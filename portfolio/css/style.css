@@ -123,15 +123,51 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 30px;
     margin-bottom: 25px;
 
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 400;
+
+    text-align: center;
 
     color: #0b3f57;
 }
 
-.category__title {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #dddddd;
+}
+
+.category__inner {
+    padding-bottom: 20px;
+}
+
+.category--training {
+    justify-content: flex-start;
+}
+
+.category--training .category__inner {
+    width: 320px;
+}
+
+.category--training .category__title {
+    width: 100%;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+}
+
+.category__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+}
+
+.category--training .category__subtitle{
     font-size: 18px;
 }
 
@@ -141,7 +177,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .portfolio__list li {
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.category--training .portfolio__list li {
+    font-size: 16px;
 }
 
 .portfolio__link {
