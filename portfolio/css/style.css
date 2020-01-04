@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 30px;
     margin-bottom: 25px;
 
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 400;
 
     text-align: center;
@@ -138,37 +138,26 @@ h1, h2, h3, h4, h5, h6, p {
 
     padding-top: 20px;
     margin-bottom: 20px;
-
-    border-bottom: 2px solid #dddddd;
 }
 
 .category__inner {
     padding-bottom: 20px;
 }
 
-.category--training {
-    justify-content: flex-start;
-}
-
-.category--training .category__inner {
-    width: 320px;
-}
-
-.category--training .category__title {
+.category__title {
     width: 100%;
     padding-bottom: 20px;
 
     font-size: 20px;
+    /*text-align: center;*/
+
+    color: darkred;
 }
 
 .category__subtitle {
     margin-bottom: 20px;
 
-    font-size: 22px;
-}
-
-.category--training .category__subtitle{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .portfolio__list {
@@ -178,10 +167,6 @@ h1, h2, h3, h4, h5, h6, p {
 .portfolio__list li {
     padding-bottom: 10px;
     font-size: 18px;
-}
-
-.category--training .portfolio__list li {
-    font-size: 16px;
 }
 
 .portfolio__link {
