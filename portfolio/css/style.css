@@ -1,0 +1,160 @@
+html,
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*HEADER
+=====================================*/
+.header {
+    background-color: #e2e7e5;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 26px;
+
+    color: #0b3f57;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+    color: #1071cc;
+}
+
+.header__logo:active {
+    color: rgba(16, 113, 204, 0.7);
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-right: 10px;
+}
+
+.contact__icon,
+.contact {
+    display: inline-block;
+}
+
+.contact__icon {
+    margin-right: 5px;
+    fill: #0b3f57;
+
+    cursor: pointer;
+}
+
+.contact__icon:hover,
+.contact__icon:focus {
+    fill: #1071cc;
+}
+
+.contact {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 14px;
+
+    color: #0b3f57;
+}
+
+.contact:hover,
+.contact:focus {
+    color: #1071cc;
+}
+
+.contact:active {
+    opacity: 0.7;
+}
+
+/*MAIN
+==================================*/
+.section__title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    font-weight: 400;
+
+    color: #0b3f57;
+}
+
+.category__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.portfolio__list {
+    list-style-position: inside;
+}
+
+.portfolio__list li {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.portfolio__link {
+    color: #0b3f57;
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+    color: #1071cc;
+}
+
+.portfolio__link:active {
+    opacity: 0.7;
+}
+
+
