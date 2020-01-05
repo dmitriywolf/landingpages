@@ -69,53 +69,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: rgba(16, 113, 204, 0.7);
 }
 
-.contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.contact__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding-right: 10px;
-}
-
-.contact__icon,
-.contact {
-    display: inline-block;
-}
-
-.contact__icon {
-    margin-right: 5px;
-    fill: #0b3f57;
-
-    cursor: pointer;
-}
-
-.contact__icon:hover,
-.contact__icon:focus {
-    fill: #1071cc;
-}
-
-.contact {
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 14px;
-
-    color: #0b3f57;
-}
-
-.contact:hover,
-.contact:focus {
-    color: #1071cc;
-}
-
-.contact:active {
-    opacity: 0.7;
-}
 
 /*MAIN
 ==================================*/
@@ -137,27 +90,13 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap;
 
     padding-top: 20px;
-    margin-bottom: 20px;
-}
-
-.category__inner {
-    padding-bottom: 20px;
-}
-
-.category__title {
-    width: 100%;
-    padding-bottom: 20px;
-
-    font-size: 20px;
-    /*text-align: center;*/
-
-    color: darkred;
+    padding-bottom: 40px;
 }
 
 .category__subtitle {
     margin-bottom: 20px;
 
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .portfolio__list {
@@ -165,8 +104,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio__list li {
-    padding-bottom: 10px;
-    font-size: 18px;
+    padding: 6px 0;
+    font-size: 20px;
 }
 
 .portfolio__link {
@@ -183,3 +122,51 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+/*FOOTER
+===========================================*/
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.contact__icon,
+.contact {
+    display: inline-block;
+}
+
+.contact__icon {
+    margin-right: 5px;
+    fill: #0b3f57;
+
+    cursor: pointer;
+}
+
+.contact {
+    padding: 10px 0;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 16px;
+
+    color: #0b3f57;
+}
+
+.contact__icon:hover,
+.contact__icon:focus,
+.contact:hover,
+.contact:focus {
+    fill: #1071cc;
+    color: #1071cc;
+}
+
+.contact:active {
+    opacity: 0.7;
+}
