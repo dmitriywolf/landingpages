@@ -56,48 +56,48 @@ input[type="radio"] .visually-hidden {
 /*------Fonts------*/
 @font-face {
     font-family: 'Cuprum';
-    src: url("../fonts/web/cuprum.woff") format("woff"),
-    url("../fonts/web/cuprum.woff2") format("woff2");
+    src: url("../fonts/cuprum.woff") format("woff"),
+    url("../fonts/cuprum.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cuprum';
-    src: url("../fonts/web/cuprumbold.woff") format("woff"),
-    url("../fonts/web/cuprumbold.woff2") format("woff2");
+    src: url("../fonts/cuprumbold.woff") format("woff"),
+    url("../fonts/cuprumbold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cuprum';
-    src: url("../fonts/web/cuprumitalic.woff") format("woff"),
-    url("../fonts/web/cuprumitalic.woff2") format("woff2");
+    src: url("../fonts/cuprumitalic.woff") format("woff"),
+    url("../fonts/cuprumitalic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Cuprum';
-    src: url("../fonts/web/cuprumbolditalic.woff") format("woff"),
-    url("../fonts/web/cuprumbolditalic.woff2") format("woff2");
+    src: url("../fonts/cuprumbolditalic.woff") format("woff"),
+    url("../fonts/cuprumbolditalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url("../fonts/web/ptsans.woff") format("woff"),
-    url("../fonts/web/ptsans.woff2") format("woff2");
+    src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url("../fonts/web/ptsans.woff") format("woff"),
-    url("../fonts/web/ptsans.woff2") format("woff2");
+    src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
