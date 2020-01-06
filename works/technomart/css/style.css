@@ -1501,6 +1501,10 @@ legend {
     cursor: pointer;
 }
 
+.filter-option input {
+	display: none;
+}
+
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
