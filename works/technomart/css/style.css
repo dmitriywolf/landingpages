@@ -530,7 +530,7 @@ input[type="radio"] .visually-hidden {
 
 .slider-controls {
     position: absolute;
-    z-index: 60;
+    z-index: 2;
     bottom: 14%;
     left: 45%;
     width: 60px;
@@ -553,7 +553,7 @@ input[type="radio"] .visually-hidden {
 .slider .arrow-left::before {
     content: "";
     position: absolute;
-    z-index: 20;
+    z-index: 3;
     left: 22px;
     top: 123px;
     -webkit-transform: rotate(-45deg);
@@ -570,7 +570,7 @@ input[type="radio"] .visually-hidden {
 .slider .arrow-right::before {
     content: "";
     position: absolute;
-    z-index: 20;
+    z-index: 3;
     top: 140px;
     display: block;
     width: 28px;
@@ -821,12 +821,12 @@ input[type="radio"] .visually-hidden {
     height: 60px;
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+    z-index: 4;
 }
 
 .flag-new {
     background: url("../image/new flag.png") no-repeat 0 0;
-    z-index: 50;
+    z-index: 4;
 }
 
 /*-------------Section Popular Goods-------------*/
@@ -880,12 +880,12 @@ input[type="radio"] .visually-hidden {
     height: 60px;
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+    z-index: 3;
 }
 
 .catalog-item .flag-new {
     background: url("../image/new flag.png") no-repeat 0 0;
-    z-index: 50;
+    z-index: 3;
 }
 
 .catalog-item .actions {
@@ -1966,7 +1966,7 @@ legend {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    z-index: 3;
+    z-index: 6;
 }
 
 .modal-close::before,
@@ -1996,7 +1996,8 @@ legend {
     height: 446px;
     margin-top: -223px;
     margin-left: -470px;
-    box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);;
+    box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+    z-index: 5;
 }
 
 .modal-map p {
@@ -2024,7 +2025,7 @@ legend {
     background-color: #fff;
     border-top: 7px solid #ff5257;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
-    z-index: 400;
+    z-index: 5;
 }
 
 .write-us label {
