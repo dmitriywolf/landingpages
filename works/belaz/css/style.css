@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    width: 1190px;
+    min-width: 1190px;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
@@ -83,7 +83,7 @@ p {
 }
 
 .container {
-    min-width: 1190px;
+    width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
 }
