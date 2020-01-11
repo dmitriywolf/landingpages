@@ -43,6 +43,7 @@ html {
 }
 
 body {
+    width: 1190px;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
@@ -1020,7 +1021,7 @@ p {
 
     background-image: url(../img/bg-belaz-5.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 .address .section__title {
