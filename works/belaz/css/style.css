@@ -209,7 +209,7 @@ p {
 /*Main*/
 /*Intro*/
 .intro {
-    background-image: url(../img/index-background.jpg);
+    background-image: url(../img/intro-bg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
 }
