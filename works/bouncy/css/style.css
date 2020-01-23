@@ -447,13 +447,13 @@ p {
 
     /*details*/
     .details {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .details__title {
         text-align: center;
     }
-    
+
     .details__text-wrapper {
         flex-direction: column;
         text-align: center;
@@ -462,14 +462,16 @@ p {
     .details__text--first-column {
         width: 100%;
         max-width: 100%;
-        margin: 0 10px;
+        margin: 0;
+        padding: 0 10px;
+
     }
 
     .details__text--second-column {
         width: 100%;
         max-width: 100%;
-        margin: 20px 10px 0;
-        padding-right: 0;
+        margin: 0;
+        padding: 20px 10px 0;
     }
 }
 
