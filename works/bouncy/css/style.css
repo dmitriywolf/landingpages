@@ -576,7 +576,6 @@ p {
 }
 
 
-
 /*Quotes
 =================================*/
 .quotes {
@@ -597,7 +596,7 @@ p {
 }
 
 .quotes__img-wrapper {
-   margin-top: -38px;
+    margin-top: -38px;
 }
 
 .quotes__title {
@@ -630,6 +629,43 @@ p {
 .quotes__author .text--green {
     font-weight: 400;
 }
+
+
+/*portfolio
+================================*/
+.portfolio__nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 570px;
+    margin: 0 auto 70px;
+}
+
+.portfolio__nav-link {
+    position: relative;
+    font-size: 16px;
+    color: rgba(70, 70, 70, 1);
+}
+
+.portfolio__nav-link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    margin: 0 auto;
+    bottom: -10px;
+    left: 15%;
+    border-top: 1px solid #19bd9a;
+    border-bottom: 1px solid #8ddac9;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.portfolio__nav-link:hover:after {
+    opacity: 1;
+}
+
 
 /*MEDIA*/
 @media (max-width: 1600px) {
@@ -879,6 +915,10 @@ p {
 
     .quotes__content {
         text-align: center;
+    }
+
+    .quotes__text {
+        font-size: 14px;
     }
 }
 
