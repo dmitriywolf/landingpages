@@ -7,8 +7,7 @@ $(function ($) {
     });
 
 
-
-    //Slider: https://github.com/kenwheeler/slick/
+    //Team Slider: https://github.com/kenwheeler/slick/
     let slider = $("#teamSlider");
 
     slider.slick({
@@ -16,6 +15,18 @@ $(function ($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
+        arrows: false,
+        dots: true
+    });
+
+    //Testimonials Slider
+    let testSlider = $("#testimonialsSlider");
+
+    testSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
         arrows: false,
         dots: true
     });
