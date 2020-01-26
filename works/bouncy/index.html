@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/portfolio.js"></script>
 </head>
 <body>
 <header class="header">
@@ -258,46 +262,245 @@
                     <a class="portfolio__nav-link" href="#">HTML</a>
                     <a class="portfolio__nav-link" href="#">Wordpress</a>
                 </nav>
-                <div class="portfolio__list">
-                    <div class="portfolio__col">
-                        <div class="portfolio__item">
-                            <img class="portfolio__img" src="img/" alt="work-1">
-                            <div class="portfolio__content">
 
+                <div class="portfolio__list grid">
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-1.jpg" alt="work-1">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img class="portfolio__img" src="img/" alt="work-2">
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-2.jpg" alt="work-2">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img class="portfolio__img" src="img/" alt="work-3">
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-3.jpg" alt="work-3">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="portfolio__col">
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-4.jpg" alt="work-4">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio__col">
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div></div>
-                    <div class="portfolio__col">
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div>
-                        <div class="portfolio__item"></div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-5.jpg" alt="work-5">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="portfolio__footer">
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-6.jpg" alt="work-6">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-7.jpg" alt="work-7">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-8.jpg" alt="work-8">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-9.jpg" alt="work-9">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-10.jpg" alt="work-10">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-11.jpg" alt="work-11">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-        </div>
+                    <div class="portfolio__item grid-item">
+                        <img class="portfolio_img" src="img/portfolio/work-12.jpg" alt="work-12">
+                        <div class="portfolio__content">
+                            <h3 class="portfolio__title">Title here</h3>
+                            <p class="portfolio__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium</p>
+                            <div class="portfolio__icons">
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-link.png" alt="Ссылка" width="14"
+                                         height="13">
+                                </div>
+                                <div class="portfolio__icon icon__item">
+                                    <img class="icon__img" src="img/icons/icon-heart.png" alt="Кисточка" width="14"
+                                         height="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--portfolio__item-->
+
+                </div> <!--/.portfolio__list-->
+            </div> <!--/.portfolio-->
+
+            <div class="portfolio__footer">
+                <p class="portfolio__footer-text">
+                    At vero eos et <b>accusamus</b> et iusto odio <b>dignissimos</b> ducimus qui blanditiis
+                </p>
+                <button class="portfolio__button button" type="submit">Submit Now</button>
+            </div> <!--/.portfolio__footer-->
+        </div> <!--/.container-->
 
 
     </section>
 
 </main>
+
+
+<!--JavaScript-->
+
 
 </body>
 </html>
