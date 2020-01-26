@@ -952,6 +952,38 @@ p {
 }
 
 
+/*Slider
+===========================================*/
+.team .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0 10px;
+    margin: 0 auto;
+}
+
+
+.slick-dots button {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    padding: 0;
+
+    background: #ffffff;
+    border: 1px solid #19bd9a;
+    border-radius: 50%;
+
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.slick-active button {
+    background-color: #19bd9a;
+}
+
+
+
+
 /*MEDIA*/
 @media (max-width: 1600px) {
     /*features*/
