@@ -936,7 +936,6 @@ p {
         max-width: 100%;
         margin: 0;
         padding: 0 10px;
-
     }
 
     .details__text--second-column {
@@ -995,6 +994,7 @@ p {
     .portfolio__nav {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 30px;
 
     }
 
@@ -1010,6 +1010,12 @@ p {
 
     .portfolio__nav-link::after {
         bottom: -4px;
+    }
+
+    .portfolio__footer-text {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
     }
 
 
