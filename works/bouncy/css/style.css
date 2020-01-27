@@ -1017,7 +1017,7 @@ p {
 .testimonials .slick-dots {
     position: absolute;
     bottom: 60px;
-    left: calc( 50% - 30px);
+    left: calc(50% - 30px);
     display: flex;
     justify-content: center;
     padding: 45px 0 0;
@@ -1059,14 +1059,89 @@ p {
     color: #464646;
 }
 
+/*News
+==============================*/
+.news {
+    padding: 70px 0 100px;
+
+    background-color: #000000;
+    background-image: url("../img/news-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
 
 
+.section__title--news {
+    text-align: left;
+    color: #ffffff;
+}
+
+.section__subtitle--news {
+    margin: 0;
+
+    text-align: left;
+    color: #b2b3b3;
+}
+
+.news__item {
+    margin-left: 70px;
+}
+
+.news__title {
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #e1e4e9;
+    letter-spacing: 0.04em;
+}
+
+.news__author {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.news__description {
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    color: #464646;
+    letter-spacing: 0.1em;
+}
+
+.news__text {
+    max-width: 600px;
+    padding-bottom: 40px;
+
+    letter-spacing: 0.05em;
+    color: #81868e;
+}
 
 
+.news__button {
+    padding: 0;
+    background: transparent;
+    border: none;
 
+    font-size: 16px;
+    color: #81868e;
+    outline: none;
 
+    cursor: pointer;
+}
 
+.news__button:hover,
+.news__button:focus {
+    color: #ffffff;
+}
 
+.news__button:active {
+    color: #19bd9a;
+}
 
 
 /*MEDIA*/
@@ -1089,6 +1164,13 @@ p {
         margin: 0 auto;
         padding: 0;
     }
+
+    /*news*/
+    .news {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 
 }
 
@@ -1379,6 +1461,45 @@ p {
         margin: 0 auto;
     }
 
+    /*news*/
+    .news {
+        padding: 50px 10px 50px;
+    }
+
+    .section__title--news {
+        text-align: center;
+    }
+
+    .section__subtitle--news {
+        text-align: center;
+        padding: 24px 15px 30px;
+        max-width: 100%;
+    }
+
+    .news__item {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .news__title {
+        font-size: 14px;
+    }
+
+    .news__description {
+        padding-bottom: 25px;
+    }
+
+    .news__text {
+        max-width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .news__button {
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+    }
 
 }
 
