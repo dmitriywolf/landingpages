@@ -177,6 +177,27 @@ p {
     color: rgba(99, 96, 96, 0.7);
 }
 
+.social__list {
+    display: flex;
+    z-index: 6;
+}
+
+.social__item {
+    margin: 0 5px;
+}
+
+.social__icon {
+    fill: #19bd9a;
+}
+
+.social__icon:hover {
+    fill: #148bd0;
+}
+
+.social__icon:active {
+    fill: #f92a3d;
+}
+
 /*Main logo
 ================================*/
 .main-logo {
@@ -210,7 +231,6 @@ p {
     justify-content: space-between;
     align-content: center;
 }
-
 
 .header__logo {
     color: #ffffff;
@@ -246,6 +266,12 @@ p {
 .nav__link:active {
     opacity: 0.7;
 }
+
+
+
+
+
+
 
 
 /*Intro
@@ -837,24 +863,6 @@ p {
     right: 0;
     background-color: rgba(255, 255, 255, 0.5);
 }
-
-.social__list {
-    display: flex;
-    z-index: 6;
-}
-
-.social__item {
-    margin: 0 5px;
-}
-
-.social__icon {
-    fill: #19bd9a;
-}
-
-.social__icon:hover {
-    fill: #148bd0;
-}
-
 
 .team__content {
     max-width: 430px;
