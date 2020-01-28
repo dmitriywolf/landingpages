@@ -907,8 +907,8 @@
         <div class="container">
             <form action="">
                 <div class="subscribe__inner">
-                    <input type="email" class="subscribe__input" placeholder="Email Address">
-                    <button class="subscribe__button">Submit</button>
+                    <input type="email" class="subscribe__input input" placeholder="Email Address">
+                    <button class="subscribe__button form__button">Submit</button>
                 </div> <!--/.subscribe__inner-->
             </form>
         </div> <!--/.container-->
@@ -931,14 +931,14 @@
                                 <img class="contact__icon" src="img/email-icon.png" alt="#">
                             </a>
                         </div>
-                    </div>
+                    </div> <!--/.contact__img-wrapper-->
                     <div class="contact__content">
                         <h3 class="contact__title">Email</h3>
                         <p class="contact__text">
                             <a class="contact__email" href="mailto:hello@codecafe.com">hello@codecafe.com</a>
                             <a class="contact__email" href="mailto:personal@codecafe.com">personal@codecafe.com</a>
                         </p>
-                    </div>
+                    </div> <!--/.contact__content-->
                 </div> <!--/.contact__item-->
 
                 <div class="contact__item">
@@ -947,15 +947,15 @@
                         <div class="contact__icon-wrapper">
                             <img class="contact__icon" src="img/map-icon.png" alt="#">
                         </div>
-                    </div>
+                    </div> <!--/.contact__img-wrapper-->
                     <div class="contact__content">
                         <h3 class="contact__title">Our Office</h3>
                         <p class="contact__text">
                             240 Bhatikhana, 8200 Barisal Bangladesh
                         </p>
-                    </div> <!--/.contact__item-->
+                    </div> <!--/.contact__content-->
+                </div><!--/.contact__item-->
 
-                </div>
                 <div class="contact__item">
                     <div class="contact__img-wrapper">
                         <img class="contact__img" src="img/contact-img-3.jpg" alt="icon-3">
@@ -963,22 +963,38 @@
                             <a href="tel: +00 11 66 00 66 44">
                                 <img class="contact__icon" src="img/phone-icon.png" alt="#">
                             </a>
-
                         </div>
-                    </div>
+                    </div> <!--/.contact__img-wrapper-->
                     <div class="contact__content">
                         <h3 class="contact__title">Phone</h3>
                         <p class="contact__text">
                             <a class="contact__tel" href="tel: +00 11 66 00 66 44">+00 11 66 00 66 44</a>
                             <a class="contact__tel" href="tel: +11 99 66 44 065">11 99 66 44 065</a>
                         </p>
-                    </div>
-
+                    </div> <!--/.contact__content-->
                 </div> <!--/.contact__item-->
+
             </div> <!--/.contacts-->
 
         </div> <!--/.container-->
     </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="form__wrapper">
+                <form action="#">
+                    <div class="form__top-wrapper">
+                        <input class="input form__input" type="text" placeholder="Your name">
+                        <input class="input form__input" type="email" placeholder="Email address">
+                        <input class="input form__input" type="text" placeholder="Subject">
+                    </div>
+                    <textarea class="form__textarea" name="" cols="10" rows="4"></textarea>
+
+                    <button class="form__button">Submit Now</button>
+                </form>
+            </div> <!--/.form__wrapper-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
 
 
 </main>
