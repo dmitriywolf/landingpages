@@ -200,19 +200,23 @@ p {
     align-content: center;
 }
 
-.header__logo {
+.main-logo{
     font-family: 'Big John', sans-serif;
     font-size: 25px;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0;
 
-    color: #ffffff;
+
     transition: opacity 0.2s linear;
 }
 
-.header__logo:hover {
+.main-logo:hover {
     opacity: 0.7;
+}
+
+.header__logo {
+    color: #ffffff;
 }
 
 /*Nav*/
@@ -1261,6 +1265,63 @@ p {
     background-color: #f92a3d;
 }
 
+/*Form
+=======================*/
+.input,
+.form__textarea {
+    padding-left: 22px;
+    padding-right: 22px;
+
+    line-height: 40px;
+
+    color: #cfd3d4;
+
+    border: 1px solid #81868e;
+    background-color: transparent;
+}
+
+.form__button {
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #19bd9a;
+    border: 0;
+    cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:focus {
+    background-color: #148bd0;
+}
+
+.form__button:active {
+    background-color: #f92a3d;
+}
+
+.form__wrapper {
+    padding: 0 115px;
+}
+
+.form__top-wrapper {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input {
+    width: 30%;
+}
+
+.form__textarea {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form__button {
+    width: 100%;
+}
+
 
 /*Subscribe us
 ==========================*/
@@ -1377,66 +1438,40 @@ p {
 }
 
 
-/*Form
-=======================*/
-.input,
-.form__textarea {
-    padding-left: 22px;
-    padding-right: 22px;
 
-    line-height: 40px;
 
-    color: #cfd3d4;
 
-    border: 1px solid #81868e;
-    background-color: transparent;
+/*Map
+=============================*/
+.map {
+    line-height: 0;
+}
+/*Footer
+=============================*/
+.main-footer {
+    background-color: #f3f3f3;
 }
 
-.form__button {
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #19bd9a;
-    border: 0;
-    cursor: pointer;
-}
-
-.form__button:hover,
-.form__button:focus {
-    background-color: #148bd0;
-}
-
-.form__button:active {
-    background-color: #f92a3d;
-}
-
-.form__wrapper {
-    padding: 0 115px;
-}
-
-.form__top-wrapper {
-    padding-bottom: 30px;
+.footer__inner {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 0 90px;
 }
 
-.form__input {
-    width: 30%;
+.footer__logo {
+    color: #323a45;
 }
 
-.form__textarea {
-    width: 100%;
-    margin-bottom: 30px;
+.footer__copyright {
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    letter-spacing: 0.05em;
+    color: #81868e;
 }
-
-.form__button {
-    width: 100%;
-}
-
-
-
-
 
 
 
@@ -1851,6 +1886,25 @@ p {
         margin: 20px auto;
     }
 
+    /*form*/
+    .form__wrapper {
+        padding: 0 25px;
+    }
+
+    .form__top-wrapper {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .form__input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
     /*subscribe*/
     .subscribe__inner {
         padding: 0 30px;
@@ -1885,20 +1939,7 @@ p {
         font-size: 14px;
     }
 
-    /*form*/
-    .form__wrapper {
-        padding: 0 25px;
-    }
 
-    .form__top-wrapper {
-        flex-wrap: wrap;
-        padding-bottom: 0;
-    }
-
-    .form__input {
-        width: 100%;
-        margin-bottom: 30px;
-    }
 
 }
 
