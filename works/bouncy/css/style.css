@@ -238,10 +238,11 @@ p {
 
 .burger {
     display: none;
-    padding: 0;
+    padding: 6px 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: opacity 0.3s linear;
 }
 
 .burger__item {
@@ -274,6 +275,10 @@ p {
 
 .burger__item:after {
     top: 6px;
+}
+
+.burger:hover {
+    opacity: 0.7;
 }
 
 
@@ -1524,7 +1529,7 @@ p {
 @media (max-width: 1200px) {
     /*header*/
     .header__inner {
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     /*portfolio*/
@@ -1628,7 +1633,6 @@ p {
     .team__item-name::after {
         display: none;
     }
-
 
     /*testimonials*/
     .testimonials {
@@ -1958,6 +1962,20 @@ p {
 
 
 @media (max-width: 520px) {
+    /*intro*/
+    .intro__inner {
+        padding: 0 10px;
+    }
+
+    .intro__title {
+        font-size: 26px;
+    }
+
+    .intro__subtitle {
+        font-size: 14px;
+
+    }
+    
     /*features*/
     .feature__item {
         width: 100%;
