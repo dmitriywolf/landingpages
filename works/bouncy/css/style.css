@@ -229,7 +229,7 @@ p {
 .header.fixed {
     position: fixed;
     background-color: #19bd9a;
-    padding: 10px 0;
+    padding: 15px 0;
     z-index: 100;
 }
 
@@ -288,9 +288,23 @@ p {
     opacity: 0.7;
 }
 
+.burger--close .burger__item {
+    background-color: transparent;
+}
+
+.burger--close .burger__item::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.burger--close .burger__item::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
 
 /*Nav*/
 .nav {
+    display: flex;
     font-size: 16px;
     line-height: 1;
 }
@@ -979,6 +993,11 @@ p {
     text-transform: uppercase;
 }
 
+.skill__title {
+    font-weight: 300;
+}
+
+
 .skill__scale {
     position: relative;
 
@@ -1012,7 +1031,6 @@ p {
 .skill__scale--interface::after {
     width: 75%;
 }
-
 
 /*Slider
 ===========================================*/
@@ -1677,9 +1695,51 @@ p {
 
 @media (max-width: 900px) {
     /*header*/
-    .nav {
-        display: none;
+    .header.header-bg {
+        background-color: #19bd9a;
     }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        text-align: right;
+
+        background-color: #19bd9a;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 12px 40px;
+        color: #ffffff;
+
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+
+    }
+
+    .nav__link:hover,
+    .nav__link:focus {
+        border: none;
+        background-color: #148bd0;
+
+    }
+
+    .nav__link:active {
+        background-color: #f92a3d;
+        opacity: 1;
+
+    }
+
 
     .burger {
         display: block;
