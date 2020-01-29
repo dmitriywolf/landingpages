@@ -226,6 +226,13 @@ p {
     z-index: 2;
 }
 
+.header.fixed {
+    position: fixed;
+    background-color: #19bd9a;
+    padding: 10px 0;
+    z-index: 100;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -1497,11 +1504,12 @@ p {
     justify-content: center;
     align-items: center;
 
-    padding: 110px 0 90px;
+    padding: 80px 0 80px;
 }
 
 .footer__logo {
     color: #323a45;
+    padding-bottom: 15px;
 }
 
 .footer__copyright {
