@@ -769,7 +769,7 @@ p {
 }
 
 .address__wrapper {
-    width: 44%;
+    width: 54%;
     padding: 20px;
     background-color: rgba(69, 86, 97, 0.71);
 }
@@ -796,7 +796,7 @@ p {
 
 /*Form*/
 .form {
-    width: 54%;
+    width: 44%;
     max-width: 615px;
     padding: 30px 30px 40px;
     background-color: rgba(69, 86, 97, 0.71);
@@ -918,6 +918,16 @@ textarea {
         margin: 0 0 20px 0;
     }
 
+    /*.contacts*/
+    .form, .address__wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    .form {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 
@@ -1017,6 +1027,16 @@ textarea {
         width: 100%;
         margin-top: -30px;
         padding: 50px 10px 20px;
+    }
+
+    /*contacts*/
+    .form, .address__wrapper {
+        padding: 20px 15px;
+    }
+
+    .form__button {
+        width: 100%;
+        text-align: center;
     }
 
 }
