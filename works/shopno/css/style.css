@@ -644,24 +644,6 @@ p {
     white-space: nowrap;
 }
 
-/*Social__List*/
-.social__list {
-    display: flex;
-
-}
-
-.social__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0 7px;
-}
-
-.social__icon:hover {
-    fill: #7d7981;
-}
 
 /*Testimonials*/
 .testimonials__item {
@@ -779,7 +761,7 @@ p {
 }
 
 .address__text,
-.address__link{
+.address__link {
     font-size: 15px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
@@ -845,10 +827,76 @@ textarea {
 }
 
 
+/*Social__List*/
+.social__list {
+    display: flex;
 
+}
 
+.social__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin: 0 7px;
+}
 
+.social__icon:hover {
+    fill: #7d7981;
+}
+
+/*footer*/
+footer {
+    background-color: #262b2e;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__title {
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__social-icon {
+    fill: #bbb8b9;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 40px;
+    margin: 4px;
+
+    background-color: #424648;
+}
+
+.social__link:hover {
+    background-color: #6eeee4;
+}
+
+.social__link:hover .footer__social-icon {
+    fill: #170f1c;
+}
+
+.footer__copyright {
+    padding-top: 35px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 
 /*Media
@@ -919,10 +967,12 @@ textarea {
     }
 
     /*.contacts*/
+    /*form*/
     .form, .address__wrapper {
         max-width: 100%;
         width: 100%;
     }
+
     .form {
         margin-bottom: 30px;
     }
@@ -1101,10 +1151,15 @@ textarea {
         padding-bottom: 15px;
     }
 
-    /*Logotypes*/
+    /*logotypes*/
     .logotype__item {
         width: 50%;
         margin-bottom: 35px;
+    }
+
+    /*footer*/
+    .footer__copyright {
+        font-size: 12px;
     }
 
 }
@@ -1144,7 +1199,7 @@ textarea {
         background-size: cover;
     }
 
-    /*Logotypes*/
+    /*logotypes*/
     .logotype__item {
         width: 100%;
         margin-bottom: 30px;
@@ -1152,5 +1207,10 @@ textarea {
 
     .logotype__item:last-child {
         margin-bottom: 0;
+    }
+
+    /*footer*/
+    .footer__copyright {
+        font-size: 10px;
     }
 }
