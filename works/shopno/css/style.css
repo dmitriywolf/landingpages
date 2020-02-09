@@ -755,7 +755,94 @@ p {
     opacity: 1;
 }
 
+/*Contacts*/
+.contacts {
+    background-image: url(../img/bg-form.jpg);
+    background-position: center center;
+    background-size: cover;
+}
 
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.address__wrapper {
+    width: 44%;
+    padding: 20px;
+    background-color: rgba(69, 86, 97, 0.71);
+}
+
+.address__text--web {
+    margin-top: 30px;
+}
+
+.address__text,
+.address__link{
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.address__link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.map__wrapper {
+    height: 225px;
+    margin-top: auto;
+}
+
+/*Form*/
+.form {
+    width: 54%;
+    max-width: 615px;
+    padding: 30px 30px 40px;
+    background-color: rgba(69, 86, 97, 0.71);
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+.input, input::placeholder, textarea {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 3;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.input, textarea {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+textarea {
+    line-height: 2;
+}
+
+.form__button {
+    margin-top: 20px;
+    padding: 12px 36px;
+    border: none;
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #6eeee4;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #19decf;
+}
 
 
 
@@ -997,11 +1084,19 @@ p {
     /*Logotypes*/
     .logotype__item {
         width: 50%;
+        margin-bottom: 35px;
     }
 
 }
 
 @media (max-width: 400px) {
+    /*intro*/
+    .intro__button {
+        bottom: 8%;
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+
     /*services*/
     .service__title {
         font-size: 14px;
@@ -1032,5 +1127,10 @@ p {
     /*Logotypes*/
     .logotype__item {
         width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .logotype__item:last-child {
+        margin-bottom: 0;
     }
 }
