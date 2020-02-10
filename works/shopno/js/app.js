@@ -34,8 +34,8 @@ $(function () {
         }, 1200);
     });
 
-    //Nav Toggle
 
+    //Nav Toggle
     let nav = $("#nav");
     let navToggle = $("#navToggle");
 
@@ -44,9 +44,31 @@ $(function () {
 
         nav.toggleClass("show");
         navToggle.toggleClass("burger--close");
-
-
     });
+
+
+    //AboutUs Slider Библиотека Slick
+    let aboutUsSlider = $("#aboutUsSlider");
+
+    aboutUsSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+        });
+
+    //Testimonials Slider Библиотека Slick
+    let testimonialsSlider = $("#testimonialsSlider");
+
+    testimonialsSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+    });
+
 
 
 });

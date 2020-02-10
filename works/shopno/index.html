@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <!--JavaScript-->
@@ -85,11 +86,23 @@
             </div>
 
             <div class="about-us">
-                <div>
-                    <div class="about-us__img-wrapper">
-                        <img class="about-us__img" src="img/about-us-img.jpg" alt="">
-                    </div><!--/.about-us__img-wrapper-->
-                </div>
+                <div id="aboutUsSlider">
+                    <div>
+                        <div class="about-us__img-wrapper">
+                            <img class="about-us__img" src="img/about-us-img.jpg" alt="">
+                        </div><!--/.about-us__img-wrapper-->
+                    </div>
+                    <div>
+                        <div class="about-us__img-wrapper">
+                            <img class="about-us__img" src="img/about-us-img.jpg" alt="">
+                        </div><!--/.about-us__img-wrapper-->
+                    </div>
+                    <div>
+                        <div class="about-us__img-wrapper">
+                            <img class="about-us__img" src="img/about-us-img.jpg" alt="">
+                        </div><!--/.about-us__img-wrapper-->
+                    </div>
+                </div> <!--/#aboutUsSlider-->
                 <div class="about-us__content">
                     <h2 class="about-us__title">We Actually Do amazing works</h2>
                     <p class="about-us__text">
@@ -502,7 +515,7 @@
             <h3 class="section__subtitle">Lorem ipsum dolor sit amet event landing template</h3>
         </div>
         <div class="container">
-            <div class="testimonials">
+            <div class="testimonials" id="testimonialsSlider">
                 <div>
                     <div class="testimonials__item">
                         <div class="testimonials__img-author">
@@ -531,11 +544,59 @@
                     </div> <!--/.testimonials__item-->
                 </div> <!--/.slider__item-->
                 <div>
-                    <div class="testimonials__item"></div>
-                </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__img-author">
+                            <div class="testimonials__author-img-wrapper">
+                                <img class="testimonials__img" src="img/team/team-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__header">
+                                <span class="testimonials__author">Al Rayhan</span>
+                                <span class="testimonials__author--position">&nbsp;/&nbsp; UI/UX Designer</span>
+                            </div>
+                            <div class="testimonials__text">
+                                Lorem Ipsum is simply dummy text of the printing and you
+                                standard dummy know that text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                            <div class="testimonials__stars">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                            </div> <!--/.testimonials__stars-->
+                        </div> <!--/.testimonials__content-->
+                    </div> <!--/.testimonials__item-->
+                </div> <!--/.slider__item-->
                 <div>
-                    <div class="testimonials__item"></div>
-                </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__img-author">
+                            <div class="testimonials__author-img-wrapper">
+                                <img class="testimonials__img" src="img/team/team-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__header">
+                                <span class="testimonials__author">Al Rayhan</span>
+                                <span class="testimonials__author--position">&nbsp;/&nbsp; UI/UX Designer</span>
+                            </div>
+                            <div class="testimonials__text">
+                                Lorem Ipsum is simply dummy text of the printing and you
+                                standard dummy know that text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                            <div class="testimonials__stars">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                            </div> <!--/.testimonials__stars-->
+                        </div> <!--/.testimonials__content-->
+                    </div> <!--/.testimonials__item-->
+                </div> <!--/.slider__item-->
             </div> <!--/.testimonials-->
         </div> <!--/.container-->
     </section> <!--/.section #testimonials-->
@@ -643,6 +704,8 @@
 </footer> <!--footer-->
 
 <!--JavaScript-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/app.js"></script>
 
 </body>
