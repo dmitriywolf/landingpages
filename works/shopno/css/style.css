@@ -194,6 +194,15 @@ p {
     color: #77efe5;
 }
 
+
+.header.fixed {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eff0f2;
+
+}
+
 /*Burger*/
 .burger {
     display: none;
@@ -481,14 +490,14 @@ p {
 
     padding: 60px;
 
-    z-index: 3;
+    z-index: 2;
 
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .service__content--more {
     background-color: #71f5ea;
-    z-index: 4;
+    z-index: 3;
     opacity: 0;
 
     transition: opacity 0.3s linear;
@@ -1050,6 +1059,8 @@ footer {
 
         width: 100%;
         padding-top: 5px;
+        padding-bottom: 10px;
+
         background-color: #eff0f2;
     }
 
@@ -1058,7 +1069,7 @@ footer {
         padding-bottom: 5px;
     }
 
-    .show.nav {
+    .nav.show {
         display: flex;
     }
 
