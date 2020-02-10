@@ -118,7 +118,7 @@ p {
     margin: 0 auto;
 }
 
-/*SLider
+/*Slider
 ===================================*/
 .slick-dots {
     display: flex;
@@ -146,18 +146,6 @@ p {
 .slick-active button {
     background-color: #19bd9a;
 }
-
-.testimonials .slick-slide {
-
-    height: 410px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-y: visible;
-
-}
-
-
 
 
 /*Section
@@ -540,12 +528,13 @@ p {
 }
 
 .service__content--more {
+    display: flex;
     background-color: #71f5ea;
     z-index: 3;
     opacity: 0;
-
     transition: opacity 0.3s linear;
 }
+
 
 .service__title {
     font-family: "Merriweather", serif;
@@ -794,6 +783,14 @@ p {
     display: flex;
 }
 
+.testimonials .slick-slide {
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: visible;
+}
+
 /*Logotypes*/
 .logotypes {
     display: flex;
@@ -978,10 +975,6 @@ footer {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.8);
 }
-
-
-
-
 
 
 /*Media

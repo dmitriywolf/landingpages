@@ -56,7 +56,7 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: true
-        });
+    });
 
     //Testimonials Slider Библиотека Slick
     let testimonialsSlider = $("#testimonialsSlider");
@@ -68,7 +68,6 @@ $(function () {
         arrows: false,
         dots: true
     });
-
 
 
 });
