@@ -24,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../advogrand" />
+    <property name="last_opened_file_path" value="D:/projects/magick" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -50,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580410052534</updated>
       <workItem from="1580410055876" duration="2433000" />
+      <workItem from="1581441782541" duration="621000" />
     </task>
     <servers />
   </component>
@@ -61,7 +62,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

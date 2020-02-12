@@ -22,7 +22,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../irvas" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,6 +49,7 @@
       <workItem from="1581188591196" duration="24745000" />
       <workItem from="1581355266009" duration="13289000" />
       <workItem from="1581368892695" duration="194000" />
+      <workItem from="1581372055149" duration="30000" />
     </task>
     <servers />
   </component>
