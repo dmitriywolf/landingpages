@@ -24,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/projects/magick" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -51,6 +51,7 @@
       <updated>1580410052534</updated>
       <workItem from="1580410055876" duration="2433000" />
       <workItem from="1581441782541" duration="621000" />
+      <workItem from="1581767566043" duration="42000" />
     </task>
     <servers />
   </component>
