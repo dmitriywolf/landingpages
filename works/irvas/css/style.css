@@ -77,6 +77,29 @@ p {
 .container {
     width: 100%;
     max-width: 1170px;
+    margin: 0 auto;
 }
+
+
+/*Header*/
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.header__logo {
+    margin-right: 28px;
+}
+
+.header__subtitle {
+    max-width: 220px;
+    color: #0096dc;
+
+}
+
+
 
 
