@@ -130,7 +130,6 @@ p {
 .edit-icon {
     margin-right: 10px;
     fill: #55a831;
-
     transition: fill 0.3s linear;
 }
 
@@ -143,7 +142,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     line-height: 1.4;
     color: #333333;
 }
@@ -157,4 +155,41 @@ p {
     font-size: 18px;
     font-weight: 600;
 }
+
+.header__phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-icon {
+    margin: 5px 10px 0 0;
+}
+
+.phone__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: right;
+}
+
+.phone__link {
+    padding-bottom: 5px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.phone__call-back {
+    font-size: 15px;
+    text-decoration: underline;
+    color: #0089cc;
+}
+
+.phone__call-back:hover,
+.phone__call-back:focus {
+    color: #55a831;
+}
+
+
 
