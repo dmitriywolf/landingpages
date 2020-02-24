@@ -97,9 +97,64 @@ p {
 .header__subtitle {
     max-width: 220px;
     color: #0096dc;
-
 }
 
+.edit__button {
+    display: flex;
+    justify-content: space-between;
 
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    color: #55a831;
 
+    border: 2px solid #55a831;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: color 0.3s linear,
+        border-top-color 0.3s linear,
+        border-bottom-color 0.3s linear,
+        border-left-color 0.3s linear,
+        border-right-color 0.3s linear;
+}
+
+.edit__button:hover,
+.edit__button:focus {
+    color: #0096dc;
+    border-color: #0096dc;
+    cursor: pointer;
+}
+
+.edit-icon {
+    margin-right: 10px;
+    fill: #55a831;
+
+    transition: fill 0.3s linear;
+}
+
+.edit__button:hover .edit-icon,
+.edit__button:focus .edit-icon {
+    fill: #0096dc;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 1.4;
+    color: #333333;
+}
+
+.clock-icon {
+    margin-right: 20px;
+    fill: #a5a5a5;
+}
+
+.schedule--time {
+    font-size: 18px;
+    font-weight: 600;
+}
 
