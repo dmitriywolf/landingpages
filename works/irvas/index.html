@@ -25,41 +25,44 @@
 
 <header class="header" id="header">
     <div class="container">
+
         <div class="header__inner">
-            <a class="header__logo logo" href="#">
-                <img class="header__logo-img" src="img/logo.png" alt="Логотип компании">
-            </a> <!--/.header__logo-->
-            <p class="header__subtitle">
-                Остекление балконов и лоджий
-                в Москве и Московской области
-            </p> <!--header__subtitle-->
+            <div class="header__logo-wrapper">
+                <a class="header__logo logo" href="#">
+                    <img class="header__logo-img" src="img/logo.png" alt="Логотип компании">
+                </a> <!--/.header__logo-->
+                <p class="header__subtitle">
+                    Остекление балконов и лоджий
+                    в Москве и Московской области
+                </p> <!--header__subtitle-->
+            </div> <!--/.header__logo-wrapper-->
+
             <button class="header__edit edit__button">
                 <svg class="edit-icon" width="30" height="30">
                     <use xlink:href="#edit"></use>
                 </svg>
                 <span>Вызвать<br> замерщика</span>
             </button> <!--/.header__edit-->
+
             <div class="header__schedule schedule">
-                <svg class="clock-icon" width="30" height="30">
+                <svg class="header__clock-icon" width="30" height="30">
                     <use xlink:href="#clock"></use>
                 </svg> <!--/.clock-icon-->
-                <div class="schedule__text-wrapper">
+                <div class="header__schedule-text-wrapper">
                     <span class="schedule--day">без выходных</span> <br>
                     <span class="schedule--time">9:00 - 18:00</span>
                 </div> <!--/.schedule__text-wrapper-->
             </div> <!--/.header__schedule-->
 
             <div class="header__phone phone">
-                <svg class="phone-icon" width="20" height="20">
+                <svg class="header__phone-icon" width="20" height="20">
                     <use xlink:href="#phone-call"></use>
                 </svg> <!--/.phone-icon-->
-                <div class="phone__text-wrapper">
+                <div class="header__phone-text-wrapper">
                     <a class="phone__link" href="tel:+74956466171">+7 (495) 646-61-71</a>
                     <a class="phone__call-back" href="#">Заказать обратный звонок</a>
-                </div> <!--/.phone__text-wrapper-->
+                </div> <!--/.header__phone-text-wrapper-->
             </div> <!--/.header__phone-->
-
-
         </div> <!--/.header__inner-->
     </div> <!--/.container-->
 </header> <!--./header-->

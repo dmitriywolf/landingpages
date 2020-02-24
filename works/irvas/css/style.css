@@ -76,7 +76,8 @@ p {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1190px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -88,6 +89,12 @@ p {
     align-items: center;
 
     padding: 20px 0;
+}
+
+.header__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -114,10 +121,10 @@ p {
     border-radius: 8px;
     background-color: transparent;
     transition: color 0.3s linear,
-        border-top-color 0.3s linear,
-        border-bottom-color 0.3s linear,
-        border-left-color 0.3s linear,
-        border-right-color 0.3s linear;
+    border-top-color 0.3s linear,
+    border-bottom-color 0.3s linear,
+    border-left-color 0.3s linear,
+    border-right-color 0.3s linear;
 }
 
 .edit__button:hover,
@@ -138,7 +145,7 @@ p {
     fill: #0096dc;
 }
 
-.schedule {
+.header__schedule {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,7 +153,7 @@ p {
     color: #333333;
 }
 
-.clock-icon {
+.header__clock-icon {
     margin-right: 20px;
     fill: #a5a5a5;
 }
@@ -161,11 +168,11 @@ p {
     justify-content: space-between;
 }
 
-.phone-icon {
+.header__phone-icon {
     margin: 5px 10px 0 0;
 }
 
-.phone__text-wrapper {
+.header__phone-text-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
