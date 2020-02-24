@@ -199,7 +199,6 @@ p {
 }
 
 
-
 /*MEDIA*/
 @media (max-width: 1000px) {
     /*Header*/
@@ -220,11 +219,20 @@ p {
     /*Header*/
     .header__logo {
         width: 120px;
-      
+    }
+
+    .edit__button {
+        align-items: center;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .edit-icon {
+        margin-right: 8px;
     }
 
     .header__schedule,
-    .phone__call-back{
+    .phone__call-back {
         display: none;
     }
 
@@ -241,27 +249,28 @@ p {
         fill: #0096dc;
     }
 
-    .header__phone-text-wrapper{
+    .header__phone-text-wrapper {
         justify-content: center;
     }
 
     .phone__link {
         padding-bottom: 0;
     }
-
 }
 
 @media (max-width: 600px) {
-    .header__edit{
+    /*Header*/
+    .header__edit {
         display: none;
     }
 }
 
 
 @media (max-width: 420px) {
-   .header__inner {
-       flex-direction: column;
-   }
+    /*Header*/
+    .header__inner {
+        flex-direction: column;
+    }
 
     .header__logo {
         width: 100px;
@@ -274,7 +283,6 @@ p {
 
     .header__phone-icon {
         margin: 0 10px 0 0;
-
     }
 }
 
