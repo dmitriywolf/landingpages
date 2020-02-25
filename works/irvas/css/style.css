@@ -198,6 +198,27 @@ p {
     color: #55a831;
 }
 
+/*Intro*/
+.intro {
+    height: 640px;
+    background-color: #a5a5a5;
+    background-image: url("../img/intro_bg.jpg");
+    background-position: top center;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
