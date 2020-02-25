@@ -225,8 +225,12 @@ p {
 
 
 /*MEDIA*/
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     /*Header*/
+    .header__inner {
+        padding: 10px 0;
+    }
+
     .header__subtitle {
         display: none;
     }
