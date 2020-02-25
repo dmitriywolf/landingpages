@@ -222,12 +222,12 @@ p {
 @media (max-width: 768px) {
     /*Header*/
     .header__logo {
-        width: 120px;
+        width: 100px;
     }
 
     .edit__button {
         align-items: center;
-        padding: 8px 14px;
+        padding: 5px 12px;
         font-size: 12px;
     }
 
@@ -274,10 +274,11 @@ p {
     /*Header*/
     .header__inner {
         flex-direction: column;
+        padding: 10px 0;
     }
 
     .header__logo {
-        width: 100px;
+        width: 90px;
         margin: 0 auto;
     }
 
@@ -287,6 +288,9 @@ p {
 
     .header__phone-icon {
         margin: 0 10px 0 0;
+        width: 20px;
+        height: 20px;
     }
+
 }
 
