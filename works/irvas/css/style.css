@@ -200,13 +200,15 @@ p {
 
 /*Intro*/
 .intro {
-    height: 640px;
+    /*height: 640px;*/
     background-color: #a5a5a5;
     background-image: url("../img/intro/intro_bg.jpg");
     background-position: top center;
     background-size: cover;
 }
+
 .intro__inner {
+    position: relative;
     padding-top: 110px;
 }
 
@@ -221,14 +223,16 @@ p {
 .intro__benefits {
     display: flex;
     margin-top: 150px;
+    padding-bottom: 140px;
 
 }
 
 .benefits__item {
+    position: relative;
     width: 110px;
     height: 110px;
     margin-right: 20px;
-    padding-top: 40px;
+    padding-top: 45px;
 
     font-family: 'Open Sans Condensed', serif;
     font-size: 16px;
@@ -242,6 +246,99 @@ p {
     border: 1px solid #ffffff;
     border-radius: 50%;
 }
+
+.benefits__icon {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.benefits__icon--time {
+    left: 26px;
+    transform: translate3d(0, 0, 0);
+}
+
+.benefits__icon--up {
+    bottom: 80px;
+}
+
+
+.intro__form {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.form {
+    padding: 35px 50px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.form__title {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.form__title span {
+    font-size: 24px;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.form__input {
+    width: 270px;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    line-height: 3.9;
+
+    text-align: center;
+
+    color: #333333;
+    border: 1px solid #999999;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.form__input:focus {
+    border-color: #55a831;
+}
+
+.form__button {
+    width: 270px;
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 20px;
+    line-height: 3.9;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: 1px solid #ffc600;
+    border-radius: 8px;
+    background: linear-gradient(-90deg, #ffed26, #ffb400);
+    box-shadow: 0 2px 20px 0 rgba(255, 153, 0, 0.4);
+
+    cursor: pointer;
+}
+
+.form__button:hover {
+    box-shadow: none;
+}
+
+.form__text {
+    font-size: 11px;
+    font-weight: 300;
+    color: #666666;
+}
+
 
 
 
