@@ -242,6 +242,10 @@ p {
 
 @media (max-width: 768px) {
     /*Header*/
+    .header__inner {
+        padding: 10px 0;
+    }
+
     .header__logo {
         width: 100px;
     }
@@ -295,7 +299,6 @@ p {
     /*Header*/
     .header__inner {
         flex-direction: column;
-        padding: 10px 0;
     }
 
     .header__logo {
