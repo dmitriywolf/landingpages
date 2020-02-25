@@ -51,7 +51,7 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    color: #000000;
+    color: #333333;
 }
 
 a {
@@ -202,10 +202,20 @@ p {
 .intro {
     height: 640px;
     background-color: #a5a5a5;
-    background-image: url("../img/intro_bg.jpg");
+    background-image: url("../img/intro/intro_bg.jpg");
     background-position: top center;
     background-size: cover;
+}
+.intro__inner {
+    padding-top: 110px;
+}
 
+.intro__title {
+    font-size: 55px;
+}
+
+.intro__subtitle {
+    font-size: 26px;
 }
 
 
