@@ -124,31 +124,33 @@
             <div class="glazing">
 
                 <div class="glazing__nav">
-                    <div class="glazing__link-wrapper">
+                    <div class="glazing__link-wrapper glazing-nav-tab is-active" data-tab-name="glazing-tab1">
                         <img class="glazing__img" src="img/glazing/glazing-1.png" alt="Деревяное остекление">
-                        <a class="glazing__link glazing__link--current" href="#">Деревяное остекление</a>
+                        <a class="glazing__link glazing__link--current" href="">Деревяное остекление</a>
                     </div><!--/.glazing__link-wrapper-->
-                    <div class="glazing__link-wrapper">
+                    <div class="glazing__link-wrapper glazing-nav-tab" data-tab-name="glazing-tab2">
                         <img class="glazing__img" src="img/glazing/glazing-2.png" alt="Алюминиевое остекление">
-                        <a class="glazing__link" href="#">Алюминиевое остекление</a>
+                        <a class="glazing__link" href="">Алюминиевое остекление</a>
                     </div> <!--/.glazing__link-wrapper-->
-                    <div class="glazing__link-wrapper">
+                    <div class="glazing__link-wrapper glazing-nav-tab" data-tab-name="glazing-tab3">
                         <img class="glazing__img" src="img/glazing/glazing-3.png" alt="Остекление пластиковыми рамами">
-                        <a class="glazing__link" href="#">Остекление пластиковыми рамами</a>
+                        <a class="glazing__link" href="">Остекление пластиковыми рамами</a>
                     </div> <!--/.glazing__link-wrapper-->
-                    <div class="glazing__link-wrapper">
+                    <div class="glazing__link-wrapper glazing-nav-tab" data-tab-name="glazing-tab4">
                         <img class="glazing__img" src="img/glazing/glazing-4.png"
                              alt="Французкое остекление (панорамное)">
-                        <a class="glazing__link" href="#">Французкое остекление (панорамное)</a>
+                        <a class="glazing__link" href="">Французкое остекление (панорамное)</a>
                     </div> <!--/.glazing__link-wrapper-->
-                    <div class="glazing__link-wrapper">
+                    <div class="glazing__link-wrapper glazing-nav-tab" data-tab-name="glazing-tab5">
                         <img class="glazing__img" src="img/glazing/glazing-5.png" alt="Остекление с выносом">
-                        <a class="glazing__link" href="#">Остекление с выносом</a>
+                        <a class="glazing__link" href="">Остекление с выносом</a>
                     </div> <!--/.glazing__link-wrapper-->
                 </div> <!--/.glazing__nav-->
 
                 <div class="glazing__list">
-                    <div class="glazing__item-wrapper">
+
+                    <!--Деревяное остекление-->
+                    <div class="glazing__item-wrapper glazing-tab-content glazing-tab1 is-active">
                         <div class="glazing__item glazing__item--cool">
                             <h3 class="glazing__title glazing__title--cool">Холодное</h3>
                             <img class="glazing__item-img" src="img/glazing/glazing-item-cool.jpg"
@@ -163,10 +165,9 @@
                                 <div class="glazing__price">
                                     <b>2600 руб.кв.м</b> под ключ с установкой
                                 </div>
-                                <button class="glazing__button">Рассчитать стоимость</button>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
                             </div> <!--/.glazing__price-wrapper"-->
                         </div> <!--/.glazing__item-->
-
                         <div class="glazing__item glazing__item--heat">
                             <h3 class="glazing__title glazing__title--heat">Теплое</h3>
                             <img class="glazing__item-img" src="img/glazing/glazing-item-heat.jpg"
@@ -181,17 +182,173 @@
                                 <div class="glazing__price">
                                     <b>4000 руб.кв.м</b> под ключ с установкой
                                 </div>
-                                <button class="glazing__button">Рассчитать стоимость</button>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
                             </div> <!--/.glazing__price-wrapper"-->
-                        </div>
-                    </div> <!--/.glazing__item-->
+                        </div> <!--/.glazing__item-->
+                    </div> <!--/.glazing__item-wrapper-->
 
+                    <!--Алюминиевое остекление-->
+                    <div class="glazing__item-wrapper glazing-tab-content glazing-tab2">
+                        <div class="glazing__item glazing__item--cool">
+                            <h3 class="glazing__title glazing__title--cool">Холодное</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-cool.jpg"
+                                 alt="Холодное деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 42-58 мм</li>
+                                <li class="glazing__parameter">Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.07 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: 20-27 дб</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>3600 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                        <div class="glazing__item glazing__item--heat">
+                            <h3 class="glazing__title glazing__title--heat">Теплое</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-heat.jpg"
+                                 alt="Теплое деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 58-78 мм</li>
+                                <li class="glazing__parameter">Остекление: однокамерные и двухкамерные стеклопакеты</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.63 - 1.05 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: до 5 класса</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>5000 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                    </div> <!--/.glazing__item-wrapper-->
+
+                    <!--Остекление пластиковыми рамами-->
+                    <div class="glazing__item-wrapper glazing-tab-content glazing-tab3">
+                        <div class="glazing__item glazing__item--cool">
+                            <h3 class="glazing__title glazing__title--cool">Холодное</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-cool.jpg"
+                                 alt="Холодное деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 42-58 мм</li>
+                                <li class="glazing__parameter">Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.07 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: 20-27 дб</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>2000 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                        <div class="glazing__item glazing__item--heat">
+                            <h3 class="glazing__title glazing__title--heat">Теплое</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-heat.jpg"
+                                 alt="Теплое деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 58-78 мм</li>
+                                <li class="glazing__parameter">Остекление: однокамерные и двухкамерные стеклопакеты</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.63 - 1.05 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: до 5 класса</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>3000 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                    </div> <!--/.glazing__item-wrapper-->
+
+
+                    <!--Французкое остекление-->
+                    <div class="glazing__item-wrapper glazing-tab-content glazing-tab4">
+                        <div class="glazing__item glazing__item--cool">
+                            <h3 class="glazing__title glazing__title--cool">Холодное</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-cool.jpg"
+                                 alt="Холодное деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 42-58 мм</li>
+                                <li class="glazing__parameter">Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.07 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: 20-27 дб</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>3200 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                        <div class="glazing__item glazing__item--heat">
+                            <h3 class="glazing__title glazing__title--heat">Теплое</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-heat.jpg"
+                                 alt="Теплое деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 58-78 мм</li>
+                                <li class="glazing__parameter">Остекление: однокамерные и двухкамерные стеклопакеты</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.63 - 1.05 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: до 5 класса</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>5200 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                    </div> <!--/.glazing__item-wrapper-->
+
+
+                    <!--Остекление с выносом-->
+                    <div class="glazing__item-wrapper glazing-tab-content glazing-tab5">
+                        <div class="glazing__item glazing__item--cool">
+                            <h3 class="glazing__title glazing__title--cool">Холодное</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-cool.jpg"
+                                 alt="Холодное деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 42-58 мм</li>
+                                <li class="glazing__parameter">Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.07 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: 20-27 дб</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>6600 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                        <div class="glazing__item glazing__item--heat">
+                            <h3 class="glazing__title glazing__title--heat">Теплое</h3>
+                            <img class="glazing__item-img" src="img/glazing/glazing-item-heat.jpg"
+                                 alt="Теплое деревяное остекление">
+                            <ul class="glazing__parameters">
+                                <li class="glazing__parameter">Конструктивная толщина 58-78 мм</li>
+                                <li class="glazing__parameter">Остекление: однокамерные и двухкамерные стеклопакеты</li>
+                                <li class="glazing__parameter">Теплоизоляция: 0.63 - 1.05 м<sup>2</sup>*C/Вт</li>
+                                <li class="glazing__parameter">Звукоизоляция: до 5 класса</li>
+                            </ul><!--/.glazing__parameters-->
+                            <div class="glazing__price-wrapper">
+                                <div class="glazing__price">
+                                    <b>9000 руб.кв.м</b> под ключ с установкой
+                                </div>
+                                <button class="glazing__button form__button">Рассчитать стоимость</button>
+                            </div> <!--/.glazing__price-wrapper"-->
+                        </div> <!--/.glazing__item-->
+                    </div> <!--/.glazing__item-wrapper-->
 
                 </div> <!--/.glazing__list-->
+
+
             </div> <!--/.glazing-->
         </div> <!--/.container-->
     </section> <!--/.section-->
 </main>
 
+<script src="js/app.js"></script>
 </body>
 </html>
