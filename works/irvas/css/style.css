@@ -573,7 +573,6 @@ p {
     width: 0;
 }
 
-
 .decoration__link {
     font-size: 20px;
     font-weight: 600;
@@ -598,15 +597,120 @@ p {
 }
 
 
-.decoration__content-wrapper {
 
+
+
+.decoration__content-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .decoration__form {
     width: 370px;
 }
 
+.decoration__item-wrapper {
+    display: flex;
+    /*justify-content: space-between;*/
+}
 
+.decoration__img-wrapper {
+    width: 300px;
+}
+
+.decoration__item-content {
+    max-width: 470px;
+}
+
+.decoration__item-title {
+    padding-top: 67px;
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+/*Внутрення отделка*/
+.inner-decoration__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-decoration__item {
+    width: 110px;
+    margin: 30px 20px;
+    text-align: center;
+}
+
+.inner-decoration__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80px;
+}
+
+.inner-decoration__title {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.inner-decoration__text {
+    font-size: 12px;
+}
+
+.inner-decoration__price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0d8fe3;
+}
+
+/*Внешняя отделка*/
+.outer-decoration__list {
+    padding-left: 50px;
+}
+
+.outer__decoration__item {
+
+}
+
+.outer-decoration__color-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.outer-decoration__color-box--white {
+    background-color: #ffffff;
+}
+
+.outer-decoration__color-box--smoky {
+    background-color: #434b5a;
+}
+
+.outer-decoration__color-box--cream {
+    background-color: #f8f0d3;
+}
+
+.outer-decoration__color-box--lime {
+    background-color: #faf49b;
+}
+
+.outer-decoration__color-box--pink {
+    background-color: #f8b6b6;
+}
+
+.outer-decoration__color-box--light-green {
+    background-color: #d3f8dc;
+}
+
+.outer-decoration__color-box--light-gray {
+    background-color: #e4e4e4;
+}
 
 
 
