@@ -114,6 +114,14 @@ p {
     content: url("../img/title-line-white.png");
 }
 
+.section__title--pay {
+    padding-bottom: 80px;
+}
+
+.section__title--pay::after {
+    content: "";
+}
+
 
 /*Header*/
 .header__inner {
@@ -843,6 +851,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 35px;
 }
 
 .guarantee__item {
@@ -865,6 +874,109 @@ p {
     font-weight: 600;
     color: #ffffff;
 }
+
+
+/*Payment*/
+.payment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.payment__item {
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.payment__method-text {
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+/*Action*/
+.action {
+    height: 600px;
+    background-color: #a5a5a5;
+    background-image: url("../img/action-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+}
+
+.action__inner {
+    position: relative;
+}
+
+.action__title {
+    padding-top: 80px;
+    padding-bottom: 72px;
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #008cce;
+}
+
+.action__text {
+    font-size: 24px;
+    line-height: 1.67;
+}
+
+
+.action__form {
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+    width: 370px;
+}
+
+.action__time-block {
+    box-sizing: border-box;
+    width: 260px;
+    margin-top: 75px;
+
+    padding: 20px 18px 25px;
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+}
+
+
+.action-time__title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
