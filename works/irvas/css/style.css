@@ -598,8 +598,13 @@ p {
 }
 
 
+.decoration__content-wrapper {
 
+}
 
+.decoration__form {
+    width: 370px;
+}
 
 
 
