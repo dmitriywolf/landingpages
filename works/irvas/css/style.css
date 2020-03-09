@@ -640,8 +640,6 @@ p {
 }
 
 
-
-
 /*Внутрення отделка*/
 .inner-decoration__list {
     display: flex;
@@ -794,9 +792,38 @@ p {
 
 
 
+/*Works*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.gallery__link {
+    position: relative;
+    margin: 15px 0;
+}
 
+.gallery__img-small{
+    transition: 1s;
+}
 
+.gallery__img-small:hover {
+    transform: scale(1.1);
+}
+
+.gallery__link:hover .icon-zoom {
+    fill: #000000;
+}
+
+.icon-zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    fill: #ffffff;
+    transition: fill 0.3s linear;
+}
 
 
 

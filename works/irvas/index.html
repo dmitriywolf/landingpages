@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--JavaScript-->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
 </head>
 <body>
 <div style="display: none">
@@ -19,6 +24,9 @@
         </symbol>
         <symbol id="clock" viewBox="0 0 612 612">
             <path d="M.509,306.491C.509,137.781,137.771.5,306.5.5s305.991,137.281,305.991,305.99C612.509,475.24,475.229,612.5,306.5,612.5S.509,475.24.509,306.491Zm34.976,0c0,149.458,121.577,271.034,271.014,271.034S577.515,455.948,577.515,306.491C577.534,157.052,455.958,35.475,306.5,35.475,157.062,35.475,35.485,157.052,35.485,306.491ZM387.977,412.7l-93.832-93.833a17.461,17.461,0,0,1-5.124-12.374V107.968a17.488,17.488,0,0,1,34.976,0V299.259l88.709,88.708a17.487,17.487,0,1,1-24.729,24.73Z"/>
+        </symbol>
+        <symbol id="zoom" viewBox="0 0 512 512">
+            <path d="M16.715,494.974a58.271,58.271,0,0,1,0-82.345L122.392,307.017a13.189,13.189,0,0,1,18.642,0l22.556,22.542,22.138-22.125C122.4,234.553,125.387,123.7,194.713,54.416,267.174-18,385.077-18,457.539,54.416s72.46,190.248,0,262.668a186.161,186.161,0,0,1-253.173,8.98l-22.138,22.125,22.558,22.542a13.169,13.169,0,0,1,0,18.63L99.109,494.975a58.355,58.355,0,0,1-82.394,0Zm18.639-63.715a31.89,31.89,0,0,0,45.113,45.086l58.971-58.936L94.325,372.324Zm77.612-77.564,45.113,45.086,18.745-18.735L131.711,334.96ZM213.353,73.044c-62.183,62.146-62.183,163.265,0,225.41s163.363,62.143,225.545,0,62.182-163.264,0-225.41a159.736,159.736,0,0,0-225.545,0Zm21.753,203.67a128.774,128.774,0,1,1,91.02,37.68A127.768,127.768,0,0,1,235.106,276.714Zm18.641-163.3A102.4,102.4,0,1,0,326.125,83.45,101.594,101.594,0,0,0,253.747,113.414Zm59.2,112.05V198.921h-26.56a13.172,13.172,0,1,1,0-26.345h26.56V146.033a13.181,13.181,0,0,1,26.361,0v26.543h26.558a13.172,13.172,0,1,1,0,26.345H339.307v26.544a13.181,13.181,0,0,1-26.361,0Z"/>
         </symbol>
     </svg>
 </div> <!--sprite-->
@@ -597,7 +605,65 @@
         <div class="container">
             <div class="works">
 
-            </div>
+                <div class="gallery">
+                    <a class="gallery__link" href="img/works/work-1@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-1-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-2@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-2-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-3@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-3-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-4@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-4-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-5@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-5-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-6@2x.jpg">
+                        <img class="gallery__img-small" src="img/works/work-6-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-7@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-7-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+
+                    <a class="gallery__link" href="img/works/work-8@2x.jpg" data-lightbox="mygallery">
+                        <img class="gallery__img-small" src="img/works/work-8-small.jpg" alt="">
+                        <svg class="icon-zoom" width="40" height="40">
+                            <use xlink:href="#zoom"></use>
+                        </svg>
+                    </a>
+                </div> <!--/.works__gallery-->
+
+            </div> <!--/.works-->
 
         </div> <!--/.container-->
     </section> <!--/.section-->
