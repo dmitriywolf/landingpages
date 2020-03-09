@@ -956,6 +956,17 @@ p {
 }
 
 
+/*Contacts*/
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map__wrapper {
+    width: 570px;
+    height: 470px;
+}
+
 
 
 
