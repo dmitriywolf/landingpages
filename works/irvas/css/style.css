@@ -82,6 +82,10 @@ p {
 }
 
 /*Section*/
+.section {
+    padding-bottom: 80px;
+}
+
 .section--gray {
     background-color: #f7f7f7;
 }
@@ -988,6 +992,34 @@ p {
 .map__wrapper {
     width: 570px;
     height: 470px;
+}
+
+.contacts__list {
+    padding-left: 130px;
+    padding-right: 100px;
+}
+
+.contact__item {
+    padding-bottom: 30px;
+}
+
+.contact__title {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #008cce;
+}
+
+.contact__content,
+.contact__content a{
+    font-size: 18px;
+    line-height: 1.44;
+    color: #000000;
+}
+
+.contact--email {
+    text-decoration: underline;
 }
 
 
