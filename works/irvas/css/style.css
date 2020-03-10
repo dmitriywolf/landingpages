@@ -940,7 +940,7 @@ p {
     width: 260px;
     margin-top: 75px;
 
-    padding: 20px 18px 25px;
+    padding: 20px 23px 25px;
     background-color: #ffffff;
     border: 1px solid #d1d1d1;
     border-radius: 8px;
@@ -955,6 +955,29 @@ p {
     text-align: center;
 }
 
+.action__timer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.action__timer span{
+    width: 40px;
+    height: 50px;
+
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.78;
+    color: #ffffff;
+
+    text-align: center;
+
+    border-radius: 7px;
+    background-color: #333334;
+}
+
+
 
 /*Contacts*/
 .contacts {
@@ -966,6 +989,7 @@ p {
     width: 570px;
     height: 470px;
 }
+
 
 
 
