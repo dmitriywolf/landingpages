@@ -73,3 +73,6 @@ function setClock(id, endtime) {
 
 setClock('timer', dedline);
 
+
+// Modal
+
