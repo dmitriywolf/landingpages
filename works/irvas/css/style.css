@@ -83,6 +83,7 @@ p {
 
 /*Section*/
 .section {
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -629,7 +630,6 @@ p {
     justify-content: space-between;
 }
 
-
 .decoration__form {
     width: 370px;
 }
@@ -1025,9 +1025,29 @@ p {
 
 
 
+/*Asks*/
+.asks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
 
+.asks__text {
+    margin-right: 40px;
+    font-size: 30px;
+}
 
+.asks__link {
+    font-size: 30px;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 0.3s;
+}
 
+.asks__link:hover {
+    opacity: 0.8;
+}
 
 
 
