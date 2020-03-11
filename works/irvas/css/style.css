@@ -842,6 +842,7 @@ p {
     transition: fill 0.7s linear;
 }
 
+
 /*Guarantee*/
 .guarantee__list {
     display: flex;
@@ -1537,8 +1538,6 @@ p {
     }
 
 
-
-
     /*Contacts*/
     .contacts__list {
         flex-direction: column;
@@ -1571,22 +1570,9 @@ p {
         padding: 15px 0;
     }
 
-    .footer__copyright {
-        font-size: 12px;
-    }
-
     .footer__logo {
-        width: 100px;
+        display: none;
     }
-
-    .footer__tel {
-        font-size: 14px;
-    }
-
-    .footer__email {
-        font-size: 12px;
-    }
-
 
 }
 
@@ -1736,12 +1722,6 @@ p {
         padding-left: 20px;
     }
 
-    .payment__item {
-        display: flex;
-        align-items: center;
-        margin-top: 12px;
-    }
-
     .payment__method-img {
         width: 50px;
     }
@@ -1750,8 +1730,6 @@ p {
         padding-left: 15px;
         font-size: 15px;
     }
-
-
 
 
     /*Asks*/
@@ -1770,7 +1748,6 @@ p {
     }
 
 
-
     /*Footer*/
     .footer__inner {
         flex-direction: column;
@@ -1785,14 +1762,13 @@ p {
 
     .footer__logo {
         order: 1;
+        display: block;
+        width: 100px;
     }
 
     .footer__contacts {
         display: none;
     }
-
-
-
 
 }
 
