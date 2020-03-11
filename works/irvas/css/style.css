@@ -808,17 +808,17 @@ p {
 }
 
 
-/*Works*/
+/*Gallery*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 65px;
+    justify-content: center;
+    margin: -15px;
 }
 
 .gallery__link {
     position: relative;
-    margin: 15px 0;
+    margin: 15px;
 }
 
 .gallery__img-small {
@@ -1256,7 +1256,7 @@ p {
         font-size: 15px;
         line-height: 3;
     }
-    
+
 
     /*Payment*/
     .payment {
