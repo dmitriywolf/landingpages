@@ -119,9 +119,6 @@ p {
     content: url("../img/title-line-white.png");
 }
 
-.section__title--pay {
-    padding-bottom: 80px;
-}
 
 .section__title--pay::after {
     content: "";
@@ -989,8 +986,8 @@ p {
 }
 
 .contacts__list {
-    padding-left: 130px;
-    padding-right: 100px;
+    max-width: 580px;
+    padding-left: 100px;
 }
 
 .contact__item {
@@ -1146,13 +1143,22 @@ p {
 
 
 
-
+/*//////////////////////////////////////////////////////////////////////*/
 /*MEDIA*/
 @media (max-width: 1024px) {
     /*Section*/
     .section {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    .section__title {
+        padding-bottom: 60px;
+        font-size: 26px;
+    }
+
+    .section__title::after {
+        top: 30px;
     }
 
 
@@ -1242,8 +1248,33 @@ p {
 
         font-size: 15px;
         line-height: 3;
-
     }
+
+
+    /*Contacts*/
+    .map__wrapper {
+        width: 60%;
+        height: 380px;
+    }
+
+    .contacts__list {
+        max-width: 580px;
+        padding-left: 20px;
+    }
+
+    .contact__item {
+        padding-bottom: 15px;
+    }
+
+    .contact__title {
+        padding-bottom: 8px;
+    }
+
+    .contact__content,
+    .contact__content a {
+        font-size: 15px;
+    }
+
 
     /*Asks*/
     .asks__text {
@@ -1258,13 +1289,23 @@ p {
 
 
 
-
+/*//////////////////////////////////////////////////////////////////////*/
 @media (max-width: 768px) {
     /*Section*/
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .section__title {
+        padding-bottom: 35px;
+        font-size: 20px;
+    }
+
+    .section__title::after {
+        top: 25px;
+    }
+
 
     /*Header*/
     .header__inner {
@@ -1339,12 +1380,89 @@ p {
         width: 100%;
         max-width: 400px;
         margin: auto auto 0;
-
         padding-bottom: 60px;
     }
 
     .benefits__item {
         margin-right: 0;
+    }
+
+
+    /*Contacts*/
+    .contacts {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .map__wrapper {
+        width: 100%;
+        height: 380px;
+    }
+
+    .contacts__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 20px 15px 0;
+    }
+
+    .contact__item {
+        padding: 0 0 10px;
+        text-align: center;
+    }
+
+    .contact__item span {
+        display: none;
+    }
+
+    .contact__item:nth-child(1),
+    .contact__item:nth-child(2) {
+        width: 50%;
+    }
+
+    .contact__item:last-child {
+        padding-bottom: 0;
+    }
+
+    .contact__title {
+        padding-bottom: 5px;
+    }
+
+    /*Asks*/
+    .asks__text {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .asks__link {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+@media (max-width: 600px) {
+    /*Header*/
+    .header__edit {
+        display: none;
+    }
+
+    /*Contacts*/
+    .contacts__list {
+        flex-direction: column;
+    }
+
+    .contact__item:nth-child(1),
+    .contact__item:nth-child(2) {
+        width: 100%;
     }
 
 
@@ -1354,25 +1472,13 @@ p {
     }
 
     .asks__text {
-        padding-bottom: 15px;
-        font-size: 22px;
+        padding-bottom: 10px;
+        font-size: 16px;
         margin: 0;
     }
 
     .asks__link {
-        font-size: 22px;
-    }
-}
-
-
-
-
-
-
-@media (max-width: 600px) {
-    /*Header*/
-    .header__edit {
-        display: none;
+        font-size: 16px;
     }
 
 
@@ -1385,11 +1491,9 @@ p {
         font-size: 12px;
     }
 
-
     .footer__logo {
         width: 100px;
     }
-
 
     .footer__tel {
         font-size: 14px;
@@ -1408,11 +1512,27 @@ p {
 
 
 
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////*/
 @media (max-width: 420px) {
     /*Section*/
     .section {
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    .section__title {
+        padding-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .section__title::after {
+        top: 15px;
     }
 
 
@@ -1442,7 +1562,6 @@ p {
     }
 
     .intro__title {
-
         font-size: 22px;
     }
 
@@ -1459,10 +1578,8 @@ p {
         top: 100%;
         right: 0;
         left: 0;
-
         width: 100%;
     }
-
 
     .intro__benefits {
         width: 100%;
@@ -1510,6 +1627,8 @@ p {
     }
 
 
+
+
     /*Form*/
     .form {
         padding: 20px;
@@ -1524,12 +1643,12 @@ p {
         font-size: 14px;
     }
 
-
     .form__button {
-
         font-size: 12px;
-
     }
+
+
+
 
     /*Asks*/
     .asks {
