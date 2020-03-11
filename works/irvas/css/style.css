@@ -872,18 +872,17 @@ p {
 }
 
 
+
 /*Payment*/
 .payment {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 80px;
 }
 
 .payment__item {
     display: flex;
     align-items: center;
-    width: 33%;
 }
 
 .payment__method-text {
@@ -891,9 +890,6 @@ p {
     font-size: 20px;
     line-height: 2;
 }
-
-
-
 
 
 /*Action*/
@@ -923,7 +919,6 @@ p {
     line-height: 1.67;
 }
 
-
 .action__form {
     position: absolute;
     top: 80px;
@@ -942,7 +937,6 @@ p {
     border: 1px solid #d1d1d1;
     border-radius: 8px;
 }
-
 
 .action-time__title {
     font-size: 14px;
@@ -984,9 +978,6 @@ p {
     font-size: 13px;
     font-weight: 600;
 }
-
-
-
 
 
 /*Contacts*/
@@ -1266,6 +1257,20 @@ p {
         line-height: 3;
     }
 
+    /*Payment*/
+    .payment {
+        justify-content: space-between;
+    }
+
+    .payment__method-img {
+        width: 50px;
+    }
+
+    .payment__method-text {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
 
     /*Action*/
     .action__inner {
@@ -1281,13 +1286,9 @@ p {
         font-size: 18px;
     }
 
-
     .action__form {
         width: 300px;
     }
-
-
-
 
 
     /*Contacts*/
@@ -1426,8 +1427,6 @@ p {
         margin-right: 0;
     }
 
-
-
     /*Action*/
     .action__title {
         padding-bottom: 70px;
@@ -1447,8 +1446,6 @@ p {
     .action__time-block {
         margin: 50px auto 0;
     }
-
-
 
     /*Contacts*/
     .contacts {
@@ -1516,6 +1513,31 @@ p {
     .header__edit {
         display: none;
     }
+
+
+    /*Payment*/
+    .payment {
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .payment__item {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .payment__method-img {
+        width: 60px;
+    }
+
+    .payment__method-text {
+        padding-left: 30px;
+        font-size: 18px;
+    }
+
+
+
 
     /*Contacts*/
     .contacts__list {
@@ -1707,6 +1729,26 @@ p {
 
     .form__button {
         font-size: 12px;
+    }
+
+    /*Payment*/
+    .payment {
+        padding-left: 20px;
+    }
+
+    .payment__item {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .payment__method-img {
+        width: 50px;
+    }
+
+    .payment__method-text {
+        padding-left: 15px;
+        font-size: 15px;
     }
 
 
