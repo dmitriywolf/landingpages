@@ -97,7 +97,7 @@ p {
 
 .section__title {
     position: relative;
-    padding: 80px 0 100px;
+    padding: 0 0 100px;
     font-size: 30px;
 
     text-transform: uppercase;
@@ -111,7 +111,7 @@ p {
 .section__title::after {
     content: url("../img/title-line.png");
     position: absolute;
-    top: 130px;
+    top: 50px;
     left: calc(50% - 85px);
 }
 
@@ -1134,8 +1134,28 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIA*/
 @media (max-width: 1024px) {
+    /*Section*/
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
     /*Header*/
     .header__inner {
         padding: 10px 0;
@@ -1225,6 +1245,14 @@ p {
 
     }
 
+    /*Asks*/
+    .asks__text {
+        font-size: 24px;
+    }
+
+    .asks__link {
+        font-size: 26px;
+    }
 
 }
 
@@ -1232,6 +1260,12 @@ p {
 
 
 @media (max-width: 768px) {
+    /*Section*/
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     /*Header*/
     .header__inner {
         padding: 10px 0;
@@ -1312,6 +1346,22 @@ p {
     .benefits__item {
         margin-right: 0;
     }
+
+
+    /*Asks*/
+    .asks {
+        flex-direction: column;
+    }
+
+    .asks__text {
+        padding-bottom: 15px;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .asks__link {
+        font-size: 22px;
+    }
 }
 
 
@@ -1324,7 +1374,6 @@ p {
     .header__edit {
         display: none;
     }
-
 
 
     /*Footer*/
@@ -1360,6 +1409,13 @@ p {
 
 
 @media (max-width: 420px) {
+    /*Section*/
+    .section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
     /*Header*/
     .header__inner {
         flex-direction: column;
@@ -1475,26 +1531,37 @@ p {
 
     }
 
+    /*Asks*/
+    .asks {
+        flex-direction: column;
+    }
+
+    .asks__text {
+        padding-bottom: 7px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .asks__link {
+        font-size: 16px;
+    }
+
 
 
     /*Footer*/
     .footer__inner {
         flex-direction: column;
-        justify-content: flex-start;
-        padding: 15px 0;
     }
 
     .footer__copyright {
-        padding-top: 10px;
         order: 2;
+        padding-top: 10px;
         text-align: center;
         line-height: 2;
     }
 
-
     .footer__logo {
         order: 1;
-        width: 100px;
     }
 
     .footer__contacts {
