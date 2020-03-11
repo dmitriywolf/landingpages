@@ -893,9 +893,11 @@ p {
 }
 
 
+
+
+
 /*Action*/
 .action {
-    height: 600px;
     background-color: #a5a5a5;
     background-image: url("../img/action-bg.jpg");
     background-position: top center;
@@ -904,12 +906,11 @@ p {
 
 .action__inner {
     position: relative;
+    padding: 80px 0;
 }
 
 .action__title {
-    padding-top: 80px;
     padding-bottom: 72px;
-
     font-size: 48px;
     font-weight: 700;
     line-height: 1;
@@ -973,6 +974,20 @@ p {
     background-color: #333334;
 }
 
+.timer__text {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.timer__text span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+
 
 /*Contacts*/
 .contacts {
@@ -998,7 +1013,6 @@ p {
     padding-bottom: 15px;
     font-size: 15px;
     font-weight: 600;
-
     color: #008cce;
 }
 
@@ -1221,6 +1235,8 @@ p {
         bottom: 55px;
     }
 
+
+
     /*Form*/
     .form {
         padding: 20px 25px;
@@ -1249,6 +1265,29 @@ p {
         font-size: 15px;
         line-height: 3;
     }
+
+
+    /*Action*/
+    .action__inner {
+        padding: 60px 0;
+    }
+
+    .action__title {
+        padding-bottom: 50px;
+        font-size: 36px;
+    }
+
+    .action__text {
+        font-size: 18px;
+    }
+
+
+    .action__form {
+        width: 300px;
+    }
+
+
+
 
 
     /*Contacts*/
@@ -1386,6 +1425,29 @@ p {
     .benefits__item {
         margin-right: 0;
     }
+
+
+
+    /*Action*/
+    .action__title {
+        padding-bottom: 70px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .action__text {
+        display: none;
+    }
+
+    .action__form {
+        position: static;
+        margin: 20px  auto 0;
+    }
+
+    .action__time-block {
+        margin: 50px auto 0;
+    }
+
 
 
     /*Contacts*/
