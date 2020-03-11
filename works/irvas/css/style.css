@@ -848,7 +848,6 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 35px;
 }
 
 .guarantee__item {
@@ -1257,6 +1256,7 @@ p {
         font-size: 15px;
         line-height: 3;
     }
+    
 
     /*Payment*/
     .payment {
@@ -1428,6 +1428,14 @@ p {
         margin-right: 0;
     }
 
+
+
+
+    /*Guarantee*/
+    .guarantee__text {
+        font-size: 15px;
+    }
+
     /*Action*/
     .action__title {
         padding-bottom: 70px;
@@ -1515,6 +1523,12 @@ p {
         display: none;
     }
 
+
+    /*Guarantee*/
+    .guarantee__item {
+        width: 50%;
+        margin: 10px 0;
+    }
 
     /*Payment*/
     .payment {
@@ -1715,6 +1729,12 @@ p {
 
     .form__button {
         font-size: 12px;
+    }
+
+
+    /*Guarantee*/
+    .guarantee__item {
+        width: 100%;
     }
 
     /*Payment*/
