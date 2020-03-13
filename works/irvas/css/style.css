@@ -564,6 +564,7 @@ p {
 }
 
 .decoration__link-wrapper.is-active {
+    padding-top: 16px;
     background: linear-gradient(to bottom, #eaeaea, rgba(0, 0, 0, 0));
     border-top: 10px solid #0085db;
 }
@@ -595,7 +596,7 @@ p {
 }
 
 .decoration__link {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 2.4;
     text-transform: uppercase;
@@ -617,6 +618,7 @@ p {
     border: none;
 }
 
+/*Decoration Content*/
 
 .decoration__content-wrapper {
     display: flex;
@@ -1236,6 +1238,29 @@ p {
         line-height: 3;
     }
 
+    /*Decoration*/
+    .decoration__link-wrapper {
+        padding: 15px 0;
+    }
+
+    .decoration__link-wrapper.is-active {
+        background: none;
+        border-top: none;
+    }
+
+    .decoration__link-wrapper.is-active::before {
+        content: none;
+    }
+
+    .decoration__link-wrapper:last-child::after {
+        width: 0;
+    }
+
+    .decoration__link {
+        font-size: 14px;
+    }
+
+
 
     /*Payment*/
     .payment {
@@ -1319,11 +1344,15 @@ p {
 
     .section__title {
         padding-bottom: 35px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .section__title::after {
         top: 25px;
+    }
+
+    .section__title--decoration::after {
+        content: none;
     }
 
 
@@ -1406,6 +1435,29 @@ p {
     .benefits__item {
         margin-right: 0;
     }
+
+    /*Decoration*/
+    .decoration__link-wrapper {
+        width: auto;
+        padding: 12px 0;
+    }
+
+    .decoration__link-wrapper.is-active {
+        padding-top: 12px;
+    }
+
+    .decoration__link-wrapper::after {
+        content: none;
+    }
+
+    .decoration__link-wrapper:last-child::after {
+        width: 0;
+    }
+
+    .decoration__link {
+        font-size: 12px;
+    }
+
 
 
 
@@ -1495,6 +1547,19 @@ p {
     /*Header*/
     .header__edit {
         display: none;
+    }
+
+    /*Decoration*/
+    .decoration__nav {
+        flex-direction: column;
+    }
+
+    .decoration__link-wrapper {
+        padding: 8px 0;
+    }
+
+    .decoration__link {
+        font-size: 14px;
     }
 
 
@@ -1662,6 +1727,19 @@ p {
 
     .benefits__icon--4 {
         width: 30px;
+    }
+
+    /*Decoration*/
+    .decoration__link-wrapper {
+        padding: 5px 0;
+    }
+
+    .decoration__link-wrapper.is-active {
+        padding-top: 5px;
+    }
+
+    .decoration__link {
+        font-size: 12px;
     }
 
 
