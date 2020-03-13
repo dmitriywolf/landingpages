@@ -619,7 +619,6 @@ p {
 }
 
 /*Decoration Content*/
-
 .decoration__content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1262,6 +1261,13 @@ p {
 
 
 
+
+
+
+
+
+
+
     /*Payment*/
     .payment {
         justify-content: space-between;
@@ -1620,7 +1626,6 @@ p {
     .asks__link {
         font-size: 16px;
     }
-
 
     /*Footer*/
     .footer__inner {
