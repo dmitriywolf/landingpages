@@ -1555,11 +1555,15 @@ p {
     }
 
     .decoration__link-wrapper {
-        padding: 8px 0;
+        padding: 0;
+    }
+
+    .decoration__link-wrapper.is-active {
+        padding-top: 0;
     }
 
     .decoration__link {
-        font-size: 14px;
+        font-size: 16px;
     }
 
 
@@ -1642,9 +1646,11 @@ p {
     }
 
     .section__title {
+        max-width: 260px;
+        margin: 0 auto;
         padding-bottom: 30px;
-
     }
+
 
     .section__title::after {
         top: 15px;
@@ -1730,18 +1736,9 @@ p {
     }
 
     /*Decoration*/
-    .decoration__link-wrapper {
-        padding: 5px 0;
-    }
-
-    .decoration__link-wrapper.is-active {
-        padding-top: 5px;
-    }
-
     .decoration__link {
-        font-size: 12px;
+        font-size: 15px;
     }
-
 
 
     /*Form*/
