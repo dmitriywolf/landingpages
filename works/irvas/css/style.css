@@ -1700,8 +1700,12 @@ p {
 
     /*Decoration*/
     /*Decoration Content*/
+    .decoration__content-wrapper {
+        justify-content: center;
+    }
     .decoration__item-wrapper {
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .decoration__img-wrapper {
