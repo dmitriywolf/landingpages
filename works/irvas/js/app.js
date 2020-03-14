@@ -1,4 +1,4 @@
-// Tab Glazing
+// Tab--Glazing
 let tabGlazing = function () {
     let tabNav = document.querySelectorAll('.glazing-nav-tab');
     let tabContent = document.querySelectorAll('.glazing-tab-content');
@@ -26,7 +26,7 @@ let tabGlazing = function () {
 
 tabGlazing();
 
-//Tab Decoration
+//Tab--Decoration
 let tabDecoration = function () {
     let tabNavDecoration = document.querySelectorAll('.decoration-nav-tab');
     let tabContentDecoration = document.querySelectorAll('.decoration-tab-content');
@@ -62,7 +62,6 @@ function getTimeRemaining(endTime) {
     let minutes = Math.floor((t / 1000 / 60) % 60);
     let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
     let days = Math.floor(t / (1000 * 60 * 60 * 24));
-
     return {
         'total': t,
         'days': days,
@@ -73,19 +72,19 @@ function getTimeRemaining(endTime) {
 }
 
 function setClock(id, endTime) {
-    let timer = document.getElementById(id),
-        daysSpan = timer.querySelector('.days'),
-        hoursSpan = timer.querySelector('.hours'),
-        minutesSpan = timer.querySelector('.minutes'),
-        secondsSpan = timer.querySelector('.seconds');
+    let timer = document.getElementById(id);
+    let daysSpan = timer.querySelector('.days');
+    let hoursSpan = timer.querySelector('.hours');
+    let minutesSpan = timer.querySelector('.minutes');
+    let secondsSpan = timer.querySelector('.seconds');
 
     function updateClock() {
         let t = getTimeRemaining(endTime);
 
         daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = t.hours;
-        minutesSpan.innerHTML = t.minutes;
-        secondsSpan.innerHTML = t.seconds;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
         if (t.total <= 0) {
             clearInterval(timeInterval);
@@ -96,8 +95,7 @@ function setClock(id, endTime) {
     let timeInterval = setInterval(updateClock, 1000);
 }
 
-
-let dedLine = '2020-04-23';
+let dedLine = 'April 23 2020';
 setClock('timer', dedLine);
 
 
