@@ -99,5 +99,20 @@ let dedLine = 'April 23 2020';
 setClock('timer', dedLine);
 
 
-// Modal
+// Modal Windows
+
+//Popup CallBack
+let popupCallBack = document.getElementById('popupCallback'),
+    popupCallBackButton = document.getElementById('openCallBackPopupButton'),
+    popupCallBackCloseButton = document.querySelector('.close--callback-popup');
+
+popupCallBackButton.addEventListener('click', function (evt) {
+    popupCallBack.classList.add('show');
+});
+
+popupCallBackCloseButton.addEventListener('click', function (evt) {
+    popupCallBack.classList.remove('show');
+});
+
+
 

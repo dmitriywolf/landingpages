@@ -1109,6 +1109,7 @@ p {
 
 /*MODAL*/
 .modal-popup {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1120,11 +1121,15 @@ p {
     z-index: 100;
 }
 
-
 .popup {
+    display: none;
     text-align: center;
     background-color: #ffffff;
     border-radius: 8px;
+}
+
+.popup.show {
+    display: block;
 }
 
 .popup__title {
@@ -1703,9 +1708,9 @@ p {
     .decoration__content-wrapper {
         justify-content: center;
     }
+
     .decoration__item-wrapper {
         flex-direction: column;
-        margin: 0 auto;
     }
 
     .decoration__img-wrapper {

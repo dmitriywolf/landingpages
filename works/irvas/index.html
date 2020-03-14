@@ -5,13 +5,13 @@
     <title>Ирвас</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 
-    <!--Favicon-->
-    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
-    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
-    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
-    <!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
-    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
-    <!--    <meta name="theme-color" content="#ffffff">-->
+    <!--    Favicon-->
+<!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
+<!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
+<!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
+<!--    <meta name="msapplication-TileColor" content="#da532c">-->
+<!--    <meta name="theme-color" content="#ffffff">-->
 
     <!--Style-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -57,7 +57,7 @@
                 </p> <!--header__subtitle-->
             </div> <!--/.header__logo-wrapper-->
 
-            <button class="header__edit edit__button">
+            <button class="header__edit edit__button" id="openCallBackPopupButton">
                 <svg class="edit-icon" width="30" height="30">
                     <use xlink:href="#edit"></use>
                 </svg>
@@ -845,20 +845,20 @@
     </div> <!--/.container-->
 </footer> <!--/.footer-->
 
-<!--<div class="modal-popup modal-popup&#45;&#45;callback popup">-->
-<!--    <button class="modal-close__button">-->
-<!--        <svg class="modal-close__icon" width="25" height="25">-->
-<!--            <use xlink:href="#close-popup"></use>-->
-<!--        </svg>-->
-<!--    </button> &lt;!&ndash;/.modal-close__button&ndash;&gt;-->
-<!--    <form class="form-popup" action="#" method="post">-->
-<!--        <h2 class="popup__title">Закажите сейчас<br><span>обратный звонок</span></h2>-->
-<!--        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>-->
-<!--        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>-->
-<!--        <button class="popup__button" type="submit">Отправить заявку</button>-->
-<!--        <p class="popup__text">Ваши данные конфиденциальны</p>-->
-<!--    </form>-->
-<!--</div> &lt;!&ndash;/.modal-callback&ndash;&gt;-->
+<div class="modal-popup popup" id="popupCallback">
+    <button class="modal-close__button close--callback-popup">
+        <svg class="modal-close__icon" width="25" height="25">
+            <use xlink:href="#close-popup"></use>
+        </svg>
+    </button> <!--/.modal-close__button-->
+    <form class="form-popup" action="#" method="post">
+        <h2 class="popup__title">Закажите сейчас<br><span>обратный звонок</span></h2>
+        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
+        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+        <button class="popup__button" type="submit">Отправить заявку</button>
+        <p class="popup__text">Ваши данные конфиденциальны</p>
+    </form>
+</div> <!--/.modal-callback-->
 
 <!--<div class="modal-popup modal-popup&#45;&#45;cost">-->
 <!--    <form class="form-popup" action="#" method="post">-->
