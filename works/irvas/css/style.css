@@ -615,6 +615,7 @@ p {
     color: #000000;
     border-bottom: 1px dotted #000000;
     transition: color 0.3s linear, border-bottom-color 0.3s linear;
+    cursor: pointer;
 }
 
 .decoration__link:hover,
@@ -623,9 +624,7 @@ p {
     border-bottom-color: #666666;
 }
 
-.decoration__link--current,
-.decoration__link--current:hover,
-.decoration__link--current:focus {
+.decoration__link-wrapper.is-active .decoration__link {
     color: #0085db;
     border: none;
 }
@@ -641,8 +640,12 @@ p {
 }
 
 .decoration__item-wrapper {
-    display: flex;
+    display: none;
     padding: 15px 0;
+}
+
+.decoration__item-wrapper.is-active {
+    display: flex;
 }
 
 .decoration__img-wrapper {
