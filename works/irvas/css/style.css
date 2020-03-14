@@ -633,7 +633,14 @@ p {
 }
 
 .decoration__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
+}
+
+.decoration__img {
+    display: block;
 }
 
 .decoration__item-content {
@@ -641,7 +648,7 @@ p {
 }
 
 .decoration__item-title {
-    padding-top: 67px;
+    padding-top: 10px;
     padding-left: 60px;
     font-size: 14px;
     font-weight: 700;
@@ -652,10 +659,10 @@ p {
 }
 
 .decoration__price {
-    font-size: 14px;
-    font-weight: 700;
-    color: #0d8fe3;
-}
+     font-size: 14px;
+     font-weight: 700;
+     color: #0d8fe3;
+ }
 
 
 /*Внутрення отделка*/
@@ -1101,35 +1108,108 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*//////////////////////////////////////////////////////////////////////*/
 /*MEDIA*/
+@media (max-width: 1130px) {
+    /*Decoration*/
+    /*Decoration Content*/
+    .decoration__form {
+        display: none;
+    }
+
+    .decoration__item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 60%;
+    }
+
+    .decoration__item-title {
+        padding-top: 0;
+        /*padding-left: 60px;*/
+        /*font-size: 14px;*/
+        /*font-weight: 700;*/
+    }
+
+    .decoration__text {
+        /*font-size: 12px;*/
+    }
+
+    .decoration__price {
+        font-size: 14px;
+        line-height: 1.4;
+        /*font-weight: 700;*/
+        /*color: #0d8fe3;*/
+    }
+
+
+
+
+    /*Внутрення отделка*/
+    .inner-decoration__list {
+        justify-content: center;
+        align-items: center;
+        /*padding-top: 25px;*/
+    }
+
+    .inner-decoration__item {
+        /*width: 11px;*/
+        margin: 20px 10px;
+    }
+
+    .inner-decoration__content {
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*flex-direction: column;*/
+        /*height: px;*/
+    }
+
+    /*Внешняя отделка*/
+    .outer-decoration__list {
+        /*padding-left: 50px;*/
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        justify-content: flex-start;
+    }
+
+    .outer-decoration__item {
+        /*width: 75px;*/
+        /*margin-top: 35px;*/
+    }
+
+    .outer-decoration__color-box {
+        /*width: 60px;*/
+        /*height: 60px;*/
+        /*margin: 0 auto;*/
+        /*border-radius: 50%;*/
+    }
+
+    .outer-decoration__title {
+        /*font-size: 10px;*/
+        /*font-weight: 400;*/
+        /*line-height: 1.6;*/
+
+        /*text-align: center;*/
+    }
+
+    .outer-decoration__text {
+        padding-top: 20px;
+        /*padding-left: 60px;*/
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 @media (max-width: 1024px) {
     /*Section*/
     .section {
@@ -1465,6 +1545,133 @@ p {
     }
 
 
+    /*Decoration*/
+    /*Decoration Content*/
+    .decoration__item-wrapper {
+        flex-direction: column;
+    }
+
+    .decoration__img-wrapper {
+        width: 100%;
+    }
+
+    .decoration__item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .decoration__item-title {
+        padding-top: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+    /*Внутрення отделка*/
+    /*.inner-decoration__list {*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    !*padding-top: 25px;*!*/
+    /*}*/
+    /*.inner-decoration__item {*/
+    /*    width: 103px;*/
+    /*    margin: 20px 10px;*/
+    /*}*/
+    .inner-decoration__content {
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*flex-direction: column;*/
+        /*height: px;*/
+    }
+
+    /*Внешняя отделка*/
+    .outer-decoration__list {
+        padding: 0;
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+    }
+
+    .outer-decoration__item {
+        /*width: 75px;*/
+        /*margin-top: 35px;*/
+    }
+
+    .outer-decoration__color-box {
+        /*width: 60px;*/
+        /*height: 60px;*/
+        /*margin: 0 auto;*/
+        /*border-radius: 50%;*/
+    }
+
+    .outer-decoration__title {
+        /*font-size: 10px;*/
+        /*font-weight: 400;*/
+        /*line-height: 1.6;*/
+
+        /*text-align: center;*/
+    }
+
+    .outer-decoration__text {
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+
+    /*Выносное остекление*/
+    .remote-glazing__list {
+        padding: 20px 0 0;
+        /*padding-top: 30px;*/
+        /*padding-left: 60px;*/
+    }
+
+    .remote-glazing__item {
+           /*display: flex;*/
+           /*align-items: center;*/
+           padding: 8px 0;
+       }
+    /*.remote-glazing__img-wrapper {*/
+    /*    width: 40px;*/
+    /*    text-align: right;*/
+
+
+    .remote-glazing__text {
+        /*padding-left: 0;*/
+        width: 250px;
+
+        /*font-size: 12px;*/
+        /*line-height: 1.3;*/
+    }
+
+    .remote-glazing-decoration__text {
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+
+    /*Крыша на балкон*/
+    .decorate-roof__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0 0;
+    }
+
+    .decorate-roof__item {
+        /*display: flex;*/
+        /*align-items: center;*/
+        margin-right: 15px;
+    }
+
+    /*.decorate-roof__item span {*/
+    /*    padding-left: 20px;*/
+    /*}*/
+
+
+
+
 
 
 
@@ -1486,7 +1693,7 @@ p {
 
     .action__form {
         position: static;
-        margin: 20px  auto 0;
+        margin: 20px auto 0;
     }
 
     .action__time-block {
@@ -1543,8 +1750,8 @@ p {
     .asks__link {
         font-size: 20px;
     }
-}
 
+}
 
 
 
