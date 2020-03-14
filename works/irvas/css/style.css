@@ -2138,7 +2138,7 @@ p {
     /*}*/
 
     .glazing__item {
-        width: auto;
+        width: 100%;
         max-width: 420px;
 
     }
@@ -2472,6 +2472,14 @@ p {
 
     .form__button {
         font-size: 12px;
+    }
+
+    /*Gallery*/
+    .gallery {
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: center;*/
+        margin: 0;
     }
 
 
