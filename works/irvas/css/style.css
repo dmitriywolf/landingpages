@@ -44,6 +44,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -52,6 +53,17 @@ body {
     font-style: normal;
 
     color: #333333;
+}
+
+body.mask::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(107, 197, 255, 0.8);
+    z-index: 2;
 }
 
 a {
@@ -1094,10 +1106,10 @@ p {
 
 /*MODAL*/
 .modal-popup {
-    /*position: fixed;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate3d(-50%, -50%, 0);*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
     width: 100%;
     max-width: 370px;
     margin: 0 auto;
@@ -1172,6 +1184,21 @@ p {
     color: #666666;
 }
 
+.modal-close__button {
+    position: absolute;
+    top: -45px;
+    right: 0;
+
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: #ffffff;
+}
+
+.modal-close__button:hover {
+    cursor: pointer;
+    fill: #000000;
+}
 
 
 
