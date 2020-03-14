@@ -1094,15 +1094,19 @@ p {
 
 /*MODAL*/
 .modal-popup {
-    position: relative;
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate3d(-50%, -50%, 0);*/
+    width: 100%;
     max-width: 370px;
     margin: 0 auto;
     padding: 40px 50px;
+    z-index: 100;
 }
 
 
-
-.form-popup {
+.popup {
     text-align: center;
     background-color: #ffffff;
     border-radius: 8px;
@@ -2179,10 +2183,20 @@ p {
 
     /*MODAL*/
     .modal-popup {
-        position: relative;
-        max-width: 370px;
-        margin: 0 auto;
-        padding: 30px 10px;
+        width: 90%;
+        padding: 30px 30px;
+    }
+
+    .popup__title {
+        font-size: 16px;
+    }
+
+    .popup__title span {
+        font-size: 18px;
+    }
+
+    .popup__button {
+        font-size: 14px;
     }
 
 }
