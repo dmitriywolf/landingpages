@@ -1093,6 +1093,82 @@ p {
 
 
 /*MODAL*/
+.modal-popup {
+    position: relative;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+
+
+.form-popup {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.popup__title {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.popup__title span {
+    font-size: 24px;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.popup__input {
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+    line-height: 3.9;
+
+    text-align: center;
+
+    color: #333333;
+    border: 1px solid #999999;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.popup__input:focus {
+    border-color: #55a831;
+}
+
+.popup__button {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans Condensed', serif;
+    font-size: 20px;
+    line-height: 3.9;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: 1px solid #ffc600;
+    border-radius: 8px;
+    background: linear-gradient(-90deg, #ffed26, #ffb400);
+    box-shadow: 0 2px 20px 0 rgba(255, 153, 0, 0.4);
+
+    cursor: pointer;
+}
+
+.popup__button:hover {
+    box-shadow: none;
+}
+
+.popup__text {
+    font-size: 11px;
+    font-weight: 300;
+    color: #666666;
+}
+
+
 
 
 
@@ -2099,6 +2175,14 @@ p {
 
     .footer__contacts {
         display: none;
+    }
+
+    /*MODAL*/
+    .modal-popup {
+        position: relative;
+        max-width: 370px;
+        margin: 0 auto;
+        padding: 30px 10px;
     }
 
 }
