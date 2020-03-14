@@ -1111,9 +1111,9 @@ p {
 .modal-popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, 0, 0);
     width: 100%;
     max-width: 370px;
     margin: 0 auto;
