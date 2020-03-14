@@ -1,4 +1,3 @@
-
 // Tab Glazing
 let tabGlazing = function () {
     let tabNav = document.querySelectorAll('.glazing-nav-tab');
@@ -56,30 +55,13 @@ let tabDecoration = function () {
 tabDecoration();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Timer
-
-let dedline = '2020-04-23';
-
-function getTimeRemaining(endtime) {
-    let t = Date.parse(endtime) - Date.parse(new Date()),
-        seconds = Math.floor((t / 1000) % 60),
-        minutes = Math.floor((t / 1000 / 60) % 60),
-        hours = Math.floor((t / (1000 * 60 * 60)) % 24),
-        days = Math.floor(t / (1000 * 60 * 60 * 24));
+function getTimeRemaining(endTime) {
+    let t = Date.parse(endTime) - Date.parse(new Date());
+    let seconds = Math.floor((t / 1000) % 60);
+    let minutes = Math.floor((t / 1000 / 60) % 60);
+    let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
 
     return {
         'total': t,
@@ -90,19 +72,20 @@ function getTimeRemaining(endtime) {
     };
 }
 
-function setClock(id, endtime) {
+function setClock(id, endTime) {
     let timer = document.getElementById(id),
-        days = timer.querySelector('.days'),
-        hours = timer.querySelector('.hours'),
-        minutes = timer.querySelector('.minutes'),
-        seconds = timer.querySelector('.seconds');
+        daysSpan = timer.querySelector('.days'),
+        hoursSpan = timer.querySelector('.hours'),
+        minutesSpan = timer.querySelector('.minutes'),
+        secondsSpan = timer.querySelector('.seconds');
 
     function updateClock() {
-        let t = getTimeRemaining(endtime);
-        days.innerHTML = t.days;
-        hours.innerHTML = t.hours;
-        minutes.innerHTML = t.minutes;
-        seconds.innerHTML = t.seconds;
+        let t = getTimeRemaining(endTime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = t.hours;
+        minutesSpan.innerHTML = t.minutes;
+        secondsSpan.innerHTML = t.seconds;
 
         if (t.total <= 0) {
             clearInterval(timeInterval);
@@ -110,11 +93,12 @@ function setClock(id, endtime) {
     }
 
     updateClock();
-
     let timeInterval = setInterval(updateClock, 1000);
 }
 
-setClock('timer', dedline);
+
+let dedLine = '2020-04-23';
+setClock('timer', dedLine);
 
 
 // Modal
