@@ -414,6 +414,7 @@ p {
 
 .glazing__link:hover,
 .glazing__link:focus {
+    cursor: pointer;
     color: #55a831;
 }
 
@@ -422,7 +423,7 @@ p {
     color: #333333;
 }
 
-
+/*Glazing List */
 .glazing__list {
     margin-top: 35px;
     margin-bottom: 100px;
@@ -1271,6 +1272,32 @@ p {
         line-height: 3;
     }
 
+    /*Glazing*/
+    /*.glazing__nav {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+
+    /*.glazing__link-wrapper {*/
+    /*    text-align: center;*/
+    /*}*/
+
+    .glazing__img {
+        /*display: block;*/
+        width: 80px;
+        margin: 0 auto 15px;
+    }
+
+    .glazing__link {
+        /*display: inline-block;*/
+        /*max-width: 140px;*/
+        font-size: 16px;
+        /*font-weight: 600;*/
+        /*line-height: 1.45;*/
+        /*text-decoration: underline;*/
+        /*color: #249ae6;*/
+    }
+
     /*Decoration*/
     .decoration__link-wrapper {
         padding: 15px 0;
@@ -1467,6 +1494,35 @@ p {
         margin-right: 0;
     }
 
+    /*Glazing*/
+    /*.glazing__nav {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+
+    /*.glazing__link-wrapper {*/
+    /*    text-align: center;*/
+    /*}*/
+
+    .glazing__img {
+        /*display: block;*/
+        width: 70px;
+        margin: 0 auto 15px;
+    }
+
+    .glazing__link {
+        /*display: inline-block;*/
+        /*max-width: 140px;*/
+        font-size: 12px;
+        font-weight: 400;
+        /*line-height: 1.45;*/
+        /*text-decoration: underline;*/
+        /*color: #249ae6;*/
+    }
+
+
+
+
     /*Decoration*/
     .decoration__link-wrapper {
         width: auto;
@@ -1660,6 +1716,38 @@ p {
         font-size: 16px;
     }
 
+    /*Glazing*/
+    .glazing__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .glazing__link-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 50px;
+        padding-bottom: 8px;
+    }
+
+    .glazing__img {
+        /*display: block;*/
+        width: 40px;
+        margin: 0;
+    }
+
+    .glazing__link {
+        /*display: inline-block;*/
+        padding: 0 0 0 15px;
+        max-width: 100%;
+        font-size: 13px;
+        /*font-weight: 400;*/
+        /*line-height: 1.45;*/
+        /*text-decoration: underline;*/
+        /*color: #249ae6;*/
+    }
+
 
     /*Guarantee*/
     .guarantee__item {
@@ -1826,6 +1914,38 @@ p {
 
     .benefits__icon--4 {
         width: 30px;
+    }
+
+    /*Glazing*/
+    /*.glazing__nav {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*}*/
+
+    .glazing__link-wrapper {
+        /*display: flex;*/
+        /*justify-content: flex-start;*/
+        /*align-items: center;*/
+        padding-left: 15px;
+        /*padding-bottom: 8px;*/
+    }
+
+    .glazing__img {
+        /*display: block;*/
+        /*width: 40px;*/
+        /*margin: 0;*/
+    }
+
+    .glazing__link {
+        /*display: inline-block;*/
+        /*padding: 0 0 0 15px;*/
+        /*max-width: 100%;*/
+        font-size: 12px;
+        /*font-weight: 400;*/
+        /*line-height: 1.45;*/
+        /*text-decoration: underline;*/
+        /*color: #249ae6;*/
     }
 
     /*Decoration*/
