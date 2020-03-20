@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DmitriyWolf</title>
+    <title>Web.Wolf</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <svg style="display: none">
+    <symbol id="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" >
+        <g >
+            <path d="M3 9.4l5-5 5 5-1.4 1.4-3.6-3.6-3.6 3.6z"/>
+            <path  d="M15 8c0 3.9-3.1 7-7 7s-7-3.1-7-7 3.1-7 7-7 7 3.1 7 7zM16 8c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8v0z"/>
+        </g>
+    </symbol>
+    <symbol id="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.208 100.208">
+        <g>
+            <path d="M50.104,0C22.432,0,0,22.432,0,50.104s22.432,50.104,50.104,50.104s50.104-22.432,50.104-50.104
+        S77.776,0,50.104,0z M71.96,38.236c0,0,2.57,4.101,2.57,9.151l-2.57-0.848V38.236z M57.43,21.613c0,0,2.58,4.094,2.58,9.148
+        l-2.58-0.68V21.613z M57.423,32.381c2.967,0.333,3.811,4.284,5.196,7.405c1.435,3.232,3.346,5.658,2.831,7.455
+        c-0.934,3.232-4.044,4.413-7.179,4.008s-6.725-0.902-6.342-4.262C52.301,43.619,51.382,31.698,57.423,32.381z M44.106,21.072v8.564
+        l-2.577,0.583C41.529,25.166,44.106,21.072,44.106,21.072z M38.988,37.195c1.535-1.997,2.545-5.068,4.978-5.093
+        c6.61-0.05,3.711,12.218,3.443,15.604c-0.265,3.371-3.157,3.139-6.302,2.852c-3.157-0.286-5.111-0.82-6.148-4.019
+        C34.157,44.074,36.35,40.62,38.988,37.195z M29.053,38.236v8.299l-2.577,0.848C26.476,42.334,29.053,38.236,29.053,38.236z
+         M29.336,66.67c-1.886-2.72-6.71-13.367-3.547-16.559c3.164-3.182,9.946,4.162,11.828,6.875c1.89,2.716,1.517,5.447-0.73,7.423
+        C34.64,66.381,31.229,69.383,29.336,66.67z M64.96,74.762c-3.761,7.737-6.728,3.926-15.031,3.926
+        c-8.296,0-11.066,3.89-15.028-3.926c-2.069-4.098,4.781-7.294,6.989-9.699c2.752-3.006,3.429-8.471,8.038-8.471
+        c4.398,0,5.34,5.375,8.092,8.178C60.465,67.254,67.186,70.181,64.96,74.762z M71.606,66.595c-1.678,2.867-3.386,2.645-5.78,0.905
+        c-2.401-1.739-6.424-5.787-4.742-8.657c0.737-1.26,3.361-1.56,5.472-3.547c2.706-2.548,5.121-6.546,7.337-4.924
+        C77.847,53.264,73.291,63.729,71.606,66.595z"/>
+        </g>
+    </symbol>
     <symbol id="icon-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 56">
         <g>
             <path d="M55.534,44.933l-8.742-8.744a4.56,4.56,0,0,0-6.427.121l-4.4,4.4-.869-.484A43.825,43.825,0,0,1,24.5,32.568a44.055,44.055,0,0,1-7.677-10.612c-.164-.295-.32-.579-.474-.849L19.3,18.155,20.756,16.7a4.553,4.553,0,0,0,.117-6.427L12.131,1.528A4.554,4.554,0,0,0,5.7,1.65L3.24,4.128l.068.067a14.233,14.233,0,0,0-2.03,3.581,14.845,14.845,0,0,0-.9,3.632C-.78,20.978,3.593,29.724,15.461,41.593,31.866,58,45.087,56.758,45.658,56.7a14.778,14.778,0,0,0,3.643-.915,14.2,14.2,0,0,0,3.568-2.022l.054.048,2.5-2.444A4.561,4.561,0,0,0,55.534,44.933Z"/>
@@ -30,98 +54,102 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a class="header__logo" href="#">Dmitriy Volchenko</a>
-        </div>
-    </div>
-</header>
+            <div class="header__logo logo">
+                <svg class="logo__img" width="50" height="50">
+                    <use xlink:href="#icon-logo"></use>
+                </svg>
+                <p class="logo__text">Web.Wolf</p>
+            </div> <!--/.header__logo-->
+            <nav class="navigation" id="navigation">
+                <a class="navigation__link navigation__link--active" href="#" data-scroll="#home">Главная</a>
+                <a class="navigation__link" href="#" data-scroll="#about-me">Обо мне</a>
+                <a class="navigation__link" href="#" data-scroll="#works">Мои работы</a>
+                <a class="navigation__link" href="#" data-scroll="#contact">Контакты</a>
+            </nav> <!--/.navigation-->
+            <button class="burger" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button> <!--/.burger-->
+        </div> <!--/.header__inner-->
+    </div> <!--/.container-->
+</header> <!--/.header-->
 
-<main class="main">
-    <div class="container">
-        <section class="portfolio">
-            <h1 class="section__title">Demo для личных проектов</h1>
-            <div class="category">
-                <div class="category__inner">
-                    <p class="category__subtitle">Вёрстка:</p>
-                    <ul class="portfolio__list">
-                    	 <li>
-                            <a class="portfolio__link" href="works/irvas/index.html" target="_blank"
-                               title="Адаптивная вёрстка  &laquo;Ирвас&raquo;">Irvas</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/shopno/index.html" target="_blank"
-                               title="Адаптивная вёрстка Landing Page &laquo;Shopno&raquo;">Shopno</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/bouncy/index.html" target="_blank"
-                               title="Адаптивная вёрстка Landing Page &laquo;Bouncy&raquo;">Bouncy</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/granit/index.html" target="_blank"
-                               title="Адаптивная вёрстка Landing Page компании &laquo;Гранит&raquo; занимающейся доставкой нерудных строительных материалов">Гранит</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/advogrand/index.html" target="_blank"
-                               title="Вёрстка Landing Page консалтинговой компании &laquo;Advogrand&raquo;">Advogrand</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/belaz/index.html" target="_blank"
-                               title="Вёрстка Landing Page компании &laquo;Eddie`s-Car&raquo; занимающейся продажей доставкой запчастей для техники БелАЗ">Eddie's
-                                Car</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/houses/index.html" target="_blank"
-                               title="Вёрстка Landing Page строительной компании &laquo;Дома Навека&raquo;">Дома
-                                Навека</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/cat-energy/index.html"
-                               target="_blank"
-                               title="Адаптивная вёрстка учебного проекта от HTML Academy: &laquo;Cat Energy&raquo;">Cat
-                                Energy</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/device/index.html"
-                               target="_blank"
-                               title="Вёрстка учебного проекта от HTML Academy: &laquo;Device&raquo;">Device</a>
-                        </li>
-                        <li>
-                            <a class="portfolio__link" href="works/technomart/index.html"
-                               target="_blank"
-                               title="Вёрстка учебного проекта от HTML Academy: &laquo;Technomart&raquo;">Technomart</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--   <div class="category__inner">
-                      <p class="category__subtitle">Программирование:</p>
-                  </div> -->
+
+<main>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__subtitle">Привет, меня зовут <span class="brown-text">Дмитрий Волченко</span> и Я</h2>
+                <h1 class="intro__title"><span class="green-text">FrontEnd</span> разработчик</h1>
+
+            </div> <!--/.intro__inner-->
+            <button class="intro__button"  data-scroll="#about-me">
+                <svg class="intro__button-icon" width="30px" height="30px" style="transform: rotate(180deg)">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </button>
+        </div> <!--/.container-->
+    </section> <!--/.intro-->
+
+
+    <section class="works">
+        <div class="container">
+            <div class="category__inner">
+                <p class="category__subtitle">Вёрстка:</p>
+                <ul class="portfolio__list">
+                    <li>
+                        <a class="portfolio__link" href="works/irvas/index.html" target="_blank"
+                           title="Адаптивная вёрстка  &laquo;Ирвас&raquo;">Irvas</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/shopno/index.html" target="_blank"
+                           title="Адаптивная вёрстка Landing Page &laquo;Shopno&raquo;">Shopno</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/bouncy/index.html" target="_blank"
+                           title="Адаптивная вёрстка Landing Page &laquo;Bouncy&raquo;">Bouncy</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/granit/index.html" target="_blank"
+                           title="Адаптивная вёрстка Landing Page компании &laquo;Гранит&raquo; занимающейся доставкой нерудных строительных материалов">Гранит</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/advogrand/index.html" target="_blank"
+                           title="Вёрстка Landing Page консалтинговой компании &laquo;Advogrand&raquo;">Advogrand</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/belaz/index.html" target="_blank"
+                           title="Вёрстка Landing Page компании &laquo;Eddie`s-Car&raquo; занимающейся продажей доставкой запчастей для техники БелАЗ">Eddie's
+                            Car</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/houses/index.html" target="_blank"
+                           title="Вёрстка Landing Page строительной компании &laquo;Дома Навека&raquo;">Дома
+                            Навека</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/cat-energy/index.html"
+                           target="_blank"
+                           title="Адаптивная вёрстка учебного проекта от HTML Academy: &laquo;Cat Energy&raquo;">Cat
+                            Energy</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/device/index.html"
+                           target="_blank"
+                           title="Вёрстка учебного проекта от HTML Academy: &laquo;Device&raquo;">Device</a>
+                    </li>
+                    <li>
+                        <a class="portfolio__link" href="works/technomart/index.html"
+                           target="_blank"
+                           title="Вёрстка учебного проекта от HTML Academy: &laquo;Technomart&raquo;">Technomart</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
-    <div class="container">
-        <div class="contacts">
-            <div class="contact__wrapper">
-                <svg class="contact__icon" width="20" height="20">
-                    <use xlink:href="#icon-phone"></use>
-                </svg>
-                <a class="contact" href="tel:+38 (093) 934-59-92">+38 (093) 934-59-92</a>
-            </div>
-            <div class="contact__wrapper">
-                <svg class="contact__icon" width="20" height="20">
-                    <use xlink:href="#icon-email"></use>
-                </svg>
-                <a class="contact" href="mailto:dmitriyvolchenko18@ukr.net">dmitriyvolchenko18@ukr.net</a>
-            </div>
-            <div class="contact__wrapper">
-                <svg class="contact__icon" width="18" height="20">
-                    <use xlink:href="#icon-github"></use>
-                </svg>
-                <a class="contact" href="https://github.com/dmitriywolf">dmitriywolf</a>
-            </div>
-        </div>
-    </div>
+
 </footer>
 
 </body>

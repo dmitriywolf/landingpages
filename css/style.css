@@ -1,4 +1,31 @@
-html,
+/*Fonts
+=========================================================*/
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+    url('../fonts/Oswald-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.woff2') format('woff2'),
+    url('../fonts/Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff2') format('woff2'),
+    url('../fonts/Oswald-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Global Styles
+=======================================*/
 *,
 *::before,
 *::after {
@@ -9,165 +36,227 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-style: normal;
 
     line-height: 1.2;
 
 }
 
-a {
-    text-decoration: none;
-}
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
-    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
-
+/*Container
+=============================*/
 .container {
-    max-width: 960px;
+    width: 100%;
+    max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-/*HEADER
-=====================================*/
+/*Header*/
 .header {
-    background-color: #e2e7e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 15px 0 10px;
+    z-index: 2;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    align-content: center;
 }
 
+/*Logo*/
 .header__logo {
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 26px;
-
-    color: #0b3f57;
-}
-
-.header__logo:hover,
-.header__logo:focus {
-    color: #1071cc;
-}
-
-.header__logo:active {
-    color: rgba(16, 113, 204, 0.7);
-}
-
-
-/*MAIN
-==================================*/
-.section__title {
-    margin-top: 30px;
-    margin-bottom: 25px;
-
-    font-size: 40px;
-    font-weight: 400;
-
-    text-align: center;
-
-    color: #0b3f57;
-}
-
-.category {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-.category__subtitle {
-    margin-bottom: 20px;
-
-    font-size: 22px;
-}
-
-.portfolio__list {
-    list-style-position: inside;
-}
-
-.portfolio__list li {
-    padding: 6px 0;
-    font-size: 20px;
-}
-
-.portfolio__link {
-    color: #0b3f57;
-}
-
-.portfolio__link:hover,
-.portfolio__link:focus {
-    color: #1071cc;
-}
-
-.portfolio__link:active {
-    opacity: 0.7;
-}
-
-
-/*FOOTER
-===========================================*/
-.contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
 }
 
-.contact__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    padding: 0 30px;
+.logo__img {
+    fill: rgba(198, 133, 9, 0.8);
+    transform: rotate(25deg);
+    transition: transform 0.3s linear, fill 0.7s linear;
 }
 
-.contact__icon,
-.contact {
-    display: inline-block;
-}
-
-.contact__icon {
-    margin-right: 5px;
-    fill: #0b3f57;
-
+.logo__img:hover {
+    fill: #0d8fe3;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-.contact {
-    padding: 10px 0;
-    font-family: 'Saira Stencil One', cursive;
+.logo__text {
+    margin-left: 20px;
     font-size: 16px;
-
-    color: #0b3f57;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(198, 133, 9, 0.8);
 }
 
-.contact__icon:hover,
-.contact__icon:focus,
-.contact:hover,
-.contact:focus {
-    fill: #1071cc;
-    color: #1071cc;
+
+/*Navigation*/
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
-.contact:active {
+.navigation__link {
+    margin: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation__link--active,
+.navigation__link:hover,
+.navigation__link:focus {
+    color: rgba(198, 133, 9, 0.8);
+}
+
+
+/*Burger*/
+.burger {
+    display: none;
+    padding: 6px 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+}
+
+.burger__item {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 3px;
+    font-size: 0;
+    color: transparent;
+    background-color: #ffffff;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.burger__item:before {
+    top: -6px;
+}
+
+.burger__item:after {
+    top: 6px;
+}
+
+.burger:hover {
     opacity: 0.7;
 }
+
+/*Intro
+=============================*/
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../img/main-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro__inner {
+    position: relative;
+    z-index: 3;
+}
+
+.intro__title,
+.intro__subtitle {
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro__subtitle {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.intro__title {
+    font-size: 38px;
+    transition: color 2s linear;
+}
+
+.intro__button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s, fill 0.5s;
+
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+    fill: rgba(198, 133, 9, 0.8);
+    cursor: pointer;
+}
+
+.intro__button:hover {
+    transform: translateX(-50%) rotate(360deg) scale(1.2);
+    fill: #00CCCC;
+}
+
+
+
+.green-text{
+    color: #00CCCC;
+    text-shadow: 2px -2px 0 rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.06em;
+}
+
+.brown-text {
+    color: rgba(198, 133, 9, 0.8);
+}
+
