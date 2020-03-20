@@ -17,6 +17,8 @@
     <!--    Style-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--    JavaScript-->
 </head>
 <body>
 <svg style="display: none">
@@ -70,7 +72,7 @@
                 <p class="logo__text">Web.Wolf</p>
             </div> <!--/.header__logo-->
             <nav class="navigation" id="navigation">
-                <a class="navigation__link navigation__link--active" href="#" data-scroll="#home">Главная</a>
+                <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Главная</a>
                 <a class="navigation__link" href="#" data-scroll="#about-me">Обо мне</a>
                 <a class="navigation__link" href="#" data-scroll="#works">Мои работы</a>
                 <a class="navigation__link" href="#" data-scroll="#contact">Контакты</a>
@@ -84,7 +86,7 @@
 
 
 <main>
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__subtitle">Привет, меня зовут <span class="brown-text">Дмитрий Волченко</span> и Я</h2>
@@ -95,9 +97,54 @@
                 <svg class="intro__button-icon" width="30px" height="30px" style="transform: rotate(180deg)">
                     <use xlink:href="#icon-arrow"></use>
                 </svg>
-            </button>
+            </button> <!--/.intro__button-->
         </div> <!--/.container-->
     </section> <!--/.intro-->
+
+
+    <section class="section" id="about-me">
+        <div class="section__header">
+            <h1 class="section__title">Обо мне</h1>
+        </div> <!--/.section__header-->
+        <div class="container">
+            <div class="about">
+                <div class="about__content-wrapper">
+                    <h2 class="about__title">Волченко Дмитрий</h2>
+                    <h3 class="about__subtitle">FrontEnd developer/HTML Coder</h3>
+                    <div class="about__item">
+                        <span>Возраст:</span> 24 года
+                    </div> <!--/.about__item-->
+                    <div class="about__item">
+                        <span>Страна/Город:</span> Украина/Чернигов
+                    </div> <!--/.about__item-->
+                    <div class="about__item">
+                        <span>Род деятельности:</span> Занимаюсь HTML-вёрсткой с подключение jQuery и JavaScript
+                        библиотек, верстаю валидно по стандартам W3C, кросбраузерно, адаптивно.
+                    </div> <!--/.about__item-->
+                    <div class="about__item">
+                        <span>Используемые технологии/навыки:</span>
+                        <ul class="technology__list">
+                            <li class="technology__item">HTML&CSS: Адаптивная/Резиновая/Pixel Perfect вёрстка</li>
+                            <li class="technology__item">Методология: БЭМ</li>
+                            <li class="technology__item">Препроцессор: SASS(SCSS)</li>
+                            <li class="technology__item">Автоматизация: Gulp</li>
+                            <li class="technology__item">Система контроля версий: Git/GitHub</li>
+                            <li class="technology__item">JQuery: на уровне подклюения библиотек</li>
+                            <li class="technology__item">JavaScript: базовые навыки</li>
+                            <li class="technology__item">Node.js: установка отдельных пакетов для автоматизации</li>
+                        </ul> <!--/.technology__list-->
+                    </div> <!--/.about__item-->
+                    <div class="about__item">
+                        <span>Использование программ:</span>
+                        <ul class="software__list">
+                            <li class="software__item">Графические редакторы: Adobe Photoshop, Adobe XD</li>
+                            <li class="software__item">Редакторы кода/IDE: Sublime Text 3/WebStorm</li>
+                        </ul> <!--/.software__list-->
+                    </div> <!--/.about__item-->
+                </div> <!--/.about__content-wrapper-->
+            </div> <!--/.about-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
 
 
     <section class="works">
@@ -154,7 +201,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> <!--/.works-->
 </main>
 
 <footer class="footer">
