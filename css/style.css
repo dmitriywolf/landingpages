@@ -382,5 +382,132 @@ p {
 
 
 .works__item {
+    position: relative;
     width: 350px;
+    margin: 10px;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.works__item:hover {
+    transform: scale(1.1);
+}
+
+
+.works__item-img {
+    display: block;
+}
+
+.works__item:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+    /*top: 10px;*/
+    /*bottom: 10px;*/
+    /*left: 10px;*/
+    /*right: 10px;*/
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(198, 133, 9, 0.8);
+    transition: top 1s, left 1s, right 1s, bottom 1s;
+}
+
+.works__item:hover:after {
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-width: 1px;
+}
+
+
+
+.works__item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+
+
+.work__title {
+    margin-top: -200%;
+
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+
+    transition: margin-top 1s;
+}
+
+
+
+.work__technology {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -200%;
+    padding: 15px;
+    transition: margin-bottom 0.9s;
+}
+
+.work__technology span {
+    margin: 5px 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(198, 133, 9);
+    color: #ffffff;
+}
+
+.work__button-wrapper {
+    margin-bottom: -200%;
+    display: flex;
+    justify-content: space-around;
+    transition: margin-bottom 0.9s;
+}
+
+
+.works__item:hover .work__title {
+    margin: 20px;
+}
+
+.works__item:hover .work__technology,
+.works__item:hover .work__button-wrapper {
+    margin-bottom: 0;
+}
+
+
+.work__button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 5px;
+
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.work__img {
+    fill: #ffffff;
+    margin-right: 10px;
+}
+
+.work__button:hover {
+    background-color: #0d8fe3;
+    border: none;
 }
