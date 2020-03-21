@@ -6,13 +6,13 @@
     <title>Web.Wolf</title>
 
     <!--    Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ff1500">
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
+    <!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
+    <!--    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
+    <!--    <meta name="theme-color" content="#ff1500">-->
 
     <!--    Style-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -102,12 +102,12 @@
     </section> <!--/.intro-->
 
 
-    <section class="section" id="about-me">
-        <div class="section__header">
-            <h1 class="section__title">Обо мне</h1>
-        </div> <!--/.section__header-->
+    <section class="section">
+        <!--        <div class="section__header">-->
+        <!--            <h1 class="section__title">Обо мне</h1>-->
+        <!--        </div> &lt;!&ndash;/.section__header&ndash;&gt;-->
         <div class="container">
-            <div class="about">
+            <div class="about" id="about-me">
                 <div class="about__content-wrapper">
                     <h2 class="about__title">Волченко Дмитрий</h2>
                     <h3 class="about__subtitle">FrontEnd developer/HTML Coder</h3>
@@ -147,61 +147,49 @@
     </section> <!--/.section-->
 
 
-    <section class="works">
-        <div class="container">
-            <div class="category__inner">
-                <p class="category__subtitle">Вёрстка:</p>
-                <ul class="portfolio__list">
-                    <li>
-                        <a class="portfolio__link" href="works/irvas/index.html" target="_blank"
-                           title="Адаптивная вёрстка  &laquo;Ирвас&raquo;">Irvas</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/shopno/index.html" target="_blank"
-                           title="Адаптивная вёрстка Landing Page &laquo;Shopno&raquo;">Shopno</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/bouncy/index.html" target="_blank"
-                           title="Адаптивная вёрстка Landing Page &laquo;Bouncy&raquo;">Bouncy</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/granit/index.html" target="_blank"
-                           title="Адаптивная вёрстка Landing Page компании &laquo;Гранит&raquo; занимающейся доставкой нерудных строительных материалов">Гранит</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/advogrand/index.html" target="_blank"
-                           title="Вёрстка Landing Page консалтинговой компании &laquo;Advogrand&raquo;">Advogrand</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/belaz/index.html" target="_blank"
-                           title="Вёрстка Landing Page компании &laquo;Eddie`s-Car&raquo; занимающейся продажей доставкой запчастей для техники БелАЗ">Eddie's
-                            Car</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/houses/index.html" target="_blank"
-                           title="Вёрстка Landing Page строительной компании &laquo;Дома Навека&raquo;">Дома
-                            Навека</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/cat-energy/index.html"
-                           target="_blank"
-                           title="Адаптивная вёрстка учебного проекта от HTML Academy: &laquo;Cat Energy&raquo;">Cat
-                            Energy</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/device/index.html"
-                           target="_blank"
-                           title="Вёрстка учебного проекта от HTML Academy: &laquo;Device&raquo;">Device</a>
-                    </li>
-                    <li>
-                        <a class="portfolio__link" href="works/technomart/index.html"
-                           target="_blank"
-                           title="Вёрстка учебного проекта от HTML Academy: &laquo;Technomart&raquo;">Technomart</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section> <!--/.works-->
+    <section class="section works__wrapper">
+        <div class="works" id="works">
+            <div class="container">
+                <div class="works__inner">
+                    <p class="works__title">Вёрстка:</p>
+                    <ul class="works__list">
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/irvas.jpg" alt="Окна Ирвас">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/bouncy.jpg" alt="Code Cafe Bouncy">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/granit.jpg" alt="Гранит">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/shopno.jpg" alt="Shopno">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/cat-energy.jpg" alt="Cat-Energy">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/advogrand.jpg" alt="Advogrand">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/belaz.jpg" alt="Eddie's Car">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/houses.jpg" alt="Дома н авека">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/device.jpg" alt="Device">
+                        </li>
+                        <li class="works__item">
+                            <img class="works__item-img" src="img/works/technomart.jpg" alt="Technomart">
+                        </li>
+                    </ul> <!--/.works__list-->
+                </div> <!--/.works__inner-->
+            </div> <!--/.container-->
+        </div> <!--/.works-->
+    </section> <!--/.section-->
+
+
 </main>
 
 <footer class="footer">

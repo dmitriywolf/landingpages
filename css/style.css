@@ -87,12 +87,11 @@ p {
 .section__title {
     position: relative;
     font-size: 26px;
-    color: #0d8fe3;;
+    color: #0d8fe3;
 
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-
 
 
 /*Header*/
@@ -333,7 +332,7 @@ p {
 .technology__item,
 .software__item {
     position: relative;
-    padding: 5px  25px;
+    padding: 5px 25px;
 
 }
 
@@ -346,4 +345,42 @@ p {
     width: 15px;
     height: 15px;
     background: url("../img/svg/tick.svg") center no-repeat;
+}
+
+
+/*Works
+===============================*/
+.works__wrapper {
+    position: relative;
+    background-image: url("../img/works-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.works__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.works {
+    position: relative;
+    z-index: 3;
+}
+
+.works__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.works__item {
+    width: 350px;
 }
