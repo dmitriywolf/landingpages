@@ -51,6 +51,5 @@ $(function () {
         header.toggleClass('show');
         nav.toggleClass('show');
         navToggle.toggleClass('burger--close');
-
     })
 });
