@@ -109,6 +109,12 @@ p {
     z-index: 2;
 }
 
+.header.fixed {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -199,6 +205,7 @@ p {
 
     background-color: rgb(198, 133, 9);
     z-index: 1;
+    transition: transform 0.5s;
 }
 
 .burger__item:before {
@@ -211,6 +218,20 @@ p {
 
 .burger:hover {
     opacity: 0.7;
+}
+
+.burger--close.burger__item {
+    background-color: transparent;
+}
+
+.burger--close.burger__item::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.burger--close.burger__item::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 /*Intro
@@ -906,7 +927,7 @@ p {
 
         /*width: 100%;*/
         max-width: 320px;
-        padding: 25px 0;
+        padding: 35px 0 20px;
         /*border-bottom: 1px solid rgba(40, 40, 40, 0.8);*/
     }
 
@@ -957,8 +978,9 @@ p {
 
         /*width: 100%;*/
         /*padding: 25px 0 10px;*/
-        padding-top: 25px;
-        /*z-index: 2;*/
+        /*padding: 25px 0 0;*/
+        z-index: 4;
+        background-color: rgba(0,0,0, 0.7);
     }
 
     /*.header__inner {*/
@@ -999,12 +1021,25 @@ p {
 
     /*Navigation*/
     .navigation {
-        display: none;
-        /*align-items: center;*/
+        position: absolute;
+        top: 100%;
+        right: -100%;
+
+        flex-direction: column;
+        align-items: flex-end;
+
+        padding: 0 0 20px 100px;
+        background-color: rgba(0,0,0, 0.9);
+        transition: right 0.5s;
     }
 
+    .navigation.show{
+        right: 0;
+    }
+
+
     .navigation__link {
-        /*margin: 10px 10px;*/
+        margin: 5px 10px;
         /*font-size: 13px;*/
         /*font-weight: 700;*/
         /*letter-spacing: 0.05em;*/
@@ -1013,6 +1048,7 @@ p {
 
         /*color: #ffffff;*/
         /*transition: color 0.3s ease-in-out;*/
+        /*text-align: right;*/
     }
 
     /*.navigation__link--active,*/
@@ -1143,7 +1179,7 @@ p {
 
     .about__item {
         padding: 5px 0;
-        /*font-size: 15px;*/
+        font-size: 14px;
         /*line-height: 1.4;*/
         /*letter-spacing: 0.03em;*/
     }
