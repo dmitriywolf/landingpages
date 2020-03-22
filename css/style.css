@@ -107,12 +107,18 @@ p {
     width: 100%;
     padding: 15px 0 10px;
     z-index: 2;
+
+    transition: background-color 0.7s;
 }
 
 .header.fixed {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 100;
+}
+
+.header.show {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header__inner {
@@ -153,6 +159,7 @@ p {
 .navigation {
     display: flex;
     align-items: center;
+    transition: display 0.5s;
 }
 
 .navigation__link {
@@ -205,7 +212,7 @@ p {
 
     background-color: rgb(198, 133, 9);
     z-index: 1;
-    transition: transform 0.5s;
+    transition: transform 0.7s;
 }
 
 .burger__item:before {
@@ -220,16 +227,16 @@ p {
     opacity: 0.7;
 }
 
-.burger--close.burger__item {
+.burger.burger--close .burger__item {
     background-color: transparent;
 }
 
-.burger--close.burger__item::before {
+.burger.burger--close  .burger__item::before {
     transform: rotate(45deg);
     top: 0;
 }
 
-.burger--close.burger__item::after {
+.burger.burger--close .burger__item::after {
     transform: rotate(-45deg);
     top: 0;
 }
@@ -972,13 +979,11 @@ p {
 @media (max-width: 600px) {
     /*Header*/
     .header {
-        z-index: 4;
         overflow: hidden;
     }
-
-    /*.header.fixed {*/
-    /*    background-color: rgba(0,0,0, 0.7);*/
-    /*}*/
+    .header.show {
+        overflow: visible;
+    }
 
     .logo__text {
         margin-left: 10px;
@@ -987,19 +992,21 @@ p {
     /*Navigation*/
     .navigation {
         position: absolute;
-        top: 100%;
-        right: -100%;
+        top: -200px;
+        right: 0;
 
         flex-direction: column;
         align-items: flex-end;
 
         padding: 0 0 20px 100px;
         background-color: rgba(0,0,0, 0.9);
-        transition: right 0.5s;
+
+        transition: top 1s;
     }
 
     .navigation.show{
-        right: 0;
+        top: 100%;
+
     }
 
     .navigation__link {
