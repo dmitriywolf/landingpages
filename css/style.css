@@ -972,52 +972,17 @@ p {
 @media (max-width: 600px) {
     /*Header*/
     .header {
-        /*position: absolute;*/
-        /*top: 0;*/
-        /*left: 0;*/
-
-        /*width: 100%;*/
-        /*padding: 25px 0 10px;*/
-        /*padding: 25px 0 0;*/
         z-index: 4;
-        background-color: rgba(0,0,0, 0.7);
+        overflow: hidden;
     }
 
-    /*.header__inner {*/
-    /*    display: flex;*/
-    /*    justify-content: space-between;*/
-    /*    align-content: center;*/
-    /*}*/
-
-    /*Logo*/
-    /*.logo {*/
-    /*    display: flex;*/
-    /*    align-items: center;*/
-    /*}*/
-
-    .logo__img {
-        /*width: 45px;*/
-        /*height: 45px;*/
-        /*fill: rgba(198, 133, 9, 0.8);*/
-        /*transform: rotate(25deg);*/
-        /*transition: transform 0.3s linear, fill 0.7s linear;*/
-    }
-
-    /*.logo__img:hover {*/
-    /*    fill: #0d8fe3;*/
-    /*    transform: scale(1.2);*/
-    /*    cursor: pointer;*/
+    /*.header.fixed {*/
+    /*    background-color: rgba(0,0,0, 0.7);*/
     /*}*/
 
     .logo__text {
         margin-left: 10px;
-        /*font-size: 14px;*/
-        /*font-weight: 700;*/
-        /*text-transform: uppercase;*/
-        /*letter-spacing: 0.08em;*/
-        /*color: rgba(198, 133, 9, 0.8);*/
     }
-
 
     /*Navigation*/
     .navigation {
@@ -1037,38 +1002,18 @@ p {
         right: 0;
     }
 
-
     .navigation__link {
         margin: 5px 10px;
-        /*font-size: 13px;*/
-        /*font-weight: 700;*/
-        /*letter-spacing: 0.05em;*/
-        /*text-decoration: none;*/
-        /*text-transform: uppercase;*/
-
-        /*color: #ffffff;*/
-        /*transition: color 0.3s ease-in-out;*/
-        /*text-align: right;*/
     }
 
-    /*.navigation__link--active,*/
-    /*.navigation__link:hover,*/
-    /*.navigation__link:focus {*/
-    /*    color: rgba(198, 133, 9, 0.8);*/
-    /*}*/
-
+    .navigation__link:hover {
+        transform: scale(1.1);
+    }
 
     /*Burger*/
     .burger {
         display: block;
-        /*padding: 6px 0;*/
-        /*border: none;*/
-        /*background-color: transparent;*/
-        /*cursor: pointer;*/
-        /*transition: opacity 0.3s linear;*/
     }
-
-
 
     /*Works*/
     .works__item {

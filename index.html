@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web.Wolf</title>
+    <title>Web.WerWolf</title>
 
     <!--    Favicon-->
     <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--    JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <svg style="display: none">
@@ -90,16 +91,16 @@
     </symbol>
 </svg>
 
-<header class="header fixed">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo logo">
                 <svg class="logo__img" width="50" height="50">
                     <use xlink:href="#icon-logo"></use>
                 </svg>
-                <p class="logo__text">Web.Wolf</p>
+                <p class="logo__text">Web.WerWolf</p>
             </div> <!--/.header__logo-->
-            <nav class="navigation show" id="navigation">
+            <nav class="navigation" id="navigation">
                 <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Главная</a>
                 <a class="navigation__link" href="#" data-scroll="#about-me">Обо мне</a>
                 <a class="navigation__link" href="#" data-scroll="#works">Мои работы</a>
@@ -483,7 +484,7 @@
                 </a> <!--/.contact__item-->
             </div><!--/.footer__contacts-->
             <div class="copyright">
-                &copy; Copyright 2020 / Design by <span class="brown-text">Web.Wolf</span>
+                &copy; Copyright 2020 / Design by <span class="brown-text">Web.WerWolf</span>
             </div> <!--/.copyright-->
         </div> <!--/.footer__inner-->
     </div><!--/.container-->
@@ -491,6 +492,7 @@
 
 <!--Подключение виджета обратной связи - Spikmi-->
 <!--<script type="text/javascript" src="https://spikmi.com/Widget?Id=2986"></script>-->
+<script src="js/app.js"></script>
 
 
 </body>
