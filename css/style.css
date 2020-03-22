@@ -79,20 +79,6 @@ p {
     padding: 40px 0;
 }
 
-.section__header {
-    padding: 15px 0;
-    text-align: center;
-}
-
-.section__title {
-    position: relative;
-    font-size: 26px;
-    color: #0d8fe3;
-
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
 /*Arrow*/
 .arrow {
     position: absolute;
@@ -540,8 +526,10 @@ p {
 }
 
 .contact__icon {
+    height: 32px;
     fill: #525252;
     transition: fill 0.5s, transform 0.5s;
+    outline: none;
 }
 
 .contact__icon:hover {
@@ -599,6 +587,10 @@ p {
 }
 
 @media (max-width: 880px) {
+    /*Section*/
+    .section {
+        padding: 30px 0;
+    }
     /*Intro*/
     /*.intro {*/
     /*    position: relative;*/
@@ -812,7 +804,7 @@ p {
     /*}*/
 
     .about__title {
-        /*padding: 10px 0;*/
+        padding-top: 0;
         font-size: 26px;
         /*font-weight: 500;*/
         /*color: rgb(198, 133, 9);*/
@@ -891,6 +883,68 @@ p {
         width: 10px;
         height: 10px;
     }
+
+
+    /*Footer*/
+    /*.footer {*/
+    /*    background-color: #000000;*/
+    /*}*/
+
+    .footer__inner {
+        /*position: relative;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        padding: 70px 0 30px;
+    }
+
+    .footer__contacts {
+        /*display: flex;*/
+        /*justify-content: space-around;*/
+        /*align-items: center;*/
+
+        /*width: 100%;*/
+        max-width: 320px;
+        padding: 25px 0;
+        /*border-bottom: 1px solid rgba(40, 40, 40, 0.8);*/
+    }
+
+    .contact__item {
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        width: 25px;
+        height: 24px;
+        /*text-decoration: none;*/
+    }
+
+    /*.contact__icon {*/
+    /*    fill: #525252;*/
+    /*    transition: fill 0.5s, transform 0.5s;*/
+    /*}*/
+
+    /*.contact__icon:hover {*/
+    /*    fill: white;*/
+    /*    transform: scale(1.2);*/
+    /*}*/
+
+    .copyright {
+        /*padding-top: 20px;*/
+        font-size: 14px;
+        /*color: #525252;*/
+        /*letter-spacing: 0.05em;*/
+    }
+
+    /*.footer__arrow {*/
+    /*    top: 40px;*/
+    /*    transform: translateX(0);*/
+    /*}*/
+
+    /*.footer__arrow:hover {*/
+    /*    transform: translateX(0) rotate(360deg) scale(1.2);*/
+    /*}*/
+
 
 }
 
@@ -1073,7 +1127,7 @@ p {
     /*}*/
 
     .about__title {
-        /*padding: 10px 0;*/
+        /*padding-top: 0;*/
         /*font-size: 26px;*/
         /*font-weight: 500;*/
         /*color: rgb(198, 133, 9);*/
@@ -1154,5 +1208,65 @@ p {
         padding: 3px 10px;
         font-size: 13px;
     }
+
+    /*Footer*/
+    /*.footer {*/
+    /*    background-color: #000000;*/
+    /*}*/
+
+    .footer__inner {
+        /*position: relative;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        /*padding: 70px 0 30px;*/
+    }
+
+    .footer__contacts {
+        /*display: flex;*/
+        /*justify-content: space-around;*/
+        /*align-items: center;*/
+
+        /*width: 100%;*/
+        /*max-width: 320px;*/
+        /*padding: 25px 0;*/
+        /*border-bottom: 1px solid rgba(40, 40, 40, 0.8);*/
+    }
+
+    .contact__item {
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*width: 25px;*/
+        /*height: 24px;*/
+        /*text-decoration: none;*/
+    }
+
+    /*.contact__icon {*/
+    /*    fill: #525252;*/
+    /*    transition: fill 0.5s, transform 0.5s;*/
+    /*}*/
+
+    /*.contact__icon:hover {*/
+    /*    fill: white;*/
+    /*    transform: scale(1.2);*/
+    /*}*/
+
+    .copyright {
+        /*padding-top: 20px;*/
+        font-size: 12px;
+        /*color: #525252;*/
+        /*letter-spacing: 0.05em;*/
+    }
+
+    /*.footer__arrow {*/
+    /*    top: 40px;*/
+    /*    transform: translateX(0);*/
+    /*}*/
+
+    /*.footer__arrow:hover {*/
+    /*    transform: translateX(0) rotate(360deg) scale(1.2);*/
+    /*}*/
 
 }
