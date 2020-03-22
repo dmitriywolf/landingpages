@@ -1010,7 +1010,8 @@ p {
     }
 
     .navigation__link {
-        margin: 5px 10px;
+        font-size: 15px;
+        margin: 10px;
     }
 
     .navigation__link:hover {
