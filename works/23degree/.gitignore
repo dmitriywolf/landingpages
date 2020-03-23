@@ -1,7 +1,0 @@
-#ТЗ, PSD и т.д.
-_tz/
-sass/
-.idea/
-node_modules/
-# json - files
-*.json
