@@ -1,0 +1,42 @@
+.copyright {
+  padding: 10px 0;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  .copyright__logo {
+    fill: #666666;
+  }
+}
+
+.copyright__logo:hover,
+.copyright__logo:focus {
+  fill: $main-green;
+}
+
+.copyright__logo:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  padding-top: 10px;
+
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444;
+}
+
+.copyright__text:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    flex-basis: 162px;
+  }
+}

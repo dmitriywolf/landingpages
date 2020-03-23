@@ -1,0 +1,60 @@
+.button {
+  display: block;
+
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: $main-green;
+
+  cursor: pointer;
+
+  &:hover:not(.button--more) {
+    background-color: #5eaa2f;
+  }
+
+  &:active:not(.button--more) {
+    color: rgba(256, 256, 256, 0.3)
+  }
+
+  &--intro {
+    padding: 11px 25px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--form {
+    display: block;
+    width: 100%;
+    padding: 10px;
+
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--form {
+      width: 283px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--form {
+      width: 568px
+    }
+  }
+}

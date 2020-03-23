@@ -1,0 +1,10 @@
+.contacts {
+  padding-top: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 0;
+  }
+}
+

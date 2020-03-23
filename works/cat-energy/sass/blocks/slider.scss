@@ -1,0 +1,22 @@
+.slider__slides {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    min-height: 632px;
+
+    background-image: linear-gradient(to bottom, #fff 169px, transparent 169px),
+    linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    min-height: 652px;
+
+    background-image: linear-gradient(to bottom, #fff 190px, transparent 190px),
+    linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+}

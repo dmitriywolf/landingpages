@@ -1,0 +1,170 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px;
+  margin-top: 20px;
+}
+
+.controls__button {
+  padding: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111;
+
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.controls__container {
+  width: 84px;
+  height: 14px;
+  padding: 3px 4px;
+  margin-top: 4px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.controls__indicator {
+  display: block;
+  width: 35px;
+  height: 6px;
+
+  background-color: $main-green;
+  border-radius: 6px;
+
+  &--after {
+    transform: translateX(39px);
+  }
+}
+
+.controls__range {
+  display: none;
+}
+
+.controls__range-button {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .controls {
+    padding-right: 68px;
+    padding-left: 68px;
+    margin-top: 0;
+  }
+
+  .controls__button {
+    position: relative;
+
+    font-size: 20px;
+
+    cursor: default;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+    }
+
+    &:hover::after {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active::after {
+      border-bottom: none;
+    }
+  }
+
+  .controls__indicator {
+    display: none;
+  }
+
+  .controls__container {
+    width: 428px;
+    height: 34px;
+    padding: 13px 0 0 0;
+
+    border: none;
+  }
+
+  .controls__range {
+    display: block;
+    width: 100%;
+    height: 6px;
+
+    appearance: none;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    outline: none;
+  }
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge)
+  and -moz- (Firefox) to override default look) */
+  .controls__range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: #cdcdcd;
+    background-image: url("../img/svg/filter-button.svg");
+    background-size: 32px 37px;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .controls__range::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+
+    appearance: none;
+    background-color: #cdcdcd;
+    background-image: url("../img/svg/filter-button.svg");
+    background-size: 32px 37px;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .controls__range::-webkit-slider-thumb:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .controls__range::-moz-range-thumb:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .controls__range::-webkit-slider-thumb:active {
+    background-color: $main-green;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .controls__range::-moz-range-thumb:active {
+    background-color: $main-green;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    width: 610px;
+    padding: 0 0 0 40px;
+    margin-top: 31px;
+    margin-left: 610px;
+  }
+}
