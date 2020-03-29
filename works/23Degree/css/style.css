@@ -82,19 +82,51 @@ img {
 
 .section__title {
   position: relative;
+  margin: 0;
+  padding-bottom: 40px;
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
   text-align: center; }
+  .section__title::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 188px);
+    width: 366px;
+    height: 1px;
+    background-color: #19b5fe; }
 
-.section__title::after {
-  content: "";
-  position: absolute;
-  top: 55px;
-  left: calc(50% - 188px);
-  width: 366px;
-  height: 1px;
-  background-color: #19b5fe; }
+@media (max-width: 1024px) {
+  .section__title {
+    font-size: 32px; }
+    .section__title::after {
+      top: 50px;
+      left: calc(50% - 170px);
+      width: 340px; } }
+
+@media (max-width: 768px) {
+  .section__title {
+    padding-bottom: 28px;
+    font-size: 28px; }
+    .section__title::after {
+      top: 40px;
+      left: calc(50% - 130px);
+      width: 260px; } }
+
+.button {
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #19b5fe;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s linear, opacity 0.4s linear; }
+  .button:hover, .button:focus {
+    background-color: #eb2f21;
+    cursor: pointer; }
+  .button:active {
+    color: rgba(255, 255, 255, 0.8); }
 
 .services__item {
   display: flex;
@@ -126,3 +158,47 @@ img {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33; }
+
+.services__button {
+  width: 180px;
+  margin-top: 22px;
+  padding: 16px 0;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 25px; }
+
+@media (max-width: 1024px) {
+  .services__title {
+    font-size: 24px; }
+  .services__text {
+    font-size: 16px; }
+  .services__button {
+    width: 160px;
+    margin-top: 17px;
+    padding: 12px 0;
+    border-radius: 20px; } }
+
+@media (max-width: 768px) {
+  .services__title {
+    padding-bottom: 8px;
+    font-size: 18px; }
+  .services__text {
+    font-size: 13px; }
+  .services__button {
+    width: 135px;
+    margin-top: 15px;
+    padding: 8px 0;
+    font-size: 11px;
+    border-radius: 15px; } }
+
+@media (max-width: 600px) {
+  .services__item {
+    flex-direction: column;
+    padding: 10px 0; }
+    .services__item .services__text-wrapper,
+    .services__item .services__img-wrapper {
+      width: 100%; }
+    .services__item .services__text-wrapper {
+      order: 1; }
+    .services__item .services__img-wrapper {
+      padding: 0; } }

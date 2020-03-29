@@ -4,21 +4,51 @@
 
 .section__title {
   position: relative;
+  margin: 0;
+  padding-bottom: 40px;
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 55px;
+    left: calc(50% - 188px);
+
+    width: 366px;
+    height: 1px;
+
+    background-color: #19b5fe;
+  }
+
 }
 
-.section__title::after {
-  content: "";
-  position: absolute;
+@media (max-width: 1024px) {
+  .section__title {
+    font-size: 32px;
 
-  top: 55px;
-  left: calc(50% - 188px);
+    &::after {
+      top: 50px;
+      left: calc(50% - 170px);
+      width: 340px;
+    }
+  }
 
-  width: 366px;
-  height: 1px;
+}
 
-  background-color: #19b5fe;
+@media (max-width: 768px) {
+  .section__title {
+    padding-bottom: 28px;
+    font-size: 28px;
+
+    &::after {
+      top: 40px;
+      left: calc(50% - 130px);
+      width: 260px;
+    }
+  }
+
 }
