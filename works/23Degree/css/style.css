@@ -262,3 +262,31 @@ img {
   .advantage__item {
     width: 100%;
     max-width: 360px; } }
+
+.interaction__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.interaction__img,
+.interaction__title {
+  width: 50%; }
+
+.interaction__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #464646; }
+
+@media (max-width: 1024px) {
+  .interaction__title {
+    font-size: 26px; } }
+
+@media (max-width: 768px) {
+  .interaction__title {
+    font-size: 20px; } }
+
+@media (max-width: 600px) {
+  .interaction__title {
+    font-size: 16px; } }
