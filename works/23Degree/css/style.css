@@ -11,6 +11,9 @@ body {
   color: #363636;
   overflow-x: hidden; }
 
+p {
+  margin: 0; }
+
 a {
   text-decoration: none; }
 
@@ -79,6 +82,9 @@ img {
 
 .section {
   padding: 50px 0; }
+
+.section--gray {
+  background-color: #f5f9fa; }
 
 .section__title {
   position: relative;
