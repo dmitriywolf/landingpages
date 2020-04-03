@@ -54,7 +54,7 @@
                 </p> <!--header__subtitle-->
             </div> <!--/.header__logo-wrapper-->
 
-            <button class="header__edit edit__button">
+            <button class="header__edit edit__button popup__engineer__button">
                 <svg class="edit-icon" width="30" height="30">
                     <use xlink:href="#edit"></use>
                 </svg>
@@ -79,7 +79,7 @@
                 </a>
                 <div class="header__phone-text-wrapper">
                     <a class="phone__link" href="tel:+74956466171">+7 (495) 646-61-71</a>
-                    <a class="phone__call-back" id="openCallBackPopupButton" href="#">Заказать обратный звонок</a>
+                    <a class="phone__call-back" href="#">Заказать обратный звонок</a>
                 </div> <!--/.header__phone-text-wrapper-->
             </div> <!--/.header__phone-->
         </div> <!--/.header__inner-->
@@ -842,14 +842,16 @@
     </div> <!--/.container-->
 </footer> <!--/.footer-->
 
-<div class="modal-popup popup" id="popupCallback">
-    <button class="modal-close__button close--callback-popup">
+
+
+<div class="modal-popup popup">
+    <button class="modal-close__button">
         <svg class="modal-close__icon" width="25" height="25">
             <use xlink:href="#close-popup"></use>
         </svg>
     </button> <!--/.modal-close__button-->
     <form class="form-popup" action="#" method="post">
-        <h2 class="popup__title">Закажите сейчас<br><span>обратный звонок</span></h2>
+        <h2 class="popup__title">Запишись сегодня на<br><span>бесплатный замер</span></h2>
         <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
         <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
         <button class="popup__button" type="submit">Отправить заявку</button>
@@ -857,15 +859,19 @@
     </form>
 </div> <!--/.modal-callback-->
 
-<!--<div class="modal-popup modal-popup&#45;&#45;cost">-->
-<!--    <form class="form-popup" action="#" method="post">-->
-<!--        <h2 class="popup__title">Рассчитать стоимость<br><span>со скидкой</span></h2>-->
-<!--        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>-->
-<!--        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>-->
-<!--        <button class="popup__button" type="submit">Рассчитать стоимость</button>-->
-<!--        <p class="popup__text">Ваши данные конфиденциальны</p>-->
-<!--    </form>-->
-<!--</div> &lt;!&ndash;/.modal-cost&ndash;&gt;-->
+
+
+<div class="modal-popup modal-popup--cost">
+    <form class="form-popup" action="#" method="post">
+        <h2 class="popup__title">Рассчитать стоимость<br><span>со скидкой</span></h2>
+        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
+        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+        <button class="popup__button" type="submit">Рассчитать стоимость</button>
+        <p class="popup__text">Ваши данные конфиденциальны</p>
+    </form>
+</div> <!--/.modal-cost-->
+
+
 
 <!--Java Script-->
 <script src="js/app.js"></script>
