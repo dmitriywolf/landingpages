@@ -1,0 +1,11 @@
+{
+  "name": "irvas",
+  "version": "1.0.0",
+  "description": "- Вёрстка Landing Page: [Окна Ирвас](https://dmitriywolf.github.io/works/irvas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "D.Volchenko",
+  "license": "ISC"
+}
