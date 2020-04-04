@@ -13,11 +13,21 @@ let modals = () => {
                     e.preventDefault();
                 }
                 modal.style.display = 'block';
+                document.body.classList.add('open-popup');
             });
         });
 
         close.addEventListener('click', () => {
             modal.style.display = 'none';
+            document.body.classList.remove('open-popup');
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                modal.style.display = 'none';
+                document.body.classList.remove('open-popup');
+            }
         });
     }
 
@@ -28,8 +38,10 @@ let modals = () => {
     bindModal('.popup--calculate__button', '.popup--calculate', '.popup--calculate .popup__close');
 };
 
-
 modals();
+
+
+
 
 
 
