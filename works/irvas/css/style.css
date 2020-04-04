@@ -1109,6 +1109,7 @@ p {
 
 /*MODAL POPUP*/
 .popup {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -2204,7 +2205,7 @@ p {
     }
 
     /*MODAL*/
-    .modal-popup {
+    .popup {
         width: 90%;
         padding: 30px 30px;
     }

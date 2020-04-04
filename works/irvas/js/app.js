@@ -7,22 +7,24 @@ let modals = () => {
             }
 
             modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            // document.body.style.overflow = 'hidden';
         });
 
         close.addEventListener('click', () => {
             modal.style.display = 'none';
-            document.body.style.overflow = '';
+            // document.body.style.overflow = '';
         });
     }
 
-    let callEngineerButton = document.querySelector('.popup__engineer__button'),
-        modalEngineer = document.querySelector('.popup__engineer'),
-        modalEngineerClose = document.querySelector('popup__engineer .popup__close');
+    let popupEngineerButton = document.querySelector('.popup--engineer__button'),
+        popupEngineer = document.querySelector('.popup--engineer'),
+        popupEngineerClose = document.querySelector('.popup--engineer .popup__close');
+
+    bindModal(popupEngineerButton, popupEngineer, popupEngineerClose);
 };
 
 
-
+modals();
 
 
 
