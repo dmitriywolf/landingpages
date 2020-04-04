@@ -1,26 +1,31 @@
 // Modal windows
 let modals = () => {
-    function bindModal(trigger, modal, close) {
-        trigger.addEventListener('click', (event) => {
-            if (event.target) {
-                event.preventDefault();
-            }
+    function bindModal(triggerSelector, modalSelector, closeSelector) {
 
-            modal.style.display = 'block';
-            // document.body.style.overflow = 'hidden';
+        let trigger = document.querySelectorAll(triggerSelector),
+            modal = document.querySelector(modalSelector),
+            close = document.querySelector(closeSelector);
+
+
+        trigger.forEach(item => {
+            item.addEventListener('click', (e) => {
+                if (e.target) {
+                    e.preventDefault();
+                }
+                modal.style.display = 'block';
+            });
         });
 
         close.addEventListener('click', () => {
             modal.style.display = 'none';
-            // document.body.style.overflow = '';
         });
     }
 
-    let popupEngineerButton = document.querySelector('.popup--engineer__button'),
-        popupEngineer = document.querySelector('.popup--engineer'),
-        popupEngineerClose = document.querySelector('.popup--engineer .popup__close');
+    bindModal('.popup--engineer__button', '.popup--engineer', '.popup--engineer .popup__close');
 
-    bindModal(popupEngineerButton, popupEngineer, popupEngineerClose);
+    bindModal('.popup--callback__button', '.popup--callback', '.popup--callback .popup__close');
+
+    bindModal('.popup--calculate__button', '.popup--calculate', '.popup--calculate .popup__close');
 };
 
 
