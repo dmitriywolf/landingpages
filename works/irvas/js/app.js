@@ -22,9 +22,9 @@ let modals = () => {
             document.body.classList.remove('open-popup');
         });
 
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                evt.preventDefault();
+        window.addEventListener("keydown", function (e) {
+            if (e.keyCode === 27) {
+                e.preventDefault();
                 modal.style.display = 'none';
                 document.body.classList.remove('open-popup');
             }
@@ -40,6 +40,40 @@ let modals = () => {
 
 modals();
 
+// Tab
+let tabs = () => {
+    function tab(tabNavSelector, tabContentSelector) {
+
+        let tabNav = document.querySelectorAll(tabNavSelector);
+        let tabContent = document.querySelectorAll(tabContentSelector);
+        let tabName;
+
+        tabNav.forEach(item => {
+            item.addEventListener('click', selectTabNav)
+        });
+
+        function selectTabNav() {
+            tabNav.forEach(item => {
+                item.classList.remove('is-active');
+            });
+            this.classList.add('is-active');
+            tabName = this.getAttribute('data-tab-name');
+            selectTabContent(tabName);
+        }
+
+        function selectTabContent(tabName) {
+            tabContent.forEach(item => {
+                item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+            });
+        }
+    }
+
+    tab('.decoration-nav-tab', '.decoration-tab-content');
+    tab('.glazing-nav-tab', '.glazing-tab-content');
+
+};
+
+tabs();
 
 
 
