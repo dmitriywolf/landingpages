@@ -12,10 +12,10 @@
 
 .team__avatar {
   transition: 0.5s linear;
-}
 
-.team__avatar:hover {
-  transform: rotateY(180deg) scale(1.1);
+  &:hover {
+    transform: rotateY(180deg) scale(1.1);
+  }
 }
 
 .team__name {
@@ -36,8 +36,6 @@
 
 @media (max-width: 768px) {
   .team {
-    //display: flex;
-    //flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -46,27 +44,17 @@
   }
 
   .team__name {
-    //margin: 0;
-    //padding-top: 15px;
-
     font-size: 20px;
-    //font-weight: 300;
-    //color: $theme-color;
-    //text-align: center;
   }
 
   .team__position {
     font-size: 15px;
-    //line-height: 1.7;
-    //text-align: center;
   }
 }
 
 @media (max-width: 600px) {
   .team__item {
     width: 50%;
-    //margin-bottom: 45px;
-    //text-align: center;
   }
 }
 
@@ -80,21 +68,12 @@
   }
 
   .team__name {
-    //margin: 0;
-    //padding-top: 15px;
-
     font-size: 22px;
-    //font-weight: 300;
-    //color: $theme-color;
-    //text-align: center;
   }
 
   .team__position {
     font-size: 16px;
-    //line-height: 1.7;
-    //text-align: center;
   }
-
 
 }
 
