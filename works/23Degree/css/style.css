@@ -314,3 +314,25 @@ img {
     margin-bottom: 5px; }
   .interaction__title {
     font-size: 15px; } }
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team__item {
+  width: 33.3333%;
+  margin-bottom: 45px;
+  text-align: center; }
+
+.team__name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #19b5fe;
+  text-align: center; }
+
+.team__position {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center; }
