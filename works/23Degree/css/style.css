@@ -32,6 +32,14 @@ img {
   padding: 0 15px;
   margin: 0 auto; }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 5px; } }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.ttf") format("truetype");
@@ -325,8 +333,15 @@ img {
   margin-bottom: 45px;
   text-align: center; }
 
+.team__avatar {
+  transition: 0.5s linear; }
+
+.team__avatar:hover {
+  transform: rotateY(180deg) scale(1.1); }
+
 .team__name {
   margin: 0;
+  padding-top: 15px;
   font-size: 24px;
   font-weight: 300;
   color: #19b5fe;
@@ -336,3 +351,27 @@ img {
   font-size: 16px;
   line-height: 1.7;
   text-align: center; }
+
+@media (max-width: 768px) {
+  .team {
+    justify-content: space-between; }
+  .team__avatar {
+    max-width: 180px; }
+  .team__name {
+    font-size: 20px; }
+  .team__position {
+    font-size: 15px; } }
+
+@media (max-width: 600px) {
+  .team__item {
+    width: 50%; } }
+
+@media (max-width: 420px) {
+  .team__item {
+    width: 100%; }
+  .team__avatar {
+    max-width: 100%; }
+  .team__name {
+    font-size: 22px; }
+  .team__position {
+    font-size: 16px; } }
