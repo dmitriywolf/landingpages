@@ -34,6 +34,13 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .team__avatar {
+    max-width: 195px;
+  }
+
+}
+
 @media (max-width: 768px) {
   .team {
     justify-content: space-between;
