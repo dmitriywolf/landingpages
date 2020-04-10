@@ -680,7 +680,8 @@ img {
 
 .questions__inner {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 45px; }
 
 .questions__form {
   max-width: 750px;
@@ -712,16 +713,11 @@ img {
   border-radius: 6px; }
 
 .questions__button {
-  align-self: center; }
+  padding: 0 45px;
+  line-height: 3.73;
+  border-radius: 27px; }
 
-.form__input {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  color: #3f3f3f;
-  border: none;
-  outline: none; }
-
+.form__input,
 .form__textarea {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;

@@ -1,17 +1,9 @@
-.form__input {
-  font-family: $main-fonts;
-  font-size: 13px;
-  font-weight: 300;
-  color: #3f3f3f;
-
-  border: none;
-  outline: none;
-}
-
+.form__input,
 .form__textarea {
   font-family: $main-fonts;
   font-size: 13px;
   font-weight: 300;
+
   color: #3f3f3f;
 
   border: none;

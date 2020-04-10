@@ -45,6 +45,7 @@
 .questions__inner {
   display: flex;
   justify-content: space-between;
+  margin-top: 45px;
 }
 
 .questions__form {
@@ -85,5 +86,7 @@
 }
 
 .questions__button {
-  align-self: center;
+  padding: 0 45px;
+  line-height: 3.73;
+  border-radius: 27px;
 }
