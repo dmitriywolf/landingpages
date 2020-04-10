@@ -19,6 +19,30 @@
   padding: 38px 0 55px;
 }
 
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+}
+
+.footer__menu-item {
+  min-width: 160px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #ffffff;
+
+  transition: 0.5s linear;
+}
+
+.footer__menu-item:hover,
+.footer__menu-item:focus {
+  opacity: 0.8;
+}
+
+
+
+
 
 
 
