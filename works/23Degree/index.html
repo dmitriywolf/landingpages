@@ -92,9 +92,22 @@
         </symbol>
     </svg>
 </div>
-<header class="header">
 
-</header>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <div class="logo__img">
+                    <img src="img/logo.png" alt="Логотип" width="60" height="60">
+                </div>
+                <div class="logo__text">
+                    Degree
+                </div>
+            </div><!--/.logo-->
+
+        </div> <!--/.header__inner-->
+    </div> <!--/.container-->
+</header> <!--/.header-->
 
 <main>
     <section class="intro">
@@ -102,23 +115,27 @@
             <h1 class="intro__title">Услиги по 3D моделированию <span>полный спектр услуг</span></h1>
             <p class="intro__subtitle">Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно!*
             </p>
-
-            <form class="intro__form form" method="post" action="#">
-                <label class="intro__label form__label" for="yourFirstName">
-                    <input class="intro__input form__input" type="text" name="name" id="yourFirstName"
-                           placeholder="Ваше имя" required>
-                </label>
-                <label class="intro__label form__label" for="yourEmail">
-                    <input class="intro__input form__input" type="email" name="email" id="yourEmail"
-                           placeholder="Ваш e-mail" required>
-                </label>
-                <label class="intro__label form_label" for="yourPhone">
-                    <input class="intro__input form__input" type="tel" name="phone" id="yourPhone"
-                           placeholder="Ваш номер телефона" required>
-                </label>
-                <button class="intro__button form__button button" type="submit">Оставить заявку!</button>
+            <form class="intro__form form" method="#" action="#">
+                <div class="intro__form-inner">
+                    <label class="intro__label" for="yourFirstName">
+                        <input class="intro__input form__input" type="text" name="name" id="yourFirstName"
+                               placeholder="Ваше имя" required>
+                    </label>
+                    <label class="intro__label" for="yourEmail">
+                        <input class="intro__input form__input" type="email" name="email" id="yourEmail"
+                               placeholder="E-mail" required>
+                    </label>
+                    <label class="intro__label" for="yourPhone">
+                        <input class="intro__input form__input" type="tel" name="phone" id="yourPhone"
+                               placeholder="Номер телефона" required>
+                    </label>
+                </div> <!--/.intro__form-inner-->
+                <button class="intro__button button" type="submit">Оставить заявку!</button>
                 <p class="intro__form-text">*Мы гарантируем конфидициальность передаваемых данных</p>
             </form> <!--./intro__form-->
+            <a class="intro__anchor" href="#">
+                <img src="img/mouse.png" alt="Перейти вниз" width="17" height="49">
+            </a>
         </div> <!--/.intro__inner-->
     </section> <!--/.intro-->
 

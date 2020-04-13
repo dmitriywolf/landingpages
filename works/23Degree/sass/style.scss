@@ -6,8 +6,9 @@
 @import "global/visually-hidden";
 @import "global/section";
 @import "global/button";
-
 //Blocks
+@import "blocks/header";
+@import "blocks/logo";
 @import "blocks/intro";
 @import "blocks/services";
 @import "blocks/advantages";

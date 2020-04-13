@@ -140,6 +140,15 @@ img {
   .button:active {
     color: rgba(255, 255, 255, 0.8); }
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+
+.header__inner {
+  display: flex;
+  justify-content: space-between; }
+
 .intro {
   position: relative;
   height: 100vh;
@@ -185,10 +194,44 @@ img {
   color: #fff; }
 
 .intro__form-text {
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
   color: #fff; }
+
+.intro__form {
+  width: 100%;
+  max-width: 890px;
+  margin: 45px auto 0; }
+
+.intro__form-inner {
+  display: flex;
+  justify-content: space-between; }
+
+.intro__label {
+  width: 32.584%;
+  margin-bottom: 20px; }
+
+.intro__input {
+  width: 100%;
+  padding: 0 27px;
+  line-height: 3.92;
+  border-radius: 25px; }
+
+.intro__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 3.81;
+  border-radius: 30px; }
+
+.intro__anchor {
+  position: absolute;
+  left: calc(50% - 9px);
+  bottom: 50px; }
 
 .services__item {
   display: flex;
@@ -801,6 +844,10 @@ img {
   color: #3f3f3f;
   border: none;
   outline: none; }
+
+.form__input:focus,
+.form__textarea:focus {
+  box-shadow: 0 0 2px 2px rgba(25, 181, 254, 0.8); }
 
 .contact {
   padding-left: 30px; }
