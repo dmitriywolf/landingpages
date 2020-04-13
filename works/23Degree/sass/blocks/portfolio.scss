@@ -43,9 +43,11 @@
 .portfolio__item {
   width: 33.333%;
   padding: 15px;
+  text-align: center;
+  font-size: 0;
 
   .portfolio__img {
-    display: block;
+    //display: block;
   }
 }
 
