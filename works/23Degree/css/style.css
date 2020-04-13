@@ -813,6 +813,9 @@ img {
   color: #19b5fe;
   border-right: 1px solid #19b5fe; }
 
+.portfolio__nav-item:hover {
+  cursor: pointer; }
+
 .portfolio__nav-item:last-child {
   border-right: none; }
 
