@@ -184,6 +184,12 @@ img {
   text-align: center;
   color: #fff; }
 
+.intro__form-text {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff; }
+
 .services__item {
   display: flex;
   justify-content: space-between;

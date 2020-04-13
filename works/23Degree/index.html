@@ -100,10 +100,26 @@
     <section class="intro">
         <div class="intro__inner">
             <h1 class="intro__title">Услиги по 3D моделированию <span>полный спектр услуг</span></h1>
-
             <p class="intro__subtitle">Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно!*
             </p>
-        </div>
+
+            <form class="intro__form form" method="post" action="#">
+                <label class="intro__label form__label" for="yourFirstName">
+                    <input class="intro__input form__input" type="text" name="name" id="yourFirstName"
+                           placeholder="Ваше имя" required>
+                </label>
+                <label class="intro__label form__label" for="yourEmail">
+                    <input class="intro__input form__input" type="email" name="email" id="yourEmail"
+                           placeholder="Ваш e-mail" required>
+                </label>
+                <label class="intro__label form_label" for="yourPhone">
+                    <input class="intro__input form__input" type="tel" name="phone" id="yourPhone"
+                           placeholder="Ваш номер телефона" required>
+                </label>
+                <button class="intro__button form__button button" type="submit">Оставить заявку!</button>
+                <p class="intro__form-text">*Мы гарантируем конфидициальность передаваемых данных</p>
+            </form> <!--./intro__form-->
+        </div> <!--/.intro__inner-->
     </section> <!--/.intro-->
 
     <section class="section">
