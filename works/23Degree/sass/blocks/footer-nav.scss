@@ -29,23 +29,14 @@
 
   .footer-nav__link {
     min-width: auto;
-
     margin: 0 5px;
   }
 }
 
 @media (max-width: 420px) {
-  //.footer-nav {
-  //  max-width: 100%;
-  //  justify-content: space-around;
-  //  margin-bottom: 15px;
-  //}
-
   .footer-nav__link {
-    //min-width: auto;
     width: 100%;
     text-align: center;
-
     margin: 0;
   }
 }
