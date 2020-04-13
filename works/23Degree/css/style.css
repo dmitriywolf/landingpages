@@ -848,3 +848,14 @@ img {
   .portfolio__nav-item {
     padding: 0 15px;
     font-size: 12px; } }
+
+@media (max-width: 600px) {
+  .portfolio__nav {
+    flex-direction: column;
+    padding: 0;
+    border: 1px solid #19b5fe;
+    border-radius: 16px; }
+  .portfolio__nav-item {
+    border-right: none; }
+  .portfolio__nav-item.is-active {
+    box-shadow: 0 0 0 3px #19b5fe; } }

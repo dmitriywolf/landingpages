@@ -72,3 +72,43 @@
 
 
 }
+
+@media (max-width: 600px) {
+  .portfolio__nav {
+    //display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+    //width: 100%;
+    //max-width: 580px;
+    //margin: 0 auto 15px;
+    padding: 0;
+    border: 1px solid $theme-color;
+    border-radius: 16px;
+  }
+
+  .portfolio__nav-item {
+    //padding: 0 15px;
+    //font-size: 12px;
+    //
+    //font-weight: 300;
+    //line-height: 2.7;
+    //text-transform: uppercase;
+    //color: $theme-color;
+    border-right: none;
+  }
+  ////
+  //.portfolio__nav-item:last-child {
+  //  border-right: none;
+  //}
+
+  .portfolio__nav-item.is-active {
+    //background-color: $theme-color;
+    //color: #fff;
+    //border-radius: 5px;
+    box-shadow: 0 0 0 3px rgba(25, 181, 254, 1);
+  }
+
+
+
+
+}
