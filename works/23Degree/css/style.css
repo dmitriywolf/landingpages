@@ -153,16 +153,29 @@ img {
   justify-content: flex-end;
   padding-top: 35px; }
 
+@media (max-width: 1024px) {
+  .header__inner {
+    padding-top: 20px; } }
+
 .logo {
   display: flex;
   align-items: center;
   margin-right: auto; }
+
+.logo__img img {
+  display: block; }
 
 .logo__text {
   padding-left: 10px;
   font-size: 28px;
   font-weight: 900;
   color: #fff; }
+
+@media (max-width: 768px) {
+  .logo__img {
+    width: 45px; }
+  .logo__text {
+    font-size: 24px; } }
 
 .intro {
   position: relative;
@@ -263,7 +276,26 @@ img {
   .intro__button {
     padding: 0 30px;
     font-size: 15px;
-    line-height: 2.5;
+    line-height: 2.8;
+    border-radius: 20px; } }
+
+@media (max-width: 768px) {
+  .intro__inner {
+    padding: 0 10px; }
+  .intro__title {
+    max-width: 580px;
+    font-size: 36px; }
+    .intro__title span {
+      font-size: 26px; }
+  .intro__subtitle {
+    padding-top: 15px;
+    font-size: 18px; }
+  .intro__form {
+    max-width: 580px; }
+  .intro__button {
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 2.8;
     border-radius: 20px; } }
 
 .phone {
@@ -283,6 +315,12 @@ img {
   font-weight: 500;
   color: #fff; }
 
+@media (max-width: 1024px) {
+  .phone__text {
+    font-size: 12px; }
+  .phone__link {
+    font-size: 18px; } }
+
 .nav {
   display: none; }
 
@@ -297,7 +335,6 @@ img {
     text-transform: uppercase;
     color: #fff; }
 
-/*Burger*/
 .burger {
   margin: 13px 0 9px;
   padding: 9px 0;
@@ -334,6 +371,14 @@ img {
 
 .burger:hover {
   opacity: 0.7; }
+
+@media (max-width: 768px) {
+  .burger__wrapper span {
+    font-size: 10px; }
+  .burger {
+    margin: 5px 0; }
+  .burger__item {
+    width: 36px; } }
 
 .services__item {
   display: flex;

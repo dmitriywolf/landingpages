@@ -153,7 +153,61 @@
 
     font-size: 15px;
     //font-weight: 500;
-    line-height: 2.5;
+    line-height: 2.8;
+
+    border-radius: 20px;
+  }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+  .intro__inner {
+    padding: 0 10px;
+  }
+
+  .intro__title {
+    //margin: 0 auto;
+    //
+    max-width: 580px;
+
+    font-size: 36px;
+    //font-weight: 700;
+    //line-height: 1;
+    //
+    //text-align: center;
+    //color: #fff;
+
+    span {
+      font-size: 26px;
+    }
+  }
+
+  .intro__subtitle {
+    padding-top: 15px;
+
+    font-size: 18px;
+    //font-weight: 300;
+    //text-align: center;
+    //color: #fff;
+  }
+
+  .intro__form {
+    //width: 100%;
+    max-width: 580px;
+    //margin: 45px auto 0;
+  }
+
+  .intro__button {
+    //display: block;
+    //margin: 0 auto;
+    padding: 0 30px;
+
+    font-size: 15px;
+    //font-weight: 500;
+    line-height: 2.8;
 
     border-radius: 20px;
   }
