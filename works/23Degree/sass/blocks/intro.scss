@@ -216,3 +216,142 @@
 
 
 }
+
+@media (max-width: 600px) {
+
+  .intro__title {
+    //margin: 0 auto;
+    //
+    max-width: 410px;
+
+    font-size: 26px;
+    //font-weight: 700;
+    //line-height: 1;
+    //
+    //text-align: center;
+    //color: #fff;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .intro__subtitle {
+    padding-top: 10px;
+
+    font-size: 14px;
+    //font-weight: 300;
+    //text-align: center;
+    //color: #fff;
+  }
+
+  .intro__form {
+    //width: 100%;
+    //max-width: 580px;
+    margin-top: 30px;
+  }
+
+  .intro__button {
+    //display: block;
+    //margin: 0 auto;
+    padding: 0 30px;
+
+    font-size: 15px;
+    //font-weight: 500;
+    line-height: 2.8;
+
+    border-radius: 20px;
+  }
+
+  .intro__form-inner {
+    //display: flex;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .intro__label {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    //margin-bottom: 20px;
+  }
+
+  .intro__input {
+    //width: 100%;
+    padding: 0 27px;
+
+    line-height: 3;
+    border-radius: 25px;
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  .intro__title {
+    //margin: 0 auto;
+    //
+    max-width: 300px;
+
+    font-size: 20px;
+    //font-weight: 700;
+    //line-height: 1;
+    //
+    //text-align: center;
+    //color: #fff;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+
+  .intro__form {
+    //width: 100%;
+    //max-width: 580px;
+    margin-top: 30px;
+  }
+
+  .intro__button {
+    //display: block;
+    //margin: 0 auto;
+    //padding: 0 30px;
+    //
+    //font-size: 15px;
+    //font-weight: 500;
+    line-height: 2.2;
+
+    border-radius: 15px;
+  }
+
+  .intro__form-inner {
+    //display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+  }
+
+  .intro__label {
+    //width: 100%;
+    max-width: 300px;
+    //margin: 0 auto 15px;
+    //margin-bottom: 20px;
+  }
+
+  .intro__input {
+    //width: 100%;
+    //padding: 0 27px;
+    //
+    //line-height: 3;
+    //border-radius: 25px;
+  }
+
+
+
+  .intro__form-text {
+    //margin-top: 20px;
+    font-size: 12px;
+    //font-weight: 300;
+    //text-align: center;
+    //color: #fff;
+  }
+}

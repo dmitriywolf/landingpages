@@ -38,4 +38,21 @@
 
 }
 
-@media (max-width: 1024px){}
+@media (max-width: 420px){
+  .phone__icon {
+    //margin-right: 13px;
+    display: none;
+  }
+
+  .phone__text {
+    display: none;
+    //font-size: 12px;
+    //font-weight: 300;
+    //
+    //color: #ffffff;
+  }
+
+  .phone__link {
+    font-size: 14px;
+  }
+}
