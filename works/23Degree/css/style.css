@@ -298,6 +298,9 @@ img {
     font-size: 18px; }
   .intro__form {
     max-width: 580px; }
+  .intro__input {
+    line-height: 3.3;
+    border-radius: 25px; }
   .intro__button {
     padding: 0 30px;
     font-size: 15px;
@@ -318,7 +321,7 @@ img {
   .intro__button {
     padding: 0 30px;
     font-size: 15px;
-    line-height: 2.8;
+    line-height: 2.6;
     border-radius: 20px; }
   .intro__form-inner {
     flex-wrap: wrap; }
@@ -332,6 +335,8 @@ img {
     border-radius: 25px; } }
 
 @media (max-width: 420px) {
+  .intro {
+    min-height: 568px; }
   .intro__title {
     max-width: 300px;
     font-size: 20px; }
@@ -339,13 +344,18 @@ img {
       font-size: 18px; }
   .intro__form {
     margin-top: 30px; }
+  .intro__label {
+    max-width: 300px;
+    margin-bottom: 10px; }
+  .intro__input {
+    line-height: 2.5; }
   .intro__button {
     line-height: 2.2;
     border-radius: 15px; }
-  .intro__label {
-    max-width: 300px; }
   .intro__form-text {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .intro__anchor {
+    bottom: 35px; } }
 
 .phone {
   display: flex;
