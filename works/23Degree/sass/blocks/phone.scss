@@ -1,20 +1,21 @@
-.main-phone {
+.phone {
   display: flex;
   align-items: center;
+
 }
 
-.main-phone__icon {
+.phone__icon {
   margin-right: 13px;
 }
 
-.main-phone__text {
+.phone__text {
   font-size: 12px;
   font-weight: 300;
 
   color: #ffffff;
 }
 
-.main-phone__link {
+.phone__link {
   font-size: 21px;
   font-weight: 500;
   color: #fff;
