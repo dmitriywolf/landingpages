@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
 
+  padding-left: 80px;
+
   span {
     font-size: 12px;
     font-weight: 500;
@@ -13,7 +15,8 @@
 
 /*Burger*/
 .burger {
-  padding: 0;
+  margin: 13px 0 9px;
+  padding: 9px 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -24,11 +27,11 @@
 .burger__item {
   position: relative;
   display: block;
-  width: 28px;
+  width: 46px;
   height: 3px;
   font-size: 0;
   color: transparent;
-  background-color: rgb(198, 133, 9);;
+  background-color: #ffffff;
 }
 
 .burger__item:before,
@@ -38,17 +41,16 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: rgb(198, 133, 9);
-  z-index: 1;
+  background-color: #ffffff;
   transition: transform 0.7s;
 }
 
 .burger__item:before {
-  top: -6px;
+  top: -9px;
 }
 
 .burger__item:after {
-  top: 6px;
+  top: 9px;
 }
 
 .burger:hover {

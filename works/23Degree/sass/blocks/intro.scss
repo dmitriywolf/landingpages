@@ -1,6 +1,7 @@
 .intro {
   position: relative;
   height: 100vh;
+  min-height: 640px;
 
   background: url("../img/intro-bg.jpg") center no-repeat;
   background-size: cover;
@@ -108,5 +109,56 @@
   bottom: 50px;
 }
 
+@media (max-width: 1024px) {
+  .intro__inner {
+    padding: 0 10px;
+  }
+
+  .intro__title {
+    //margin: 0 auto;
+    //
+    //max-width: 680px;
+
+    font-size: 42px;
+    //font-weight: 700;
+    //line-height: 1;
+    //
+    //text-align: center;
+    //color: #fff;
+
+    span {
+      font-size: 32px;
+    }
+  }
+
+  .intro__subtitle {
+    //padding-top: 30px;
+
+    font-size: 20px;
+    //font-weight: 300;
+    //text-align: center;
+    //color: #fff;
+  }
+
+  .intro__form {
+    //width: 100%;
+    max-width: 740px;
+    //margin: 45px auto 0;
+  }
+
+  .intro__button {
+    //display: block;
+    //margin: 0 auto;
+    padding: 0 30px;
+
+    font-size: 15px;
+    //font-weight: 500;
+    line-height: 2.5;
+
+    border-radius: 20px;
+  }
 
 
+
+
+}
