@@ -389,7 +389,9 @@ img {
     font-size: 14px; } }
 
 .nav {
-  display: none; }
+  position: absolute;
+  top: 100%;
+  right: 0; }
 
 .burger__wrapper {
   display: flex;
