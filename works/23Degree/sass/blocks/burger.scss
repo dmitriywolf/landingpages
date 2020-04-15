@@ -57,19 +57,25 @@
   opacity: 0.7;
 }
 
-//.burger.burger--close .burger__item {
-//  background-color: transparent;
-//}
-//
-//.burger.burger--close .burger__item::before {
-//  transform: rotate(45deg);
-//  top: 0;
-//}
-//
-//.burger.burger--close .burger__item::after {
-//  transform: rotate(-45deg);
-//  top: 0;
-//}
+.burger__wrapper.burger--close {
+  .burger__text {
+    display: none;
+  }
+}
+
+.burger__wrapper.burger--close .burger__item {
+  background-color: transparent;
+}
+
+.burger__wrapper.burger--close .burger__item::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.burger__wrapper.burger--close .burger__item::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 
 
 
