@@ -79,7 +79,6 @@
 
 @media (max-width: 420px) {
   .section__title {
-    //font-size: 20px;
   }
 
   .section__title--long {
@@ -88,8 +87,6 @@
 
     &::after {
       top: 60px;
-      //left: calc(50% - 100px);
-      //width: 200px;
     }
   }
 
