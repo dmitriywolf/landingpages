@@ -183,6 +183,12 @@ img {
   .logo__text {
     font-size: 24px; } }
 
+@media (max-width: 600px) {
+  .logo__img {
+    width: 40px; }
+  .logo__text {
+    font-size: 22px; } }
+
 @media (max-width: 420px) {
   .logo__img {
     width: 35px; }
@@ -381,10 +387,22 @@ img {
   color: #fff; }
 
 @media (max-width: 1024px) {
+  .phone__link {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  .phone__icon {
+    width: 25px; }
+  .phone__text {
+    font-size: 10px; }
+  .phone__link {
+    font-size: 16px; } }
+
+@media (max-width: 600px) {
   .phone__icon {
     display: none; }
   .phone__link {
-    font-size: 18px; } }
+    font-size: 14px; } }
 
 @media (max-width: 420px) {
   .phone__text {
@@ -495,17 +513,21 @@ img {
   .burger__wrapper .burger__text {
     font-size: 10px; }
   .burger__item {
-    width: 35px; } }
+    width: 34px; } }
 
 @media (max-width: 600px) {
   .burger__wrapper {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .burger__text {
+    display: none; } }
 
 @media (max-width: 420px) {
   .burger__wrapper {
     padding-left: 15px; }
-    .burger__wrapper .burger__text {
-      display: none; } }
+  .burger {
+    margin: 0; }
+  .burger__item {
+    width: 30px; } }
 
 .services__item {
   display: flex;
