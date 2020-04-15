@@ -13,7 +13,6 @@
   }
 }
 
-
 .burger {
   margin: 13px 0 9px;
   padding: 9px 0;
@@ -97,20 +96,15 @@
 
 @media (max-width: 600px) {
   .burger__wrapper {
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .burger__text {
     display: none;
   }
-
 }
 
 @media (max-width: 420px) {
-  .burger__wrapper {
-    padding-left: 15px;
-  }
-
   .burger {
     margin: 0;
   }
@@ -118,5 +112,4 @@
   .burger__item {
     width: 30px;
   }
-
 }
