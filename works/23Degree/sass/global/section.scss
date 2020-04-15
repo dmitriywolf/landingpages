@@ -44,6 +44,9 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 35px 0;
+  }
   .section__title {
     padding-bottom: 28px;
     font-size: 28px;
@@ -52,6 +55,41 @@
       top: 40px;
       left: calc(50% - 130px);
       width: 260px;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 25px 0;
+  }
+
+  .section__title {
+    font-size: 24px;
+
+    &::after {
+      top: 40px;
+      left: calc(50% - 100px);
+      width: 200px;
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .section__title {
+    //font-size: 20px;
+  }
+
+  .section__title--long {
+    max-width: 300px;
+    margin: 0 auto;
+
+    &::after {
+      top: 60px;
+      //left: calc(50% - 100px);
+      //width: 200px;
     }
   }
 

@@ -107,7 +107,7 @@
 
 @media (max-width: 600px) {
   .questions__subtitle {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .questions__inner {
@@ -126,5 +126,11 @@
     padding: 0 35px;
     line-height: 2.5;
     border-radius: 27px;
+  }
+}
+
+@media (max-width: 420px) {
+  .questions__subtitle {
+    font-size: 14px;
   }
 }
