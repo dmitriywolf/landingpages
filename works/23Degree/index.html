@@ -102,7 +102,7 @@
     </svg>
 </div>
 
-<header class="header show">
+<header class="header show" id="up">
     <div class="container">
         <div class="header__inner">
             <div class="logo">
@@ -122,12 +122,12 @@
                 <nav class="nav show">
                     <div class="container">
                         <div class="nav__inner">
-                            <a class="nav__link" href="#">Услуги</a>
-                            <a class="nav__link" href="#">Стоимость</a>
-                            <a class="nav__link" href="#">Портфолио</a>
-                            <a class="nav__link" href="#">Команда</a>
-                            <a class="nav__link" href="#">Блог</a>
-                            <a class="nav__link" href="#">Контакты</a>
+                            <a class="nav__link" href="#services">Услуги</a>
+                            <!--                            <a class="nav__link" href="#">Стоимость</a>-->
+                            <a class="nav__link" href="#portfolio">Портфолио</a>
+                            <a class="nav__link" href="#team">Команда</a>
+                            <a class="nav__link" href="#blog">Блог</a>
+                            <a class="nav__link" href="#contacts">Контакты</a>
                         </div> <!--/.nav__inner-->
                     </div> <!--/.container-->
                 </nav> <!--/.nav-->
@@ -166,13 +166,13 @@
                 <button class="intro__button button" type="submit">Оставить заявку!</button>
                 <p class="intro__form-text">*Мы гарантируем конфидициальность передаваемых данных</p>
             </form> <!--./intro__form-->
-            <a class="intro__anchor" href="#">
+            <a class="intro__anchor" href="#services">
                 <img src="img/mouse.png" alt="Перейти вниз" width="17" height="49">
             </a>
         </div> <!--/.intro__inner-->
     </section> <!--/.intro-->
 
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Наши услуги</h2>
@@ -221,7 +221,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
-    <section class="section">
+    <section class="section" id="portfolio">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Портфолио</h2>
@@ -396,7 +396,7 @@
         </div> <!--/.section__header-->
     </section>
 
-    <section>
+    <section id="team">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Наша команда</h2>
@@ -473,7 +473,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
-    <section class="section section--gray">
+    <section class="section section--gray" id="blog">
         <div class="section__header">
             <h2 class="section__title">Блог</h2>
         </div> <!--/.section__header-->
@@ -495,7 +495,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
-    <div class="questions">
+    <div class="questions" id="contacts">
         <div class="section__header">
             <h2 class="section__title">Остались вопросы?</h2>
             <p class="questions__subtitle">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</p>
@@ -586,7 +586,7 @@
     </div> <!--/.map-->
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer__top-wrapper">
         <div class="container">
             <div class="footer__top">
@@ -640,6 +640,15 @@
         </div> <!--/.container-->
     </div> <!--/.footer__bottom-wrapper-->
 </footer> <!--/.footer-->
+
+
+<a href="#up" class="pageup">
+    <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z"
+              fill="black"/>
+    </svg>
+</a>
 
 <!--JavaScript-->
 <script src="js/app.js"></script>
