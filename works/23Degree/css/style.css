@@ -814,6 +814,9 @@ img {
   justify-content: center;
   align-items: center; }
 
+.quote-item-slider {
+  min-height: 170px; }
+
 .quote__mark {
   position: absolute; }
 

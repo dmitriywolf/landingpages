@@ -65,10 +65,102 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     filter();
 
-    //
+    //Slider
+    const sliders = (slides, dir, prev, next) => {
+
+        let slideIndex = 1,
+            paused = false;
+
+        const items = document.querySelectorAll(slides);
 
 
+        //Функция показа слайда
+        function showSlides(n) {
+
+            //Проверка
+            if (n > items.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = items.length;
+            }
+
+            //Скрываем все слайды
+            items.forEach(item => {
+                item.classList.add('animated');
+                item.style.display = 'none';
+            });
+
+            //Показываем один слайд
+            items[slideIndex - 1].style.display = "flex";
+        }
+
+        showSlides(slideIndex);
+
+
+        //Будем передавать либо 1 либо -1
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+
+        //Если не были переданы селекторы кнопок то этот код не сработает и не сломает логику
+        try {
+            const prevBtn = document.querySelector(prev),
+                nextBtn = document.querySelector(next);
+
+            //При нажатии на кнопки меняются слайды
+            prevBtn.addEventListener('click', () => {
+                plusSlides(-1);
+                items[slideIndex - 1].classList.remove('slideInRight');
+                items[slideIndex - 1].classList.add('slideInLeft');
+            });
+
+            nextBtn.addEventListener('click', () => {
+                plusSlides(1);
+                items[slideIndex - 1].classList.remove('slideInLeft');
+                items[slideIndex - 1].classList.add('slideInRight');
+            });
+
+
+        } catch (e) {
+        }
+
+        //Направление движения слайдов вертикальное/горизонтальное
+        //Смена слайдов каждые 4 секунды
+        function activateAnimation() {
+            if (dir === 'vertical') {
+
+                paused = setInterval(function () {
+                    plusSlides(1);
+                    items[slideIndex - 1].classList.add('slideInDown');
+                }, 4000)
+            } else {
+                paused = setInterval(function () {
+                    plusSlides(1);
+                    items[slideIndex - 1].classList.remove('slideInRight');
+                    items[slideIndex - 1].classList.add('slideInLeft');
+                }, 4000)
+            }
+        }
+
+        activateAnimation();
+
+        //При наведении на слайд автоматическое смещение прекращается
+        items[0].parentNode.addEventListener('mouseenter', () => {
+            clearInterval(paused);
+        });
+
+        items[0].parentNode.addEventListener('mouseleave', () => {
+            activateAnimation();
+        });
+
+
+    };
+    sliders('.quote-item-slider', '', '', '');
 });
+
 
 
 
