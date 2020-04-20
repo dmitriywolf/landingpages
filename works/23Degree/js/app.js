@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
-    //Fixed Header
+    //Nav Header
     const navHeader = () => {
         let header = document.querySelector('#header');
         let intro = document.querySelector('.intro');
@@ -43,6 +43,56 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     navHeader();
 
+    //Smooth Scroll
+    const scrolling = (upSelector) => {
+        //Функция PageUp
+        const upElem = document.querySelector(upSelector);
+
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 1650) {
+                upElem.classList.add('animated', 'fadeIn');
+                upElem.classList.remove('fadeOut');
+            } else {
+                upElem.classList.add('fadeOut');
+                upElem.classList.remove('fadeIn');
+            }
+        });
+
+        //Scrolling with Request Animation Frame
+        let links = document.querySelectorAll('[href^="#"]'),
+            speed = 0.2;
+
+        links.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                let widthTop = document.documentElement.scrollTop,
+                    hash = this.hash,
+                    toBlock = document.querySelector(hash).getBoundingClientRect().top,
+                    start = null;
+
+                requestAnimationFrame(step);
+
+                function step(time) {
+                    if (start === null) {
+                        start = time;
+                    }
+
+                    let progress = time - start,
+                        r = (toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock));
+
+                    document.documentElement.scrollTo(0, r);
+
+                    if (r !== widthTop + toBlock) {
+                        requestAnimationFrame(step)
+                    } else {
+                        location.hash = hash;
+                    }
+                }
+            });
+        });
+    };
+    scrolling('.pageup');
 
     //Filter
     const filter = () => {
@@ -116,7 +166,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const items = document.querySelectorAll(slides);
 
-
         //Функция показа слайда
         function showSlides(n) {
 
@@ -166,7 +215,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 items[slideIndex - 1].classList.add('slideInRight');
             });
 
-
         } catch (e) {
         }
 
@@ -203,59 +251,8 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     sliders('.quote-item-slider', '', '', '');
 
-    //Smooth Scroll
-    const scrolling = (upSelector) => {
-        //Функция PageUp
-        const upElem = document.querySelector(upSelector);
-
-        window.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 1650) {
-                upElem.classList.add('animated', 'fadeIn');
-                upElem.classList.remove('fadeOut');
-            } else {
-                upElem.classList.add('fadeOut');
-                upElem.classList.remove('fadeIn');
-            }
-        });
-
-        //Scrolling with Request Animation Frame
-        let links = document.querySelectorAll('[href^="#"]'),
-            speed = 0.2;
-
-        links.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                let widthTop = document.documentElement.scrollTop,
-                    hash = this.hash,
-                    toBlock = document.querySelector(hash).getBoundingClientRect().top,
-                    start = null;
-
-                requestAnimationFrame(step);
-
-                function step(time) {
-                    if (start === null) {
-                        start = time;
-                    }
-
-                    let progress = time - start,
-                        r = (toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock));
-
-                    document.documentElement.scrollTo(0, r);
-
-                    if (r !== widthTop + toBlock) {
-                        requestAnimationFrame(step)
-                    } else {
-                        location.hash = hash;
-                    }
-                }
-            });
-        });
-    };
-    scrolling('.pageup');
-
-
 });
+
 
 
 

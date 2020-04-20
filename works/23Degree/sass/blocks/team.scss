@@ -1,3 +1,7 @@
+.team__wrapper {
+  padding: 50px 0;
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +46,10 @@
 }
 
 @media (max-width: 768px) {
+  .team__wrapper {
+    padding: 35px 0;
+  }
+
   .team {
     justify-content: space-between;
   }
@@ -60,6 +68,10 @@
 }
 
 @media (max-width: 600px) {
+  .team__wrapper {
+    padding: 25px 0;
+  }
+
   .team__item {
     width: 50%;
   }

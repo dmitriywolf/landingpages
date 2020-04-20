@@ -6,18 +6,23 @@
     <title>23 Degree</title>
 
     <!--    Favicon-->
-    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
-    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
-    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
-    <!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
-    <!--    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
-    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
-    <!--    <meta name="theme-color" content="#ffffff">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!--    Style-->
+    <!--Slider Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
 <body>
 <div style="display: none">
@@ -400,9 +405,36 @@
         <div class="section__header">
             <h2 class="section__title section__title--long">Нам доверяют более 50 компаний</h2>
         </div> <!--/.section__header-->
-    </section>
+        <div class="carousel">
+            <div class="container">
+                <div class="carousel__inner" id="carouselCompanies">
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-1.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-2.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-3.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-4.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-5.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-6.png" alt="">
+                    </div>
+                    <div class="carousel__img-wrapper">
+                        <img class="carousel__img" src="img/companies/item-7.png" alt="">
+                    </div>
+                </div> <!--/.carousel__inner-->
+            </div> <!--/.container-->
+        </div> <!--/.carousel-->
+    </section> <!--/.section-->
 
-    <section id="team">
+    <section id="team" class="team__wrapper">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Наша команда</h2>
@@ -653,7 +685,12 @@
     </svg>
 </a> <!--/.pageup-->
 
+<!--SLick-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
 <!--JavaScript-->
 <script src="js/app.js"></script>
+
 </body>
 </html>
