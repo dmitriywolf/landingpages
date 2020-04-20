@@ -1,6 +1,28 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
+    //Fixed Header
+    const fixedHeader = () => {
+        let header = document.querySelector('#header');
+        let intro = document.querySelector('.intro');
+        let introH;
+        let scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+        window.addEventListener('scroll', () => {
+            introH = intro.offsetHeight;
+            scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPos > introH) {
+                header.classList.add('fixed', 'animated', 'fadeIn', 'show');
+            } else {
+                header.classList.remove('fixed', 'show');
+            }
+        });
+
+
+    };
+    fixedHeader();
+
     //Filter
     const filter = () => {
 

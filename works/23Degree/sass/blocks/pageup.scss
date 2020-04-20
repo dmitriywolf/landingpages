@@ -3,8 +3,8 @@
   width: 26px;
   height: 26px;
   position: fixed;
-
   right: 5%;
+  bottom: 100px;
   z-index: 30;
   background-color: #fff;
   cursor: pointer;
@@ -16,15 +16,4 @@
   .pageup {
     bottom: 50px;
   }
-
-
-
 }
-
-@media (max-width: 600px) {
-  .pageup {
-
-
-  }
-}
-

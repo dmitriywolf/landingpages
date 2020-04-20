@@ -6,6 +6,10 @@
   z-index: 10;
 }
 
+.header.fixed {
+  position: fixed;
+}
+
 .header.show {
   background-color: rgba(22, 22, 22, 0.85);
 }
