@@ -2,12 +2,14 @@ window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     //Fixed Header
-    const fixedHeader = () => {
+    const navHeader = () => {
         let header = document.querySelector('#header');
         let intro = document.querySelector('.intro');
         let introH;
         let scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 
+
+        //Fixed Header
         window.addEventListener('scroll', () => {
             introH = intro.offsetHeight;
             scrollPos = window.pageYOffset || document.documentElement.scrollTop;
@@ -15,13 +17,34 @@ window.addEventListener('DOMContentLoaded', () => {
             if (scrollPos > introH) {
                 header.classList.add('fixed', 'animated', 'fadeIn', 'show');
             } else {
-                header.classList.remove('fixed', 'show');
+                header.classList.remove('fixed', 'fadeIn', 'show');
             }
+        });
+
+        //Navigation
+        let nav = document.querySelector('.nav');
+        let navToggle = document.querySelector('.burger__wrapper');
+
+        navToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (scrollPos > introH) {
+                nav.classList.toggle('show');
+
+            } else {
+                nav.classList.toggle('show');
+                header.classList.toggle('show');
+            }
+
+
+            // header.classList.toggle('show');
+            navToggle.classList.toggle('burger--close');
         });
 
 
     };
-    fixedHeader();
+    navHeader();
+
 
     //Filter
     const filter = () => {
