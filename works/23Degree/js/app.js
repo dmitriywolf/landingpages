@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        //Scrolling with request animation frame
+        //Scrolling with Request Animation Frame
         let links = document.querySelectorAll('[href^="#"]'),
             speed = 0.2;
 
