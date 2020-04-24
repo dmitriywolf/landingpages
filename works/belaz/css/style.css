@@ -32,24 +32,19 @@
 }
 
 /*-----Global Styles-----*/
+*,
+*::before,
+*::after,
 html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 body {
-    min-width: 1190px;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-style: normal;
-
     line-height: 1.2;
 }
 
@@ -63,10 +58,6 @@ img {
 }
 
 ul, ol {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -83,267 +74,188 @@ p {
 }
 
 .container {
-    width: 1190px;
-    padding: 0 10px;
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 5px;
     margin: 0 auto;
 }
 
-.button {
-    font-size: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-
-    color: #ffffff;
-}
-
-.button:hover,
-.button:focus {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.button:active {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.button--blue {
-    background-color: #1669b3;
-}
-
-.button--blue:hover,
-.button--blue:focus {
-    background-color: #08579d;
-}
-
-.button--blue:active {
-    background-color: #0b2b48;
-}
-
-.button--yellow {
-    background-color: #f7b516;
-}
-
-.phone-number {
-    font-size: 18px;
-    font-weight: 700;
+/*-----------------------------------------------------------------*/
+/*Section*/
+.section {
+    padding: 90px 0 85px;
 }
 
 .section__title {
-    margin: 0;
-
     font-size: 36px;
     font-weight: 700;
-
     text-align: center;
-
     color: #ffffff;
 }
 
 .section__subtitle {
     margin: 0 auto;
-
     font-size: 20px;
-
     text-align: center;
-
     color: #ffffff;
 }
 
-
+/*------------------------------------------------------------------*/
 /*Header*/
 .header {
     background-color: #000000;
 }
 
-.header__wrapper {
+.header__inner {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-
     padding: 25px 0;
 }
 
 .header__logo {
+    display: flex;
+    align-items: center;
     margin-right: auto;
 }
 
-.timetable {
-    width: 170px;
-
+.header__timetable {
+    padding-right: 42px;
     font-size: 12px;
-    line-height: 24px;
-
+    line-height: 2;
     color: #ffffff;
-
     text-align: center;
 }
 
-.timetable--time {
-    font-weight: 600;
+.timetable__time {
+    font-weight: 700;
+}
+
+.header__phone-wrapper {
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 130px;
+}
+
+.header__phone {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .header__button {
-    display: block;
+    display: inline-block;
     width: 170px;
-    margin-left: 28px;
-
+    margin-left: 30px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 800;
     line-height: 50px;
-
-    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #1669b3;
+    border: none;
+    transition: 0.3s linear;
+    outline: none;
 }
 
-.phone {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: space-between;
-
-    width: 172px;
-    height: 50px;
-
-    margin-left: 130px;
-
-    color: #fff;
+.header__button:hover {
+    cursor: pointer;
+    background-color: #ea1414;
+    border-radius: 3px;
 }
 
-/*Main*/
+
 /*Intro*/
 .intro {
     background-image: url(../img/intro-bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: center 0;
+    background-size: cover;
 }
 
-.intro__wrapper {
-    width: 570px;
+.intro__inner {
+    max-width: 570px;
     padding: 85px 100px;
-
     background-color: #f7b516;
 }
 
 .intro__title {
-    margin: 0;
-
     font-size: 40px;
     font-weight: 700;
-    line-height: 55px;
-
+    line-height: 1.37;
     text-transform: uppercase;
 }
 
 .intro__subtitle {
-    display: block;
-    width: 300px;
-    margin-top: 33px;
-
+    max-width: 300px;
+    margin-top: 30px;
     font-size: 25px;
     font-weight: 600;
-
-    line-height: 30px;
 }
 
 .intro__list {
-    flex-direction: column;
     padding-top: 95px;
 }
 
 .intro__item {
-    position: relative;
+    display: flex;
+    padding-bottom: 40px;
+}
 
-    padding-left: 51px;
-    padding-bottom: 43px;
+.intro__icon-wrapper {
+    width: 30px;
+}
 
+.intro__item p {
+    padding-left: 20px;
     font-size: 18px;
-    line-height: 21px;
-}
-
-.intro__item::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-}
-
-.intro__item--bank::before {
-    top: 5px;
-
-    width: 25px;
-    height: 38px;
-
-    background: url("../img/svg/bank.svg") no-repeat;
-}
-
-.intro__item--delivery::before {
-    top: 8px;
-
-    width: 30px;
-    height: 24px;
-
-    background: url("../img/svg/delivery-truck.svg") no-repeat;
-}
-
-.intro__item--calendar::before {
-    top: 6px;
-
-    width: 30px;
-    height: 30px;
-
-    background: url("../img/svg/calendar.svg") no-repeat;
-}
-
-.intro__item--medal::before {
-    top: 6px;
-
-    width: 23px;
-    height: 30px;
-
-    background: url("../img/svg/medal.svg") no-repeat;
 }
 
 /*Price*/
-.price {
+.price__wrapper {
     background-image: url("../img/bg-belaz-2.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+    background-size: cover;
 }
 
-.price__wrapper {
-    padding-top: 92px;
-    padding-bottom: 98px;
+.price {
+    max-width: 800px;
+    padding: 0 18px;
+    margin-left: auto;
 }
 
-.price__proposal {
-    display: block;
-    margin-left: 700px;
-
-    padding-right: 17px;
-
+.price__title {
+    max-width: 400px;
+    margin-left: auto;
+    text-align: right;
     font-size: 30px;
     font-weight: 700;
-    line-height: 36px;
-
-    text-align: right;
 }
 
-.form {
+
+.price__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.price__form {
-    margin-left: 370px;
-    padding: 57px 18px 0 12px;
+.price__label {
+    width: 370px;
 }
 
 .input {
-    box-sizing: border-box;
-
-    width: 370px;
-    padding: 27px 50px 27px 31px;
+    width: 100%;
+    padding: 0 50px 0 30px;
+    font-size: 13px;
+    line-height: 5.4;
+    text-transform: uppercase;
+    color: #818181;
 
     border: none;
-
     background-color: #f2f2f2;
 }
 
@@ -351,35 +263,19 @@ p {
     outline: 1px solid #818181;
 }
 
-.input,
-.input::placeholder {
-    font-size: 13px;
-    line-height: 16px;
-    color: #818181;
-
-    text-transform: uppercase;
-}
 
 .form__label {
     position: relative;
 }
 
-.email-icon,
-.tel-icon {
+.form__icon {
     position: absolute;
-
     top: 26px;
     right: 30px;
-
     fill: #818181;
-
     cursor: pointer;
 }
 
-.email-icon:hover,
-.tel-icon:hover {
-    fill: #000000;
-}
 
 .form__text {
     position: relative;
