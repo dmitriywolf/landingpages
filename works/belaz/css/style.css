@@ -87,6 +87,7 @@ p {
 }
 
 .section__title {
+    padding-bottom: 30px;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -312,59 +313,44 @@ p {
 
 /*------------------------------------------------------------------*/
 /*---Features---*/
-.features {
-    padding: 93px 0 97px;
+.features__wrapper {
     background-color: #08243e;
 }
 
-.features .section__subtitle {
+.features__subtitle {
+    max-width: 370px;
     margin: 0 auto;
-    padding: 25px 0 95px;
-
-    line-height: 24px;
 }
 
-.features__item {
-    box-sizing: border-box;
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0 20px;
+}
 
-    width: 270px;
+.features__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    padding-top: 145px;
+    width: 25%;
+}
 
+.features__img-wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 110px;
+    margin-bottom: 40px;
+    font-size: 0;
+}
+
+.features__item-wrapper p {
+    max-width: 220px;
+    margin: 0 auto;
     font-size: 18px;
-    line-height: 22px;
-
     text-align: center;
-
-    color: #fff;
-}
-
-.features__item--engine {
-    background-image: url('../img/engine.png');
-    background-repeat: no-repeat;
-    background-size: 95px 100px;
-    background-position: center 0;
-}
-
-.features__item--truck {
-    background-image: url('../img/dump-truck.png');
-    background-repeat: no-repeat;
-    background-size: 100px 88px;
-    background-position: 79px 13px;
-}
-
-.features__item--calendar {
-    background-image: url('../img/calendar.png');
-    background-repeat: no-repeat;
-    background-size: 100px 93px;
-    background-position: 87px 4px;
-}
-
-.features__item--map {
-    background-image: url('../img/map-icon.png');
-    background-repeat: no-repeat;
-    background-size: 95px 92px;
-    background-position: 81px 5px;
+    color: #ffffff;
 }
 
 
