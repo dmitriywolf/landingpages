@@ -45,7 +45,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 a {
@@ -97,6 +97,7 @@ p {
 .section__subtitle {
     margin: 0 auto;
     font-size: 20px;
+    font-weight: 400;
     text-align: center;
     color: #ffffff;
 }
@@ -215,7 +216,6 @@ p {
 .intro__item p {
     padding-left: 10px;
     font-size: 18px;
-    line-height: 1.3;
 }
 
 /*------------------------------------------------------------------*/
@@ -253,6 +253,10 @@ p {
     margin-bottom: 30px;
 }
 
+.price__input {
+    background-color: #f2f2f2;
+}
+
 /*---------------------------------------*/
 /*-----Form--------*/
 .form__label {
@@ -267,7 +271,7 @@ p {
     text-transform: uppercase;
     color: #818181;
     border: none;
-    background-color: #f2f2f2;
+
 }
 
 .input:focus {
@@ -333,7 +337,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 25%;
 }
 
@@ -353,67 +356,72 @@ p {
     color: #ffffff;
 }
 
-
-/*Search*/
-.search {
-    padding: 94px 0 80px;
+/*------------------------------------------------------------------*/
+/*---Search---*/
+.search__wrapper {
     background-image: url("../img/bg-belaz-3.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+    background-size: cover;
 }
 
-.search .section__title {
+.search__title {
     font-size: 30px;
 }
 
-.search .section__subtitle {
+.search__subtitle {
+    max-width: 560px;
     margin: 0 auto;
-    padding: 25px 0 50px;
 }
 
-.search .section__subtitle span {
+.search__subtitle span {
     text-transform: uppercase;
 }
 
-.search .input__button {
-    height: 70px;
-    margin-top: 0;
+.search__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0;
 }
 
-.search__text,
-.search__phone-text {
-    margin: 0 auto;
-    padding-top: 59px;
+.search__label,
+.search__button {
+    width: 31.62%;
+}
 
-    font-size: 18px;
-
-    color: #fff;
-
+.search__text {
+    font-size: 14px;
+    color: #ffffff;
     text-align: center;
-}
-
-.search__phone-text {
-    padding-top: 26px;
 }
 
 .search__phone {
     margin: 10px auto 0;
-
     text-align: center;
 }
 
-.search__phone .phone-number {
+/*---Phone---*/
+.phone__text {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.phone__link{
+    margin: 0 auto;
+    padding-top: 3px;
+
     font-size: 30px;
     font-weight: 600;
-    margin: 0 auto;
-
+    color: #ffffff;
 }
 
-.search .phone {
-    width: auto;
 
-    text-align: center;
-}
+
+
+
+
+
 
 /*Guarantee*/
 .guarantee {
