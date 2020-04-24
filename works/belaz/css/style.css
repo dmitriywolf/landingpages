@@ -80,8 +80,8 @@ p {
     margin: 0 auto;
 }
 
-/*-----------------------------------------------------------------*/
-/*Section*/
+/*------------------------------------------------------------------*/
+/*---Section---*/
 .section {
     padding: 90px 0 85px;
 }
@@ -101,7 +101,7 @@ p {
 }
 
 /*------------------------------------------------------------------*/
-/*Header*/
+/*---Header---*/
 .header {
     background-color: #000000;
 }
@@ -167,8 +167,8 @@ p {
     border-radius: 3px;
 }
 
-
-/*Intro*/
+/*------------------------------------------------------------------*/
+/*---Intro---*/
 .intro {
     background-image: url(../img/intro-bg.jpg);
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ p {
 }
 
 .intro__inner {
-    max-width: 570px;
+    max-width: 520px;
     padding: 85px 100px;
     background-color: #f7b516;
 }
@@ -206,15 +206,19 @@ p {
 }
 
 .intro__icon-wrapper {
-    width: 30px;
+    display: flex;
+    align-items: center;
+    min-width: 40px;
 }
 
 .intro__item p {
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 18px;
+    line-height: 1.3;
 }
 
-/*Price*/
+/*------------------------------------------------------------------*/
+/*---Price---*/
 .price__wrapper {
     background-image: url("../img/bg-belaz-2.jpg");
     background-repeat: no-repeat;
@@ -236,15 +240,22 @@ p {
     font-weight: 700;
 }
 
-
 .price__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .price__label {
     width: 370px;
+    margin-bottom: 30px;
+}
+
+/*---------------------------------------*/
+/*-----Form--------*/
+.form__label {
+    position: relative;
 }
 
 .input {
@@ -254,18 +265,12 @@ p {
     line-height: 5.4;
     text-transform: uppercase;
     color: #818181;
-
     border: none;
     background-color: #f2f2f2;
 }
 
 .input:focus {
     outline: 1px solid #818181;
-}
-
-
-.form__label {
-    position: relative;
 }
 
 .form__icon {
@@ -276,50 +281,37 @@ p {
     cursor: pointer;
 }
 
-
 .form__text {
-    position: relative;
-    box-sizing: border-box;
     width: 370px;
-    margin-top: 30px;
-    padding: 23px 58px 23px 124px;
-
+    padding: 24px 60px 24px 120px;
     font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-
     text-align: right;
+    background: url('../img/icon-clock.png') no-repeat right center;
 }
 
-.form__text::after {
-    content: "";
-
-    position: absolute;
-
-    top: 25px;
-    right: 0;
-
-    width: 30px;
-    height: 30px;
-
-    background: url("../img/svg/clock.svg") no-repeat;
-}
-
-.input__button {
-    box-sizing: border-box;
-
-    width: 370px;
-    height: 80px;
-    margin-top: 30px;
-    padding: 0;
+.form__button {
     font-size: 17px;
-
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
     border: none;
-
-    cursor: pointer;
+    background-color: #f7b516;
+    transition: 0.3s;
 }
 
-/*Features*/
+.form__button:hover {
+    cursor: pointer;
+    background-color: #ea1414;
+    border-radius: 3px;
+}
+
+.price__button {
+    width: 370px;
+    background-color: #1669b3;
+}
+
+/*------------------------------------------------------------------*/
+/*---Features---*/
 .features {
     padding: 93px 0 97px;
     background-color: #08243e;
