@@ -836,6 +836,20 @@ p {
 /*--------------------MEDIA--------------------------- */
 /*----------------------------------------------------------------------------*/
 @media (max-width: 1024px) {
+    /*section*/
+    .section {
+        padding: 50px 0;
+    }
+
+    .section__title {
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .section__subtitle {
+        font-size: 18px;
+    }
+
     /*header*/
     .header__inner {
         justify-content: space-between;
@@ -884,13 +898,26 @@ p {
     }
 
 
-
 }
 
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media (max-width: 768px) {
+    /*section*/
+    .section {
+        padding: 40px 0;
+    }
+
+    .section__title {
+        padding-bottom: 18px;
+        font-size: 26px;
+    }
+
+    .section__subtitle {
+        font-size: 16px;
+    }
+
     /*header*/
     .header__logo {
         width: 140px;
@@ -918,7 +945,7 @@ p {
         line-height: 35px;
     }
 
-    /*Footer*/
+    /*footer*/
     .footer__logo {
         width: 140px;
     }
@@ -932,12 +959,25 @@ p {
     }
 
 
-
 }
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media (max-width: 600px) {
+    /*section*/
+    .section {
+        padding: 25px 0;
+    }
+
+    .section__title {
+        padding-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .section__subtitle {
+        font-size: 14px;
+    }
+
     /*header*/
     .header__inner {
         padding: 15px 0;
@@ -953,7 +993,7 @@ p {
         line-height: 30px;
     }
 
-    /*Footer*/
+    /*footer*/
     .footer {
         padding: 15px 0;
     }
@@ -967,24 +1007,35 @@ p {
     }
 
 
-
 }
 
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media (max-width: 420px) {
+    /*section*/
+    .section {
+        padding: 15px 0;
+    }
+
+    .section__title {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .section__subtitle {
+        font-size: 12px;
+    }
+
     /*header*/
     .header__timetable {
         display: none;
     }
 
-    /*Footer*/
+    /*footer*/
     .footer__phone-wrapper {
         display: none;
     }
-
-
 
 
 }
