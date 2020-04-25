@@ -848,7 +848,7 @@ p {
     }
 
     .header__timetable {
-        padding: 0;
+        padding: 5px 0;
         line-height: 1.6;
     }
 
@@ -887,9 +887,8 @@ p {
     }
 
     .header__timetable {
+        padding: 2px 0;
         line-height: 1.1;
-        /*display: flex;*/
-        /*align-items: center;*/
     }
 
     .header__timetable span {
@@ -920,14 +919,6 @@ p {
         padding: 15px 0;
     }
 
-    /*.header__timetable span {*/
-    /*    padding: 0;*/
-    /*}*/
-
-    /*.timetable__day {*/
-    /*    display: none;*/
-    /*}*/
-
     .header__phone-wrapper {
         display: none;
     }
@@ -937,6 +928,7 @@ p {
         font-size: 10px;
         line-height: 30px;
     }
+
 
 
 }
