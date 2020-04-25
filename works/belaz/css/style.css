@@ -833,7 +833,7 @@ p {
 }
 
 /*----------------------------------------------------------------------------*/
-/*--------------------MEDIA---------------------------*/
+/*--------------------MEDIA--------------------------- */
 /*----------------------------------------------------------------------------*/
 @media (max-width: 1024px) {
     /*header*/
@@ -888,8 +888,8 @@ p {
 
     .header__timetable {
         line-height: 1.1;
-        display: flex;
-        align-items: center;
+        /*display: flex;*/
+        /*align-items: center;*/
     }
 
     .header__timetable span {
@@ -920,20 +920,16 @@ p {
         padding: 15px 0;
     }
 
-    .header__logo {
-        width: 120px;
-    }
+    /*.header__timetable span {*/
+    /*    padding: 0;*/
+    /*}*/
 
-    .header__timetable span {
-        padding: 0;
-    }
+    /*.timetable__day {*/
+    /*    display: none;*/
+    /*}*/
 
-    .timetable__day {
+    .header__phone-wrapper {
         display: none;
-    }
-
-    .header__phone {
-        font-size: 12px;
     }
 
     .header__button {
@@ -954,9 +950,6 @@ p {
         display: none;
     }
 
-    .header__phone {
-        display: none;
-    }
 
 
 }
