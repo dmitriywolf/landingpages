@@ -838,12 +838,12 @@ p {
 @media (max-width: 1024px) {
     /*section*/
     .section {
-        padding: 50px 0;
+        padding: 55px 0;
     }
 
     .section__title {
         padding-bottom: 20px;
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .section__subtitle {
@@ -906,12 +906,12 @@ p {
 @media (max-width: 768px) {
     /*section*/
     .section {
-        padding: 40px 0;
+        padding: 45px 0;
     }
 
     .section__title {
         padding-bottom: 18px;
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .section__subtitle {
@@ -966,17 +966,14 @@ p {
 @media (max-width: 600px) {
     /*section*/
     .section {
-        padding: 25px 0;
+        padding: 35px 0;
     }
 
     .section__title {
         padding-bottom: 15px;
-        font-size: 22px;
+        font-size: 26px;
     }
 
-    .section__subtitle {
-        font-size: 14px;
-    }
 
     /*header*/
     .header__inner {
@@ -1015,17 +1012,14 @@ p {
 @media (max-width: 420px) {
     /*section*/
     .section {
-        padding: 15px 0;
+        padding: 25px 0;
     }
 
     .section__title {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 22px;
     }
-
-    .section__subtitle {
-        font-size: 12px;
-    }
+    
 
     /*header*/
     .header__timetable {
