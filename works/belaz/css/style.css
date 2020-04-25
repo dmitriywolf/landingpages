@@ -832,3 +832,133 @@ p {
     text-transform: uppercase;
 }
 
+/*----------------------------------------------------------------------------*/
+/*--------------------MEDIA---------------------------*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+    /*header*/
+    .header__inner {
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .header__logo {
+        width: 160px;
+        margin: 0;
+    }
+
+    .header__timetable {
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    .header__phone-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__phone {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .header__button {
+        margin: 0;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    /*header*/
+    .header__inner {
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .header__logo {
+        width: 140px;
+        margin: 0;
+    }
+
+    .header__timetable {
+        line-height: 1.1;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__timetable span {
+        padding: 0 5px;
+    }
+
+    .header__phone-wrapper {
+        justify-content: center;
+    }
+
+    .header__phone-wrapper .header__phone:first-child {
+        display: none;
+    }
+
+    .header__button {
+        width: 140px;
+        line-height: 35px;
+    }
+
+
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    /*header*/
+    .header__inner {
+        padding: 15px 0;
+    }
+
+    .header__logo {
+        width: 120px;
+    }
+
+    .header__timetable span {
+        padding: 0;
+    }
+
+    .timetable__day {
+        display: none;
+    }
+
+    .header__phone {
+        font-size: 12px;
+    }
+
+    .header__button {
+        width: 120px;
+        font-size: 10px;
+        line-height: 30px;
+    }
+
+
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 420px) {
+    /*header*/
+    .header__timetable {
+        display: none;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+
+}
+
+
