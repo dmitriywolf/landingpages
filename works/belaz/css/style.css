@@ -925,6 +925,18 @@ p {
         font-size: 26px;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     /*consultation*/
     .consultation .section__title {
         font-size: 28px;
@@ -937,7 +949,6 @@ p {
     .consultation__form {
         margin: 45px auto 0;
     }
-
 
     /*address*/
     .address .section__title {
@@ -1062,7 +1073,29 @@ p {
         font-size: 24px;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*consultation*/
+    .consultation__wrapper {
+        background-position: right top;
+    }
+
     .consultation .section__title {
         font-size: 26px;
     }
@@ -1074,7 +1107,6 @@ p {
     .consultation__form {
         margin: 30px auto 0;
     }
-
 
     /*address*/
     .address .section__title {
@@ -1145,7 +1177,6 @@ p {
         font-size: 26px;
     }
 
-
     /*header*/
     .header__inner {
         padding: 15px 0;
@@ -1196,6 +1227,14 @@ p {
         font-size: 18px;
     }
 
+
+
+
+
+
+
+
+
     /*consultation*/
     .consultation .section__title {
         font-size: 24px;
@@ -1221,7 +1260,6 @@ p {
     .consultation__button {
         line-height: 3.68;
     }
-
 
     /*address*/
     .address .section__title {
@@ -1249,8 +1287,6 @@ p {
     .footer__phone {
         font-size: 12px;
     }
-
-
 }
 
 
@@ -1298,6 +1334,16 @@ p {
         font-size: 18px;
     }
 
+
+
+
+
+
+
+
+
+
+
     /*consultation*/
     .consultation .section__title {
         font-size: 22px;
@@ -1309,7 +1355,6 @@ p {
         margin-bottom: 15px;
     }
 
-
     /*address*/
     .address .section__title {
         font-size: 22px;
@@ -1319,7 +1364,6 @@ p {
     .footer__phone-wrapper {
         display: none;
     }
-
 
 }
 
