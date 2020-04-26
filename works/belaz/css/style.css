@@ -903,6 +903,63 @@ p {
         line-height: 40px;
     }
 
+
+    /*intro*/
+    .intro__inner {
+        max-width: 430px;
+        padding: 60px 50px;
+    }
+
+    .intro__title {
+        font-size: 36px;
+    }
+
+    .intro__subtitle {
+        max-width: 100%;
+        font-size: 24px;
+    }
+
+    .intro__list {
+        padding-top: 60px;
+    }
+
+    .intro__item {
+        padding-bottom: 30px;
+    }
+
+    .intro__icon-wrapper {
+        min-width: 35px;
+    }
+
+    .intro__item p {
+        font-size: 17px;
+    }
+
+
+
+
+
+    /*price*/
+    .price__title {
+        font-size: 28px;
+    }
+
+
+
+    /*features*/
+    .features__list {
+        padding: 60px 0 15px;
+    }
+
+    .features__img-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .features__item-wrapper p {
+        max-width: 180px;
+        font-size: 16px;
+    }
+
     /*search*/
     .search__title {
         font-size: 28px;
@@ -924,6 +981,22 @@ p {
     .phone__link {
         font-size: 26px;
     }
+
+
+    /*bonuses*/
+    .bonus__list {
+        margin: 30px 15px;
+    }
+
+    .bonus__img {
+        margin-bottom: 30px;
+    }
+
+    .bonus__text {
+        max-width: 175px;
+        font-size: 16px;
+    }
+
 
 
 
@@ -1105,6 +1178,65 @@ p {
         line-height: 35px;
     }
 
+    /*intro*/
+    .intro__inner {
+        max-width: 380px;
+        padding: 40px 35px 20px 45px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+    }
+
+    .intro__subtitle {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .intro__list {
+        padding-top: 35px;
+    }
+
+    .intro__item {
+        padding-bottom: 25px;
+    }
+
+    .intro__icon-wrapper {
+        min-width: 35px;
+    }
+
+    .intro__item p {
+        font-size: 16px;
+    }
+
+
+
+    /*price*/
+    .price__title {
+        font-size: 26px;
+    }
+
+
+
+
+
+
+
+    /*features*/
+    .features__list {
+        padding: 50px 0 15px;
+    }
+
+    .features__img-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .features__item-wrapper p {
+        padding: 0 2px;
+        font-size: 15px;
+    }
+
+
     /*search*/
     .search__wrapper {
         background-position: top left;
@@ -1130,6 +1262,24 @@ p {
     .phone__link {
         font-size: 24px;
     }
+
+
+
+    /*bonuses*/
+    .bonus__list {
+        margin-top: 35px;
+    }
+
+    .bonus__img {
+        margin-bottom: 30px;
+    }
+
+    .bonus__text {
+        padding: 0 4px;
+        font-size: 15px;
+    }
+
+
 
     /*asks*/
     .asks__inner {
@@ -1255,8 +1405,7 @@ p {
     }
 
     .form__text {
-        padding: 10px 35px 10px 110px;
-        font-size: 12px;
+        display: none;
     }
 
     .form__button {
@@ -1288,6 +1437,102 @@ p {
         line-height: 30px;
     }
 
+    /*intro*/
+    .intro__inner {
+        max-width: 100%;
+        padding: 45px 25px 20px;
+        opacity: 0.8;
+    }
+
+    .intro__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .intro__subtitle {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .intro__list {
+        padding-top: 35px;
+        padding-left: 40px;
+    }
+
+    .intro__item {
+        padding-bottom: 15px;
+    }
+
+    .intro__icon-wrapper {
+        min-width: 35px;
+    }
+
+    .intro__item p {
+        font-size: 16px;
+    }
+
+
+    /*price*/
+    .price__wrapper {
+        background-position: bottom  left;
+    }
+
+    .price {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .price__title {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .price__form {
+        margin: 30px 0;
+        padding: 0 10px;
+    }
+
+    .price__label {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto 20px;
+    }
+
+    .price__button {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        line-height: 3.68;
+    }
+
+
+
+
+
+
+    /*features*/
+    .features__list {
+        padding: 25px 0 10px;
+    }
+
+    .features__item-wrapper {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .features__img-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .features__item-wrapper p {
+        padding: 0 2px;
+        font-size: 15px;
+    }
+
     /*search*/
     .search__title {
         font-size: 24px;
@@ -1296,7 +1541,7 @@ p {
     .search__form {
         flex-direction: column;
         align-items: center;
-        padding: 30px 0 10px;
+        padding: 30px 10px 10px;
     }
 
     .search__label,
@@ -1322,6 +1567,24 @@ p {
     .phone__link {
         font-size: 18px;
     }
+
+
+
+
+    /*bonuses*/
+    .bonus__list {
+        margin: 10px auto 0;
+    }
+
+    .bonus__item {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .bonus__img {
+        margin-bottom: 15px;
+    }
+
 
 
 
@@ -1398,7 +1661,7 @@ p {
     }
 
     .consultation__form {
-        margin: 20px auto 0;
+        margin: 25px auto;
         flex-direction: column;
         align-items: center;
     }
@@ -1461,6 +1724,74 @@ p {
         display: none;
     }
 
+
+    /*intro*/
+    .intro__inner {
+        padding: 40px 20px 20px;
+    }
+
+    .intro__title {
+        font-size: 26px;
+    }
+
+    .intro__subtitle {
+        font-size: 18px;
+    }
+
+    .intro__list {
+        padding-top: 25px;
+        padding-left: 0;
+    }
+
+    .intro__item {
+        padding-bottom: 15px;
+    }
+
+    .intro__icon-wrapper {
+        min-width: 35px;
+    }
+
+    .intro__item p {
+        font-size: 16px;
+    }
+
+
+    /*price*/
+    .price__title {
+        font-size: 22px;
+    }
+
+    .price__form {
+        margin: 20px 0;
+    }
+
+    .price__label {
+        max-width: 360px;
+    }
+
+    .price__button {
+        max-width: 360px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*features*/
+    .features__item-wrapper {
+        width: 100%;
+    }
+
+    .features__item-wrapper p {
+        max-width: 200px;
+    }
+
     /*search*/
     .search__subtitle {
         max-width: 560px;
@@ -1491,6 +1822,21 @@ p {
 
 
 
+    /*bonuses*/
+    .bonus__list {
+        margin: 15px auto 0;
+    }
+
+    .bonus__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bonus__text {
+        max-width: 200px;
+    }
+
+
 
     /*asks*/
     .asks__item {
@@ -1502,18 +1848,6 @@ p {
         width: 100%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     /*services*/
     .services__item {
         width: 100%;
@@ -1524,11 +1858,18 @@ p {
         font-size: 22px;
     }
 
+    .consultation__form {
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
     .consultation__label,
     .consultation__button {
         max-width: 360px;
         margin-bottom: 15px;
     }
+
+
 
     /*address*/
     .address .section__title {
