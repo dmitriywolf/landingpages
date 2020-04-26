@@ -837,56 +837,25 @@ p {
 /*----------------------------------------------------------------------------*/
 @media (max-width: 1024px) {
     /*form*/
-    /*.form__label {*/
-    /*    position: relative;*/
-    /*}*/
-
     .input {
-        /*width: 100%;*/
         padding: 0 40px 0 20px;
         font-size: 12px;
         line-height: 5;
-        /*text-transform: uppercase;*/
-        /*color: #818181;*/
-        /*border: none;*/
     }
 
-    /*.input:focus {*/
-    /*    outline: 1px solid #818181;*/
-    /*}*/
-
     .form__icon {
-        /*position: absolute;*/
         top: 21px;
         right: 20px;
-        /*fill: #818181;*/
-        /*cursor: pointer;*/
     }
 
     .form__text {
-        /*width: 48%;*/
         padding: 14px 60px 14px 120px;
         font-size: 13px;
-        /*text-align: right;*/
-        /*background: url('../img/icon-clock.png') no-repeat right center;*/
     }
 
     .form__button {
         font-size: 15px;
-        /*font-weight: 700;*/
-        /*color: #ffffff;*/
-        /*text-transform: uppercase;*/
-        /*border: none;*/
-        /*background-color: #f7b516;*/
-        /*transition: 0.3s;*/
     }
-
-    /*.form__button:hover {*/
-    /*    cursor: pointer;*/
-    /*    background-color: #ea1414;*/
-    /*    border-radius: 3px;*/
-    /*}*/
-
 
     /*section*/
     .section {
@@ -934,64 +903,40 @@ p {
         line-height: 40px;
     }
 
-    /*---Search---*/
-    /*.search__wrapper {*/
-    /*    background-image: url("../img/bg-belaz-3.jpg");*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-position: 50% 0;*/
-    /*    background-size: cover;*/
-    /*}*/
-
+    /*search*/
     .search__title {
         font-size: 28px;
     }
 
-    /*.search__subtitle {*/
-    /*    max-width: 560px;*/
-    /*}*/
-
-    /*.search__subtitle span {*/
-    /*    text-transform: uppercase;*/
-    /*}*/
-
     .search__form {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: space-between;*/
         padding: 40px 0;
     }
 
-    /*.search__label,*/
-    /*.search__button {*/
-    /*    width: 31.62%;*/
-    /*}*/
-
     .search__text {
         font-size: 13px;
-        /*color: #ffffff;*/
-        /*text-align: center;*/
     }
 
-    /*.search__phone {*/
-    /*    margin: 10px auto 0;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*---Phone---*/
+    /*phone*/
     .phone__text {
         font-size: 13px;
-        /*color: #ffffff;*/
     }
 
     .phone__link {
-        /*margin: 0 auto;*/
-        /*padding-top: 3px;*/
-
         font-size: 26px;
-        /*font-weight: 600;*/
-        /*color: #ffffff;*/
     }
 
+    /*consultation*/
+    .consultation .section__title {
+        font-size: 28px;
+    }
+
+    .consultation__phone {
+        margin: 20px auto 0;
+    }
+
+    .consultation__form {
+        margin: 45px auto 0;
+    }
 
 
     /*address*/
@@ -1008,12 +953,11 @@ p {
     }
 
     /*map*/
-    .map iframe{
+    .map iframe {
         height: 320px;
     }
 
-
-    /*Footer*/
+    /*footer*/
     .footer {
         padding: 20px 0;
     }
@@ -1035,55 +979,25 @@ p {
 /*----------------------------------------------------------------------------*/
 @media (max-width: 768px) {
     /*form*/
-    /*.form__label {*/
-    /*    position: relative;*/
-    /*}*/
-
     .input {
-        /*width: 100%;*/
         padding: 0 20px 0 20px;
-        /*font-size: 12px;*/
         line-height: 4;
         text-transform: none;
-        /*color: #818181;*/
-        /*border: none;*/
     }
 
-    /*.input:focus {*/
-    /*    outline: 1px solid #818181;*/
-    /*}*/
-
     .form__icon {
-        /*position: absolute;*/
         top: 15px;
         right: 15px;
-        /*fill: #818181;*/
-        /*cursor: pointer;*/
     }
 
     .form__text {
-        /*width: 48%;*/
         padding: 10px 35px 10px 110px;
         font-size: 13px;
-        /*text-align: right;*/
-        /*background: url('../img/icon-clock.png') no-repeat right center;*/
     }
 
     .form__button {
         font-size: 13px;
-        /*font-weight: 700;*/
-        /*color: #ffffff;*/
-        /*text-transform: uppercase;*/
-        /*border: none;*/
-        /*background-color: #f7b516;*/
-        /*transition: 0.3s;*/
     }
-
-    /*.form__button:hover {*/
-    /*    cursor: pointer;*/
-    /*    background-color: #ea1414;*/
-    /*    border-radius: 3px;*/
-    /*}*/
 
     /*section*/
     .section {
@@ -1126,64 +1040,41 @@ p {
         line-height: 35px;
     }
 
-
-    /*---Search---*/
-    /*.search__wrapper {*/
-    /*    background-image: url("../img/bg-belaz-3.jpg");*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-position: 50% 0;*/
-    /*    background-size: cover;*/
-    /*}*/
-
+    /*search*/
     .search__title {
         font-size: 26px;
     }
 
-    /*.search__subtitle {*/
-    /*    max-width: 560px;*/
-    /*}*/
-
-    /*.search__subtitle span {*/
-    /*    text-transform: uppercase;*/
-    /*}*/
-
     .search__form {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: space-between;*/
         padding: 35px 0;
     }
 
-    /*.search__label,*/
-    /*.search__button {*/
-    /*    width: 31.62%;*/
-    /*}*/
-
     .search__text {
         font-size: 12px;
-        /*color: #ffffff;*/
-        /*text-align: center;*/
     }
 
-    /*.search__phone {*/
-    /*    margin: 10px auto 0;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*---Phone---*/
+    /*phone*/
     .phone__text {
         font-size: 12px;
-        /*color: #ffffff;*/
     }
 
     .phone__link {
-        /*margin: 0 auto;*/
-        /*padding-top: 3px;*/
-
         font-size: 24px;
-        /*font-weight: 600;*/
-        /*color: #ffffff;*/
     }
+
+    /*consultation*/
+    .consultation .section__title {
+        font-size: 26px;
+    }
+
+    .consultation__phone {
+        margin: 10px auto 0;
+    }
+
+    .consultation__form {
+        margin: 30px auto 0;
+    }
+
 
     /*address*/
     .address .section__title {
@@ -1200,10 +1091,9 @@ p {
     }
 
     /*map*/
-    .map iframe{
+    .map iframe {
         height: 300px;
     }
-
 
     /*footer*/
     .footer__logo {
@@ -1225,55 +1115,25 @@ p {
 /*----------------------------------------------------------------------------*/
 @media (max-width: 600px) {
     /*form*/
-    /*.form__label {*/
-    /*    position: relative;*/
-    /*}*/
-
     .input {
-        /*width: 100%;*/
         padding: 0 20px 0 20px;
-        /*font-size: 12px;*/
         line-height: 3.8;
         text-transform: none;
-        /*color: #818181;*/
-        /*border: none;*/
     }
 
-    /*.input:focus {*/
-    /*    outline: 1px solid #818181;*/
-    /*}*/
-
     .form__icon {
-        /*position: absolute;*/
-        top: 15px;
+        top: 13px;
         right: 15px;
-        /*fill: #818181;*/
-        /*cursor: pointer;*/
     }
 
     .form__text {
-        /*width: 48%;*/
         padding: 10px 35px 10px 110px;
         font-size: 12px;
-        /*text-align: right;*/
-        /*background: url('../img/icon-clock.png') no-repeat right center;*/
     }
 
     .form__button {
         font-size: 12px;
-        /*font-weight: 700;*/
-        /*color: #ffffff;*/
-        /*text-transform: uppercase;*/
-        /*border: none;*/
-        /*background-color: #f7b516;*/
-        /*transition: 0.3s;*/
     }
-
-    /*.form__button:hover {*/
-    /*    cursor: pointer;*/
-    /*    background-color: #ea1414;*/
-    /*    border-radius: 3px;*/
-    /*}*/
 
     /*section*/
     .section {
@@ -1301,30 +1161,12 @@ p {
         line-height: 30px;
     }
 
-    /*---Search---*/
-    /*.search__wrapper {*/
-    /*    background-image: url("../img/bg-belaz-3.jpg");*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-position: 50% 0;*/
-    /*    background-size: cover;*/
-    /*}*/
-
+    /*search*/
     .search__title {
         font-size: 24px;
     }
 
-    /*.search__subtitle {*/
-    /*    max-width: 560px;*/
-    /*}*/
-
-    /*.search__subtitle span {*/
-    /*    text-transform: uppercase;*/
-    /*}*/
-
     .search__form {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: space-between;*/
         flex-direction: column;
         align-items: center;
         padding: 30px 0 10px;
@@ -1343,28 +1185,41 @@ p {
 
     .search__text {
         font-size: 12px;
-        /*color: #ffffff;*/
-        /*text-align: center;*/
     }
 
-    /*.search__phone {*/
-    /*    margin: 10px auto 0;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*---Phone---*/
+    /*phone*/
     .phone__text {
         font-size: 12px;
-        /*color: #ffffff;*/
     }
 
     .phone__link {
-        /*margin: 0 auto;*/
-        /*padding-top: 3px;*/
-
         font-size: 18px;
-        /*font-weight: 600;*/
-        /*color: #ffffff;*/
+    }
+
+    /*consultation*/
+    .consultation .section__title {
+        font-size: 24px;
+    }
+
+    .consultation__phone {
+        margin: 10px auto 0;
+    }
+
+    .consultation__form {
+        margin: 20px auto 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation__label,
+    .consultation__button {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    .consultation__button {
+        line-height: 3.68;
     }
 
 
@@ -1412,40 +1267,15 @@ p {
         font-size: 22px;
     }
 
-
     /*header*/
     .header__timetable {
         display: none;
     }
 
-    /*---Search---*/
-    /*.search__wrapper {*/
-    /*    background-image: url("../img/bg-belaz-3.jpg");*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-position: 50% 0;*/
-    /*    background-size: cover;*/
-    /*}*/
-
-    /*.search__title {*/
-    /*    font-size: 24px;*/
-    /*}*/
-
+    /*search*/
     .search__subtitle {
         max-width: 560px;
         font-size: 14px;
-    }
-
-    /*.search__subtitle span {*/
-    /*    text-transform: uppercase;*/
-    /*}*/
-
-    .search__form {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: space-between;*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*padding: 30px 0 10px;*/
     }
 
     .search__label,
@@ -1455,35 +1285,30 @@ p {
         margin-bottom: 15px;
     }
 
-    .search__button {
-        line-height: 3.69;
-    }
-
     .search__text {
         font-size: 12px;
-        /*color: #ffffff;*/
-        /*text-align: center;*/
     }
 
-    /*.search__phone {*/
-    /*    margin: 10px auto 0;*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*---Phone---*/
+    /*phone*/
     .phone__text {
         font-size: 12px;
-        /*color: #ffffff;*/
     }
 
     .phone__link {
-        /*margin: 0 auto;*/
-        /*padding-top: 3px;*/
-
         font-size: 18px;
-        /*font-weight: 600;*/
-        /*color: #ffffff;*/
     }
+
+    /*consultation*/
+    .consultation .section__title {
+        font-size: 22px;
+    }
+
+    .consultation__label,
+    .consultation__button {
+        max-width: 360px;
+        margin-bottom: 15px;
+    }
+
 
     /*address*/
     .address .section__title {
