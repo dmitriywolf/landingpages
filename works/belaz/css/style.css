@@ -936,14 +936,10 @@ p {
     }
 
 
-
-
-
     /*price*/
     .price__title {
         font-size: 28px;
     }
-
 
 
     /*features*/
@@ -982,6 +978,20 @@ p {
         font-size: 26px;
     }
 
+    /*guarantee*/
+    .guarantee__list {
+        margin-top: 50px;
+    }
+
+    .guarantee__text {
+        max-width: 270px;
+        font-size: 17px;
+    }
+
+    .guarantee__link {
+        font-size: 17px;
+    }
+
 
     /*bonuses*/
     .bonus__list {
@@ -996,10 +1006,6 @@ p {
         max-width: 175px;
         font-size: 16px;
     }
-
-
-
-
 
 
     /*asks*/
@@ -1040,13 +1046,6 @@ p {
         margin: 25px auto 0;
         font-size: 16px;
     }
-
-
-
-
-
-
-
 
 
     /*services*/
@@ -1210,16 +1209,10 @@ p {
     }
 
 
-
     /*price*/
     .price__title {
         font-size: 26px;
     }
-
-
-
-
-
 
 
     /*features*/
@@ -1263,6 +1256,23 @@ p {
         font-size: 24px;
     }
 
+    /*guarantee*/
+    .guarantee__list {
+        margin-top: 35px;
+    }
+
+    .guarantee__item {
+        padding: 0 5px;
+    }
+
+    .guarantee__text {
+        max-width: 270px;
+        font-size: 16px;
+    }
+
+    .guarantee__link {
+        font-size: 16px;
+    }
 
 
     /*bonuses*/
@@ -1278,7 +1288,6 @@ p {
         padding: 0 4px;
         font-size: 15px;
     }
-
 
 
     /*asks*/
@@ -1319,7 +1328,6 @@ p {
         margin: 15px auto 0;
         font-size: 15px;
     }
-
 
 
     /*services*/
@@ -1460,22 +1468,10 @@ p {
         padding-left: 40px;
     }
 
-    .intro__item {
-        padding-bottom: 25px;
-    }
-
-    .intro__icon-wrapper {
-        min-width: 35px;
-    }
-
-    .intro__item p {
-        font-size: 16px;
-    }
-
 
     /*price*/
     .price__wrapper {
-        background-position: bottom  left;
+        background-position: bottom left;
     }
 
     .price {
@@ -1508,10 +1504,6 @@ p {
         margin: 0 auto;
         line-height: 3.68;
     }
-
-
-
-
 
 
     /*features*/
@@ -1568,7 +1560,24 @@ p {
         font-size: 18px;
     }
 
+    /*guarantee*/
+    .guarantee__list {
+        margin-top: 25px;
+    }
 
+    .guarantee__item {
+        width: 50%;
+        padding: 0 10px 15px 10px;
+    }
+
+    .guarantee__text {
+        max-width: 230px;
+        font-size: 15px;
+    }
+
+    .guarantee__link {
+        font-size: 15px;
+    }
 
 
     /*bonuses*/
@@ -1584,11 +1593,6 @@ p {
     .bonus__img {
         margin-bottom: 15px;
     }
-
-
-
-
-
 
 
     /*asks*/
@@ -1641,8 +1645,6 @@ p {
     .process__text {
         max-width: 160px;
     }
-
-
 
 
     /*services*/
@@ -1725,39 +1727,27 @@ p {
     }
 
     /*intro*/
+    .intro {
+        height: 100vh;
+        min-height: 500px;
+    }
+
     .intro__inner {
-        /*max-width: 100%;*/
-        padding: 70px 14px 45px;
-        /*opacity: 0.8;*/
+        padding: 35px 14px 15px;
     }
 
     .intro__title {
-        font-size: 32px;
-        /*text-align: center;*/
+        font-size: 30px;
     }
 
     .intro__subtitle {
-        /*margin-top: 35px;*/
+        margin-top: 25px;
         font-size: 18px;
-        /*text-align: center;*/
     }
 
     .intro__list {
-        /*padding-top: 40px;*/
         padding-left: 10px;
     }
-
-    .intro__item {
-        /*padding-bottom: 25px;*/
-    }
-
-    /*.intro__icon-wrapper {*/
-    /*    min-width: 35px;*/
-    /*}*/
-
-    /*.intro__item p {*/
-    /*    font-size: 16px;*/
-    /*}*/
 
 
     /*price*/
@@ -1776,15 +1766,6 @@ p {
     .price__button {
         max-width: 360px;
     }
-
-
-
-
-
-
-
-
-
 
 
     /*features*/
@@ -1822,8 +1803,14 @@ p {
         font-size: 18px;
     }
 
+    /*guarantee*/
+    .guarantee__list {
+        margin-top: 20px;
+    }
 
-
+    .guarantee__item {
+        width: 100%;
+    }
 
 
     /*bonuses*/
@@ -1839,7 +1826,6 @@ p {
     .bonus__text {
         max-width: 200px;
     }
-
 
 
     /*asks*/
@@ -1872,7 +1858,6 @@ p {
         max-width: 360px;
         margin-bottom: 15px;
     }
-
 
 
     /*address*/
