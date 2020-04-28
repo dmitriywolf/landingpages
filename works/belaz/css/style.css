@@ -79,6 +79,39 @@ p {
     padding: 0 5px;
     margin: 0 auto;
 }
+/*------------------------------------------------------------------*/
+/*---Animate---*/
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut
+}
+
 
 /*------------------------------------------------------------------*/
 /*---Section---*/
@@ -104,9 +137,33 @@ p {
 }
 
 /*------------------------------------------------------------------*/
+/*---PageUp---*/
+.pageup {
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+    position: fixed;
+    right: 5%;
+    bottom: 100px;
+    z-index: 30;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 1s all;
+}
+
+
+/*------------------------------------------------------------------*/
 /*---Header---*/
 .header {
+    width: 100%;
     background-color: #000000;
+}
+
+.header.fixed {
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.65);
 }
 
 .header__inner {
@@ -642,8 +699,7 @@ p {
 }
 
 .gallery__item {
-    width: 370px;
-    height: 270px;
+    width: 31.62%;
 }
 
 .gallery__item img {
@@ -655,7 +711,7 @@ p {
 .arrow-previous,
 .arrow-next {
     position: absolute;
-    top: 120px;
+    top: calc(50% - 15px);
     display: block;
     width: 20px;
     height: 30px;
@@ -903,7 +959,6 @@ p {
         line-height: 40px;
     }
 
-
     /*intro*/
     .intro__inner {
         max-width: 430px;
@@ -935,12 +990,10 @@ p {
         font-size: 17px;
     }
 
-
     /*price*/
     .price__title {
         font-size: 28px;
     }
-
 
     /*features*/
     .features__list {
@@ -992,7 +1045,6 @@ p {
         font-size: 17px;
     }
 
-
     /*bonuses*/
     .bonus__list {
         margin: 30px 15px;
@@ -1006,7 +1058,6 @@ p {
         max-width: 175px;
         font-size: 16px;
     }
-
 
     /*asks*/
     .asks__inner {
@@ -1047,6 +1098,10 @@ p {
         font-size: 16px;
     }
 
+    /*gallery*/
+    .gallery__list {
+        margin-top: 60px;
+    }
 
     /*services*/
     .services__list {
@@ -1107,14 +1162,17 @@ p {
         padding-top: 5px;
         font-size: 16px;
     }
-
-
 }
 
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media (max-width: 768px) {
+    /*pageup*/
+    .pageup {
+        bottom: 50px;
+    }
+
     /*form*/
     .input {
         padding: 0 20px 0 20px;
@@ -1208,12 +1266,10 @@ p {
         font-size: 16px;
     }
 
-
     /*price*/
     .price__title {
         font-size: 26px;
     }
-
 
     /*features*/
     .features__list {
@@ -1228,7 +1284,6 @@ p {
         padding: 0 2px;
         font-size: 15px;
     }
-
 
     /*search*/
     .search__wrapper {
@@ -1274,7 +1329,6 @@ p {
         font-size: 16px;
     }
 
-
     /*bonuses*/
     .bonus__list {
         margin-top: 35px;
@@ -1288,7 +1342,6 @@ p {
         padding: 0 4px;
         font-size: 15px;
     }
-
 
     /*asks*/
     .asks__inner {
@@ -1329,6 +1382,25 @@ p {
         font-size: 15px;
     }
 
+    /*gallery*/
+    .gallery__list {
+        margin-top: 45px;
+    }
+
+    .arrow-previous,
+    .arrow-next {
+        top: calc(50% - 11px);
+        width: 15px;
+        height: 22px;
+    }
+
+    .arrow-previous {
+        left: 15px;
+    }
+
+    .arrow-next {
+        right: 15px;
+    }
 
     /*services*/
     .services__list {
@@ -1393,8 +1465,6 @@ p {
     .footer__phone {
         font-size: 14px;
     }
-
-
 }
 
 /*----------------------------------------------------------------------------*/
@@ -1468,7 +1538,6 @@ p {
         padding-left: 40px;
     }
 
-
     /*price*/
     .price__wrapper {
         background-position: bottom left;
@@ -1504,7 +1573,6 @@ p {
         margin: 0 auto;
         line-height: 3.68;
     }
-
 
     /*features*/
     .features__list {
@@ -1579,7 +1647,6 @@ p {
         font-size: 15px;
     }
 
-
     /*bonuses*/
     .bonus__list {
         margin: 10px auto 0;
@@ -1593,7 +1660,6 @@ p {
     .bonus__img {
         margin-bottom: 15px;
     }
-
 
     /*asks*/
     .asks__inner {
@@ -1646,6 +1712,17 @@ p {
         max-width: 160px;
     }
 
+    /*gallery*/
+    .gallery__list {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 45px;
+    }
+
+    .gallery__item {
+        width: 100%;
+        max-width: 420px;
+    }
 
     /*services*/
     .services__item {
@@ -1749,7 +1826,6 @@ p {
         padding-left: 10px;
     }
 
-
     /*price*/
     .price__title {
         font-size: 22px;
@@ -1766,7 +1842,6 @@ p {
     .price__button {
         max-width: 360px;
     }
-
 
     /*features*/
     .features__item-wrapper {
@@ -1812,7 +1887,6 @@ p {
         width: 100%;
     }
 
-
     /*bonuses*/
     .bonus__list {
         margin: 15px auto 0;
@@ -1826,7 +1900,6 @@ p {
     .bonus__text {
         max-width: 200px;
     }
-
 
     /*asks*/
     .asks__item {
@@ -1859,7 +1932,6 @@ p {
         margin-bottom: 15px;
     }
 
-
     /*address*/
     .address .section__title {
         font-size: 22px;
@@ -1869,7 +1941,6 @@ p {
     .footer__phone-wrapper {
         display: none;
     }
-
 }
 
 
