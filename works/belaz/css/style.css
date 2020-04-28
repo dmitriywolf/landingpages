@@ -231,7 +231,7 @@ p {
 /*------------------------------------------------------------------*/
 /*---Intro---*/
 .intro {
-    background-image: url(../img/intro-bg.jpg);
+    background-image: url(../img/bg-intro.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -280,7 +280,7 @@ p {
 /*------------------------------------------------------------------*/
 /*---Price---*/
 .price__wrapper {
-    background-image: url("../img/bg-belaz-2.jpg");
+    background-image: url("../img/bg-price.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -416,7 +416,7 @@ p {
 /*------------------------------------------------------------------*/
 /*---Search---*/
 .search__wrapper {
-    background-image: url("../img/bg-belaz-3.jpg");
+    background-image: url("../img/bg-search.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -823,7 +823,7 @@ p {
 /*------------------------------------------------------------------*/
 /*---Consultation---*/
 .consultation__wrapper {
-    background-image: url("../img/bg-belaz-4.jpg");
+    background-image: url("../img/bg-consultation.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -856,7 +856,7 @@ p {
 /*------------------------------------------------------------------*/
 /*---Address---*/
 .address__wrapper {
-    background-image: url(../img/bg-belaz-5.jpg);
+    background-image: url(../img/bg-address.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
