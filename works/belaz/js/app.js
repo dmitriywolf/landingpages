@@ -1,8 +1,9 @@
 $(function () {
 
-    //Fixed Header
+    //Fixed Header  and PageUp
     let header = $("#header");
     let intro = $("#intro");
+    let pageUp = $('.pageup');
     let introHeight;
     let scrollPosition = $(window).scrollTop();
 
@@ -11,36 +12,22 @@ $(function () {
         introHeight = intro.innerHeight();
         scrollPosition = $(this).scrollTop();
 
+        //Fixed Animate Header
         if (scrollPosition > introHeight) {
             header.addClass('fixed animated fadeIn');
         } else {
             header.removeClass('fixed fadeIn');
         }
-    });
 
-    //PageUp
-    let pageUp = $('.pageup');
-
-    $(window).on('scroll load resize', function(){
-
-        introHeight = intro.innerHeight();
-        scrollPosition = $(this).scrollTop();
-
-        if (scrollPosition > introHeight) {
+        //Animate PageUp
+        if (scrollPosition > 1260) {
             pageUp.addClass('animated fadeIn');
             pageUp.removeClass('fadeOut');
         } else {
             pageUp.addClass('fadeOut');
-            header.removeClass('fadeIn');
+            pageUp.removeClass('fadeIn');
         }
-
-
-
     });
-
-
-
-
 
     //Smooth Scroll
     $("[data-scroll]").on("click", function (event) {
@@ -54,9 +41,32 @@ $(function () {
         }, 1500);
     });
 
+    //Slick Slider
+    let slider = $('.gallery__list');
+    let prevArrow = $('.arrow-previous');
+    let nextArrow = $('.arrow-next');
 
-
-
-
-
+    slider.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        fade: false,
+        arrows: true,
+        dots: true,
+        prevArrow: prevArrow,
+        nextArrow: nextArrow,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
 });
