@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дома на века</title>
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!--Style-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="sprite" style="display: none">
+    <svg>
+        <symbol id="icon-play" viewBox="0 0 30 30">
+            <g>
+                <path d="M.474,15A14.781,14.781,0,0,1,15-.023,14.781,14.781,0,0,1,29.525,15,14.779,14.779,0,0,1,15,30.024,14.779,14.779,0,0,1,.474,15ZM2.9,15A12.31,12.31,0,0,0,15,27.516,12.309,12.309,0,0,0,27.1,15,12.315,12.315,0,0,0,15,2.484,12.317,12.317,0,0,0,2.9,15ZM13,20.223a.752.752,0,0,1-.4-.67V10.483a.754.754,0,0,1,.4-.669.707.707,0,0,1,.758.062l6.032,4.536a.753.753,0,0,1,.3.607.763.763,0,0,1-.3.608l-6.032,4.532a.7.7,0,0,1-.758.065Z"/>
+            </g>
+        </symbol>
+        <symbol id="icon-arrow--next" viewBox="0 0 189 306">
+            <g>
+                <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
+            </g>
+        </symbol>
+        <symbol id="icon-arrow--prev" viewBox="0 0 189 306">
+            <g>
+                <path d="M153.243,0,189,35.7,71.514,153,189,270.3,153.243,306,0,153Z"/>
+            </g>
+        </symbol>
+    </svg>
+</div> <!--/.sprite-->
+
+
 <header class="header">
     <div class="container">
         <div class="header__inner">
@@ -81,7 +111,6 @@
                 </div> <!--/.projects-nav-->
 
                 <div class="projects__inner">
-
                     <!--Эконом-->
                     <div class="projects__item-wrapper tab-content">
                         <div class="projects__list project">
@@ -129,28 +158,22 @@
                         </div> <!--/.projects__list-->
 
                         <div class="projects__slider-nav">
-                            <div class="projects__arrow--prev slider__arrow">
-                                <svg class="slider__arrow arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+                            <div class="projects__arrow projects__arrow--prev">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--prev"></use>
                                 </svg>
-                            </div>
+                            </div> <!--/. projects__arrow /.projects__arrow--prev-->
+
                             <div class="projects__dots slider__dots"></div>
-                            <div class="projects__arrow--next slider__arrow">
-                                <svg class="slider__arrow arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+
+                            <div class="projects__arrow projects__arrow--next">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--next"></use>
                                 </svg>
-                            </div>
-                        </div>
+                            </div> <!--/.projects__arrow /.projects__arrow--next-->
+                        </div> <!--/.projects__slider-nav-->
+
+
                     </div>  <!--/.projects__item-wrapper /.tab-content-->
 
                     <!--Средний-->
@@ -200,28 +223,20 @@
                         </div> <!--/.projects__list-->
 
                         <div class="projects__slider-nav">
-                            <div class="projects__arrow--prev slider__arrow">
-                                <svg class="slider__arrow arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+                            <div class="projects__arrow projects__arrow--prev">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--prev"></use>
                                 </svg>
-                            </div>
+                            </div> <!--/. projects__arrow /.projects__arrow--prev-->
+
                             <div class="projects__dots slider__dots"></div>
-                            <div class="projects__arrow--next slider__arrow">
-                                <svg class="slider__arrow arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+
+                            <div class="projects__arrow projects__arrow--next">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--next"></use>
                                 </svg>
-                            </div>
-                        </div>
+                            </div> <!--/.projects__arrow /.projects__arrow--next-->
+                        </div> <!--/.projects__slider-nav-->
                     </div>  <!--/.projects__item-wrapper /.tab-content-->
 
                     <!--Премиум-->
@@ -269,33 +284,22 @@
                                 </div> <!--/.project__content-->
                             </div> <!--/.project__item-->
                         </div> <!--/.projects__list-->
-
                         <div class="projects__slider-nav">
-                            <div class="projects__arrow--prev slider__arrow">
-                                <svg class="slider__arrow arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+                            <div class="projects__arrow projects__arrow--prev">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--prev"></use>
                                 </svg>
-                            </div>
+                            </div> <!--/. projects__arrow /.projects__arrow--prev-->
+
                             <div class="projects__dots slider__dots"></div>
-                            <div class="projects__arrow--next slider__arrow">
-                                <svg class="slider__arrow arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 189 306"
-                                     width="12"
-                                     height="20">
-                                    <g>
-                                        <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                    </g>
+
+                            <div class="projects__arrow projects__arrow--next">
+                                <svg class="slider__arrow" width="12" height="20">
+                                    <use xlink:href="#icon-arrow--next"></use>
                                 </svg>
-                            </div>
-                        </div>
+                            </div> <!--/.projects__arrow /.projects__arrow--next-->
+                        </div> <!--/.projects__slider-nav-->
                     </div>  <!--/.projects__item-wrapper /.tab-content-->
-
-
                 </div> <!--/.projects__inner-->
 
             </div> <!--/.projects-->
@@ -312,94 +316,83 @@
 
                 <div class="design__inner">
                     <h2 class="design__title">За 19 лет мы разработали более 500 индивидуальных проектов</h2>
-                    <div class="design__list design__slides">
+
+                    <div class="design__list-wrapper">
+
                         <div class="design__arrow design__arrow--prev">
-                            <svg class="slider__arrow arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 189 306"
-                                 width="12"
-                                 height="20">
-                                <g>
-                                    <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                </g>
+                            <svg class="slider__arrow" width="12" height="20">
+                                <use xlink:href="#icon-arrow--prev"></use>
                             </svg>
-                        </div>
+                        </div> <!--/.design__arrow /.design__arrow--prev-->
 
+                        <div class="design__list">
+                            <div class="design__item">
+                                <a class="design__img" href="#">
+                                    <img src="img/design/design-1.jpg" alt="design-1" width="370" height="245"></a>
+                                <div class="design__mask">
+                                    <img src="img/plus.png" alt="" width="50" height="50">
+                                </div>
+                            </div> <!--/.design__item-->
+                            <div class="design__item">
+                                <a class="design__img" href="#"><img src="img/design/design-2.jpg" alt="design-2"
+                                                                     width="370"
+                                                                     height="245"></a>
+                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
+                            </div> <!--/.design__item-->
+                            <div class="design__item">
+                                <a class="design__img" href="#"><img src="img/design/design-3.jpg" alt="design-3"
+                                                                     width="370"
+                                                                     height="245"></a>
+                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
+                            </div> <!--/.design__item-->
+                        </div> <!--/.design__list-->
 
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-1.jpg" alt="design-1"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-2.jpg" alt="design-2"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-3.jpg" alt="design-3"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
                         <div class="design__arrow design__arrow--next">
-                            <svg class="slider__arrow arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 189 306"
-                                 width="12"
-                                 height="20">
-                                <g>
-                                    <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                </g>
+                            <svg class="slider__arrow" width="12" height="20">
+                                <use xlink:href="#icon-arrow--next"></use>
                             </svg>
-                        </div>
-                    </div> <!--/.design__list-->
+                        </div> <!--/.design__arrow /.design__arrow--next-->
+
+                    </div> <!--/.design__list-wrapper-->
                 </div>  <!--/.design__inner-->
 
                 <div class="design__inner">
                     <h2 class="design__title">Мы разрабатываем оригинальные,конструктивно сложные проекты и реализуем
                         их</h2>
-                    <div class="design__list">
+                    <div class="design__list-wrapper">
                         <div class="design__arrow design__arrow--prev">
-                            <svg class="slider__arrow arrow-left" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 189 306"
-                                 width="12"
-                                 height="20">
-                                <g>
-                                    <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                </g>
+                            <svg class="slider__arrow" width="12" height="20">
+                                <use xlink:href="#icon-arrow--prev"></use>
                             </svg>
-                        </div>
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-4.jpg" alt="design-4"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-5.jpg" alt="design-5"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
-                        <div class="design__item">
-                            <a class="design__img" href="#"><img src="img/design/design-6.jpg" alt="design-6"
-                                                                 width="370"
-                                                                 height="245"></a>
-                            <div class="design__mask"></div>
-                        </div> <!--/.design__item-->
+                        </div> <!--/.design__arrow /.design__arrow--prev-->
+                        <div class="design__list">
+                            <div class="design__item">
+                                <a class="design__img" href="#"><img src="img/design/design-4.jpg" alt="design-4"
+                                                                     width="370"
+                                                                     height="245"></a>
+                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
+                            </div> <!--/.design__item-->
+                            <div class="design__item">
+                                <a class="design__img" href="#"><img src="img/design/design-5.jpg" alt="design-5"
+                                                                     width="370"
+                                                                     height="245"></a>
+                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
+                            </div> <!--/.design__item-->
+                            <div class="design__item">
+                                <a class="design__img" href="#"><img src="img/design/design-6.jpg" alt="design-6"
+                                                                     width="370"
+                                                                     height="245"></a>
+                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
+                            </div> <!--/.design__item-->
+                        </div> <!--/.design__list-->
                         <div class="design__arrow design__arrow--next">
-                            <svg class="slider__arrow arrow-right" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 189 306"
-                                 width="12"
-                                 height="20">
-                                <g>
-                                    <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-                                </g>
+                            <svg class="slider__arrow" width="12" height="20">
+                                <use xlink:href="#icon-arrow--next"></use>
                             </svg>
-                        </div>
-                    </div> <!--/.design__list-->
+                        </div> <!--/.design__arrow /.design__arrow--next-->
+                    </div> <!--/.design__list-wrapper-->
                 </div> <!--/.design__inner-->
+
                 <div class="design__form-wrapper">
                     <h3 class="design__form-title">Мы готовы разработать для Вас индивидуальный проект дома по Вашим
                         пожеланиям
@@ -500,30 +493,33 @@
     </section> <!--/.section /.info__wrapper-->
 
     <!--Employees-->
-    <!--        <section class="section">-->
-    <!--            <div class="container">-->
-    <!--                <div class="employee">-->
-    <!--                    <h2 class="section__title">-->
-    <!--                        Все сотрудники в нашем штате имеют высшее инженерно-строительное образование-->
-    <!--                    </h2>-->
-    <!--                    <div class="employee__inner">-->
-    <!--                        <div class="employee__img-wrapper">-->
-    <!--                            <img class="employee__img" src="img/employee.jpg" alt="Екатерина Волкова" width="470"-->
-    <!--                                 height="301">-->
-    <!--                            <div class="employee__mask"></div>-->
-    <!--                        </div>-->
-    <!--                        <div class="employee__description">-->
-    <!--                            <h3 class="employee__name">Екатерина Волкова</h3>-->
-    <!--                            <p class="employee__position">Генеральный директор ООО "Дома Навека"</p>-->
-    <!--                            <div class="employee__contacts">-->
-    <!--                                <p>Вы можете напрямую связаться с директором по телефону:</p>-->
-    <!--                                <a class="employee__link" href="tel:+7495204237*">+7 (495) 204-23-76</a>-->
-    <!--                            </div>-->
-    <!--                        </div> &lt;!&ndash;/.employee__description&ndash;&gt;-->
-    <!--                    </div> &lt;!&ndash;/.employee__inner&ndash;&gt;-->
-    <!--                </div> &lt;!&ndash;/.employee&ndash;&gt;-->
-    <!--            </div> &lt;!&ndash;/.container&ndash;&gt;-->
-    <!--        </section> &lt;!&ndash;/.section&ndash;&gt;-->
+    <section class="section">
+        <div class="container">
+            <div class="employee">
+                <h2 class="section__title">
+                    Все сотрудники в нашем штате имеют высшее инженерно-строительное образование
+                </h2>
+                <div class="employee__inner">
+                    <div class="employee__img-wrapper">
+                        <img class="employee__img" src="img/employee.jpg" alt="Екатерина Волкова" width="470"
+                             height="301">
+                        <div class="employee__mask"></div>
+                        <svg class="employee__play" width="30" height="30">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                    <div class="employee__description">
+                        <h3 class="employee__name">Екатерина Волкова</h3>
+                        <p class="employee__position">Генеральный директор ООО "Дома Навека"</p>
+                        <div class="employee__contacts">
+                            <p>Вы можете напрямую связаться с директором по телефону:</p>
+                            <a class="employee__link" href="tel:+7495204237*">+7 (495) 204-23-76</a>
+                        </div>
+                    </div> <!--/.employee__description-->
+                </div> <!--/.employee__inner-->
+            </div> <!--/.employee-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
 
     <!--Staff-->
     <section class="section staff__wrapper">
