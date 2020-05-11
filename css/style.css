@@ -360,6 +360,50 @@ p {
 }
 
 
+/*Download
+===============================*/
+.download {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px;
+}
+
+.download__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 300px;
+
+    text-decoration: none;
+    transition: 0.5s linear;
+
+    background-color: rgb(198, 133, 9);
+}
+
+.download__text {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2;
+    color: white;
+    letter-spacing: 0.06em;
+}
+
+.download__icon {
+    margin-left: 10px;
+    fill: #ffffff;
+    transition: 0.5s linear;
+}
+
+.download__button:hover {
+    box-shadow: 0 4px 5px 0 rgba(198, 133, 9, 0.5);
+}
+
+.download__button:active .download__icon {
+    transform: scale(1.1);
+}
+
 /*Works
 ===============================*/
 .works__wrapper {
@@ -843,6 +887,20 @@ p {
         left: 0;
         width: 10px;
         height: 10px;
+    }
+
+    /*Download*/
+    .download__button {
+        max-width: 260px;
+    }
+
+    .download__text {
+        font-size: 15px;
+    }
+
+    .download__icon {
+        width: 14px;
+        height: 14px;
     }
 
     /*Works*/
