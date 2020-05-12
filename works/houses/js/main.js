@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let scrollPosition;
 
     /* Fixed Header
-     * =======================================================*/
+     * ====================================================*/
     $(window).on("scroll load resize", function () {
         introHeight = intro.innerHeight();
         scrollPosition = $(this).scrollTop();
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     /*Smooth Scroll
-    * =======================================================*/
+    * =====================================================*/
     let pageUp = $(".pageup");
     let $page = $('html, body');
 
@@ -44,9 +44,8 @@ window.addEventListener('DOMContentLoaded', () => {
         return false;
     });
 
-
     /*Tabs Projects
-    * =======================================================*/
+    * =====================================================*/
     $('.projects-nav').on("click", ".tab-nav", function () {
         let tabsNav = $(".tab-nav"),
             tabsContent = $(".tab-content");
@@ -58,7 +57,6 @@ window.addEventListener('DOMContentLoaded', () => {
         return false;
     });
 
-
     /*Projects Slider
     * =========================================*/
     $('.projects__slider').slick({
@@ -67,7 +65,6 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesToScroll: 1,
         dots: true,
         arrows: true,
-
         responsive: [
             {
                 breakpoint: 768,
@@ -83,11 +80,29 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
         ]
-
     });
 
     /*Design Slider
     * =========================================*/
+    $('.design__list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
 
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
 });

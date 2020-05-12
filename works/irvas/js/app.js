@@ -134,7 +134,7 @@ let timer = () => {
         updateClock();
     };
 
-    let dedLine = 'April 23 2020';
+    let dedLine = 'May 30 2020';
 
     setTime('#timer', dedLine);
 };

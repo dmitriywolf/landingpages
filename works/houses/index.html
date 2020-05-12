@@ -16,8 +16,8 @@
 
     <!--Style-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,19 +31,8 @@
                 <path d="M.474,15A14.781,14.781,0,0,1,15-.023,14.781,14.781,0,0,1,29.525,15,14.779,14.779,0,0,1,15,30.024,14.779,14.779,0,0,1,.474,15ZM2.9,15A12.31,12.31,0,0,0,15,27.516,12.309,12.309,0,0,0,27.1,15,12.315,12.315,0,0,0,15,2.484,12.317,12.317,0,0,0,2.9,15ZM13,20.223a.752.752,0,0,1-.4-.67V10.483a.754.754,0,0,1,.4-.669.707.707,0,0,1,.758.062l6.032,4.536a.753.753,0,0,1,.3.607.763.763,0,0,1-.3.608l-6.032,4.532a.7.7,0,0,1-.758.065Z"/>
             </g>
         </symbol>
-        <symbol id="icon-arrow--next" viewBox="0 0 189 306">
-            <g>
-                <path d="M35.757,0,0,35.7,117.486,153,0,270.3,35.757,306,189,153Z"/>
-            </g>
-        </symbol>
-        <symbol id="icon-arrow--prev" viewBox="0 0 189 306">
-            <g>
-                <path d="M153.243,0,189,35.7,71.514,153,189,270.3,153.243,306,0,153Z"/>
-            </g>
-        </symbol>
     </svg>
 </div> <!--/.sprite-->
-
 
 <header class="header fixed" id="header">
     <div class="container">
@@ -338,80 +327,90 @@
                 <div class="design__inner">
                     <h2 class="design__title">За 19 лет мы разработали более 500 индивидуальных проектов</h2>
 
-                    <div class="design__list-wrapper">
+                    <div class="design__list">
 
-                        <div class="design__arrow design__arrow--prev">
-                            <svg class="slider__arrow" width="12" height="20">
-                                <use xlink:href="#icon-arrow--prev"></use>
-                            </svg>
-                        </div> <!--/.design__arrow /.design__arrow--prev-->
+                        <div class="design__item">
+                            <a class="design__img">
+                                <img src="img/design/design-1.jpg" alt="design-1" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-1@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
 
-                        <div class="design__list">
-                            <div class="design__item">
-                                <a class="design__img" href="#">
-                                    <img src="img/design/design-1.jpg" alt="design-1" width="370" height="245"></a>
-                                <div class="design__mask">
-                                    <img src="img/plus.png" alt="" width="50" height="50">
-                                </div>
-                            </div> <!--/.design__item-->
-                            <div class="design__item">
-                                <a class="design__img" href="#"><img src="img/design/design-2.jpg" alt="design-2"
-                                                                     width="370"
-                                                                     height="245"></a>
-                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
-                            </div> <!--/.design__item-->
-                            <div class="design__item">
-                                <a class="design__img" href="#"><img src="img/design/design-3.jpg" alt="design-3"
-                                                                     width="370"
-                                                                     height="245"></a>
-                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
-                            </div> <!--/.design__item-->
-                        </div> <!--/.design__list-->
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-2.jpg" alt="design-2" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-2@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50"></a>
+                        </div> <!--/.design__item-->
 
-                        <div class="design__arrow design__arrow--next">
-                            <svg class="slider__arrow" width="12" height="20">
-                                <use xlink:href="#icon-arrow--next"></use>
-                            </svg>
-                        </div> <!--/.design__arrow /.design__arrow--next-->
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-3.jpg" alt="design-3" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-3@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
 
-                    </div> <!--/.design__list-wrapper-->
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-2.jpg" alt="design-2" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-2@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                    </div> <!--/.design__list-->
+
                 </div>  <!--/.design__inner-->
 
                 <div class="design__inner">
                     <h2 class="design__title">Мы разрабатываем оригинальные,конструктивно сложные проекты и реализуем
                         их</h2>
-                    <div class="design__list-wrapper">
-                        <div class="design__arrow design__arrow--prev">
-                            <svg class="slider__arrow" width="12" height="20">
-                                <use xlink:href="#icon-arrow--prev"></use>
-                            </svg>
-                        </div> <!--/.design__arrow /.design__arrow--prev-->
-                        <div class="design__list">
-                            <div class="design__item">
-                                <a class="design__img" href="#"><img src="img/design/design-4.jpg" alt="design-4"
-                                                                     width="370"
-                                                                     height="245"></a>
-                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
-                            </div> <!--/.design__item-->
-                            <div class="design__item">
-                                <a class="design__img" href="#"><img src="img/design/design-5.jpg" alt="design-5"
-                                                                     width="370"
-                                                                     height="245"></a>
-                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
-                            </div> <!--/.design__item-->
-                            <div class="design__item">
-                                <a class="design__img" href="#"><img src="img/design/design-6.jpg" alt="design-6"
-                                                                     width="370"
-                                                                     height="245"></a>
-                                <div class="design__mask"><img src="img/plus.png" alt="" width="50" height="50"></div>
-                            </div> <!--/.design__item-->
-                        </div> <!--/.design__list-->
-                        <div class="design__arrow design__arrow--next">
-                            <svg class="slider__arrow" width="12" height="20">
-                                <use xlink:href="#icon-arrow--next"></use>
-                            </svg>
-                        </div> <!--/.design__arrow /.design__arrow--next-->
-                    </div> <!--/.design__list-wrapper-->
+
+                    <div class="design__list">
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-4.jpg" alt="design-4" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-4@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-5.jpg" alt="design-5" width="370" height="245"></a>
+                            <a class="design__mask" href="img/design/design-5@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-6.jpg" alt="design-6" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-6@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-5.jpg" alt="design-5" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-5@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                    </div> <!--/.design__list-->
+
                 </div> <!--/.design__inner-->
 
                 <div class="design__form-wrapper">
@@ -710,6 +709,8 @@
 <!--Java Script-->
 <!--Slick-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/lightbox.min.js"></script>
 
 <script src="js/main.js"></script>
 
