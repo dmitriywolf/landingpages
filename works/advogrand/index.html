@@ -95,7 +95,7 @@
                         <span class="burger__item"></span>
                     </button> <!--/.burger-->
 
-                    <ul class="nav__list show">
+                    <ul class="nav__list">
                         <li><a class="nav__link" href="">Как мы работаем</a></li>
                         <li><a class="nav__link" href="">Преимущества</a></li>
                         <li><a class="nav__link" href="">Отзывы</a></li>
@@ -105,7 +105,7 @@
                     </ul> <!--/.nav__list-->
                 </nav> <!--nav-->
 
-                <button class="header__button button button--red">Перезвоните мне</button>
+                <button class="header__button button button--red button--callback">Перезвоните мне</button>
             </div> <!--/.header__inner-->
         </div> <!--/.container-->
     </div> <!--/.header__top-->
@@ -141,13 +141,15 @@
 
 <main>
     <!--Intro-->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">Годовой абонемент на услуги <b>&laquo;личного юриста&raquo;</b></h1>
                 <p class="intro__subtitle">24 часа в сутки Ваш личный юрист &ndash; <b>Advogrand</b> на связи всего
                     <b>за 12 рублей в день</b></p>
-                <button class="intro__button button button--red">Хочу &laquo;личного юриста&raquo;!</button>
+                <button class="intro__button button button--red button--consultation">Хочу &laquo;личного
+                    юриста&raquo;!
+                </button>
             </div> <!--/.intro__inner-->
         </div> <!--/.container-->
     </section> <!--/.intro-->
@@ -353,7 +355,9 @@
                             <p class="client__text"><b>13 500</b> - предпринимателей</p>
                         </li> <!--/.client__item-->
                     </ul> <!--/.client__list-->
-                    <button class="clients__button button button--red" type="button">Узнать больше!</button>
+                    <button class="clients__button button button--red button--consultation" type="button">Узнать
+                        больше!
+                    </button>
                 </div> <!--/.clients-->
             </div> <!--/.features__inner-->
         </div> <!--/.container-->
@@ -787,75 +791,83 @@
 
 <!--Modal Window-->
 <!--Popup Consultation-->
-<div class="popup popup--consultation">
-    <button class="popup__close">
-        <svg class="popup__close-icon" width="14" height="14">
-            <use xlink:href="#icon-close"></use>
-        </svg>
-    </button> <!--/.popup__close-->
-    <form class="popup__form form" action="#">
-        <h3 class="form__title">Оставьте свой номер и мы свяжемся с вами</h3>
-        <div class="form__input-wrapper">
-            <label class="form__label" for="nameCon">Введите своё имя</label>
-            <input class="form__input" id="nameCon" type="text">
-        </div> <!--/.form__input-wrapper-->
-        <div class="form__input-wrapper">
-            <label class="form__label" for="phoneCon">Ваш номер телефона</label>
-            <input class="form__input" id="phoneCon" type="tel">
-        </div> <!--/.form__input-wrapper-->
-        <button class="form__button button button--red" type="submit">Заказать звонок консультанта
-        </button>
-        <p class="form__text">Перезвоним вам в течении 5 минут</p>
-    </form> <!--/.popup__form-->
+<div class="popup  popup--callback animated fadeIn">
+    <div class="popup__inner animated bounceIn">
+        <button class="popup__close">
+            <svg class="popup__close-icon" width="14" height="14">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button> <!--/.popup__close-->
+        <form class="popup__form form" action="#">
+            <h3 class="form__title">Оставьте свой номер и мы свяжемся с вами</h3>
+            <div class="form__input-wrapper">
+                <label class="form__label" for="nameCon">Введите своё имя</label>
+                <input class="form__input" id="nameCon" type="text">
+            </div> <!--/.form__input-wrapper-->
+            <div class="form__input-wrapper">
+                <label class="form__label" for="phoneCon">Ваш номер телефона</label>
+                <input class="form__input" id="phoneCon" type="tel">
+            </div> <!--/.form__input-wrapper-->
+            <button class="form__button button button--red" type="submit">Заказать звонок консультанта
+            </button>
+            <p class="form__text">Перезвоним вам в течении 5 минут</p>
+        </form> <!--/.popup__form-->
+    </div> <!--/.popup__inner-->
 </div> <!--popup--consultation-->
 
 <!--Popup CallBack-->
-<div class="popup popup--callback">
-    <button class="popup__close">
-        <svg class="popup__close-icon" width="14" height="14">
-            <use xlink:href="#icon-close"></use>
-        </svg>
-    </button> <!--/.popup__close-->
-    <form class="popup__form form" action="#">
-        <h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
-        <div class="form__input-wrapper">
-            <label class="form__label" for="nameCall">Введите своё имя</label>
-            <input class="form__input" id="nameCall" type="text">
-        </div> <!--/.form__input-wrapper-->
-        <div class="form__input-wrapper">
-            <label class="form__label" for="phoneCall">Ваш номер телефона</label>
-            <input class="form__input" id="phoneCall" type="tel">
-        </div> <!--/.form__input-wrapper-->
-        <div class="form__input-wrapper">
-            <label class="form__label" for="textareaCall">Сообщение или вопрос</label>
-            <textarea class="form__textarea" name="your-question" id="textareaCall"></textarea>
-        </div> <!--/.form__input-wrapper-->
+<div class="popup popup--consultation animated fadeIn">
+    <div class="popup__inner animated bounceIn">
+        <button class="popup__close">
+            <svg class="popup__close-icon" width="14" height="14">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button> <!--/.popup__close-->
+        <form class="popup__form form" action="#">
+            <h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
+            <div class="form__input-wrapper">
+                <label class="form__label" for="nameCall">Введите своё имя</label>
+                <input class="form__input" id="nameCall" type="text">
+            </div> <!--/.form__input-wrapper-->
+            <div class="form__input-wrapper">
+                <label class="form__label" for="phoneCall">Ваш номер телефона</label>
+                <input class="form__input" id="phoneCall" type="tel">
+            </div> <!--/.form__input-wrapper-->
+            <div class="form__input-wrapper">
+                <label class="form__label" for="textareaCall">Сообщение или вопрос</label>
+                <textarea class="form__textarea" name="your-question" id="textareaCall"></textarea>
+            </div> <!--/.form__input-wrapper-->
 
-        <button class="form__button button button--red" type="submit">Заказать звонок консультанта
-        </button>
-        <p class="form__text">Перезвоним вам в течении 5 минут</p>
-    </form> <!--/.popup__form-->
+            <button class="form__button button button--red" type="submit">Заказать звонок консультанта
+            </button>
+            <p class="form__text">Перезвоним вам в течении 5 минут</p>
+        </form> <!--/.popup__form-->
+    </div> <!--/.popup__inner-->
 </div> <!--popup--consultation-->
 
 <!--Popup Feature-->
-<div class="popup popup--feature">
-    <button class="popup__close">
-        <svg class="popup__close-icon" width="14" height="14">
-            <use xlink:href="#icon-close"></use>
-        </svg>
-    </button> <!--/.popup__close-->
-    <div class="popup__feature">
-        <h3 class="popup__title">Бездействуют государственные органы?</h3>
-        <div class="popup__img-wrapper">
-            <img src="img/popup-img.jpg" alt="" width="320" height="140">
-        </div> <!--/.popup__img-wrapper-->
-        <div class="popup__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-        </div> <!--/.popup__text-->
-    </div> <!--/.popup__feature-->
+<div class="popup popup--feature animated fadeIn">
+    <div class="popup__inner animated bounceIn">
+        <button class="popup__close">
+            <svg class="popup__close-icon" width="14" height="14">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button> <!--/.popup__close-->
+        <div class="popup__feature">
+            <h3 class="popup__title">Бездействуют государственные органы?</h3>
+            <div class="popup__img-wrapper">
+                <img src="img/popup-img.jpg" alt="" width="320" height="140">
+            </div> <!--/.popup__img-wrapper-->
+            <div class="popup__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div> <!--/.popup__text-->
+        </div> <!--/.popup__feature-->
+    </div> <!--/.popup__inner-->
+
 </div> <!--/.popup--feature-->
 
 <!--PageUp-->
@@ -864,5 +876,9 @@
         <use xlink:href="#icon-pageup"></use>
     </svg>
 </a> <!--/.pageup-->
+
+
+<!--JavaScript-->
+<script src="js/app.js"></script>
 </body>
 </html>
