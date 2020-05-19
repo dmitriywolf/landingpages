@@ -66,16 +66,6 @@
 
 /*Global Styles
 =========================================*/
-/*html {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/**,*/
-/**::before,*/
-/**::after {*/
-/*    box-sizing: inherit;*/
-/*}*/
-
 body {
     margin: 0;
     padding: 0;
@@ -109,13 +99,6 @@ h5,
 h6,
 p {
     margin: 0;
-}
-
-.container {
-    /*width: 100%;*/
-    /*max-width: 1170px;*/
-    /*padding: 0 15px;*/
-    /*margin: 0 auto;*/
 }
 
 /*Slider
@@ -190,14 +173,6 @@ p {
     z-index: 10;
 }
 
-
-
-.header__inner {
-    /*position: relative;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-}
-
 .logo__wrapper {
     width: 114px;
     text-align: center;
@@ -213,9 +188,7 @@ p {
     font-size: 17px;
     font-weight: 700;
     line-height: 2;
-
     text-transform: uppercase;
-
     color: #000000;
     border: 1px solid #7d7981;
 }
@@ -226,13 +199,11 @@ p {
     color: #77efe5;
 }
 
-
 .header.fixed {
     position: fixed;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #eff0f2;
-
 }
 
 /*Burger*/
@@ -262,10 +233,8 @@ p {
     content: "";
     position: absolute;
     left: 0;
-
     width: 100%;
     height: 4px;
-
     background-color: #606061;
 }
 
@@ -313,7 +282,6 @@ p {
     top: 100%;
     left: 0;
     right: 0;
-
     display: none;
     padding: 10px 0;
     background-color: #eff0f2;
@@ -349,81 +317,6 @@ p {
 }
 
 
-@media (max-width: 991px) {
-    .header {
-        padding-top: 45px;
-    }
-    /*nav*/
-    .nav__inner {
-        max-width: 720px;
-    }
-
-}
-
-@media (max-width: 767px) {
-    /*header*/
-    .header {
-        padding-top: 35px;
-    }
-
-    /*nav*/
-    /*.nav {*/
-    /*    position: absolute;*/
-    /*    top: 100%;*/
-    /*    right: 0;*/
-
-    /*    display: none;*/
-    /*    flex-direction: column;*/
-    /*    align-items: flex-end;*/
-
-    /*    width: 100%;*/
-    /*    padding-top: 5px;*/
-    /*    padding-bottom: 10px;*/
-
-    /*    background-color: #eff0f2;*/
-    /*}*/
-
-    .nav__inner {
-        max-width: 540px;
-    }
-
-    .nav__link {
-        font-size: 15px;
-        font-weight: 400;
-
-    }
-
-    /*.nav__link {*/
-    /*    padding-right: 15px;*/
-    /*    padding-bottom: 5px;*/
-    /*}*/
-
-    /*.nav.show {*/
-    /*    display: flex;*/
-    /*}*/
-
-    /*!*burger*!*/
-    /*.burger {*/
-    /*    display: block;*/
-    /*}*/
-}
-
-
-@media (max-width: 576px) {
-
-    .header {
-        padding-top: 25px;
-        
-    }
-    .nav__link {
-        text-align: right;
-    }
-}
-
-
-/*=======================================================================================*/
-
-
 /*Intro
 =======================*/
 .intro {
@@ -432,12 +325,6 @@ p {
 
 .intro__inner {
     position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     height: 100vh;
     min-height: 450px;
 }
@@ -448,7 +335,6 @@ p {
     font-weight: 700;
     font-size: 46px;
     line-height: 1.2;
-
     text-transform: uppercase;
     text-align: center;
     text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
@@ -461,34 +347,116 @@ p {
 
 .intro__button {
     position: absolute;
-    bottom: 18%;
-
+    bottom: 20%;
+    left: 50%;
     padding: 14px 46px;
+
     font-size: 18px;
     text-transform: uppercase;
-
     letter-spacing: 0.12em;
     background-color: transparent;
     border: 2px solid #777879;
-
-    cursor: pointer;
-
-    transition: color 0.3s linear, border-bottom-color 0.3s linear,
-    border-top-color 0.3s linear,
-    border-left-color 0.3s linear,
-    border-right-color 0.3s linear;
-
+    transition: 0.3s linear;
+    transform: translate3d(-50%, 0, 0);
     outline: none;
 }
 
 .intro__button:hover,
 .intro__button:focus {
+    cursor: pointer;
     border: 2px solid #16c4b9;
 }
 
 .intro__button:active {
     color: #16c4b9;
 }
+
+
+/*=====================================================*/
+
+
+@media (max-width: 991px) {
+    /*header*/
+    .header {
+        padding-top: 45px;
+    }
+
+    /*nav*/
+    .nav__inner {
+        max-width: 720px;
+    }
+
+    /*intro*/
+    .intro__title {
+        font-size: 38px;
+    }
+
+    .intro__button {
+        padding: 12px 40px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    /*header*/
+    .header {
+        padding-top: 35px;
+    }
+
+    .nav__inner {
+        max-width: 540px;
+    }
+
+    .nav__link {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    /*intro*/
+    .intro__title {
+        font-size: 32px;
+    }
+
+    .intro__button {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (max-width: 576px) {
+    /*header*/
+    .header {
+        padding-top: 25px;
+    }
+
+    /*nav*/
+    .nav__link {
+        text-align: right;
+    }
+
+    /*intro*/
+    .intro__title {
+        font-size: 24px;
+    }
+
+    .intro__button {
+        min-width: 180px;
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+
+
+
+
+}
+
 
 /*About Us
 =============================*/
@@ -1083,10 +1051,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    /*intro*/
+    /*!*intro*!
     .intro__title {
         font-size: 38px;
-    }
+    }*/
 
     /*team*/
     .team__item-content {
@@ -1181,50 +1149,15 @@ footer {
         padding-bottom: 40px;
     }
 
-    /*!*header*!*/
-    /*.header {*/
-    /*    padding-top: 35px;*/
-    /*}*/
 
-    /*!*nav*!*/
-    /*.nav {*/
-    /*    position: absolute;*/
-    /*    top: 100%;*/
-    /*    right: 0;*/
-
-    /*    display: none;*/
-    /*    flex-direction: column;*/
-    /*    align-items: flex-end;*/
-
-    /*    width: 100%;*/
-    /*    padding-top: 5px;*/
-    /*    padding-bottom: 10px;*/
-
-    /*    background-color: #eff0f2;*/
-    /*}*/
-
-    /*.nav__link {*/
-    /*    padding-right: 15px;*/
-    /*    padding-bottom: 5px;*/
-    /*}*/
-
-    /*.nav.show {*/
-    /*    display: flex;*/
-    /*}*/
-
-    /*!*burger*!*/
-    /*.burger {*/
-    /*    display: block;*/
-    /*}*/
-
-    /*intro*/
+    /*!*intro*!
     .intro__title {
         font-size: 30px;
     }
 
     .intro__button {
         bottom: 15%;
-    }
+    }*/
 
 
     /*team*/
@@ -1314,10 +1247,10 @@ footer {
 
 
 @media (max-width: 520px) {
-    /*intro*/
+   /* !*intro*!
     .intro__title {
         font-size: 22px;
-    }
+    }*/
 
     /*features*/
     .features__item {
