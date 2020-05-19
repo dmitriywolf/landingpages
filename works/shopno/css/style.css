@@ -404,6 +404,21 @@ p {
     background-color: #19bd9a;
 }
 
+/*Features
+===============================*/
+.features__item {
+    padding: 8px;
+    font-size: 0;
+}
+
+.features__img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 
 
 
@@ -485,6 +500,12 @@ p {
     .slick-dots {
         padding: 35px 0 0;
     }
+
+    /*features*/
+    .features__item {
+        padding: 5px;
+    }
+
 
 
 }
@@ -619,54 +640,7 @@ p {
 
 
 
-/*Features
-===============================*/
-.features {
-    margin: 0 -8px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.features__item {
-    position: relative;
-    width: 33.3333333333%;
-    padding: 8px;
-    font-size: 0;
-}
-
-.features__item:hover .feature__content {
-    cursor: pointer;
-    opacity: 1;
-}
-
-.features__img {
-    width: 100%;
-    height: auto;
-}
-
-.feature__content {
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    left: 8px;
-    right: 8px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(113, 245, 234, 0.7);
-    transition: opacity 0.3s linear;
-    opacity: 0;
-}
-
-.feature__item-title {
-    font-size: 18px;
-    color: #ffffff;
-}
 
 
 /*Our Services
@@ -1183,10 +1157,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    /*!*intro*!
-    .intro__title {
-        font-size: 38px;
-    }*/
+
     /*team*/
     .team__item-content {
         padding: 20px;
@@ -1204,24 +1175,6 @@ footer {
 
 
 @media (max-width: 900px) {
-/*    !*section*!
-    .section {
-        padding: 80px 0;
-    }
-
-    .section__title {
-        font-size: 30px;
-    }
-
-    .section__subtitle {
-        font-size: 15px;
-        padding-bottom: 60px;
-    }*/
-
-    /*features*/
-    .features__item {
-        width: 50%;
-    }
 
     /*our services*/
     .service--big {
@@ -1266,29 +1219,7 @@ footer {
 
 
 @media (max-width: 767px) {
-    /*section*/
-   /* .section {
-        padding: 60px 0;
-    }
 
-    .section__title {
-        font-size: 24px;
-    }
-
-    .section__subtitle {
-        font-size: 12px;
-        padding-bottom: 40px;
-    }*/
-
-
-    /*!*intro*!
-    .intro__title {
-        font-size: 30px;
-    }
-
-    .intro__button {
-        bottom: 15%;
-    }*/
     /*team*/
     .team__item-name {
         font-size: 15px;
@@ -1363,29 +1294,13 @@ footer {
         text-align: center;
     }
 
-    /*!*About Us*!
-    .about-us__title {
-        font-size: 18px;
-    }
 
-    .about-us__text {
-        font-size: 15px;
-    }*/
 
 }
 
 
 @media (max-width: 520px) {
-    /* !*intro*!
-     .intro__title {
-         font-size: 22px;
-     }*/
-    /*features*/
-    .features__item {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     /*services*/
     .service__item {
@@ -1447,13 +1362,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-    /*intro*/
-    .intro__button {
-        bottom: 8%;
-        padding: 10px 25px;
-        font-size: 16px;
-    }
-
     /*services*/
     .service__title {
         font-size: 14px;
@@ -1501,14 +1409,4 @@ footer {
         font-size: 10px;
     }
 
-    /*!*About Us*!*/
-    /*.about-us__title {*/
-    /*    padding-top: 12px;*/
-    /*    font-size: 16px;*/
-    /*}*/
-
-    /*.about-us__text {*/
-    /*    margin-top: 12px;*/
-    /*    font-size: 13px;*/
-    /*}*/
 }
