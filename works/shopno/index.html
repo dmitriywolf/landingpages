@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Shopno</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
+    <!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
+    <!--    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
+    <!--    <meta name="theme-color" content="#ffffff">-->
 
     <!--Styles-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <!--Bootstrap-Grid CSS-->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 
-    <!--JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -57,24 +60,39 @@
 
 <header class="header" id="header">
     <div class="container">
-        <div class="header__inner">
+
+        <div class="header__inner d-flex flex-row justify-content-between align-items-center">
+
             <div class="logo__wrapper">
                 <a class="logo" href="#">Sh<span class="light-green-word">o</span>pno</a>
             </div>
-            <nav class="nav" id="nav">
-                <a class="nav__link" href="#" data-scroll="#about-us">About-Us</a>
-                <a class="nav__link" href="#" data-scroll="#works">Works</a>
-                <a class="nav__link" href="#" data-scroll="#services">Services</a>
-                <a class="nav__link" href="#" data-scroll="#team">Team </a>
-                <a class="nav__link" href="#" data-scroll="#testimonials">Testimonials</a>
-                <a class="nav__link" href="#" data-scroll="#contacts">Contact</a>
-            </nav> <!--/.nav-->
-            <button class="burger" id="navToggle">
-                <span class="burger__item">Menu</span>
-            </button> <!--/.burger-->
+
+
+            <div class="nav__wrapper">
+                <button class="burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button> <!--/.burger-->
+
+                <nav class="nav" id="nav">
+                    <div class="nav__inner justify-content-lg-around justify-content-sm-between flex-sm-row d-flex flex-column ">
+                        <a class="nav__link" href="#" data-scroll="#about-us">About-Us</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                        <a class="nav__link" href="#" data-scroll="#services">Services</a>
+                        <a class="nav__link" href="#" data-scroll="#team">Team </a>
+                        <a class="nav__link" href="#" data-scroll="#testimonials">Testimonials</a>
+                        <a class="nav__link" href="#" data-scroll="#contacts">Contact</a>
+                    </div> <!--/.nav__inner-->
+                </nav> <!--/.nav-->
+
+            </div> <!--/.nav__wrapper-->
+
         </div> <!--/.header__inner-->
+
+
     </div> <!--/.container-->
+
 </header> <!--/.header #header-->
+
 
 <main>
     <section class="intro" id="intro">
@@ -682,7 +700,7 @@
             </div> <!--/.contacts__inner-->
         </div> <!--/.container-->
     </section> <!--/.section-->
-</main>
+</main> <!--/.main-->
 
 <footer>
     <div class="container">
@@ -712,9 +730,12 @@
     </div> <!--/container-->
 </footer> <!--footer-->
 
-<!--JavaScript-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<!--Slick Slider-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--Main JS-->
 <script src="js/app.js"></script>
 
 </body>
