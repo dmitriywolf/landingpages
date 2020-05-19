@@ -532,6 +532,15 @@ p {
 
 
 @media (max-width: 576px) {
+    /*section*/
+    .section {
+        padding: 40px 0;
+    }
+
+    .section__subtitle {
+        padding-bottom: 30px;
+    }
+
     /*header*/
     .header {
         padding-top: 25px;
@@ -559,6 +568,7 @@ p {
     }
 
     .about-us__text {
+        margin-top: 0;
         font-size: 14px;
     }
 
@@ -1471,14 +1481,14 @@ footer {
         font-size: 10px;
     }
 
-    /*About Us*/
-    .about-us__title {
-        padding-top: 12px;
-        font-size: 16px;
-    }
+    /*!*About Us*!*/
+    /*.about-us__title {*/
+    /*    padding-top: 12px;*/
+    /*    font-size: 16px;*/
+    /*}*/
 
-    .about-us__text {
-        margin-top: 12px;
-        font-size: 13px;
-    }
+    /*.about-us__text {*/
+    /*    margin-top: 12px;*/
+    /*    font-size: 13px;*/
+    /*}*/
 }
