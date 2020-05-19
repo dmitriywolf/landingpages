@@ -51,6 +51,8 @@ $(function () {
     let aboutUsSlider = $("#aboutUsSlider");
 
     aboutUsSlider.slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

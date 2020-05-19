@@ -369,7 +369,7 @@ p {
 }
 
 .about-us .slick-list {
-    box-shadow: 2px 6px 24px 0 rgba(20, 20, 21, 0.17);
+    box-shadow: 2px 6px 24px 5px rgba(20, 20, 21, 0.17);
 }
 
 /*About-us Slider*/
