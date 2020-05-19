@@ -285,6 +285,7 @@ p {
     display: none;
     padding: 10px 0;
     background-color: #eff0f2;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.4);
 }
 
 .nav.show {
@@ -371,11 +372,81 @@ p {
     color: #16c4b9;
 }
 
+/*About Us
+=============================*/
+.about-us__img-wrapper {
+    margin-bottom: 10px;
+}
+
+.about-us__img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 2px 6px 24px 0 rgba(20, 20, 21, 0.17);
+}
+
+.about-us__title {
+    padding-top: 20px;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us__text {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
 
 /*=====================================================*/
+@media (max-width: 1199px) {
+    /*section*/
+    .section {
+        padding: 100px 0;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .section__subtitle {
+        padding: 10px 0 100px;
+        font-size: 16px;
+    }
+
+    /*about us*/
+    .about-us__title {
+        padding-top: 15px;
+        font-size: 19px;
+    }
+
+    .about-us__text {
+        font-size: 17px;
+    }
+}
 
 
 @media (max-width: 991px) {
+    /*section*/
+    .section {
+        padding: 80px 0;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+
+    .section__subtitle {
+        font-size: 15px;
+        padding-bottom: 60px;
+    }
+
     /*header*/
     .header {
         padding-top: 45px;
@@ -395,14 +466,35 @@ p {
         padding: 12px 40px;
     }
 
+    /*about us*/
+    .about-us__title {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+
+    .about-us__text {
+        margin-top: 15px;
+        font-size: 16px;
+    }
 
 }
 
 
-
-
-
 @media (max-width: 767px) {
+    /*section*/
+    .section {
+        padding: 50px 0;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__subtitle {
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+
     /*header*/
     .header {
         padding-top: 35px;
@@ -426,6 +518,15 @@ p {
         font-size: 16px;
     }
 
+    /*about us*/
+    .about-us__title {
+        font-size: 17px;
+    }
+
+    .about-us__text {
+        margin-top: 10px;
+        font-size: 15px;
+    }
 
 }
 
@@ -452,40 +553,41 @@ p {
         font-size: 15px;
     }
 
+    /*about us*/
+    .about-us__title {
+        font-size: 16px;
+    }
 
+    .about-us__text {
+        font-size: 14px;
+    }
 
 
 }
 
 
-/*About Us
-=============================*/
-.about-us__img-wrapper {
-    margin-bottom: 10px;
-}
 
-.about-us__img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: 2px 6px 24px 0 rgba(20, 20, 21, 0.17);
 
-}
 
-.about-us__title {
-    padding-top: 20px;
-    font-family: "Merriweather", serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
 
-.about-us__text {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Features
 ===============================*/
@@ -1055,7 +1157,6 @@ footer {
     .intro__title {
         font-size: 38px;
     }*/
-
     /*team*/
     .team__item-content {
         padding: 20px;
@@ -1073,7 +1174,7 @@ footer {
 
 
 @media (max-width: 900px) {
-    /*section*/
+/*    !*section*!
     .section {
         padding: 80px 0;
     }
@@ -1085,7 +1186,7 @@ footer {
     .section__subtitle {
         font-size: 15px;
         padding-bottom: 60px;
-    }
+    }*/
 
     /*features*/
     .features__item {
@@ -1136,7 +1237,7 @@ footer {
 
 @media (max-width: 767px) {
     /*section*/
-    .section {
+   /* .section {
         padding: 60px 0;
     }
 
@@ -1147,7 +1248,7 @@ footer {
     .section__subtitle {
         font-size: 12px;
         padding-bottom: 40px;
-    }
+    }*/
 
 
     /*!*intro*!
@@ -1158,8 +1259,6 @@ footer {
     .intro__button {
         bottom: 15%;
     }*/
-
-
     /*team*/
     .team__item-name {
         font-size: 15px;
@@ -1234,24 +1333,23 @@ footer {
         text-align: center;
     }
 
-    /*About Us*/
+    /*!*About Us*!
     .about-us__title {
         font-size: 18px;
     }
 
     .about-us__text {
         font-size: 15px;
-    }
+    }*/
 
 }
 
 
 @media (max-width: 520px) {
-   /* !*intro*!
-    .intro__title {
-        font-size: 22px;
-    }*/
-
+    /* !*intro*!
+     .intro__title {
+         font-size: 22px;
+     }*/
     /*features*/
     .features__item {
         width: 100%;
