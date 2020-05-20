@@ -77,14 +77,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         // //Portfolio: https://github.com/desandro/masonry
-        let $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 280
-        });
+        // let $grid = $('.grid').masonry({
+        //
+        // });
+        //
+        // $grid.imagesLoaded().progress(function () {
+        //     $grid.masonry('layout');
+        // });
 
-        $grid.imagesLoaded().progress(function () {
-            $grid.masonry('layout');
+        let $grid = $('.grid').imagesLoaded(function () {
+            // init Masonry after all images have loaded
+            $grid.masonry({
+                // options...
+                itemSelector: '.grid-item',
+                columnWidth: 280
+            });
         });
+        
 
 
     });
