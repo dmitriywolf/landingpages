@@ -807,8 +807,12 @@ p {
     transition: opacity 0.3s linear;
 }
 
-.portfolio__nav-link.is-active::after {
+.portfolio__nav-link.active::after {
     opacity: 1;
+}
+
+.portfolio__nav-link.active:hover {
+    color: rgba(70, 70, 70, 1);
 }
 
 

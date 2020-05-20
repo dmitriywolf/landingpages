@@ -76,15 +76,30 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
 
-        //Portfolio: https://github.com/desandro/masonry
-        $('.grid').masonry({
+        // //Portfolio: https://github.com/desandro/masonry
+        let $grid = $('.grid').masonry({
             itemSelector: '.grid-item',
             columnWidth: 280
         });
 
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry('layout');
+        });
+
+
     });
 
     /*Filter Portfolio*/
+    //Masonry
+    // let elem = document.querySelector('.grid');
+    // let msnry = new Masonry(elem, {
+    //     // options
+    //     itemSelector: '.grid-item',
+    //     columnWidth: 280
+    // });
+    //
+
+
     const filter = () => {
         const menu = document.querySelector('.portfolio__nav'),
             items = menu.querySelectorAll('a'),
@@ -108,17 +123,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const typeFilter = (markType) => {
             markAll.forEach(mark => {
-
                 //Скрыть все элементы
                 mark.style.display = 'none';
                 //Удаляем классы анимации
                 mark.classList.remove('animated', 'tada');
-
-            });
-
-            $('.grid').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: 280
             });
 
             if (markType) {
@@ -173,9 +181,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
             let target = e.target;
 
-            if (target && target.tagName === 'a') {
-                items.forEach(btn => btn.classList.remove('is-active'));
-                target.classList.add('is-active');
+            if (target && target.tagName === 'A') {
+                items.forEach(btn => btn.classList.remove('active'));
+                target.classList.add('active');
             }
         });
     };
