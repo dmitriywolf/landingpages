@@ -54,6 +54,8 @@ $(document).ready(function () {
 
     slider.slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
@@ -77,14 +79,12 @@ $(document).ready(function () {
     // Filter Portfolio
     let $grid = $('.grid');
 
-    $grid.imagesLoaded( function() {
+    $grid.imagesLoaded(function () {
         $grid.isotope({
             itemSelector: '.grid-item'
         });
 
     });
-
-
 
     $(".portfolio__nav").on('click', 'a', function (event) {
         event.preventDefault();
@@ -98,12 +98,6 @@ $(document).ready(function () {
         let filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue});
     });
-
-
-
-    //Forms
-
-
 
 });
 
