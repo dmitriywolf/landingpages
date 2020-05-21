@@ -77,9 +77,14 @@ $(document).ready(function () {
     // Filter Portfolio
     let $grid = $('.grid');
 
-    $grid.isotope({
-        itemSelector: '.grid-item'
+    $grid.imagesLoaded( function() {
+        $grid.isotope({
+            itemSelector: '.grid-item'
+        });
+
     });
+
+
 
     $(".portfolio__nav").on('click', 'a', function (event) {
         event.preventDefault();
@@ -93,6 +98,11 @@ $(document).ready(function () {
         let filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue});
     });
+
+
+
+    //Forms
+
 
 
 });
