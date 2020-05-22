@@ -14,12 +14,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--Style-->
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!--JavaScript-->
-    <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </head>
 <body>
@@ -43,9 +39,9 @@
     </svg>
 </div> <!--sprite-->
 
+<!--Header-->
 <header class="header" id="header">
     <div class="container">
-
         <div class="header__inner">
             <div class="header__logo-wrapper">
                 <a class="header__logo logo" href="#">
@@ -88,7 +84,9 @@
         </div> <!--/.header__inner-->
     </div> <!--/.container-->
 </header> <!--./header-->
+
 <main>
+    <!--Intro-->
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
@@ -121,10 +119,10 @@
                     </div>
                 </div> <!--/.intro__benefits-->
                 <div class="intro__form">
-                    <form class="form" action="#" method="post">
+                    <form class="form" action="#" method="POST">
                         <h2 class="form__title">Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                        <input class="form__input" type="text" placeholder="Введите ваше имя" required><br>
-                        <input class="form__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+                        <input class="form__input" name="user-name" type="text" placeholder="Введите ваше имя" required><br>
+                        <input class="form__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__" required><br>
                         <button class="form__button" type="submit">Вызвать замерщика!</button>
                         <p class="form__text">Ваши данные конфиденциальны</p>
                     </form>
@@ -134,6 +132,7 @@
 
     </section> <!--/.intro-->
 
+    <!--Glazing-->
     <section class="section">
         <h1 class="section__title section__title--decoration">
             Остекление балконов и лоджий
@@ -384,6 +383,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
+    <!--Decoration-->
     <section class="section section--gray">
         <h1 class="section__title section__title--decoration">
             Закажите отделку балкона со скидкой 60%
@@ -618,10 +618,12 @@
                     </div> <!--/.decoration__content-->
 
                     <div class="decoration__form">
-                        <form class="form" action="#" method="post">
+                        <form class="form" action="#" method="POST">
                             <h2 class="form__title">Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                            <input class="form__input" type="text" placeholder="Введите ваше имя" required><br>
-                            <input class="form__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+                            <input class="form__input" name="user-name" type="text" placeholder="Введите ваше имя"
+                                   required><br>
+                            <input class="form__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__"
+                                   required><br>
                             <button class="form__button" type="submit">Вызвать замерщика!</button>
                             <p class="form__text">Ваши данные конфиденциальны</p>
                         </form>
@@ -633,6 +635,7 @@
         </div> <!--.container-->
     </section> <!--/.section-->
 
+    <!--Gallery-->
     <section class="section">
         <h1 class="section__title">Наши работы</h1> <!--/.section__title-->
         <div class="container">
@@ -698,6 +701,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
+    <!--Guarantee-->
     <section class="section section--blue">
         <h1 class="section__title section__title--white">Мы гарантируем вам</h1> <!--/.section__title-->
         <div class="container">
@@ -732,6 +736,7 @@
         </div> <!--.container-->
     </section> <!--/.section-->
 
+    <!--Payment-->
     <section class="section">
         <h1 class="section__title section__title--pay">Вы можете оплатить наши услуги:</h1> <!--/.section__title-->
         <div class="container">
@@ -752,6 +757,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
+    <!--Action-->
     <div class="action">
         <div class="container">
             <div class="action__inner">
@@ -778,10 +784,10 @@
                 </div> <!--/.action__time-block-->
 
                 <div class="action__form">
-                    <form class="form" action="#" method="post">
+                    <form class="form" action="#" method="POST">
                         <h2 class="form__title">Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                        <input class="form__input" type="text" placeholder="Введите ваше имя" required><br>
-                        <input class="form__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+                        <input class="form__input" name="user-name" type="text" placeholder="Введите ваше имя" required><br>
+                        <input class="form__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__" required><br>
                         <button class="form__button" type="submit">Вызвать замерщика!</button>
                         <p class="form__text">Ваши данные конфиденциальны</p>
                     </form>
@@ -791,6 +797,7 @@
         </div> <!--/.container-->
     </div> <!--./action-->
 
+    <!--Contacts-->
     <section class="section">
         <h1 class="section__title">Как нас найти</h1> <!--/.section__title-->
 
@@ -840,6 +847,7 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
+    <!--Asks-->
     <div class="section section--blue">
         <div class="container">
             <div class="asks">
@@ -850,6 +858,7 @@
     </div> <!--/.section-->
 </main>
 
+<!--Footer-->
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
@@ -867,7 +876,6 @@
     </div> <!--/.container-->
 </footer> <!--/.footer-->
 
-
 <!--Modal Popups-->
 <!--Popup Engineer-->
 <div class="popup popup--engineer">
@@ -876,10 +884,10 @@
             <use xlink:href="#close-icon"></use>
         </svg>
     </button> <!--/.popup__close-->
-    <form class="popup__form" action="#" method="post">
+    <form class="popup__form" action="#" method="POST">
         <h2 class="popup__title">Запишитесь сегодня на<br><span>бесплатный замер</span></h2>
-        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
-        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+        <input class="popup__input" name="user-name" type="text" placeholder="Введите ваше имя" required><br>
+        <input class="popup__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__" required><br>
         <button class="popup__button" type="submit">Вызвать замерщика</button>
         <p class="popup__text">Ваши данные конфиденциальны</p>
     </form>
@@ -892,15 +900,14 @@
             <use xlink:href="#close-icon"></use>
         </svg>
     </button> <!--/.popup__close-->
-    <form class="popup__form" action="#" method="post">
+    <form class="popup__form" action="#" method="POST">
         <h2 class="popup__title">Закажите сейчас<br><span>обратный звонок</span></h2>
-        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
-        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+        <input class="popup__input" name="user-name" type="text" placeholder="Введите ваше имя" required><br>
+        <input class="popup__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__" required><br>
         <button class="popup__button" type="submit">Отправить заявку</button>
         <p class="popup__text">Ваши данные конфиденциальны</p>
     </form>
 </div> <!--/.popup--callback-->
-
 
 <!--Popup Calculate-->
 <div class="popup popup--calculate">
@@ -909,19 +916,19 @@
             <use xlink:href="#close-icon"></use>
         </svg>
     </button> <!--/.popup__close-->
-    <form class="popup__form" action="#" method="post">
+    <form class="popup__form" action="#" method="POST">
         <h2 class="popup__title">Рассчитать стоимость<br><span>со скидкой</span></h2>
-        <input class="popup__input" type="text" placeholder="Введите ваше имя" required><br>
-        <input class="popup__input" type="tel" placeholder="+7 (__) __-__-__" required><br>
+        <input class="popup__input" name="user-name" type="text" placeholder="Введите ваше имя" required><br>
+        <input class="popup__input" name="user-phone" type="tel" placeholder="+7 (__) __-__-__" required><br>
         <button class="popup__button" type="submit">Рассчитать стоимость</button>
         <p class="popup__text">Ваши данные конфиденциальны</p>
     </form>
 </div> <!--/.popup--calculate-->
 
+<!--LightBox + jQuery-->
+<script src="js/lightbox-plus-jquery.min.js"></script>
 
-<!--Java Script-->
 <script src="js/app.js"></script>
-
 
 </body>
 </html>
