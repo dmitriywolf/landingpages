@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -30,6 +28,9 @@
             <g>
                 <path d="M.474,15A14.781,14.781,0,0,1,15-.023,14.781,14.781,0,0,1,29.525,15,14.779,14.779,0,0,1,15,30.024,14.779,14.779,0,0,1,.474,15ZM2.9,15A12.31,12.31,0,0,0,15,27.516,12.309,12.309,0,0,0,27.1,15,12.315,12.315,0,0,0,15,2.484,12.317,12.317,0,0,0,2.9,15ZM13,20.223a.752.752,0,0,1-.4-.67V10.483a.754.754,0,0,1,.4-.669.707.707,0,0,1,.758.062l6.032,4.536a.753.753,0,0,1,.3.607.763.763,0,0,1-.3.608l-6.032,4.532a.7.7,0,0,1-.758.065Z"/>
             </g>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 48 48">
+            <path d="M28.782,24.144,47.812,5.379a2.954,2.954,0,0,0,0-4.22,3.055,3.055,0,0,0-4.279,0L24.5,19.924,5.473,1.159a3.055,3.055,0,0,0-4.279,0,2.954,2.954,0,0,0,0,4.22l19.03,18.765L1.194,42.91a2.954,2.954,0,0,0,0,4.22,3.055,3.055,0,0,0,4.279,0L24.5,28.364,43.532,47.129a3.055,3.055,0,0,0,4.279,0,2.954,2.954,0,0,0,0-4.22Z"/>
         </symbol>
     </svg>
 </div> <!--/.sprite-->
@@ -79,11 +80,13 @@
                     <h3 class="intro__form-title">Бесплатно составим смету на строительство вашего дома уже
                         сегодня!</h3>
                     <form class="intro__form form" action="#" method="post">
-                        <label class="intro__label form__label" for="yourName">
-                            <input class="intro__input form__input" type="text" id="yourName" placeholder="Ваше имя">
+                        <label class="intro__label form__label">
+                            <input class="intro__input form__input" name="userName" type="text" placeholder="Ваше имя"
+                                   required>
                         </label>
-                        <label class="intro__label form__label" for="yourPhone">
-                            <input class="intro__input form__input" type="tel" id="yourPhone" placeholder="Ваш телефон">
+                        <label class="intro__label form__label">
+                            <input class="intro__input form__input" name="userPhone" type="tel"
+                                   placeholder="Ваш телефон" required>
                         </label>
                         <button class="intro__button form__button button" type="submit">Заказать смету</button>
                     </form> <!--/.intro__form-->
@@ -421,10 +424,12 @@
                         проекта</p>
                     <form class="design__form form" action="#">
                         <label class="design__label form__label">
-                            <input class="design__input form__input" type="text" placeholder="Ваше Имя">
+                            <input class="design__input form__input" name="userName" type="text" placeholder="Ваше Имя"
+                                   required>
                         </label>
                         <label class="design__label form__label">
-                            <input class="design__input form__input" type="tel" placeholder="Ваш телефон">
+                            <input class="design__input form__input" name="userPhone" type="tel"
+                                   placeholder="Ваш телефон" required>
                         </label>
                         <button class="design__button form__button button" type="submit">Заказать<br> обратный звонок
                         </button>
@@ -605,13 +610,99 @@
             <div class="asks">
                 <h3 class="asks__subtitle">На Ваши вопросы ответит Евтушенко Дмитрий</h3>
                 <ol class="asks__list">
-                    <li class="asks__item"><a href="#">Как заказать проект?</a></li>
-                    <li class="asks__item"><a href="#">Что делать, если проект не подходит?</a></li>
-                    <li class="asks__item"><a href="#">Как долго составляется проект?</a></li>
-                    <li class="asks__item"><a href="#">Как долго происходит подготовка документации?</a></li>
-                    <li class="asks__item"><a href="#">Можно ли оформить рассрочку?</a></li>
-                    <li class="asks__item"><a href="#">Как долго происходит строительство?</a></li>
-                    <li class="asks__item"><a href="#">Когда происходит ввод в эксплуатацию?</a></li>
+                    <li class="asks__item"><a href="#">Как заказать проект?</a>
+                        <div class="asks__answer answer show">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer-->
+                    </li>
+                    <li class="asks__item"><a href="#">Что делать, если проект не подходит?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer-->
+                    </li>
+                    <li class="asks__item"><a href="#">Как долго составляется проект?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer--></li>
+                    <li class="asks__item"><a href="#">Как долго происходит подготовка документации?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer--></li>
+                    <li class="asks__item"><a href="#">Можно ли оформить рассрочку?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer--></li>
+                    <li class="asks__item"><a href="#">Как долго происходит строительство?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer--></li>
+                    <li class="asks__item"><a href="#">Когда происходит ввод в эксплуатацию?</a>
+                        <div class="asks__answer answer">
+                            <button class="answer__close">
+                                <svg class="answer__close-icon" width="10" height="10">
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </button> <!--/.answer__close-->
+                            <p class="answer__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                voluptate.
+                            </p>
+                        </div> <!--/.answer--></li>
                 </ol> <!--/.asks__list-->
             </div> <!--/.asks-->
         </div> <!--/.container-->
@@ -628,10 +719,12 @@
 
                 <form class="consultation__form form" action="#">
                     <label class="consultation__label form__label">
-                        <input class="consultation__input form__input" type="text" placeholder="Ваше Имя">
+                        <input class="consultation__input form__input" name="userName" type="text"
+                               placeholder="Ваше Имя" required>
                     </label>
                     <label class="consultation__label form__label">
-                        <input class="consultation__input form__input" type="tel" placeholder="Ваш телефон">
+                        <input class="consultation__input form__input" name="userPhone" type="tel"
+                               placeholder="Ваш телефон" required>
                     </label>
                     <button class="consultation__button form__button button" type="submit">Получить бесплатную<br>консультацию
                     </button>
@@ -696,6 +789,32 @@
     </div> <!--/.container-->
 </footer> <!--/.footer-->
 
+<!--Modal CallBack-->
+<div class="popup popup--callback">
+    <div class="popup__inner animated bounceIn">
+        <button class="popup__close">
+            <svg class="popup__close-icon" width="14" height="14">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button> <!--/.popup__close-->
+
+        <h3 class="popup__title">Оставьте свой номер и мы свяжемся с Вами</h3>
+        <form class="popup__form form" action="#" method="post">
+            <label class="popup__label form__label">
+                <input class="popup__input form__input" name="userName" type="text" placeholder="Ваше имя"
+                       required>
+            </label>
+            <label class="popup__label form__label">
+                <input class="popup__input form__input" name="userPhone" type="tel"
+                       placeholder="Ваш телефон" required>
+            </label>
+            <button class="popup__button form__button button" type="submit">Перезвоните мне</button>
+        </form> <!--/.intro__form-->
+
+    </div> <!--/.popup__inner-->
+</div> <!--/.popup-->
+
+
 <a class="pageup" href="#intro">
     <svg class="pageup__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.002 492.002" width="24" height="24">
         <path d="M484.136,328.473L264.988,109.329c-5.064-5.064-11.816-7.844-19.172-7.844c-7.208,0-13.964,2.78-19.02,7.844
@@ -706,10 +825,14 @@
     </svg>
 </a> <!--/.pageup-->
 
-<!--Java Script-->
-<!--Slick-->
+
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--Slick Slider-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<!--LightBox-->
 <script src="js/lightbox.min.js"></script>
 
 <script src="js/main.js"></script>
