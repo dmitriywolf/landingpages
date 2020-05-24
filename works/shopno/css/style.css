@@ -420,7 +420,6 @@ p {
 ============================*/
 .service__item {
     position: relative;
-    overflow: hidden;
     padding: 8px;
     font-size: 0;
 }
@@ -454,6 +453,7 @@ p {
     font-size: 16px;
     line-height: 1.6;
     color: #ffffff;
+    overflow: scroll;
 }
 
 .service__button {
@@ -463,6 +463,7 @@ p {
     border: none;
     cursor: pointer;
     transition: 0.3s linear;
+    outline: none;
 }
 
 .service__button:hover {
@@ -509,13 +510,93 @@ p {
 .service__text--more {
     text-align: center;
     color: #000000;
-    overflow: hidden;
 }
 
 .service__button--close {
     width: 16px;
     height: 16px;
 }
+
+
+/*Team
+====================================*/
+.team__item {
+    position: relative;
+
+    padding: 8px;
+    font-size: 0;
+}
+
+.team__item:hover .team__item-content {
+    opacity: 1;
+}
+
+
+.team__img {
+    width: 100%;
+    height: auto;
+}
+
+.team__item-content {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+
+    padding: 34px;
+
+    background-color: #70f6eb;
+    box-shadow: 3px 6px 16px 0 rgba(20, 20, 21, 0.18);
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.team__item-content::before {
+    position: absolute;
+    content: "";
+    left: 21px;
+    top: -38px;
+    width: 22px;
+    height: 38px;
+    border-top: 19px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 19px solid #71f6ec;
+}
+
+.team__item-name {
+    font-family: Merriweather, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.team__item-position {
+    font-family: Merriweather, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+
+    color: #767070;
+}
+
+.team__item-text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 16px;
+
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.team__item-position {
+    white-space: nowrap;
+}
+
+
+
+
+
 
 
 
@@ -551,6 +632,51 @@ p {
     .about-us__text {
         font-size: 17px;
     }
+
+    /*our services*/
+    .service__content {
+        padding: 30px;
+    }
+
+    .service__title {
+        font-size: 18px;
+    }
+
+    .service__text {
+        padding-top: 10px;
+        line-height: 1.4;
+    }
+
+    .service__button--know-more {
+        font-size: 15px;
+    }
+
+    .service__button--know-more::after {
+        right: -30px;
+        bottom: 0;
+        width: 21px;
+    }
+
+    .service__button--close-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*team*/
+    .team__item-content {
+        padding: 20px;
+    }
+
+    .team__item-name {
+        font-size: 18px;
+    }
+
+    .team__item-position {
+        font-size: 13px;
+    }
+
+
+
 }
 
 
@@ -609,6 +735,39 @@ p {
         padding: 5px;
     }
 
+    /*our services*/
+    .service__item {
+        padding: 5px;
+    }
+
+    .service__content {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        padding: 25px 25px 20px 25px;
+    }
+
+    .service__title {
+        font-size: 16px;
+    }
+
+    .service__text {
+        padding-top: 5px;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -666,6 +825,37 @@ p {
         padding: 30px 0 0;
     }
 
+
+    /*our services*/
+    .service__content {
+        padding: 35px;
+    }
+
+    .service__text {
+        padding-top: 10px;
+        line-height: 1.4;
+    }
+
+    /*!*team*!*/
+    .team__item-name {
+        font-size: 15px;
+    }
+
+    .team__item-position {
+        font-size: 12px;
+    }
+
+    .team__item-text {
+        font-size: 14px;
+    }
+
+    .team__item-content::before {
+        display: none;
+    }
+
+
+
+
 }
 
 
@@ -715,92 +905,73 @@ p {
         padding: 20px 0 0;
     }
 
+    /*our services*/
+    .service__item {
+        min-height: 260px;
+    }
+
+    .service__content {
+        padding: 30px 20px;
+    }
+
+    .service__title {
+        font-size: 13px;
+    }
+
+    .service__text {
+        padding-top: 0;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .service__button--know-more {
+        font-size: 14px;
+    }
+
+    .service__button--close {
+        width: 12px;
+        height: 12px;
+    }
+
+    .service__button--close-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*team*/
+    .team__item-content::before {
+        display: block;
+    }
+
+
 
 }
 
 
-/*Team
-====================================*/
-.team {
-    margin: 0 -8px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.team__item {
-    position: relative;
-    width: 33.3333333333%;
-    padding: 8px;
-    font-size: 0;
-}
-
-.team__item:hover .team__item-content {
-    opacity: 1;
-}
 
 
-.team__img {
-    width: 100%;
-    height: auto;
-}
 
-.team__item-content {
-    position: absolute;
-    bottom: 22px;
-    left: 22px;
-    right: 22px;
 
-    padding: 34px;
 
-    background-color: #70f6eb;
-    box-shadow: 3px 6px 16px 0 rgba(20, 20, 21, 0.18);
-    transition: opacity 0.3s linear;
-    opacity: 0;
-}
 
-.team__item-content::before {
-    position: absolute;
-    content: "";
-    left: 21px;
-    top: -38px;
-    width: 22px;
-    height: 38px;
-    border-top: 19px solid transparent;
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
-    border-bottom: 19px solid #71f6ec;
-}
 
-.team__item-name {
-    font-family: Merriweather, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
 
-    text-transform: uppercase;
-}
 
-.team__item-position {
-    font-family: Merriweather, sans-serif;
-    font-size: 15px;
-    font-style: italic;
 
-    color: #767070;
-}
 
-.team__item-text {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    font-size: 16px;
 
-    letter-spacing: 0.01em;
-    color: rgba(0, 0, 0, 0.8);
-}
 
-.team__item-position {
-    white-space: nowrap;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Testimonials*/
@@ -1068,6 +1239,35 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Media
 ==================================*/
 @media (max-width: 1100px) {
@@ -1078,48 +1278,13 @@ footer {
 
 }
 
-@media (max-width: 1024px) {
 
-    /*team*/
-    .team__item-content {
-        padding: 20px;
-    }
-
-    .team__item-name {
-        font-size: 18px;
-    }
-
-    .team__item-position {
-        font-size: 13px;
-    }
-
-}
 
 
 @media (max-width: 900px) {
 
-    /*our services*/
-    .service--big {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-    }
 
-    .service--small {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-    }
 
-    .service__img {
-        width: 100%;
-        height: auto;
-    }
-
-    /*team*/
-    .team__item {
-        width: 50%;
-    }
 
     /*logotypes*/
     .logotype__item {
@@ -1142,22 +1307,11 @@ footer {
 
 @media (max-width: 767px) {
 
-    /*team*/
-    .team__item-name {
-        font-size: 15px;
-    }
 
-    .team__item-position {
-        font-size: 12px;
-    }
 
-    .team__item-text {
-        font-size: 14px;
-    }
 
-    .team__item-content::before {
-        display: none;
-    }
+
+
 
     /*testimonials*/
     .testimonials__item {
@@ -1223,36 +1377,9 @@ footer {
 @media (max-width: 520px) {
 
 
-    /*services*/
-    .service__item {
-        padding-right: 0;
-        padding-left: 0;
-    }
 
-    .service__content {
-        left: 0;
-        right: 0;
-        padding: 25px 20px;
-    }
 
-    .service__title--more {
-        font-size: 16px;
-    }
 
-    .service__text--more {
-        padding-top: 10px;
-    }
-
-    /*team*/
-    .team__item {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .team__item-content::before {
-        display: block;
-    }
 
     /*testimonials*/
     .testimonials__author {
@@ -1283,32 +1410,7 @@ footer {
 }
 
 @media (max-width: 400px) {
-    /*services*/
-    .service__title {
-        font-size: 14px;
-    }
 
-    .service__text {
-        font-size: 12px;
-    }
-
-    .service__button {
-        font-size: 14px;
-    }
-
-    .service__button::after {
-        content: "";
-
-        position: absolute;
-        right: -25px;
-        bottom: 2px;
-
-        width: 16px;
-        height: 10px;
-
-        background: url("../img/icon-arrow.png") no-repeat;
-        background-size: cover;
-    }
 
     /*logotypes*/
     .logotype__item {
