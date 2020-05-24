@@ -56,6 +56,13 @@
 		c0.687-2.496,3.944-15.42,3.944-15.42c1.95,3.717,7.647,6.992,13.706,6.992c18.034,0,30.271-16.441,30.271-38.45
 		C86.644,15.498,72.547,0,51.125,0z"/>
     </symbol>
+    <symbol id="icon-close" viewBox="0 0 48 48">
+        <g>
+            <path d="M28.782,24.144,47.812,5.379a2.954,2.954,0,0,0,0-4.22,3.055,3.055,0,0,0-4.279,0L24.5,19.924,5.473,1.159a3.055,3.055,0,0,0-4.279,0,2.954,2.954,0,0,0,0,4.22l19.03,18.765L1.194,42.91a2.954,2.954,0,0,0,0,4.22,3.055,3.055,0,0,0,4.279,0L24.5,28.364,43.532,47.129a3.055,3.055,0,0,0,4.279,0,2.954,2.954,0,0,0,0-4.22Z"/>
+        </g>
+    </symbol>
+
+
 </svg>
 
 <header class="header" id="header">
@@ -85,6 +92,7 @@
 
 
 <main>
+    <!--Intro-->
     <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner d-flex flex-column justify-content-center align-content-center-center">
@@ -93,9 +101,9 @@
                 <button class="intro__button" data-scroll="#contacts">Contact Us</button>
             </div> <!--/.intro__inner-->
         </div> <!--/.container-->
-    </section> <!--/.section-->
+    </section> <!--/.intro-->
 
-
+    <!--About Us-->
     <section class="section section--gray" id="about-us">
         <div class="container">
             <div class="section__header">
@@ -153,8 +161,9 @@
 
             </div> <!--/.about-us-->
         </div> <!--/.container-->
-    </section> <!--/.section-->
+    </section> <!--/.#about-us-->
 
+    <!--Works-->
     <section class="section" id="works">
         <div class="container">
             <div class="section__header">
@@ -183,8 +192,9 @@
                 </div>
             </div> <!--/.features-->
         </div> <!--/.container-->
-    </section> <!--/.section-->
+    </section> <!--/#works-->
 
+    <!--Services-->
     <section class="section section--gray" id="services">
         <div class="container">
             <div class="section__header">
@@ -194,506 +204,538 @@
 
             <div class="services row d-flex flex-wrap justify-content-between">
 
-                <div class="service__item service--big">
+                <div class="service__item col-md-7">
                     <img class="service__img" src="img/services/service-1.jpg" alt="">
-                    <div class="service__content">
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Designing is The CooL LOVE FOR.</h3>
                         <p class="service__text">Our most popular service is our Virtual Receptionist. We know that
                             sometimes..</p>
-                        <button class="service__button button__know-more">Know More</button>
-                    </div> <!--/.service__content--more-->
+                        <button class="service__button service__button--know-more">Know More</button>
+                    </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more show">
+                    <div class="service__content service__content--more show flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is The CooL LOVE FOR.</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
                             sometimes it’s something and you middle most this job was posted less than five minutes ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
-                            first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                            first candidates. You may even catch the client while they’re still online.
+                        </p>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
                     </div> <!--/.service__content--more-->
 
                 </div> <!--/.service__item-->
 
-
-                <div class="service__item service--small">
+                <div class="service__item col-md-5">
                     <img class="service__img" src="img/services/service-2.jpg" alt="">
-                    <div class="service__content">
+
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Cool PSD Design</h3>
                         <p class="service__text">Our most popular service is our we know that sometimes it’s..</p>
-                        <button class="service__button button__know-more">Know More</button>
-                    </div> <!--/.service__content--more-->
-                    <div class="service__content service__content--more">
+                        <button class="service__button service__button--know-more">Know More</button>
+                    </div> <!--/.service__content-->
+
+                    <div class="service__content service__content--more flex-column align-items-start">
                         <h3 class="service__title service__title--more">Cool PSD Design</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
                             sometimes it’s something and you middle most this job was posted less than five minutes ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
-                            first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                            first candidates. You may even catch the client while they’re still online.
+                        </p>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
+
                     </div> <!--/.service__content--more-->
                 </div> <!--/.service__item-->
 
-                <div class="service__item service--big">
+                <div class="service__item col-md-7">
                     <img class="service__img" src="img/services/service-3.jpg" alt="">
-                    <div class="service__content">
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Designing is the cool</h3>
                         <p class="service__text">Our most popular service is our Virtual Receptionist. We know that
                             ...</p>
-                        <button class="service__button button__know-more">Know More</button>
-                    </div> <!--/.service__content--more-->
-                    <div class="service__content service__content--more">
+                        <button class="service__button service__button--know-more">Know More</button>
+                    </div> <!--/.service__content-->
+
+                    <div class="service__content service__content--more flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is the cool</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
                             sometimes it’s something and you middle most this job was posted less than five minutes ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
                             first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
                     </div> <!--/.service__content--more-->
                 </div> <!--/.service__item-->
 
-                <div class="service__item service--small">
+                <div class="service__item col-md-5">
                     <img class="service__img" src="img/services/service-4.jpg" alt="">
-                    <div class="service__content">
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Psd to html kori</h3>
                         <p class="service__text">We know that sometimes it’s something and you middle most..</p>
-                        <button class="service__button button__know-more">Know More</button>
-                    </div> <!--/.service__content--more-->
-                    <div class="service__content service__content--more">
+                        <button class="service__button service__button--know-more">Know More</button>
+                    </div> <!--/.service__content-->
+
+                    <div class="service__content service__content--more flex-column align-items-start">
                         <h3 class="service__title service__title--more">Psd to html kori</h3>
                         <p class="service__text service__text--more">We know that sometimes it’s something and you
                             middle most it’s something and you middle most this job was posted less than five minutes
                             ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
                             first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
                     </div> <!--/.service__content--more-->
                 </div> <!--/.service__item-->
 
-                <div class="service__item service--small">
+                <div class="service__item col-md-5">
                     <img class="service__img" src="img/services/service-5.jpg" alt="">
-                    <div class="service__content">
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Cool psd design</h3>
                         <p class="service__text">We know that sometimes it’s something and you middle most..</p>
-                        <button class="service__button button__know-more">Know More</button>
-                    </div>
-                    <div class="service__content service__content--more">
+                        <button class="service__button service__button--know-more">Know More</button>
+                    </div> <!--/.service__content-->
+
+                    <div class="service__content service__content--more flex-column align-items-start">
                         <h3 class="service__title service__title--more">Cool psd design</h3>
                         <p class="service__text service__text--more">We know that sometimes it’s something and you
                             middle most it’s something and you middle most this job was posted less than five minutes
                             ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
                             first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
                     </div> <!--/.service__content--more-->
                 </div> <!--/.service__item-->
 
-                <div class="service__item service--big">
+                <div class="service__item col-md-7">
                     <img class="service__img" src="img/services/service-6.jpg" alt="">
-                    <div class="service__content">
+                    <div class="service__content d-flex flex-column align-items-start">
                         <h3 class="service__title">Designing is the cool for</h3>
                         <p class="service__text">Our most popular service is our Virtual Receptionist. We know that
                             sometimes it’s..</p>
-                        <button class="service__button button__know-more">Know More</button>
+                        <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
-                    <div class="service__content service__content--more">
+                    <div class="service__content service__content--more flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is the cool for</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that sometimes it’s something and you middle most less than five
                             minutes ago,
                             and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the
-                            first candidates. You may even catch the client while they’re still online.</p>
-                        <button class="service__more--close button__know-more--close">Close</button>
+                            first candidates. You may even catch the client while they’re still online.
+                        </p>
+                        <button class="service__button service__button--close">
+                            <svg class="service__button--close-icon" width="16" height="16">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </button> <!--/.service__button--close-->
                     </div> <!--/.service__content--more-->
                 </div> <!--/.service__item-->
-
 
             </div> <!--/.services-->
 
         </div> <!--/.container-->
+    </section> <!--/#services-->
+
+
+    <section class="section" id="team">
+        <div class="section__header">
+            <h2 class="section__title">Small Team</h2>
+            <h3 class="section__subtitle">Lorem ipsum dolor sit amet event landing template</h3>
+        </div>
+        <div class="container">
+            <div class="team">
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-1.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+
+                    </div>
+                </div> <!--/.team__item-->
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-2.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+                    </div>
+                </div> <!--/.team__item-->
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-3.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+                    </div>
+                </div> <!--/.team__item-->
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-4.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+                    </div>
+                </div> <!--/.team__item-->
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-5.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+                    </div>
+                </div> <!--/.team__item-->
+                <div class="team__item">
+                    <img class="team__img" src="img/team/team-1.jpg" alt="">
+                    <div class="team__item-content">
+                        <span class="team__item-name">AL Rayhan</span>
+                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>
+                        <p class="team__item-text">
+                            Lorem Ipsum is not simply is an action designer random text
+                            It has roots in a piece.
+                        </p>
+
+                        <div class="social__list">
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="8" height="13">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="13" height="10">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="12" height="12">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg class="social__icon" width="15" height="11">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </a>
+                        </div> <!--/.social__list-->
+                    </div>
+                </div> <!--/.team__item-->
+            </div> <!--/.team-->
+        </div> <!--/.container-->
     </section> <!--/.section-->
 
-    <!--    <section class="section" id="team">-->
-    <!--        <div class="section__header">-->
-    <!--            <h2 class="section__title">Small Team</h2>-->
-    <!--            <h3 class="section__subtitle">Lorem ipsum dolor sit amet event landing template</h3>-->
-    <!--        </div>-->
-    <!--        <div class="container">-->
-    <!--            <div class="team">-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-1.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
+    <section class="section section--gray" id="testimonials">
+        <div class="section__header">
+            <h2 class="section__title">what they says</h2>
+            <h3 class="section__subtitle">Lorem ipsum dolor sit amet event landing template</h3>
+        </div>
+        <div class="container">
+            <div class="testimonials" id="testimonialsSlider">
+                <div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__img-author">
+                            <div class="testimonials__author-img-wrapper">
+                                <img class="testimonials__img" src="img/team/team-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__header">
+                                <span class="testimonials__author">Al Rayhan</span>
+                                <span class="testimonials__author--position">&nbsp;/&nbsp; UI/UX Designer</span>
+                            </div>
+                            <div class="testimonials__text">
+                                Lorem Ipsum is simply dummy text of the printing and you
+                                standard dummy know that text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                            <div class="testimonials__stars">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                            </div> <!--/.testimonials__stars-->
+                        </div> <!--/.testimonials__content-->
+                    </div> <!--/.testimonials__item-->
+                </div> <!--/.slider__item-->
+                <div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__img-author">
+                            <div class="testimonials__author-img-wrapper">
+                                <img class="testimonials__img" src="img/team/team-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__header">
+                                <span class="testimonials__author">Al Rayhan</span>
+                                <span class="testimonials__author--position">&nbsp;/&nbsp; UI/UX Designer</span>
+                            </div>
+                            <div class="testimonials__text">
+                                Lorem Ipsum is simply dummy text of the printing and you
+                                standard dummy know that text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                            <div class="testimonials__stars">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                            </div> <!--/.testimonials__stars-->
+                        </div> <!--/.testimonials__content-->
+                    </div> <!--/.testimonials__item-->
+                </div> <!--/.slider__item-->
+                <div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__img-author">
+                            <div class="testimonials__author-img-wrapper">
+                                <img class="testimonials__img" src="img/team/team-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <div class="testimonials__header">
+                                <span class="testimonials__author">Al Rayhan</span>
+                                <span class="testimonials__author--position">&nbsp;/&nbsp; UI/UX Designer</span>
+                            </div>
+                            <div class="testimonials__text">
+                                Lorem Ipsum is simply dummy text of the printing and you
+                                standard dummy know that text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                            <div class="testimonials__stars">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                                <img class="image-star" src="img/star.png" alt="">
+                            </div> <!--/.testimonials__stars-->
+                        </div> <!--/.testimonials__content-->
+                    </div> <!--/.testimonials__item-->
+                </div> <!--/.slider__item-->
+            </div> <!--/.testimonials-->
+        </div> <!--/.container-->
+    </section> <!--/.section #testimonials-->
 
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
+    <section class="section">
+        <div class="container">
+            <div class="logotypes">
+                <div class="logotype__item">
+                    <a class="logotype__link" href="#">
+                        <img class="logotype__img" src="img/logotypes/logo-1.png" alt="">
+                    </a>
+                </div><!--/.logotype__item-->
+                <div class="logotype__item">
+                    <a class="logotype__link" href="">
+                        <img class="logotype__img" src="img/logotypes/logo-2.png" alt="">
+                    </a>
+                </div><!--/.logotype__item-->
+                <div class="logotype__item">
+                    <a class="logotype__link" href="#">
+                        <img class="logotype__img" src="img/logotypes/logo-3.png" alt="">
+                    </a>
+                </div><!--/.logotype__item-->
+                <div class="logotype__item">
+                    <a class="logotype__link" href="#">
+                        <img class="logotype__img" src="img/logotypes/logo-4.png" alt="">
+                    </a>
+                </div><!--/.logotype__item-->
+                <div class="logotype__item">
+                    <a class="logotype__link" href="#">
+                        <img class="logotype__img" src="img/logotypes/logo-5.png" alt="">
+                    </a>
+                </div><!--/.logotype__item-->
+                <div class="logotype__item">
+                    <a class="logotype__link" href="#">
+                        <img class="logotype__img" src="img/logotypes/logo-6.png" alt="">
+                    </a>
+                </div> <!--/.logotype__item-->
+            </div> <!--/.logotypes-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
 
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-2.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <form class="form" action="#" method="post">
+                    <input type="text" class="input" placeholder="Name*"> <br>
+                    <input type="text" class="input" placeholder="Subject*"><br>
+                    <input type="email" class="input" placeholder="Email*"><br>
+                    <textarea name="" id="" cols="30" rows="4">Message*</textarea> <br>
+                    <button class="form__button" type="submit">Send Message</button>
+                </form> <!--/.form-->
+                <div class="address__wrapper">
+                    <p class="address__text">Address Line 1</p>
+                    <p class="address__text">Address Line 2</p>
+                    <p class="address__text">
+                        Phone: <a class="address__link" href="tel:548945645">+548945645</a>
+                    </p>
+                    <p class="address__text">
+                        Fax: <a class="address__link" href="tel:45645654546">+45645654546</a>
+                    </p>
 
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-3.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
-
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-4.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
-
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-5.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
-
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--                <div class="team__item">-->
-    <!--                    <img class="team__img" src="img/team/team-1.jpg" alt="">-->
-    <!--                    <div class="team__item-content">-->
-    <!--                        <span class="team__item-name">AL Rayhan</span>-->
-    <!--                        <span class="team__item-position">&nbsp;/&nbsp;UI Designer</span>-->
-    <!--                        <p class="team__item-text">-->
-    <!--                            Lorem Ipsum is not simply is an action designer random text-->
-    <!--                            It has roots in a piece.-->
-    <!--                        </p>-->
-
-    <!--                        <div class="social__list">-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="8" height="13">-->
-    <!--                                    <use xlink:href="#facebook"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="13" height="10">-->
-    <!--                                    <use xlink:href="#twitter"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="12" height="12">-->
-    <!--                                    <use xlink:href="#pinterest"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                            <a class="social__item" href="#">-->
-    <!--                                <svg class="social__icon" width="15" height="11">-->
-    <!--                                    <use xlink:href="#mail"></use>-->
-    <!--                                </svg>-->
-    <!--                            </a>-->
-    <!--                        </div> &lt;!&ndash;/.social__list&ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                </div> &lt;!&ndash;/.team__item&ndash;&gt;-->
-    <!--            </div> &lt;!&ndash;/.team&ndash;&gt;-->
-    <!--        </div> &lt;!&ndash;/.container&ndash;&gt;-->
-    <!--    </section> &lt;!&ndash;/.section&ndash;&gt;-->
-
-    <!--    <section class="section section&#45;&#45;gray" id="testimonials">-->
-    <!--        <div class="section__header">-->
-    <!--            <h2 class="section__title">what they says</h2>-->
-    <!--            <h3 class="section__subtitle">Lorem ipsum dolor sit amet event landing template</h3>-->
-    <!--        </div>-->
-    <!--        <div class="container">-->
-    <!--            <div class="testimonials" id="testimonialsSlider">-->
-    <!--                <div>-->
-    <!--                    <div class="testimonials__item">-->
-    <!--                        <div class="testimonials__img-author">-->
-    <!--                            <div class="testimonials__author-img-wrapper">-->
-    <!--                                <img class="testimonials__img" src="img/team/team-1.jpg" alt="">-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="testimonials__content">-->
-    <!--                            <div class="testimonials__header">-->
-    <!--                                <span class="testimonials__author">Al Rayhan</span>-->
-    <!--                                <span class="testimonials__author&#45;&#45;position">&nbsp;/&nbsp; UI/UX Designer</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__text">-->
-    <!--                                Lorem Ipsum is simply dummy text of the printing and you-->
-    <!--                                standard dummy know that text ever since the 1500s, when an unknown printer took a-->
-    <!--                                galley of type and scrambled it to make a type specimen book.-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__stars">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                            </div> &lt;!&ndash;/.testimonials__stars&ndash;&gt;-->
-    <!--                        </div> &lt;!&ndash;/.testimonials__content&ndash;&gt;-->
-    <!--                    </div> &lt;!&ndash;/.testimonials__item&ndash;&gt;-->
-    <!--                </div> &lt;!&ndash;/.slider__item&ndash;&gt;-->
-    <!--                <div>-->
-    <!--                    <div class="testimonials__item">-->
-    <!--                        <div class="testimonials__img-author">-->
-    <!--                            <div class="testimonials__author-img-wrapper">-->
-    <!--                                <img class="testimonials__img" src="img/team/team-2.jpg" alt="">-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="testimonials__content">-->
-    <!--                            <div class="testimonials__header">-->
-    <!--                                <span class="testimonials__author">Al Rayhan</span>-->
-    <!--                                <span class="testimonials__author&#45;&#45;position">&nbsp;/&nbsp; UI/UX Designer</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__text">-->
-    <!--                                Lorem Ipsum is simply dummy text of the printing and you-->
-    <!--                                standard dummy know that text ever since the 1500s, when an unknown printer took a-->
-    <!--                                galley of type and scrambled it to make a type specimen book.-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__stars">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                            </div> &lt;!&ndash;/.testimonials__stars&ndash;&gt;-->
-    <!--                        </div> &lt;!&ndash;/.testimonials__content&ndash;&gt;-->
-    <!--                    </div> &lt;!&ndash;/.testimonials__item&ndash;&gt;-->
-    <!--                </div> &lt;!&ndash;/.slider__item&ndash;&gt;-->
-    <!--                <div>-->
-    <!--                    <div class="testimonials__item">-->
-    <!--                        <div class="testimonials__img-author">-->
-    <!--                            <div class="testimonials__author-img-wrapper">-->
-    <!--                                <img class="testimonials__img" src="img/team/team-3.jpg" alt="">-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="testimonials__content">-->
-    <!--                            <div class="testimonials__header">-->
-    <!--                                <span class="testimonials__author">Al Rayhan</span>-->
-    <!--                                <span class="testimonials__author&#45;&#45;position">&nbsp;/&nbsp; UI/UX Designer</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__text">-->
-    <!--                                Lorem Ipsum is simply dummy text of the printing and you-->
-    <!--                                standard dummy know that text ever since the 1500s, when an unknown printer took a-->
-    <!--                                galley of type and scrambled it to make a type specimen book.-->
-    <!--                            </div>-->
-    <!--                            <div class="testimonials__stars">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                                <img class="image-star" src="img/star.png" alt="">-->
-    <!--                            </div> &lt;!&ndash;/.testimonials__stars&ndash;&gt;-->
-    <!--                        </div> &lt;!&ndash;/.testimonials__content&ndash;&gt;-->
-    <!--                    </div> &lt;!&ndash;/.testimonials__item&ndash;&gt;-->
-    <!--                </div> &lt;!&ndash;/.slider__item&ndash;&gt;-->
-    <!--            </div> &lt;!&ndash;/.testimonials&ndash;&gt;-->
-    <!--        </div> &lt;!&ndash;/.container&ndash;&gt;-->
-    <!--    </section> &lt;!&ndash;/.section #testimonials&ndash;&gt;-->
-
-    <!--    <section class="section">-->
-    <!--        <div class="container">-->
-    <!--            <div class="logotypes">-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="#">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-1.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div>&lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-2.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div>&lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="#">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-3.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div>&lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="#">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-4.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div>&lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="#">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-5.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div>&lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--                <div class="logotype__item">-->
-    <!--                    <a class="logotype__link" href="#">-->
-    <!--                        <img class="logotype__img" src="img/logotypes/logo-6.png" alt="">-->
-    <!--                    </a>-->
-    <!--                </div> &lt;!&ndash;/.logotype__item&ndash;&gt;-->
-    <!--            </div> &lt;!&ndash;/.logotypes&ndash;&gt;-->
-    <!--        </div> &lt;!&ndash;/.container&ndash;&gt;-->
-    <!--    </section> &lt;!&ndash;/.section&ndash;&gt;-->
-
-    <!--    <section class="section contacts" id="contacts">-->
-    <!--        <div class="container">-->
-    <!--            <div class="contacts__inner">-->
-    <!--                <form class="form" action="#" method="post">-->
-    <!--                    <input type="text" class="input" placeholder="Name*"> <br>-->
-    <!--                    <input type="text" class="input" placeholder="Subject*"><br>-->
-    <!--                    <input type="email" class="input" placeholder="Email*"><br>-->
-    <!--                    <textarea name="" id="" cols="30" rows="4">Message*</textarea> <br>-->
-    <!--                    <button class="form__button" type="submit">Send Message</button>-->
-    <!--                </form> &lt;!&ndash;/.form&ndash;&gt;-->
-    <!--                <div class="address__wrapper">-->
-    <!--                    <p class="address__text">Address Line 1</p>-->
-    <!--                    <p class="address__text">Address Line 2</p>-->
-    <!--                    <p class="address__text">-->
-    <!--                        Phone: <a class="address__link" href="tel:548945645">+548945645</a>-->
-    <!--                    </p>-->
-    <!--                    <p class="address__text">-->
-    <!--                        Fax: <a class="address__link" href="tel:45645654546">+45645654546</a>-->
-    <!--                    </p>-->
-
-    <!--                    <p class="address__text address__text&#45;&#45;web">-->
-    <!--                        Web: <a class="address__link" href="#">www.designagency.net</a>-->
-    <!--                    </p>-->
-    <!--                    <p class="address__text">-->
-    <!--                        Email: <a class="address__link" href="mailto: info@designagency.net">info@designagency.net</a>-->
-    <!--                    </p>-->
-    <!--                    <div class="map__wrapper">-->
-    <!--                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1799.1795865898177!2d-73.94123824488577!3d40.677332722116084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b86539c37e1%3A0x4fcb0c388cf33227!2sNowhere%20Studios!5e0!3m2!1sru!2sua!4v1581268503057!5m2!1sru!2sua"-->
-    <!--                                width="100%" height="100%" style="border:0;"-->
-    <!--                                allowfullscreen=""></iframe>-->
-    <!--                    </div> &lt;!&ndash;/.map__wrapper&ndash;&gt;-->
-    <!--                </div> &lt;!&ndash;/.address__wrapper&ndash;&gt;-->
-    <!--            </div> &lt;!&ndash;/.contacts__inner&ndash;&gt;-->
-    <!--        </div> &lt;!&ndash;/.container&ndash;&gt;-->
-    <!--    </section> &lt;!&ndash;/.section&ndash;&gt;-->
+                    <p class="address__text address__text--web">
+                        Web: <a class="address__link" href="#">www.designagency.net</a>
+                    </p>
+                    <p class="address__text">
+                        Email: <a class="address__link" href="mailto: info@designagency.net">info@designagency.net</a>
+                    </p>
+                    <div class="map__wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1799.1795865898177!2d-73.94123824488577!3d40.677332722116084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b86539c37e1%3A0x4fcb0c388cf33227!2sNowhere%20Studios!5e0!3m2!1sru!2sua!4v1581268503057!5m2!1sru!2sua"
+                                width="100%" height="100%" style="border:0;"
+                                allowfullscreen=""></iframe>
+                    </div> <!--/.map__wrapper-->
+                </div> <!--/.address__wrapper-->
+            </div> <!--/.contacts__inner-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
 </main> <!--/.main-->
 
 <footer>

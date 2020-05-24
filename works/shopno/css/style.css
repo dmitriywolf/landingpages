@@ -102,8 +102,6 @@ p {
 }
 
 
-
-
 /*Section
 =========================*/
 .section {
@@ -416,27 +414,15 @@ p {
     height: auto;
 }
 
+
+
 /*Our Services
 ============================*/
-.services {
-
-}
-
 .service__item {
     position: relative;
-
     overflow: hidden;
     padding: 8px;
     font-size: 0;
-}
-
-
-.service--big {
-    width: 60%;
-}
-
-.service--small {
-    width: 40%;
 }
 
 .service__img {
@@ -450,50 +436,74 @@ p {
     left: 8px;
     right: 8px;
     bottom: 8px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 60px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-
-.service__content--more {
-    display: none;
-    background-color: #71f5ea;
-    z-index: 3;
-    transition: opacity 0.3s linear;
-}
-
-.service__content--more.show {
-    display: flex;
-}
-
-
 .service__title {
     font-family: "Merriweather", serif;
     font-size: 20px;
     line-height: 1.5;
-
     text-transform: uppercase;
-
     color: #ffffff;
-}
-
-.service__title--more {
-    text-align: center;
-    color: #000000;
 }
 
 .service__text {
     padding-top: 20px;
     font-size: 16px;
     line-height: 1.6;
-
     color: #ffffff;
+}
+
+.service__button {
+    margin-top: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.service__button:hover {
+    opacity: 0.7;
+}
+
+.service__button--know-more {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.service__button--know-more::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 2px;
+    width: 21px;
+    height: 15px;
+    background: url("../img/icon-arrow.png") no-repeat;
+}
+
+
+/*Service Content More*/
+.service__content--more {
+    display: none;
+    background-color: #71f5ea;
+}
+
+.service__content--more.show {
+    display: flex;
+}
+
+.service__title--more {
+    width: 100%;
+    text-align: center;
+    color: #000000;
 }
 
 .service__text--more {
@@ -502,68 +512,12 @@ p {
     overflow: hidden;
 }
 
-.service__button {
-    position: relative;
-
-    align-self: flex-start;
-    margin-top: auto;
-    padding: 0;
-
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
-
-    text-transform: uppercase;
-
-    color: #ffffff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.service__button::after {
-    content: "";
-
-    position: absolute;
-    right: -40px;
-    bottom: 4px;
-
-    width: 21px;
-    height: 14px;
-
-    background: url("../img/icon-arrow.png") no-repeat;
-}
-
-.service__more--close {
-    position: relative;
-
-    align-self: flex-start;
-    width: 16px;
-    height: 18px;
-    margin-top: auto;
-    padding: 0;
-
-    font-size: 0;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.service__more--close::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
+.service__button--close {
     width: 16px;
     height: 16px;
-
-    background: url("../img/icon-close.png")
 }
 
-.service__more--close:hover:after {
-    opacity: 0.7;
-}
+
 
 
 
@@ -654,7 +608,6 @@ p {
     .features__item {
         padding: 5px;
     }
-
 
 
 }
@@ -764,46 +717,6 @@ p {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Team
@@ -1302,7 +1215,6 @@ footer {
         width: 100%;
         text-align: center;
     }
-
 
 
 }
