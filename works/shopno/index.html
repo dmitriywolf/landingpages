@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
+    <!--    <link rel="manifest" href="img/favicon/site.webmanifest">-->
+    <!--    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--    <meta name="msapplication-TileColor" content="#da532c">-->
+    <!--    <meta name="theme-color" content="#ffffff">-->
 
     <!--Styles-->
     <!--Bootstrap-Grid CSS-->
@@ -63,7 +63,7 @@
     </symbol>
 </svg> <!--svg-sprite-->
 
-<header class="header" id="header">
+<header class="header animated" id="header">
     <div class="container">
         <div class="header__inner d-flex flex-row justify-content-between align-items-center">
             <div class="logo__wrapper">
@@ -210,7 +210,7 @@
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is The CooL LOVE FOR.</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
@@ -236,7 +236,7 @@
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Cool PSD Design</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
@@ -262,7 +262,7 @@
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is the cool</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that
@@ -285,7 +285,7 @@
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Psd to html kori</h3>
                         <p class="service__text service__text--more">We know that sometimes it’s something and you
                             middle most it’s something and you middle most this job was posted less than five minutes
@@ -308,7 +308,7 @@
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
 
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Cool psd design</h3>
                         <p class="service__text service__text--more">We know that sometimes it’s something and you
                             middle most it’s something and you middle most this job was posted less than five minutes
@@ -331,7 +331,7 @@
                             sometimes it’s..</p>
                         <button class="service__button service__button--know-more">Know More</button>
                     </div> <!--/.service__content-->
-                    <div class="service__content service__content--more flex-column align-items-start">
+                    <div class="service__content service__content--more animated flex-column align-items-start">
                         <h3 class="service__title service__title--more">Designing is the cool for</h3>
                         <p class="service__text service__text--more">Our most popular service is our Virtual
                             Receptionist. We know that sometimes it’s something and you middle most less than five
@@ -764,10 +764,10 @@
             <div class="contacts__inner d-flex flex-wrap justify-content-between">
 
                 <form class="form" action="#" method="post">
-                    <input type="text" class="input" placeholder="Name*"> <br>
-                    <input type="text" class="input" placeholder="Subject*"><br>
-                    <input type="email" class="input" placeholder="Email*"><br>
-                    <textarea name="" id="" cols="30" rows="4">Message*</textarea> <br>
+                    <input type="text" class="input" name="name" placeholder="Name*" required> <br>
+                    <input type="text" class="input" name="subject" placeholder="Subject*"><br>
+                    <input type="email" class="input" name="email" placeholder="Email*" required><br>
+                    <textarea name="message">Message*</textarea> <br>
                     <button class="form__button" type="submit">Send Message</button>
                 </form> <!--/.form-->
 
@@ -833,7 +833,7 @@
 
 
 <!--JQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Slick Slider-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!--Main JS-->
