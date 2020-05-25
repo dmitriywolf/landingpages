@@ -105,7 +105,7 @@ a {
 
 img {
     max-width: 100%;
-    height: auto;
+height: auto;
 }
 
 h1,
@@ -398,7 +398,7 @@ button {
 }
 
 .form__input:focus {
-    border-color: #55a831;
+    border-color: #14a833;
 }
 
 .form__button {
