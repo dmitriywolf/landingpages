@@ -27,7 +27,7 @@ $(document).ready(function () {
         let elementOffset = $(elementId).offset().top;
 
         nav.removeClass("show");
-        navToggle.removeClass("burger--close"); //Удаляем клас измениения бургера
+        navToggle.removeClass("burger--close");
 
 
         $("html, body").animate({
@@ -44,18 +44,18 @@ $(document).ready(function () {
         event.preventDefault();
 
         nav.toggleClass("show");
-        header.toggleClass("header-bg"); //Меняем цвет фона для Header
-        navToggle.toggleClass("burger--close"); //Добавляем клас изменения бургера
+        header.toggleClass("header-bg");
+        navToggle.toggleClass("burger--close");
     });
 
 
-    //Team Slider: https://github.com/kenwheeler/slick/
+    //Team Slider
     let slider = $("#teamSlider");
 
     slider.slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
@@ -68,6 +68,8 @@ $(document).ready(function () {
 
     testSlider.slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,

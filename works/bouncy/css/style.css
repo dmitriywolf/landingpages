@@ -296,6 +296,7 @@ p {
     background-color: transparent;
     cursor: pointer;
     transition: opacity 0.3s linear;
+    outline: none;
 }
 
 .burger__item {
@@ -1397,10 +1398,16 @@ p {
 
     line-height: 40px;
 
-    color: #cfd3d4;
+    color: #737576;
 
     border: 1px solid #81868e;
     background-color: transparent;
+    outline: none;
+}
+
+.input:focus,
+.form__textarea:focus {
+    border-color: #19bd9a;
 }
 
 .form__button {
@@ -1411,6 +1418,7 @@ p {
     background-color: #19bd9a;
     border: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .form__button:hover,
