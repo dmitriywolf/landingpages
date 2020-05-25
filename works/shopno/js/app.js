@@ -1,5 +1,4 @@
-$(function () {
-
+$(document).ready(function () {
     //Fixed Header
     let header = $("#header");
     let intro = $("#intro");
@@ -42,11 +41,8 @@ $(function () {
         navToggle.toggleClass("burger--close");
     });
 
-
     //Services
     let $service = $('.service__item');
-    
-    
     $service.each(function () {
 
         let serviceMore = $(this).find('.service__content--more');
@@ -61,9 +57,6 @@ $(function () {
             serviceMore.removeClass('show zoomIn');
         });
     });
-
-
-
 
     //AboutUs Slider
     let aboutUsSlider = $("#aboutUsSlider");
@@ -86,6 +79,7 @@ $(function () {
         arrows: false,
         dots: true
     });
-
-
 });
+
+
+

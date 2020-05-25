@@ -766,7 +766,7 @@ p {
 }
 
 .input,
-textarea{
+textarea {
     width: 100%;
     padding: 0 0 0 4px;
     margin-bottom: 10px;
@@ -777,7 +777,7 @@ textarea{
 
 .input,
 input::placeholder,
-textarea{
+textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     line-height: 3;
@@ -795,8 +795,6 @@ textarea {
 .input, textarea {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
-
 
 
 .form__button {
