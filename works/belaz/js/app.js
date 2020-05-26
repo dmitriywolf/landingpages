@@ -69,4 +69,20 @@ $(function () {
             }
         ]
     });
+
+
+//    Modals
+    let btnPopup = $('.btnCallBack');
+    let popupCallBack = $('.popup--callback');
+
+    btnPopup.on('click', function () {
+
+        popupCallBack.addClass('show');
+    });
+
+    let popupClose = $('.popup__close-icon');
+
+    popupClose.on('click', function () {
+        popupCallBack.removeClass('show');
+    });
 });

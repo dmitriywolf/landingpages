@@ -360,6 +360,7 @@ p {
     border: none;
     background-color: #f7b516;
     transition: 0.3s;
+    outline: none;
 }
 
 .form__button:hover {
