@@ -71,18 +71,43 @@ $(function () {
     });
 
 
-//    Modals
+    //Modals
     let btnPopup = $('.btnCallBack');
     let popupCallBack = $('.popup--callback');
+    let popupClose = $('.popup__close-icon');
 
     btnPopup.on('click', function () {
-
         popupCallBack.addClass('show');
     });
-
-    let popupClose = $('.popup__close-icon');
 
     popupClose.on('click', function () {
         popupCallBack.removeClass('show');
     });
+
+    //Answers
+    let asks = $('.asks__list');
+
+    asks.on('click', '.asks__item', function() {
+        let answer = $(this).find('.answer');
+
+        let answerClose = $(this).find('.answer__close');
+
+        $(this).on('click', function () {
+            answer.addClass('show');
+
+            answerClose.on('click', function () {
+                answer.removeClass('show');
+            });
+
+        });
+
+    });
+
+
+
+
+
+
+
+
 });
