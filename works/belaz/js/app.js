@@ -87,43 +87,24 @@ $(function () {
     //Answers
     let asks = $('.asks__item');
 
+
     asks.each(function () {
 
-        $(this).on('click', function(){
-
+        $(this).on('click', function () {
+            console.log($(this));
 
             let answer = $(this).find('.answer');
-            let close = $(this).find('button');
-
             answer.addClass('show');
-
-
-            close.on('click', function (e) {
-                e.preventDefault();
-;                answer.removeClass('show');
-            });
-
 
 
         });
 
-
-
-
-
-
-
-
+        $(this).on('click', '.answer__close-icon', function (event) {
+            console.log($(this));
+            event.stopPropagation();
+            $(this).closest('.answer').removeClass('show');
+        });
     });
-
-
-
-
-
-
-
-
-
 
 
 
