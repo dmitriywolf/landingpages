@@ -85,23 +85,42 @@ $(function () {
     });
 
     //Answers
-    let asks = $('.asks__list');
+    let asks = $('.asks__item');
 
-    asks.on('click', '.asks__item', function() {
-        let answer = $(this).find('.answer');
+    asks.each(function () {
 
-        let answerClose = $(this).find('.answer__close');
+        $(this).on('click', function(){
 
-        $(this).on('click', function () {
+
+            let answer = $(this).find('.answer');
+            let close = $(this).find('button');
+
             answer.addClass('show');
 
-            answerClose.on('click', function () {
-                answer.removeClass('show');
+
+            close.on('click', function (e) {
+                e.preventDefault();
+;                answer.removeClass('show');
             });
+
+
 
         });
 
+
+
+
+
+
+
+
     });
+
+
+
+
+
+
 
 
 
