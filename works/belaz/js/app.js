@@ -86,25 +86,20 @@ $(function () {
 
     //Answers
     let asks = $('.asks__item');
-
-
     asks.each(function () {
-
         $(this).on('click', function () {
-            console.log($(this));
-
             let answer = $(this).find('.answer');
             answer.addClass('show');
-
-
         });
 
         $(this).on('click', '.answer__close-icon', function (event) {
-            console.log($(this));
             event.stopPropagation();
             $(this).closest('.answer').removeClass('show');
         });
     });
+
+    //Forms
+
 
 
 
