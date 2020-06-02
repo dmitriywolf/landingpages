@@ -389,12 +389,12 @@
             <div class="reviews__inner">
                 <h2 class="section__title">Отзывы</h2>
                 <ul class="reviews__navigation reviews-menu">
-                    <li class="reviews-menu__item is-active">Здравохранение</li>
-                    <li class="reviews-menu__item">Бизнес</li>
-                    <li class="reviews-menu__item">Семья</li>
-                    <li class="reviews-menu__item">Жкх</li>
-                    <li class="reviews-menu__item">Недвижимость</li>
-                    <li class="reviews-menu__item">Все</li>
+                    <li class="reviews-menu__item health">Здравохранение</li>
+                    <li class="reviews-menu__item business">Бизнес</li>
+                    <li class="reviews-menu__item family">Семья</li>
+                    <li class="reviews-menu__item communal">Жкх</li>
+                    <li class="reviews-menu__item property">Недвижимость</li>
+                    <li class="reviews-menu__item all is-active">Все</li>
                 </ul><!--/.reviews-menu-->
                 <div class="reviews__list-wrapper">
                     <div class="reviews__arrow reviews__arrow--prev">
@@ -402,8 +402,10 @@
                             <use xlink:href="#arrow"></use>
                         </svg>
                     </div> <!--/.reviews__arrow-->
+
                     <ul class="reviews__list">
-                        <li class="reviews__item">
+
+                        <li class="reviews__item all health property">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-1.jpg" alt="Reviews-1">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -413,7 +415,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all health business communal">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-2.jpg" alt="Reviews-2">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -423,7 +425,7 @@
                             <p class="reviews__title">Название видеоролика</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all health business family">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-3.jpg" alt="Reviews-3">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -433,7 +435,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all health  family communal">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-4.jpg" alt="Reviews-4">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -443,7 +445,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all business family property">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-5.jpg" alt="Reviews-5">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -453,7 +455,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all family communal property">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-6.jpg" alt="Reviews-6">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -463,7 +465,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all property business">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-7.jpg" alt="Reviews-7">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -473,7 +475,7 @@
                             <p class="reviews__title">Длинное название видеоролика в две строки просто длинное</p>
                         </li> <!--/.reviews__item-->
 
-                        <li class="reviews__item">
+                        <li class="reviews__item all property business">
                             <div class="reviews__video">
                                 <img src="img/reviews/item-8.jpg" alt="Reviews-8">
                                 <svg class="reviews__play-icon" width="30" height="30">
@@ -738,11 +740,11 @@
                         <h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
                         <div class="form__input-wrapper">
                             <label class="form__label" for="userName">Введите своё имя</label>
-                            <input class="form__input" name="user-name" id="userName" type="text">
+                            <input class="form__input" name="user-name" id="userName" type="text" required>
                         </div> <!--/.form__input-wrapper-->
                         <div class="form__input-wrapper">
                             <label class="form__label" for="userPhone">Ваш номер телефона</label>
-                            <input class="form__input" name="user-phone" id="userPhone" type="tel">
+                            <input class="form__input" name="user-phone" id="userPhone" type="tel" required>
                         </div> <!--/.form__input-wrapper-->
                         <div class="form__input-wrapper">
                             <label class="form__label" for="userQuestion">Сообщение или вопрос</label>
@@ -805,11 +807,11 @@
             <h3 class="form__title">Оставьте свой номер и мы свяжемся с вами</h3>
             <div class="form__input-wrapper">
                 <label class="form__label" for="userName-2">Введите своё имя</label>
-                <input class="form__input" name="user-name" id="userName-2" type="text">
+                <input class="form__input" name="user-name" id="userName-2" type="text" required>
             </div> <!--/.form__input-wrapper-->
             <div class="form__input-wrapper">
                 <label class="form__label" for="userPhone-2">Ваш номер телефона</label>
-                <input class="form__input" name="user-phone" id="userPhone-2" type="tel">
+                <input class="form__input" name="user-phone" id="userPhone-2" type="tel" required>
             </div> <!--/.form__input-wrapper-->
             <button class="form__button button button--red" type="submit">Заказать звонок консультанта
             </button>
@@ -830,11 +832,11 @@
             <h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
             <div class="form__input-wrapper">
                 <label class="form__label" for="userName-1">Введите своё имя</label>
-                <input class="form__input" name="user-name" id="userName-1" type="text">
+                <input class="form__input" name="user-name" id="userName-1" type="text" required>
             </div> <!--/.form__input-wrapper-->
             <div class="form__input-wrapper">
                 <label class="form__label" for="userPhone-1">Ваш номер телефона</label>
-                <input class="form__input" name="user-phone" id="userPhone-1" type="tel">
+                <input class="form__input" name="user-phone" id="userPhone-1" type="tel" required>
             </div> <!--/.form__input-wrapper-->
             <div class="form__input-wrapper">
                 <label class="form__label" for="userQuestion-1">Сообщение или вопрос</label>
@@ -881,6 +883,6 @@
 </a> <!--/.pageup-->
 
 <!--JavaScript-->
-<script src="js/app.js"></script>
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
