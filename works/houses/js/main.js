@@ -105,4 +105,21 @@ window.addEventListener('DOMContentLoaded', () => {
         ]
     });
 
+    /*Answers
+    =========================================*/
+    let asks = $('.asks__item');
+
+    asks.each(function () {
+
+        $(this).on('click', function () {
+            let answer = $(this).find('.answer');
+            answer.addClass('show');
+        });
+
+        $(this).on('click', '.answer__close-icon', function (event) {
+            event.stopPropagation();
+            $(this).closest('.answer').removeClass('show');
+        });
+    });
+
 });
