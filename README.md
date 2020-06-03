@@ -1,3 +1,3 @@
 # Portfolio: Dmitriy Volchenko
-  - Вёрстка личного портфолио: [Dmitriy Wolf](https://dmitriywolf.github.io/)
+  - Портфолио FrontEnd-разработчика: [WEB.WERWOLF](https://dmitriywolf.github.io/)
 
