@@ -374,6 +374,14 @@ p {
     background-color: #1669b3;
 }
 
+.status {
+    padding: 10px;
+    text-align: center;
+    color: #dd341b;
+
+}
+
+
 /*------------------------------------------------------------------*/
 /*---Features---*/
 .features__wrapper {
