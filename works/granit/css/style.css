@@ -73,6 +73,10 @@ p {
     margin: 0;
 }
 
+button {
+    outline: none;
+}
+
 /*Container
 =============================*/
 .container {
@@ -92,7 +96,6 @@ p {
 .section--gray {
     background-color: #f4f4f4;
 }
-
 
 .section__title {
     padding-bottom: 60px;
@@ -119,16 +122,19 @@ p {
     border-radius: 3px;
 
     transition: color 0.2s linear, background-color 0.2s linear;
+
 }
 
 .button:hover,
 .button:focus {
     color: #ffffff;
     background-color: #780d0d;
+
 }
 
 .button:active {
     color: rgba(255, 255, 255, 0.75);
+
 }
 
 /*Call-Back Button
@@ -171,7 +177,6 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-
     z-index: 4;
 }
 
@@ -184,9 +189,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
     padding-top: 30px;
-
     color: #292929;
 }
 
@@ -211,15 +214,11 @@ p {
 
 .logo__title {
     padding-top: 2px;
-
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #292929;
-
     transition: color 0.25s linear;
 }
 
@@ -286,7 +285,7 @@ p {
     display: flex;
     justify-content: center;
 
-    width: 16.6666666%;
+    width: 20%;
     padding-top: 22px;
     padding-bottom: 22px;
 
@@ -310,11 +309,11 @@ p {
     background-color: #780d0d;
 }
 
-.nav__link:active {
-    color: rgba(255, 255, 255, 0.75);
-}
+/*.nav__link:active {*/
+/*    color: rgba(255, 255, 255, 0.75);*/
+/*}*/
 
-.nav__link--current {
+.nav__link.current {
     background-color: #780d0d;
     color: #ffffff;
 }
@@ -391,9 +390,6 @@ p {
     top: 0;
 }
 
-/*.burger.fixed{*/
-/*    pos*/
-/*}*/
 
 /*INTRO
 =============================*/
@@ -982,6 +978,7 @@ p {
         padding: 0;
         margin-top: 0;
         height: 100vh;
+        min-height: 560px;
     }
 
     .intro::after {
@@ -1024,7 +1021,7 @@ p {
     }
 
     .intro__button {
-        margin: auto auto 20px;
+        margin: auto auto 40px;
     }
 
     /*products*/

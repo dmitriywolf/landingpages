@@ -7,6 +7,8 @@ $(function () {
     let navToggle = $("#navToggle");
     let nav = $("#nav");
 
+    let navLinks = $('.nav__link');
+
     let scrollPos = $(window).scrollTop();
 
     $(window).on("scroll load resize", function () {
@@ -25,6 +27,9 @@ $(function () {
     //Nav Toggle
     navToggle.on("click", function (event) {
         event.preventDefault();
+        navLinks.each(function () {
+            $(this).removeClass('current');
+        });
 
         nav.toggleClass("show");
         header.toggleClass("header-bg"); //Меняем цвет фона для Header
@@ -34,6 +39,12 @@ $(function () {
     //Smooth Scroll
     $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
+
+        navLinks.each(function () {
+            $(this).removeClass('current');
+        });
+
+        $(this).addClass('current');
 
         let elementId = $(this).data('scroll');
         let elementOffset = $(elementId).offset().top;
