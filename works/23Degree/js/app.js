@@ -161,6 +161,10 @@ window.addEventListener('DOMContentLoaded', () => {
     //Slider
 
 
+    //Forms
+
+
+
 });
 
 
