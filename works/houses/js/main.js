@@ -161,7 +161,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 //Запрос
                 let request = new XMLHttpRequest();
-                request.open('POST', 'server.php');
+                request.open('POST', './server.php');
                 request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
                 let formData = new FormData(item);
