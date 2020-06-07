@@ -158,6 +158,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.body.append(answerBlock);
                 let answerText = document.createElement('p');
                 answerBlock.append(answerText);
+                answerText.innerHTML = message.loading;
 
                 //Функция удаления блока
                 function delAnswer() {
@@ -183,16 +184,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 request.send(json);
 
-
                 request.addEventListener('readystatechange', function () {
-                    if (request.readyState < 4) {
-                        answerText.textContent = message.loading;
-                    } else if (request.readyState === 4 && request.status === 200) {
-                        answerText.textContent = message.success;
-                        answerText.classList.add('success');
+                    if (request.readyState === 4 && request.status === 200) {
+                        answerText.innerHTML = message.success;
                         delAnswer();
                     } else {
-                        answerText.textContent = message.fail;
+                        answerText.innerHTML = message.fail;
                         answerText.classList.add('fail');
                         delAnswer();
                     }
