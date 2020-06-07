@@ -101,76 +101,84 @@ $(function () {
     //Forms
     const forms = () => {
 
-        //Все формы и поля
-        const form = document.querySelectorAll('form'),
-            inputs = document.querySelectorAll('input'),
-            phoneInput = document.querySelectorAll('input[name="user-tel"]');
+        let form = document.querySelectorAll('form'),
+            inputs = document.querySelectorAll('input');
 
-        //Проверка ввода номера телефона: Убрать все не числовые значения
-        phoneInput.forEach(item => {
-            item.addEventListener('input', () => {
-                item.value = item.value.replace(/\D/, '');
-            });
-        });
+        //Блок ответа
+        let answerBlock = document.createElement('div');
+        answerBlock.classList.add('popup__answer');
 
-        //Объект сообщений
-        const message = {
+
+        //Ответы для клиента
+        let message = {
             loading: 'Загрузка...',
-            success: 'Спасибо! Мы свяжемся с вами в течении 5 минут!',
-            failure: 'Что-то пошло не так...'
+            success: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 10 минут.',
+            fail: 'Извините! Что-то пошло не так...',
+            loadingImg: './img/loading.gif',
+            successImg: './img/answer-success.png'
         };
 
-        //Функция отправки запроса
-        const postData = async (url, data) => {
-            document.querySelector('.status').textContent = message.loading;
+        form.forEach((item) => {
 
-            let res = await fetch(url, {
-                method: "POST",
-                body: data
-            });
+            item.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            return await res.text();
-        };
+                //Создаем блок показа ответа
+                document.body.append(answerBlock);
 
-        //Функция очистки полей
-        const clearFields = () => {
-            inputs.forEach(item => {
-                item.value = "";
-            });
-        };
+                let answerImg = document.createElement('img');
+                answerImg.setAttribute('src', message.loadingImg);
+                answerBlock.append(answerImg);
 
-        form.forEach(item => {
-            item.addEventListener('submit', (e) => {
-                e.preventDefault();
+                let answerText = document.createElement('p');
+                answerBlock.append(answerText);
+                answerText.innerHTML = message.loading;
 
-                //Блок показа ответа
-                let statusMessage = document.createElement('div');
-                statusMessage.classList.add('status');
-                item.appendChild(statusMessage);
+                //Функция удаления блока
+                function delAnswer() {
+                    setTimeout(function () {
+                        answerBlock.remove();
+                        answerImg.remove();
+                        answerText.remove();
+                    }, 3000);
+                }
 
-                //Собираем все данные с формы
+                //Запрос
+                let request = new XMLHttpRequest();
+                request.open('POST', 'server.php');
+                request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
                 let formData = new FormData(item);
 
-                //Отправляем запрос на сервер
-                postData('server.php', formData)
-                    .then(res => {
-                        console.log(res);
-                        statusMessage.textContent = message.success;
-                    })
-                    .catch(() => statusMessage.textContent = message.failure)
-                    .finally(() => {
-                        clearFields();
-                        setTimeout(() => {
-                            statusMessage.remove();
-                        }, 5000);
-                    });
+                //Преобразование полученных данных в JSON
+                let obj = {};
+                formData.forEach(function (value, key) {
+                    obj[key] = value;
+                });
+                let json = JSON.stringify(obj);
+
+                request.send(json);
+
+                request.addEventListener('readystatechange', function () {
+                    if (request.readyState === 4 && request.status === 200) {
+                        answerImg.setAttribute('src', message.successImg);
+                        answerText.innerHTML = message.success;
+                        delAnswer();
+                    } else {
+                        answerText.innerHTML = message.fail;
+                        delAnswer();
+                    }
+                });
+
+                //Очистка полей после запроса
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].value = '';
+                }
 
             });
         });
 
-
     };
-
     forms();
 
 

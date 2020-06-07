@@ -1109,40 +1109,28 @@ p {
     outline: none;
 }
 
+/*Popup Answer*/
 .popup__answer {
     position: fixed;
     top: 50%;
     left: 50%;
 
-    display: none;
-
     width: 100%;
-    max-width: 400px;
-    padding: 40px 20px 40px 70px;
+    max-width: 460px;
+    padding: 25px 60px;
+
+    text-align: center;
     background-color: #fff;
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    background-position: 10px 50%;
-    border-radius: 3px;
+
     transform: translate3d(-50%, -50%, 0);
     box-shadow: 0 1px 5px 2px rgba(11, 53, 84, 1);
+    border-top: 30px solid #ffbc3b;
+    border-radius: 5px;
     z-index: 120;
 }
 
-.popup__answer.show {
-    display: block;
-}
-
-.popup__answer--success {
-    background-image: url("../img/popup-success.png");
-}
-
-.popup__answer--failed {
-    background-image: url("../img/popup-failed.png");
-}
-
-.popup__text {
-    font-size: 17px;
+p {
+    font-size: 20px;
 }
 
 
@@ -1446,6 +1434,21 @@ p {
 
     .popup__text {
         font-size: 16px;
+    }
+
+    /*Popup Answer*/
+    .popup__answer {
+        max-width: 400px;
+        padding: 20px 50px;
+        border-top-width: 20px;
+    }
+
+    .popup__answer img {
+        width: 90px;
+    }
+
+    .popup__answer p {
+        font-size: 18px;
     }
 
 }
@@ -1779,17 +1782,20 @@ p {
         text-align: center;
     }
 
+    /*Popup Answer*/
     .popup__answer {
-        max-width: 360px;
-        padding: 30px 10px 30px 60px;
-        background-size: 40px 40px;
+        max-width: 340px;
+        padding: 20px 30px;
     }
 
-
-    .popup__text {
-        font-size: 15px;
-        text-align: center;
+    .popup__answer img {
+        width: 70px;
     }
+
+    .popup__answer p {
+        font-size: 16px;
+    }
+
 
 }
 
@@ -2310,13 +2316,14 @@ p {
         font-size: 14px;
     }
 
+    /*Popup Answer*/
     .popup__answer {
         max-width: 300px;
-        padding: 30px 30px 30px 60px;
+        padding: 10px 20px;
     }
 
-    .popup__text {
-        font-size: 14px;
+    .popup__answer img {
+        width: 50px;
     }
 
 }
