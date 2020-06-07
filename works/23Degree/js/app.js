@@ -158,11 +158,98 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     filter();
 
-    //Slider
-
-
     //Forms
+    const forms = () => {
 
+        let form = document.querySelectorAll('form');
+        let inputs = document.querySelectorAll('input');
+        let textarea = document.querySelector('textarea');
+        let phoneFields = document.querySelectorAll('input[type="tel"]');
+
+        //В полях номера телефона вводить только цифры
+        phoneFields.forEach(input => {
+            input.addEventListener('input', () => {
+                input.value = input.value.replace(/\D/, '');
+            });
+        });
+
+        //Ответы для пользователя
+        const answers = {
+            loadingMessage: 'Загрузка...',
+            successMessage: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 15 минут',
+            failMessage: 'Извините! Что-то пошло не так...',
+            loadingImg: '../img/answer-loading.gif',
+            successImg: '../img/answer-success.png',
+            failImg: '../img/answer-fail.png'
+        };
+
+        //Функция отправки запроса
+        const postData = async (url, data) => {
+            let response = await fetch(url, {
+                method: "POST",
+                body: data
+            });
+            return await response.text();
+        };
+
+        //Очистка полей формы после отправки
+        const clearFields = () => {
+            inputs.forEach(input => {
+                input.value = "";
+            });
+
+            textarea.value = "";
+        };
+
+        //Обрабочик на отправку формы Submit
+        form.forEach(item => {
+
+            item.addEventListener('submit', (event) => {
+
+                //Отмена стандартного поведения браузера
+                event.preventDefault();
+
+                //Блок ответа для пользователя
+                let answerPopup = document.createElement('div');
+                answerPopup.classList.add('popup__answer');
+                document.body.append(answerPopup);
+
+                let answerImg = document.createElement('img');
+                answerImg.setAttribute('src', answers.loadingImg);
+                answerPopup.append(answerImg);
+
+                let answerText = document.createElement('p');
+                answerText.textContent = answers.loadingMessage;
+                answerPopup.append(answerText);
+
+                //Собрание всех данных которые ввел пользователь
+                const formData = new FormData(item);
+
+                //Осуществляем post запрос
+                postData('./server.php', formData)
+                //Успешное выполнение
+                    .then(response => {
+                        console.log(response);
+                        answerImg.setAttribute('src', answers.successImg);
+                        answerText.textContent = answers.successMessage;
+                    })
+                    //Обработка ошибки
+                    .catch(() => {
+                        answerImg.setAttribute('src', answers.failImg);
+                        answerText.textContent = answers.failMessage;
+                    })
+                    .finally(() => {
+                        clearFields();
+                        setTimeout(() => {
+                            answerPopup.remove();
+                        }, 4000);
+                    })
+            });
+
+        });
+
+    };
+    forms();
 
 
 });
