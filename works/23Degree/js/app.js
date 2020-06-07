@@ -178,9 +178,9 @@ window.addEventListener('DOMContentLoaded', () => {
             loadingMessage: 'Загрузка...',
             successMessage: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 15 минут',
             failMessage: 'Извините! Что-то пошло не так...',
-            loadingImg: '../img/answer-loading.gif',
-            successImg: '../img/answer-success.png',
-            failImg: '../img/answer-fail.png'
+            loadingImg: './img/answer-loading.gif',
+            successImg: './img/answer-success.png',
+            failImg: './img/answer-fail.png'
         };
 
         //Функция отправки запроса
