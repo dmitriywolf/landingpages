@@ -19,10 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
     /*Smooth Scroll
     * =====================================================*/
     let pageUp = $(".pageup");
     let $page = $('html, body');
+
 
     //Показ/скрытие pageUp
     $(window).on("scroll load resize", function () {
@@ -36,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
     //Анимированный плавный скрол
     $('a[href^="#"]').on("click", function () {
         $page.animate({
@@ -44,7 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
         return false;
     });
 
-    /*Tabs Projects
+
+    /*Tabs
     * =====================================================*/
     $('.projects-nav').on("click", ".tab-nav", function () {
         let tabsNav = $(".tab-nav"),
@@ -56,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent.eq($(this).index()).slick("setPosition");
         return false;
     });
+
 
     /*Projects Slider
     * =========================================*/
@@ -82,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ]
     });
 
+
     /*Design Slider
     * =========================================*/
     $('.design__list').slick({
@@ -105,13 +111,13 @@ window.addEventListener('DOMContentLoaded', () => {
         ]
     });
 
+
     /*Answers
     =========================================*/
     let asks = $('.asks__item');
-
     asks.each(function () {
 
-        $(this).on('click',  function (e) {
+        $(this).on('click', function (e) {
             e.preventDefault();
             let answer = $(this).find('.answer');
             answer.addClass('show');
@@ -123,80 +129,80 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     /*Forms
     * =======================================*/
     const forms = () => {
 
-        //Все формы и поля
-        const form = document.querySelectorAll('form'),
-            inputs = document.querySelectorAll('input'),
-            phoneInput = document.querySelectorAll('input[name="user-phone"]');
+        let form = document.querySelectorAll('form'),
+            inputs = document.querySelectorAll('input');
 
-        //Проверка ввода номера телефона: Убрать все не числовые значения
-        phoneInput.forEach(item => {
-            item.addEventListener('input', () => {
-                item.value = item.value.replace(/\D/, '');
-            });
-        });
+        //Блок ответа
+        let answerBlock = document.createElement('div');
+        answerBlock.classList.add('popup__answer');
 
-        //Объект сообщений
-        const message = {
+
+        //Ответы для клиента
+        let message = {
             loading: 'Загрузка...',
-            success: 'Мы свяжемся с вами в течении 15 минут!',
-            failure: 'Что-то пошло не так...'
+            success: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 15 минут.',
+            fail: 'Извините! Что-то пошло не так...'
         };
 
-        //Функция отправки запроса
-        const postData = async (url, data) => {
-            document.querySelector('.status').textContent = message.loading;
+        form.forEach((item) => {
 
-            let res = await fetch(url, {
-                method: "POST",
-                body: data
-            });
+            item.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            return await res.text();
-        };
+                //Создаем блок показа ответа
+                document.body.append(answerBlock);
+                let answerText = document.createElement('p');
+                answerBlock.append(answerText);
 
-        //Функция очистки полей
-        const clearFields = () => {
-            inputs.forEach(item => {
-                item.value = "";
-            });
-        };
+                //Запрос
+                let request = new XMLHttpRequest();
+                request.open('POST', 'server.php');
+                request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
-        form.forEach(item => {
-            item.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                //Блок показа ответа
-                let statusMessage = document.createElement('div');
-                statusMessage.classList.add('status');
-                item.appendChild(statusMessage);
-
-                //Собираем все данные с формы
                 let formData = new FormData(item);
 
-                //Отправляем запрос на сервер
-                postData('server.php', formData)
-                    .then(res => {
-                        console.log(res);
-                        statusMessage.textContent = message.success;
-                    })
-                    .catch(() => statusMessage.textContent = message.failure)
-                    .finally(() => {
-                        clearFields();
-                        setTimeout(() => {
-                            statusMessage.remove();
-                        }, 4000);
-                    });
+                //Преобразование полученных данных в JSON
+                let obj = {};
+                formData.forEach(function (value, key) {
+                    obj[key] = value;
+                });
+                let json = JSON.stringify(obj);
+
+                request.send(json);
+
+                request.addEventListener('readystatechange', function () {
+                    if (request.readyState < 4) {
+                        answerText.textContent = message.loading;
+                    } else if (request.readyState === 4 && request.status === 200) {
+                        answerText.textContent = message.success;
+                        answerText.classList.add('success');
+
+                        setTimeout(function () {
+                            answerBlock.remove()
+                        }, 3000);
+                    } else {
+                        answerText.textContent = message.fail;
+                        answerText.classList.add('fail');
+                        setTimeout(function () {
+                            answerBlock.remove()
+                        }, 3000);
+                    }
+                });
+
+                //Очистка полей после запроса
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].value = '';
+                }
 
             });
         });
 
-
     };
-
     forms();
 
 });
