@@ -2,3 +2,5 @@
 _tz/
 .idea/
 node_modules/
+*.json
+sass/
