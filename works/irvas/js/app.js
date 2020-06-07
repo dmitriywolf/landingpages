@@ -159,8 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             successMessage: 'Спасибо! Мы свяжемся с Вами в течении 15 минут',
             failMessage: 'Извините! Что-то пошло не так...',
             loadingImg: './img/answer-loading.gif',
-            successImg: './img/answer-success.png',
-            failImg: './img/answer-fail.png'
+            successImg: './img/answer-success.png'
         };
 
         //Функция отправки запроса
@@ -213,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     })
                     //Обработка ошибки
                     .catch(() => {
-                        answerImg.setAttribute('src', answers.failImg);
                         answerText.textContent = answers.failMessage;
                     })
                     .finally(() => {

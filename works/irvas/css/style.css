@@ -1254,14 +1254,15 @@ button {
     left: 50%;
 
     width: 100%;
-    max-width: 380px;
-    padding: 10px 40px 20px;
+    max-width: 440px;
+    padding: 25px 50px;
 
     text-align: center;
     background-color: #fff;
 
     transform: translate3d(-50%, -50%, 0);
-    box-shadow: 0 1px 5px 2px rgba(11, 53, 84, 1);
+    box-shadow: 0 1px 5px 2px rgba(10, 100, 100, 0.3);
+    border-top: 30px solid #333333;
     z-index: 120;
 }
 
@@ -1270,8 +1271,7 @@ button {
 }
 
 .popup__answer p {
-    padding-top: 10px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 
@@ -1562,6 +1562,7 @@ button {
     .popup__answer {
         max-width: 360px;
         padding: 10px 35px 20px;
+        border-top-width: 25px;
     }
 
     .popup__answer img {
@@ -1569,7 +1570,7 @@ button {
     }
 
     .popup__answer p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
@@ -1934,6 +1935,7 @@ button {
     .popup__answer {
         max-width: 340px;
         padding: 10px 30px 20px;
+        border-top-width: 20px;
     }
 
     .popup__answer img {
@@ -1941,7 +1943,7 @@ button {
     }
 
     .popup__answer p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -2330,11 +2332,6 @@ button {
     .popup__answer img {
         width: 50px;
     }
-
-    .popup__answer p {
-        padding: 0;
-    }
-
 
 }
 
