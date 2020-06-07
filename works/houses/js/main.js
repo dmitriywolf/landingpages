@@ -146,7 +146,9 @@ window.addEventListener('DOMContentLoaded', () => {
         let message = {
             loading: 'Загрузка...',
             success: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 15 минут.',
-            fail: 'Извините! Что-то пошло не так...'
+            fail: 'Извините! Что-то пошло не так...',
+            loadingImg: './img/answer-loading.gif',
+            successImg: './img/answer-success.png'
         };
 
         form.forEach((item) => {
@@ -156,6 +158,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 //Создаем блок показа ответа
                 document.body.append(answerBlock);
+
+                let answerImg = document.createElement('img');
+                answerImg.setAttribute('src', message.loadingImg);
+                answerBlock.append(answerImg);
+
                 let answerText = document.createElement('p');
                 answerBlock.append(answerText);
                 answerText.innerHTML = message.loading;
@@ -164,8 +171,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 function delAnswer() {
                     setTimeout(function () {
                         answerBlock.remove();
-                        answerText.remove()
-                    }, 3000);
+                        answerImg.remove()
+                        ;answerText.remove()
+                    }, 4000);
                 }
 
                 //Запрос
@@ -186,11 +194,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 request.addEventListener('readystatechange', function () {
                     if (request.readyState === 4 && request.status === 200) {
+                        answerImg.setAttribute('src', message.successImg);
                         answerText.innerHTML = message.success;
                         delAnswer();
                     } else {
                         answerText.innerHTML = message.fail;
-                        answerText.classList.add('fail');
                         delAnswer();
                     }
                 });
@@ -199,7 +207,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 for (let i = 0; i < inputs.length; i++) {
                     inputs[i].value = '';
                 }
-
             });
         });
 
