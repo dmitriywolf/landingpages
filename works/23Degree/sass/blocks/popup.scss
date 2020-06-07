@@ -59,18 +59,15 @@
 
 
 @media (max-width: 420px) {
-  .popup__answer {
-    max-width: 300px;
-    padding: 10px 20px;
+  max-width: 300px;
+  padding: 10px 20px;
 
-    img {
-      width: 50px;
-    }
+  img{
+    width: 50px;
+  }
 
-    p {
-      padding: 0;
-    }
-
+  p {
+    padding: 0;
   }
 
 }
