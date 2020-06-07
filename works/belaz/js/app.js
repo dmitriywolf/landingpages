@@ -140,7 +140,7 @@ $(function () {
                         answerBlock.remove();
                         answerImg.remove();
                         answerText.remove();
-                    }, 3000);
+                    }, 20000);
                 }
 
                 //Запрос

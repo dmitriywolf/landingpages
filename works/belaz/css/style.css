@@ -1123,13 +1123,17 @@ p {
     background-color: #fff;
 
     transform: translate3d(-50%, -50%, 0);
-    box-shadow: 0 1px 5px 2px rgba(11, 53, 84, 1);
+    box-shadow: 0 0 5px 2px rgba(11, 53, 84, 0.4);
     border-top: 30px solid #ffbc3b;
-    border-radius: 5px;
+    border-radius: 8px;
     z-index: 120;
 }
 
-p {
+.popup__answer img {
+    width: 80px;
+}
+
+.popup__answer p {
     font-size: 20px;
 }
 
@@ -1444,7 +1448,7 @@ p {
     }
 
     .popup__answer img {
-        width: 90px;
+        width: 70px;
     }
 
     .popup__answer p {
