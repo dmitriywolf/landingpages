@@ -159,9 +159,17 @@ window.addEventListener('DOMContentLoaded', () => {
                 let answerText = document.createElement('p');
                 answerBlock.append(answerText);
 
+                //Функция удаления блока
+                function delAnswer() {
+                    setTimeout(function () {
+                        answerBlock.remove();
+                        answerText.remove()
+                    }, 3000);
+                }
+
                 //Запрос
                 let request = new XMLHttpRequest();
-                request.open('POST', './server.php');
+                request.open('POST', 'server.php');
                 request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
                 let formData = new FormData(item);
@@ -175,22 +183,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 request.send(json);
 
+
                 request.addEventListener('readystatechange', function () {
                     if (request.readyState < 4) {
                         answerText.textContent = message.loading;
                     } else if (request.readyState === 4 && request.status === 200) {
                         answerText.textContent = message.success;
                         answerText.classList.add('success');
-
-                        setTimeout(function () {
-                            answerBlock.remove()
-                        }, 3000);
+                        delAnswer();
                     } else {
                         answerText.textContent = message.fail;
                         answerText.classList.add('fail');
-                        setTimeout(function () {
-                            answerBlock.remove()
-                        }, 3000);
+                        delAnswer();
                     }
                 });
 
