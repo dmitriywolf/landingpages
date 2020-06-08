@@ -251,7 +251,88 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Slider
     //Reviews-Slider
-    
+    const slider = (slides, prev, next) => {
+
+        //Текущий слайд который показывается пользователю
+        let slideIndex = 1;
+        let paused = false;
+
+        //Слайды
+        let items = document.querySelectorAll(slides);
+
+
+        //Функция показа слайда
+        function showSlides(n) {
+            //Если n больше чем количество слайдов
+            if (n > items.length) {
+                slideIndex = 1;
+            }
+            //Если n меньше чем количество слайдов
+            if (n < 1) {
+                slideIndex = items.length;
+            }
+
+            items.forEach(item => {
+                item.classList.add('animated');
+                //Скрываем все слайды
+                item.style.display = 'none';
+            });
+
+            //Показать нужный слайд
+            items[slideIndex - 1].style.display = 'flex';
+        }
+
+        showSlides(slideIndex);
+
+        function plusSlide(n) {
+            showSlides(slideIndex += n)
+        }
+
+
+        //Если селекторы для кнопок не были переданы
+        try {
+            let prevBtn = document.querySelector(prev);
+            let nextBtn = document.querySelector(next);
+
+            prevBtn.addEventListener('click', () => {
+                plusSlide(-1);
+                items[slideIndex - 1].classList.remove('slideInRight');
+                items[slideIndex - 1].classList.add('slideInLeft');
+            });
+
+            nextBtn.addEventListener('click', () => {
+                plusSlide(1);
+                items[slideIndex - 1].classList.remove('slideInLeft');
+                items[slideIndex - 1].classList.add('slideInRight');
+            });
+
+        } catch (e) {
+        }
+
+        //При наведении на слайдер останавливаем анимацию
+        function activateAnimation() {
+
+            //Автоматическая работа слайдера
+            paused = setInterval(function () {
+                plusSlide(1);
+                items[slideIndex - 1].classList.remove('slideInLeft');
+                items[slideIndex - 1].classList.add('slideInRight');
+            }, 4000);
+        }
+
+        activateAnimation();
+
+        items[0].parentNode.addEventListener('mouseenter', () => {
+            clearInterval(paused);
+        });
+
+        items[0].parentNode.addEventListener('mouseleave', () => {
+            activateAnimation();
+        });
+
+    };
+
+    slider('.quote-item-slider');
 
 
 });
