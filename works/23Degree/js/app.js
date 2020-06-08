@@ -240,7 +240,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         clearFields();
                         setTimeout(() => {
                             answerPopup.remove();
-                        }, 15000);
+                        }, 4000);
                     })
             });
 
@@ -248,6 +248,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     };
     forms();
+
+    //Slider
 
 
 });
