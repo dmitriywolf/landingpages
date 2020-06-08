@@ -250,6 +250,8 @@ window.addEventListener('DOMContentLoaded', () => {
     forms();
 
     //Slider
+    //Reviews-Slider
+    
 
 
 });
