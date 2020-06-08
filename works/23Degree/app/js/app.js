@@ -249,8 +249,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     forms();
 
-    //Slider
-    //Reviews-Slider
+    //Quotes Slider
     const slider = (slides, prev, next) => {
 
         //Текущий слайд который показывается пользователю
@@ -331,9 +330,31 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
     };
-
     slider('.quote-item-slider');
 
+    //Glide Carousel
+    const config = {
+        type: 'carousel',
+        startAt: 0,
+        perView: 5,
+        autoplay: 4000,
+        breakpoints: {
+            1024: {
+                perView: 4,
+            },
+            768: {
+                perView: 3,
+            },
+            600: {
+                perView: 2,
+            },
+            420: {
+                perView: 1,
+            },
+
+        }
+    };
+    new Glide('.glide', config).mount();
 
 });
 
