@@ -17,9 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
             scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 
             if (scrollPos > introH) {
-                header.classList.add('fixed', 'animated', 'bounceInRight', 'show');
+                header.classList.add('fixed', 'animated', 'fadeInDown', 'show');
             } else {
-                header.classList.remove('fixed', 'bounceInRight', 'show');
+                header.classList.remove('fixed', 'fadeInDown', 'show');
             }
 
             if (scrollPos < introH && nav.classList.contains('show')) {
@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         let form = document.querySelectorAll('form');
         let inputs = document.querySelectorAll('input');
-        let textarea = document.querySelector('textarea');
+        let textFields = document.querySelectorAll('textarea');
         let phoneFields = document.querySelectorAll('input[type="tel"]');
 
         //В полях номера телефона вводить только цифры
@@ -176,10 +176,10 @@ window.addEventListener('DOMContentLoaded', () => {
         //Ответы для пользователя
         const answers = {
             loadingMessage: 'Загрузка...',
-            successMessage: 'Спасибо за Ваше обращение! Мы свяжемся с Вами в течении 15 минут',
+            successMessage: 'Спасибо! Мы ответим Вам в течении 10 минут',
             failMessage: 'Извините! Что-то пошло не так...',
-            loadingImg: './img/answer-loading.gif',
-            successImg: './img/answer-success.png'
+            loadingImg: './img/loading.gif',
+            successImg: './img/success.png'
         };
 
         //Функция отправки запроса
@@ -197,7 +197,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 input.value = "";
             });
 
-            textarea.value = "";
+            textFields.forEach(field => {
+                field.value = "";
+            });
         };
 
         //Обрабочик на отправку формы Submit
@@ -210,7 +212,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 //Блок ответа для пользователя
                 let answerPopup = document.createElement('div');
-                answerPopup.classList.add('popup__answer');
+                answerPopup.classList.add('popup__answer', 'animated', 'flipInX');
                 document.body.append(answerPopup);
 
                 let answerImg = document.createElement('img');
@@ -221,6 +223,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 answerText.textContent = answers.loadingMessage;
                 answerPopup.append(answerText);
 
+                let divFail = document.createElement('div');
+                divFail.classList.add('img__failed');
+
                 //Собрание всех данных которые ввел пользователь
                 const formData = new FormData(item);
 
@@ -228,18 +233,22 @@ window.addEventListener('DOMContentLoaded', () => {
                 postData('./server.php', formData)
                 //Успешное выполнение
                     .then(response => {
-                        console.log(response);
+                        // console.log(response);
                         answerImg.setAttribute('src', answers.successImg);
                         answerText.textContent = answers.successMessage;
                     })
                     //Обработка ошибки
                     .catch(() => {
+                        answerImg.remove();
+                        answerPopup.prepend(divFail);
                         answerText.textContent = answers.failMessage;
                     })
                     .finally(() => {
                         clearFields();
                         setTimeout(() => {
-                            answerPopup.remove();
+                            answerPopup.classList.remove('flipInX');
+                            answerPopup.classList.add('flipOutX');
+                            // answerPopup.remove();
                         }, 4000);
                     })
             });
@@ -295,14 +304,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
             prevBtn.addEventListener('click', () => {
                 plusSlide(-1);
-                items[slideIndex - 1].classList.remove('slideInRight');
-                items[slideIndex - 1].classList.add('slideInLeft');
+                items[slideIndex - 1].classList.remove('zoomOut');
+                items[slideIndex - 1].classList.add('zoomIn');
             });
 
             nextBtn.addEventListener('click', () => {
                 plusSlide(1);
-                items[slideIndex - 1].classList.remove('slideInLeft');
-                items[slideIndex - 1].classList.add('slideInRight');
+                items[slideIndex - 1].classList.remove('zoomIn');
+                items[slideIndex - 1].classList.add('zoomOut');
             });
 
         } catch (e) {
@@ -314,8 +323,8 @@ window.addEventListener('DOMContentLoaded', () => {
             //Автоматическая работа слайдера
             paused = setInterval(function () {
                 plusSlide(1);
-                items[slideIndex - 1].classList.remove('slideInLeft');
-                items[slideIndex - 1].classList.add('slideInRight');
+                items[slideIndex - 1].classList.remove('zoomOut');
+                items[slideIndex - 1].classList.add('zoomIn');
             }, 4000);
         }
 
@@ -337,7 +346,7 @@ window.addEventListener('DOMContentLoaded', () => {
         type: 'carousel',
         startAt: 0,
         perView: 5,
-        autoplay: 4000,
+        //autoplay: 4000,
         breakpoints: {
             1024: {
                 perView: 4,
@@ -357,8 +366,6 @@ window.addEventListener('DOMContentLoaded', () => {
     new Glide('.glide', config).mount();
 
 });
-
-
 
 
 
