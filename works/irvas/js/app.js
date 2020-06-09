@@ -199,6 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 answerText.textContent = answers.loadingMessage;
                 answerPopup.append(answerText);
 
+                let divFail = document.createElement('div');
+                divFail.classList.add('img__failed');
+
                 //Собрание всех данных которые ввел пользователь
                 const formData = new FormData(item);
 
@@ -206,17 +209,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 postData('./server.php', formData)
                 //Успешное выполнение
                     .then(response => {
-                        console.log(response);
                         answerImg.setAttribute('src', answers.successImg);
                         answerText.textContent = answers.successMessage;
                     })
                     //Обработка ошибки
                     .catch(() => {
+                        answerImg.remove();
+                        answerPopup.prepend(divFail);
                         answerText.textContent = answers.failMessage;
                     })
                     .finally(() => {
                         clearFields();
                         setTimeout(() => {
+                            answerPopup.classList.remove('flipInX');
+                            answerPopup.classList.add('flipOutX');
                             answerPopup.remove();
                         }, 4000);
                     })

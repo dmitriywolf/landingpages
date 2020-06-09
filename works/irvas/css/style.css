@@ -1156,13 +1156,10 @@ button {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-
     width: 100%;
     max-width: 370px;
-
     padding: 40px 50px;
     z-index: 100;
-
     text-align: center;
     background-color: #ffffff;
     border-radius: 8px;
@@ -1268,6 +1265,38 @@ button {
 
 .popup__answer img {
     width: 90px;
+    height: 90px;
+}
+
+.img__failed {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.img__failed::after {
+    position: absolute;
+    content: "";
+    bottom: 45px;
+    right: 0;
+
+    width: 90px;
+    height: 10px;
+    background-color: #333333;
+    transform: rotate(-45deg);
+}
+
+.img__failed::before {
+    position: absolute;
+    content: "";
+    bottom: 45px;
+    left: 0;
+
+    width: 90px;
+    height: 10px;
+    background-color: #333333;
+    transform: rotate(45deg);
 }
 
 .popup__answer p {
@@ -1567,7 +1596,24 @@ button {
 
     .popup__answer img {
         width: 70px;
+        height: 70px;
     }
+
+    .img__failed {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img__failed::after {
+        bottom: 35px;
+        width: 70px;
+    }
+
+    .img__failed::before {
+        bottom: 35px;
+        width: 70px;
+    }
+
 
     .popup__answer p {
         font-size: 17px;
@@ -2330,7 +2376,23 @@ button {
     }
 
     .popup__answer img {
-        width: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .img__failed {
+        width: 60px;
+        height: 60px;
+    }
+
+    .img__failed::after {
+        bottom: 30px;
+        width: 60px;
+    }
+
+    .img__failed::before {
+        bottom: 30px;
+        width: 60px;
     }
 
 }
