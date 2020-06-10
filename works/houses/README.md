@@ -1,2 +1,2 @@
 # Houses
-- Вёрстка Landing Page строительной компании  [Дома Навека](https://dmitriywolf.github.io/works/houses/).
+- Вёрстка Landing Page: [Дома Навека](https://dmitriywolf.github.io/works/houses/).
