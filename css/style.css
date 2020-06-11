@@ -726,6 +726,10 @@ p {
     }
 
     /*Works*/
+    .works__item {
+        width: 47%;
+    }
+
     .work__title {
         font-size: 13px;
     }
@@ -821,10 +825,6 @@ p {
     }
 
     /*Works*/
-    .works__item {
-        width: 48%;
-    }
-
     .work__title {
         font-size: 18px;
     }
@@ -854,7 +854,7 @@ p {
 @media (max-width: 450px) {
     /*Intro*/
     .intro__subtitle {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .intro__title {
@@ -874,7 +874,7 @@ p {
 
     .technology__list,
     .software__list {
-        padding-left: 15px;
+        padding-left: 0;
     }
 
     .technology__item,
@@ -909,7 +909,7 @@ p {
     }
 
     .works__item {
-        width: 90%;
+        width: 94%;
     }
 
     .work__title {
