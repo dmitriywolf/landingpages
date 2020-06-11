@@ -105,7 +105,7 @@ p {
     left: 0;
     width: 100%;
     padding: 15px 0 10px;
-    z-index: 2;
+    z-index: 5;
     transition: background-color 0.7s;
 }
 
@@ -157,6 +157,7 @@ p {
     display: flex;
     align-items: center;
     transition: display 0.5s;
+
 }
 
 .navigation__link {
@@ -325,7 +326,7 @@ p {
 }
 
 .about__item {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.03em;
