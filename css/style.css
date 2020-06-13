@@ -24,6 +24,39 @@
     font-style: normal;
 }
 
+/*Animate*/
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+
+@keyframes bounceInLeft {
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0)
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0)
+    }
+    75% {
+        transform: translate3d(-10px, 0, 0)
+    }
+    90% {
+        transform: translate3d(5px, 0, 0)
+    }
+    to {
+        transform: none
+    }
+}
+
+.bounceInLeft {
+    animation-name: bounceInLeft
+}
+
+
 /*Global Styles
 =======================================*/
 *,
@@ -277,8 +310,9 @@ p {
 }
 
 .intro__subtitle {
-    padding: 10px;
-    font-size: 24px;
+    padding: 10px 5px;
+    font-size: 26px;
+    line-height: 1.4;
 }
 
 .intro__title {
@@ -304,22 +338,22 @@ p {
 /*About Me
 =============================*/
 .about {
+    position: relative;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .about__title {
-    padding: 10px 0;
+    padding-bottom: 10px;
     font-size: 28px;
     font-weight: 500;
     color: rgb(198, 133, 9);
-
 }
 
 .about__subtitle {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     color: gray;
@@ -338,25 +372,24 @@ p {
 
 .technology__list,
 .software__list {
-    padding-top: 10px;
-    padding-left: 30px;
+    padding-top: 5px;
+    padding-left: 20px;
 }
 
 .technology__item,
 .software__item {
     position: relative;
-    padding: 5px 25px;
-
+    padding: 3px 20px;
 }
 
 .technology__item::before,
 .software__item:before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 11px;
     left: 0;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background: url("../img/tick.svg") center no-repeat;
 }
 
@@ -364,9 +397,9 @@ p {
 /*Download
 ===============================*/
 .download {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
 }
 
 .download__button {
@@ -374,13 +407,11 @@ p {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
-    max-width: 300px;
-
+    width: 260px;
     text-decoration: none;
-    transition: 0.5s linear;
-
+    transition: all 0.5s linear;
     background-color: rgb(198, 133, 9);
+    box-shadow: 0 4px 5px 0 rgba(198, 133, 9, 0.5);
 }
 
 .download__text {
@@ -398,7 +429,7 @@ p {
 }
 
 .download__button:hover {
-    box-shadow: 0 4px 5px 0 rgba(198, 133, 9, 0.5);
+    box-shadow: none;
 }
 
 .download__button:active .download__icon {
@@ -577,7 +608,7 @@ p {
     align-items: center;
 
     width: 100%;
-    max-width: 400px;
+    max-width: 360px;
     padding: 25px 0;
     border-bottom: 1px solid rgba(40, 40, 40, 0.8);
 }
@@ -618,8 +649,17 @@ p {
     transform: translateX(0) rotate(360deg) scale(1.2);
 }
 
-/*Media*/
+
 @media (max-width: 1024px) {
+    /*Intro*/
+    .intro__title {
+        font-size: 36px;
+    }
+
+    .intro__subtitle {
+        font-size: 22px;
+    }
+
     /*Works*/
     .work__title {
         font-size: 20px;
@@ -649,15 +689,6 @@ p {
 }
 
 @media (max-width: 880px) {
-    /*Intro*/
-    .intro__subtitle {
-        font-size: 18px;
-    }
-
-    .intro__title {
-        font-size: 36px;
-    }
-
     /*Works*/
     .work__title {
         font-size: 15px;
@@ -690,6 +721,7 @@ p {
     }
 }
 
+
 @media (max-width: 768px) {
     /*Logo*/
     .logo__img {
@@ -705,6 +737,15 @@ p {
     .navigation__link {
         margin: 10px 10px;
         font-size: 13px;
+    }
+
+    /*Intro*/
+    .intro__title {
+        font-size: 28px;
+    }
+
+    .intro__subtitle {
+        font-size: 20px;
     }
 
     /*About Me*/
@@ -732,32 +773,28 @@ p {
     }
 
     .work__title {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .work__technology {
-        padding: 5px 15px;
+        padding: 15px;
     }
 
     .work__technology span {
-        margin: 1px 2px;
-        font-size: 10px;
-        text-transform: none;
-    }
-
-    .work__button-wrapper {
-        padding: 0 15px;
+        margin: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
     }
 
     .work__button {
-        padding: 2px;
-
-        font-size: 10px;
+        padding: 3px;
+        font-size: 11px;
     }
 
     .work__img {
-        width: 10px;
-        height: 10px;
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
     }
 
     /*Footer*/
@@ -766,7 +803,7 @@ p {
     }
 
     .footer__contacts {
-        max-width: 320px;
+        max-width: 300px;
         padding: 35px 0 20px;
     }
 
@@ -825,41 +862,39 @@ p {
         display: block;
     }
 
-    /*Works*/
-    .work__title {
+    /*Intro*/
+    .intro__title {
+        font-size: 26px;
+    }
+
+    .intro__subtitle {
         font-size: 18px;
     }
 
-    .work__technology {
-        padding: 15px;
+    .green-text {
+        text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.8);
     }
 
-    .work__technology span {
-        margin: 2px;
-        font-size: 12px;
-        text-transform: uppercase;
+    /*Download*/
+    .download {
+        position: static;
     }
 
-    .work__button {
-        padding: 3px;
-        font-size: 11px;
+    .download__button {
+        margin: 20px auto 0;
     }
 
-    .work__img {
-        margin-right: 5px;
-        width: 14px;
-        height: 14px;
-    }
+
 }
 
 @media (max-width: 450px) {
     /*Intro*/
-    .intro__subtitle {
-        font-size: 16px;
+    .intro__title {
+        font-size: 24px;
     }
 
-    .intro__title {
-        font-size: 36px;
+    .intro__subtitle {
+        font-size: 17px;
     }
 
     /*About Me*/
@@ -869,7 +904,6 @@ p {
     }
 
     .about__item {
-        padding: 5px 0;
         font-size: 14px;
     }
 
@@ -891,10 +925,6 @@ p {
     }
 
     /*Download*/
-    .download__button {
-        max-width: 260px;
-    }
-
     .download__text {
         font-size: 15px;
     }
@@ -937,6 +967,11 @@ p {
     }
 
     /*Footer*/
+    .footer__contacts {
+        max-width: 260px;
+        padding: 35px 0 20px;
+    }
+
     .copyright {
         font-size: 12px;
     }

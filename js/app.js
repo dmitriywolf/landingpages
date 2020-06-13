@@ -17,9 +17,9 @@ $(function () {
 
     function checkScroll(scrollPos, introH) {
         if (scrollPos > introH) {
-            header.addClass("fixed");
+            header.addClass("fixed animated bounceInLeft");
         } else {
-            header.removeClass("fixed");
+            header.removeClass("fixed bounceInLeft");
         }
     }
 
@@ -36,7 +36,7 @@ $(function () {
 
 
         $("html, body").animate({
-            scrollTop: elementOffset - 65
+            scrollTop: elementOffset -65
         }, 1200);
     });
 
