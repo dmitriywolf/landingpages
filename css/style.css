@@ -97,6 +97,10 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Container
 =============================*/
 .container {
@@ -370,6 +374,10 @@ p {
     color: rgb(198, 133, 9);
 }
 
+.about__item p {
+    padding: 5px 0;
+}
+
 .technology__list,
 .software__list {
     padding-top: 5px;
@@ -399,7 +407,7 @@ p {
 .download {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 35%;
 }
 
 .download__button {
@@ -875,6 +883,11 @@ p {
         text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.8);
     }
 
+    /*About*/
+    .about__item p {
+        text-align: center;
+    }
+
     /*Download*/
     .download {
         position: static;
@@ -898,13 +911,18 @@ p {
     }
 
     /*About Me*/
+    .about {
+        padding: 0;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
     .about__subtitle {
         padding-bottom: 10px;
         font-size: 18px;
-    }
-
-    .about__item {
-        font-size: 14px;
+        text-align: center;
     }
 
     .technology__list,
