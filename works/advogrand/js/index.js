@@ -431,13 +431,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 items.forEach(btn => btn.classList.remove('is-active'));
                 target.classList.add('is-active');
             }
-        })
+        });
 
 
+        /*Carousel Reviews*/
+        const configReviews = {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            breakpoints: {
+                768: {
+                    perView: 2,
+                },
+                600: {
+                    perView: 1,
+                },
+            }
+        };
+        let reviewsGlide = new Glide('.glide--reviews', configReviews);
+        reviewsGlide.mount();
     };
     filter();
 
-    const carousel = () => {
+    const carouselPartners = () => {
         const configPartners = {
             type: 'carousel',
             startAt: 0,
@@ -456,5 +472,5 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         new Glide('.glide--partners', configPartners).mount();
     };
-    carousel();
+    carouselPartners();
 });
