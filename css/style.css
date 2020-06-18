@@ -473,15 +473,14 @@ a {
 .works__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
 .works__item {
     position: relative;
     width: 31%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     transition: transform 0.5s;
     overflow: hidden;
 }
@@ -698,6 +697,11 @@ a {
 
 @media (max-width: 880px) {
     /*Works*/
+    .works__item {
+        width: 30%;
+
+    }
+
     .work__title {
         font-size: 15px;
     }
@@ -777,7 +781,7 @@ a {
 
     /*Works*/
     .works__item {
-        width: 47%;
+        width: 45%;
     }
 
     .work__title {
