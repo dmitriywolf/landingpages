@@ -1,3 +1,3 @@
 # Portfolio
-  - Портфолио FrontEnd developer: [DMITRIY.WOLF](https://dmitriywolf.github.io/)
+  - Портфолио: [DMITRIY.WOLF](https://dmitriywolf.github.io/)
 
