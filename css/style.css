@@ -339,65 +339,70 @@ a {
     color: rgba(198, 133, 9, 0.8);
 }
 
-/*About Me
+/*Resume
 =============================*/
-.about {
-    position: relative;
-    width: 100%;
+.resume {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
-.about__title {
-    padding-bottom: 10px;
+.resume__author {
+    padding-bottom: 15px;
     font-size: 28px;
     font-weight: 500;
     color: rgb(198, 133, 9);
 }
 
-.about__subtitle {
+.resume__position {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     color: gray;
 }
 
-.about__item {
-    padding: 5px 0;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
+/* Skills
+=============================== */
+.skills {
+    padding: 10px 0;
 }
 
-.about__item span {
+.skills__title {
+    font-weight: 400;
     color: rgb(198, 133, 9);
 }
 
-.about__item p {
-    padding: 5px 0;
+.skills__group {
+    display: flex;
+    justify-content: space-between;
 }
 
-.technology__list,
-.software__list {
-    padding-top: 5px;
-    padding-left: 20px;
+.skills__list {
+    padding: 10px 5px 0;
 }
 
-.technology__item,
-.software__item {
+.skills__list--tech {
+    width: 33.333%;
+}
+
+.skills__item{
     position: relative;
-    padding: 3px 20px;
+    margin: 3px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
 }
 
-.technology__item::before,
-.software__item:before {
+.skills__item::before {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 0;
-    width: 12px;
-    height: 12px;
+
+    top: 6px;
+    left: 2px;
+
+    width: 10px;
+    height: 10px;
     background: url("../img/tick.svg") center no-repeat;
 }
 
@@ -405,9 +410,7 @@ a {
 /*Download
 ===============================*/
 .download {
-    position: absolute;
-    right: 10px;
-    top: 35%;
+    padding-top: 30px;
 }
 
 .download__button {
@@ -416,6 +419,8 @@ a {
     align-items: center;
 
     width: 260px;
+    margin: 0 auto;
+
     text-decoration: none;
     transition: all 0.5s linear;
     background-color: rgb(198, 133, 9);
@@ -443,6 +448,9 @@ a {
 .download__button:active .download__icon {
     transform: scale(1.1);
 }
+
+
+
 
 /*Works
 ===============================*/

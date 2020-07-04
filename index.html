@@ -108,7 +108,7 @@
             </div> <!--/.header__logo-->
             <nav class="navigation" id="navigation">
                 <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Главная</a>
-                <a class="navigation__link" href="#" data-scroll="#about-me">Обо мне</a>
+                <a class="navigation__link" href="#" data-scroll="#resume">Обо мне</a>
                 <a class="navigation__link" href="#" data-scroll="#works">Мои работы</a>
                 <a class="navigation__link" href="#" data-scroll="#contact">Контакты</a>
             </nav> <!--/.navigation-->
@@ -135,54 +135,56 @@
         </div> <!--/.container-->
     </section> <!--/.intro-->
 
+    <!-- Resume -->
     <section class="section">
         <div class="container">
-            <div class="about" id="about-me">
 
-                <div class="about__content-wrapper">
+            <div class="resume" id="resume">
 
-                    <h2 class="about__title">Волченко Дмитрий</h2>
+                <div class="resume__inner">
 
-                    <h3 class="about__subtitle">Junior FrontEnd (React) developer</h3>
+                    <h2 class="resume__author">Volchenko Dmitriy</h2>
+                    <h3 class="resume__position">Junior FrontEnd (React) developer</h3>
 
-                    <div class="resume">
-                        <!-- <span>Навыки:</span> -->
+                    <div class="skills">
+                        <h3 class="skills__title">Technical Skills</h3>
+                        <div class="skills__group">
 
-                        <ul class="technology__list">
-                            <li class="technology__item">HTML5 & CSS3</li>
-                            <li class="technology__item">Adaptive / Pixel Perfect</li>
-                            <li class="technology__item">BEM</li>
-                            <li class="technology__item">SASS(SCSS)</li>
-                            <li class="technology__item">Bootstrap 4</li>
+                            <ul class="skills__list skills__list--tech">
+                                <li class="skills__item">HTML5 & CSS3</li>
+                                <li class="skills__item">Adaptive / Pixel Perfect</li>
+                                <li class="skills__item">BEM</li>
+                                <li class="skills__item">SASS(SCSS)</li>
+                                <li class="skills__item">Bootstrap 4</li>
+                            </ul>
+    
+                            <ul class="skills__list skills__list--tech">
+                                <li class="skills__item">Node Package Manager</li>
+                                <li class="skills__item">Gulp 4</li>
+                                <li class="skills__item">Babel</li>
+                                <li class="skills__item">Webpack</li>
+                            </ul>
+    
+                            <ul class="skills__list skills__list--tech">
+                                <li class="skills__item">JavaScript (ES6+)</li>
+                                <li class="skills__item">jQuery</li>
+                                <li class="skills__item">React/Redux</li>
+                            </ul>
+
+                        </div> <!--/.skills__group-->
+                    </div> <!--/.skills-->
+
+
+                    <div class="skills">
+                        <h3 class="skills__title">Software</h3>
+
+                        <ul class="skills__list">
+                          <li class="skills__item">Graphic editors: Avocode / Adobe Photoshop / Abode XD </li> 
+                          <li class="skills__item">Editors/IDE: WebStorm / Visual Studio Code/ Sublime Text 3</li>  
                         </ul>
 
-                        <ul class="technology__list">
-                            <li class="technology__item">Node Package Manager</li>
-                            <li class="technology__item">Gulp 4</li>
-                            <li class="technology__item">Babel</li>
-                            <li class="technology__item">Webpack</li>
-                        </ul>
-
-                        <ul class="technology__list">
-                            <li class="technology__item">JavaScript (ES6+)</li>
-                            <li class="technology__item">jQuery</li>
-                            <li class="technology__item">React/Redux</li>
-                        </ul>
-                        
-
-                        </ul> <!--/.technology__list-->
-                    </div> <!--/.about__item-->
-
-
-                    <div class="about__item">
-                        <span>Программное обеспечение:</span>
-                        <ul class="software__list">
-                            <li class="software__item">Графические редакторы: Adobe Photoshop / Abode XD / Avocode</li>
-                            <li class="software__item">Редакторы кода/IDE: WebStorm / Visual Studio Code/ Sublime Text 3</li>
-                        </ul> <!--/.software__list-->
-                    </div> <!--/.about__item-->
-
-
+                    </div> <!--/.skills-->
+                    
 
                     <!-- <div class="about__item">
                         <p>
@@ -198,19 +200,25 @@
                             разработке.
                         </p>
                     </div>  -->
-                </div> <!--/.about__content-wrapper-->
 
-                <!-- <div class="download">
+
+
+
+                </div> <!--/.resume__inner-->
+
+                <div class="resume__download download">
                     <a class="download__button" href="file/CV.pdf" download>
-                        <span class="download__text">Download CV</span>
+                        <span class="download__text">Download Resume</span>
                         <svg class="download__icon" width="15" height="15">
                             <use xlink:href="#icon-download"></use>
                         </svg>
                     </a> <!--/.download__button-->
-                <!-- </div> -->
+                </div> <!-- /.resume__download -->
+                
 
                 
-            </div> <!--/.about-->
+            </div> <!--/.resume-->
+
         </div> <!--/.container-->
     </section> <!--/.section-->
 
