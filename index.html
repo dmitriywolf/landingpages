@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,10 +107,10 @@
                 <p class="logo__text">Dmitriy.Wolf</p>
             </div> <!--/.header__logo-->
             <nav class="navigation" id="navigation">
-                <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Главная</a>
-                <a class="navigation__link" href="#" data-scroll="#resume">Обо мне</a>
-                <a class="navigation__link" href="#" data-scroll="#works">Мои работы</a>
-                <a class="navigation__link" href="#" data-scroll="#contact">Контакты</a>
+                <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Main</a>
+                <a class="navigation__link" href="#" data-scroll="#resume">About Me</a>
+                <a class="navigation__link" href="#" data-scroll="#works">My works</a>
+                <a class="navigation__link" href="#" data-scroll="#contact">Contatcs</a>
             </nav> <!--/.navigation-->
             <button class="burger" id="navToggle">
                 <span class="burger__item">Menu</span>
@@ -120,11 +120,12 @@
 </header> <!--/.header-->
 
 <main>
+    <!-- Intro -->
     <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
-                <h1 class="intro__title">Привет, меня зовут <span class="green-text">Дмитрий</span></h1>
-                <h2 class="intro__subtitle"><span class="brown-text">Добро пожаловать</span> на страницу моего портфолио
+                <h1 class="intro__title">Hello, I'm <span class="green-text">Dmitriy</span></h1>
+                <h2 class="intro__subtitle"><span class="brown-text">Welcome</span> to my portfolio page
                     <span class="brown-text">:)</span></h2>
             </div> <!--/.intro__inner-->
             <button class="intro__arrow arrow" data-scroll="#about-me">
@@ -212,20 +213,14 @@
         </div> <!--/.container-->
     </section> <!--/.section-->
 
-
-
-
-
-
-
-
-
-
+    <!-- Works -->
     <section class="section works__wrapper">
         <div class="works" id="works">
             <div class="container">
+
                 <div class="works__inner">
                     <ul class="works__list">
+
                         <!--Yoga-->
                         <li class="works__item work">
                             <img class="works__item-img" src="img/works/yoga.jpg" alt="Yoga">
@@ -234,7 +229,7 @@
                                 <div class="work__technology">
                                     <span>PSD to HTML</span>
                                     <span>Bootstrap 4 Grid</span>
-                                    <span>SASS</span>
+                                    <span>SCSS</span>
                                     <span>JS</span>
                                     <span>Gulp 4</span>
                                 </div> <!--/.work__technology-->
@@ -259,7 +254,7 @@
                         <li class="works__item work">
                             <img class="works__item-img" src="img/works/continent.jpg" alt="Seven Continents">
                             <div class="works__item-content">
-                                <h3 class="work__title">Семь Континентов</h3>
+                                <h3 class="work__title">Seven Continents</h3>
                                 <div class="work__technology">
                                     <span>PSD to HTML</span>
                                     <span>Bootstrap 4 Grid</span>
@@ -273,7 +268,7 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
                                     <a class="work__button"
                                        href="https://github.com/dmitriywolf/continent"
                                        target="_blank">
@@ -304,8 +299,16 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
+                                        <a class="work__button"
+                                       href="https://github.com/dmitriywolf/dmitriywolf.github.io/tree/master/works/advogrand"
+                                       target="_blank">
+                                        <svg class="work__img" width="14" height="14">
+                                            <use xlink:href="#icon-github"></use>
+                                        </svg>
+                                        GitHub</a>
                                 </div> <!--/.work__button-wrapper-->
+                                
                             </div><!--/.works__item--content-->
                         </li><!--/.work-->
 
@@ -313,7 +316,7 @@
                         <li class="works__item work">
                             <img class="works__item-img" src="img/works/houses.jpg" alt="Дома на века">
                             <div class="works__item-content">
-                                <h3 class="work__title">Дома на века</h3>
+                                <h3 class="work__title">Houses</h3>
                                 <div class="work__technology">
                                     <span>PSD to HTML</span>
                                     <span>SCSS</span>
@@ -326,7 +329,7 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
                                 </div> <!--/.work__button-wrapper-->
                             </div><!--works__item-content-->
                         </li><!--/.work-->
@@ -348,7 +351,7 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
                                 </div> <!--/.work__button-wrapper-->
                             </div><!--/.works__item-content-->
                         </li><!--/.work-->
@@ -368,30 +371,30 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
                                 </div> <!--/.work__button-wrapper-->
                             </div><!--/.works__item-content-->
                         </li><!--/.work-->
 
                         <!--Окна Ирвас-->
-                        <li class="works__item work">
+                        <!-- <li class="works__item work">
                             <img class="works__item-img" src="img/works/irvas.jpg" alt="Окна Ирвас">
                             <div class="works__item-content">
-                                <h3 class="work__title">Ирвас Окна</h3>
+                                <h3 class="work__title">Irvas Windows</h3>
                                 <div class="work__technology">
                                     <span>PSD to HTML</span>
                                     <span>JS</span>
-                                </div> <!--/.work__technology-->
+                                </div> 
                                 <div class="work__button-wrapper">
                                     <a class="work__button" href="https://dmitriywolf.github.io/works/irvas"
                                        target="_blank">
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
-                                </div> <!--/.work__button-wrapper-->
-                            </div> <!--/.works__item-img-->
-                        </li><!--/.work-->
+                                        Go to Site</a>
+                                </div> 
+                            </div> 
+                        </li> -->
 
                         <!--/.Bouncy-->
                         <li class="works__item work">
@@ -408,7 +411,7 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a>
+                                        Go to Site</a>
                                 </div> <!--/.work__button-wrapper-->
                             </div> <!--/.works__item-content-->
                         </li> <!--/.work-->
@@ -417,7 +420,7 @@
                         <li class="works__item work">
                             <img class="works__item-img" src="img/works/granit.jpg" alt="Гранит">
                             <div class="works__item-content">
-                                <h3 class="work__title">Гранит</h3>
+                                <h3 class="work__title">Granit</h3>
                                 <div class="work__technology">
                                     <span>PSD to HTML</span>
                                     <span>JQuery</span>
@@ -428,7 +431,7 @@
                                         <svg class="work__img" width="14" height="14">
                                             <use xlink:href="#icon-web"></use>
                                         </svg>
-                                        Перейти на сайт</a> <!--/.work__button-->
+                                        Go to Site</a> <!--/.work__button-->
                                 </div> <!--/.work__button-wrapper-->
                             </div> <!--/.work__item-content-->
                         </li> <!--/.work-->
@@ -438,6 +441,7 @@
             </div> <!--/.container-->
         </div> <!--/.works-->
     </section> <!--/.section-->
+
 </main>
 
 <footer class="footer">
@@ -470,9 +474,9 @@
                     </svg>
                 </a> <!--/.contact__item-->
             </div><!--/.footer__contacts-->
-            <div class="copyright">
+            <div class="footer__copyright">
                 &copy; Copyright 2020 / Design by <span class="brown-text">Dmitriy.Wolf</span>
-            </div> <!--/.copyright-->
+            </div> <!--/.footer__copyright-->
         </div> <!--/.footer__inner-->
     </div><!--/.container-->
 </footer> <!--/.footer-->

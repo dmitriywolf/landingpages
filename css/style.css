@@ -24,12 +24,12 @@
     font-style: normal;
 }
 
-/*Animate*/
+/*Animate
+=====================================*/
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both
 }
-
 
 @keyframes bounceInLeft {
 
@@ -101,6 +101,16 @@ a {
     text-decoration: none;
 }
 
+.green-text {
+    color: #00cccc;
+    text-shadow: 2px -2px 0 rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.06em;
+}
+
+.brown-text {
+    color: rgba(198, 133, 9, 0.8);
+}
+
 /*Container
 =============================*/
 .container {
@@ -111,12 +121,13 @@ a {
 }
 
 /*Section
-========================*/
+=============================*/
 .section {
-    padding: 40px 0;
+    padding: 45px 0;
 }
 
-/*Arrow*/
+/*Arrow
+========================*/
 .arrow {
     position: absolute;
     transform: translateX(-50%);
@@ -135,7 +146,8 @@ a {
     fill: #00CCCC;
 }
 
-/*Header*/
+/*Header
+========================*/
 .header {
     position: absolute;
     top: 0;
@@ -162,7 +174,8 @@ a {
     align-content: center;
 }
 
-/*Logo*/
+/*Logo
+==========================*/
 .logo {
     display: flex;
     align-items: center;
@@ -189,7 +202,8 @@ a {
     color: rgba(198, 133, 9, 0.8);
 }
 
-/*Navigation*/
+/*Navigation
+============================*/
 .navigation {
     display: flex;
     align-items: center;
@@ -216,7 +230,8 @@ a {
 }
 
 
-/*Burger*/
+/*Burger
+==============================*/
 .burger {
     display: none;
     padding: 0;
@@ -315,28 +330,18 @@ a {
 
 .intro__subtitle {
     padding: 10px 5px;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1.4;
 }
 
 .intro__title {
-    font-size: 44px;
+    font-size: 48px;
     transition: color 2s linear;
 }
 
 .intro__arrow {
     bottom: 10%;
     left: 50%;
-}
-
-.green-text {
-    color: #00cccc;
-    text-shadow: 2px -2px 0 rgba(255, 255, 255, 0.8);
-    letter-spacing: 0.06em;
-}
-
-.brown-text {
-    color: rgba(198, 133, 9, 0.8);
 }
 
 /*Resume
@@ -414,7 +419,6 @@ a {
     background: url("../img/tick.svg") center no-repeat;
 }
 
-
 /*Download
 ===============================*/
 .download {
@@ -457,9 +461,6 @@ a {
     transform: scale(1.1);
 }
 
-
-
-
 /*Works
 ===============================*/
 .works__wrapper {
@@ -491,7 +492,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 .works__item {
     position: relative;
@@ -611,7 +611,8 @@ a {
     border-color: transparent;
 }
 
-/*Footer*/
+/*Footer
+========================*/
 .footer {
     background-color: #000000;
 }
@@ -636,6 +637,23 @@ a {
     border-bottom: 1px solid rgba(40, 40, 40, 0.8);
 }
 
+.footer__copyright {
+    padding-top: 20px;
+    color: #525252;
+    letter-spacing: 0.05em;
+}
+
+.footer__arrow {
+    top: 40px;
+    transform: translateX(0);
+}
+
+.footer__arrow:hover {
+    transform: translateX(0) rotate(360deg) scale(1.2);
+}
+
+/* Constacts
+======================= */
 .contact__item {
     display: flex;
     justify-content: center;
@@ -657,20 +675,10 @@ a {
     transform: scale(1.2);
 }
 
-.copyright {
-    padding-top: 20px;
-    color: #525252;
-    letter-spacing: 0.05em;
-}
 
-.footer__arrow {
-    top: 40px;
-    transform: translateX(0);
-}
 
-.footer__arrow:hover {
-    transform: translateX(0) rotate(360deg) scale(1.2);
-}
+
+
 
 
 @media (max-width: 1024px) {
