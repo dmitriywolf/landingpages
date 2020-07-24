@@ -1,5 +1,5 @@
-# Seven Continents
-- Вёрстка Landing Page: [Seven Continents](https://dmitriywolf.github.io/works/continent/index.html)
+# Yoga
+- Вёрстка Landing Page: [Йога-Туры в Индию](https://dmitriywolf.github.io/works/yoga/).
 
 ## Описание
 
