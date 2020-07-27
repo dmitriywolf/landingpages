@@ -6,12 +6,9 @@
 ### 1. SASS
 	Стили написаны на препроцессоре Sass(SCSS).
 
-### 2. Gulp 4
-	Собран на Gulp 4.
+### 2. Webpack + Babel
+	Проект собран на Webpack.
 
-### 3. Webpack
-	Модули собраны на Webpack + Babel
+### 3. Плагины:
 
-### 4. Плагины:
-	
 1. Слайдер-Карусель: [Glide.js](https://glidejs.com/).

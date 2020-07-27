@@ -1,55 +1,55 @@
 $(function () {
-    /* Fixed Header
-    =============================*/
-    let header = $("#header");
-    let intro = $("#intro");
-    let introH = intro.innerHeight();
-    let scrollPos = $(window).scrollTop();
+  /* Fixed Header
+  =============================*/
+  let header = $("#header");
+  let intro = $("#intro");
+  let introH = intro.innerHeight();
+  let scrollPos = $(window).scrollTop();
+
+  checkScroll(scrollPos, introH);
+
+  $(window).on("scroll resize", function () {
+    introH = intro.innerHeight();
+    scrollPos = $(this).scrollTop();
 
     checkScroll(scrollPos, introH);
+  });
 
-    $(window).on("scroll resize", function () {
-        introH = intro.innerHeight();
-        scrollPos = $(this).scrollTop();
-
-        checkScroll(scrollPos, introH);
-    });
-
-    function checkScroll(scrollPos, introH) {
-        if (scrollPos > introH) {
-            header.addClass("fixed animated bounceInLeft");
-        } else {
-            header.removeClass("fixed bounceInLeft");
-        }
+  function checkScroll(scrollPos, introH) {
+    if (scrollPos > introH) {
+      header.addClass("fixed animated bounceInLeft");
+    } else {
+      header.removeClass("fixed bounceInLeft");
     }
+  }
 
-    /* Navigation Smooth Scroll
-    =============================*/
-    $("[data-scroll]").on("click", function (event) {
-        event.preventDefault();
-        let elementId = $(this).data('scroll');
-        let elementOffset = $(elementId).offset().top;
+  /* Navigation Smooth Scroll
+  =============================*/
+  $("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+    let elementId = $(this).data('scroll');
+    let elementOffset = $(elementId).offset().top;
 
-        nav.removeClass('show');
-        navToggle.removeClass('burger--close');
-        header.removeClass('show');
+    nav.removeClass('show');
+    navToggle.removeClass('burger--close');
+    header.removeClass('show');
 
 
-        $("html, body").animate({
-            scrollTop: elementOffset -65
-        }, 1200);
-    });
+    $("html, body").animate({
+      scrollTop: elementOffset - 65
+    }, 1200);
+  });
 
-    /* Navigation Burger Nav Toggle
-    =============================*/
-    let nav = $("#navigation");
-    let navToggle = $("#navToggle");
+  /* Navigation Burger Nav Toggle
+  =============================*/
+  let nav = $("#navigation");
+  let navToggle = $("#navToggle");
 
-    navToggle.on("click", function (event) {
-        event.preventDefault();
+  navToggle.on("click", function (event) {
+    event.preventDefault();
 
-        header.toggleClass('show');
-        nav.toggleClass('show');
-        navToggle.toggleClass('burger--close');
-    })
+    header.toggleClass('show');
+    nav.toggleClass('show');
+    navToggle.toggleClass('burger--close');
+  })
 });
