@@ -7,17 +7,13 @@
 	Стили написаны на препроцессоре Sass(SCSS).
 
 ### 2. Bootstrap 4 
-	Использована сетка Bootstrap.
+	Использована сетка Bootstrap 4.
 
 ### 3. Gulp 4
 	Собран на Gulp 4.
 
-### 4. ESLint
-	Линтер ESLint
-
-### 5. Webpack + Babel
+### 4. Webpack + Babel
 	Для сборки модулей использован webpack.
 
-### 6. Плагины:
-	
-1. Слайдер-Карусель: [Glide.js](https://glidejs.com/).
+### 5. Плагины:
+    1. Слайдер-Карусель: [Glide.js](https://glidejs.com/).
