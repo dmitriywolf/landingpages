@@ -14,6 +14,5 @@
 
 ### 4. Плагины:
 	
-1. Слайдер: [Slick Slider](https://kenwheeler.github.io/slick/).
-
-2. Галерея: [Lightbox](https://lokeshdhakar.com/projects/lightbox2/).
+	1. Слайдер: [Slick Slider](https://kenwheeler.github.io/slick/).
+	2. Галерея: [Lightbox](https://lokeshdhakar.com/projects/lightbox2/).

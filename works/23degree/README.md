@@ -9,9 +9,6 @@
 ### 2. Gulp 4
 	Собран на Gulp 4.
 
-### 3. ESlint
-	Линтер ESLint
-
-### 4. Плагины:
+### 3. Плагины:
 	
-1. Слайдер-Карусель: [Glide.js](https://glidejs.com/).
+	1. Слайдер-Карусель: [Glide.js](https://glidejs.com/).
