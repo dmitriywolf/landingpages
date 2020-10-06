@@ -1,0 +1,71 @@
+.app-header {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+
+.app-header__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.app-header__info {
+  font-size: 18px;
+  text-align: right;
+  text-decoration: underline;
+}
+.search-panel {
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+.task-filter-btn {
+  padding: 2px 8px;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.1;
+  transition: all 0.3s linear;
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.task-item__btn {
+  width: 30px;
+  height: 30px;
+
+  margin: 0 2px;
+  padding: 0 4px;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.task-item span:hover {
+  cursor: pointer;
+}
+
+.tasks-list {
+  padding: 0;
+  margin: 15px 0;
+  list-style-type: none;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
