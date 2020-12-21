@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Курсы</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <div class="logo">
+        <a class="logo__img" href="#">
+          <img src="img/header-logo.png" alt="Логотип компании" width="38" height="40">
+        </a>
+        <div class="logo__text">
+          <a class="logo__title" href="#">Mining Courses</a>
+          <div class="logo__subtitle">Учитесь вместе с нами</div>
+        </div> <!--/.logo__text-->
+      </div> <!--/.logo-->
+
+      <div class="header__contact">
+        <a class="contact__tel" href="tel:88003421333">8 800 342-13-33</a>
+        <p class="contact__text">Бесплатный звонок по Украине</p>
+      </div> <!--/.header__contact-->
+
+      <button class="call-back__button call-back__button--header" type="button">Обратный звонок</button>
+      <!-- Menu -->
+      <nav class="nav">
+        <a class="nav__link active" href="/">Главная</a>
+
+        <a class="nav__link" href="/courses.html">Курсы</a>
+        <a class="nav__link" href="/add-course.html">Добавить курс</a>
+        <a class="nav__link" href="/card.html">Корзина</a>
+        <a class="nav__link" href="/contacts.html">Контакты</a>
+      </nav> <!--/.nav-->
+
+      <button class="burger" id="navToggle">
+        <span class="burger__item">Menu</span>
+      </button> <!--/.burger-->
+
+    </div> <!--/.header__inner-->
+  </div> <!--/.container-->
+</header> <!--/.header-->
+
+<main>
+  <!--Вводная-->
+  <section class="intro intro--courses" id="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <h1 class="intro__title">Курсы</h1>
+        <p class="intro__text">Мы раскажем все, что знаем. Будет очень интересно! </p>
+        <a class="intro__button button" href="#">Узнать больше</a>
+      </div>
+    </div> <!--/.container-->
+  </section> <!--/.intro-->
+
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="courses">
+
+        <div class="courses__filter filter">
+
+        </div>
+
+        <div class="courses__inner">
+          <div class="courses__item course">
+            <div class="course__img-wrapper">
+              <img class="course__img" src="img/courses/geovia.jpg" alt="Geovia Surpac">
+            </div>
+
+            <div class="course__content">
+              <h4 class="course__title">Geovia Surpac</h4>
+              <p class="course__price"><span>Цена: </span><span>25 000 грн</span></p>
+              <p class="course__duration"><span>Продолжительность: </span><span>40 час.</span></p>
+            </div>
+
+            <div class="card-action actions">
+              <a href="/" target="_blank">Открыть</a>
+              <a href="/">Редактировать</a>
+              <form action="/" method="post">
+                <input type="hidden" name="id" value="">
+                <button type="submit" class="btn">Купить</button>
+              </form>
+            </div>
+          </div> <!-- /.course-->
+
+          <div class="courses__item course">
+            <div class="course__img-wrapper">
+              <img class="course__img" src="img/courses/autocad.jpg" alt="Autocad">
+            </div>
+
+            <div class="course__content">
+              <h4 class="course__title">Autocad</h4>
+              <p class="course__price"><span>Цена: </span><span>25 000 грн</span></p>
+              <p class="course__duration"><span>Продолжительность: </span><span>40 час.</span></p>
+            </div>
+
+            <div class="course__action actions">
+
+                <a class="course__link course__link--open" href="/open" target="_blank">Открыть</a>
+                <a class="course__link course__link--edit" href="/edit">Редактировать</a>
+
+              <form class="course__form" action="/" method="post">
+                <input type="hidden" name="id" value="">
+                <button class="course__button button" type="submit">Купить</button>
+              </form>
+            </div>
+
+          </div> <!-- /.course-->
+
+          <div class="courses__item course">
+            <div class="course__img-wrapper">
+              <img class="course__img" src="img/courses/minex.jpg" alt="Minex">
+            </div>
+
+            <div class="course__content">
+              <h4 class="course__title">Minex</h4>
+              <p class="course__price"><span>Цена: </span><span>25 000 грн</span></p>
+              <p class="course__duration"><span>Продолжительность: </span><span>40 час.</span></p>
+            </div>
+
+            <div class="card-action actions">
+              <a href="/" target="_blank">Открыть</a>
+              <a href="/">Редактировать</a>
+              <form action="/" method="post">
+                <input type="hidden" name="id" value="">
+                <button type="submit" class="btn">Купить</button>
+              </form>
+            </div>
+          </div> <!-- /.course-->
+
+          <div class="courses__item course">
+            <div class="course__img-wrapper">
+              <img class="course__img" src="img/courses/stop.jpg" alt="Studio OP">
+            </div>
+
+            <div class="course__content">
+              <h4 class="course__title">Datamine Studio OP</h4>
+              <p class="course__price"><span>Цена: </span><span>25 000 грн</span></p>
+              <p class="course__duration"><span>Продолжительность: </span><span>40 час.</span></p>
+            </div>
+
+            <div class="card-action actions">
+              <a href="/" target="_blank">Открыть</a>
+              <a href="/">Редактировать</a>
+              <form action="/" method="post">
+                <input type="hidden" name="id" value="">
+                <button type="submit" class="btn">Купить</button>
+              </form>
+            </div>
+          </div> <!-- /.course-->
+
+        </div> <!--/.courses__wrapper-->
+
+
+
+      </div> <!--/.courses-->
+    </div> <!--/.container-->
+
+
+
+
+
+  </section> <!--/.section-->
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner-top">
+
+      <div class="logo logo--footer">
+        <a class="logo__img" href="#">
+          <img src="/img/footer-logo.png" alt="Логотип компании" width="37" height="38">
+        </a>
+        <div class="logo__text">
+          <a class="logo__title" href="#">Mining Blog</a>
+          <div class="logo__subtitle">Все о горном деле</div>
+        </div>
+      </div> <!--/.logo-->
+
+      <div class="footer__contact">
+        <a class="contact__tel" href="tel:88003421333">8 800 342-13-33</a>
+        <p class="contact__text">Бесплатный звонок по Украине</p>
+      </div> <!--/.footer__contact-->
+
+    </div> <!--/.footer__inner-top-->
+
+    <div class="footer__inner-bottom">
+      <div class="copyright">
+        &copy; 2020 Mining Blog
+      </div>
+      <button class="call-back__button call-back__button--footer" type="button">Обратный звонок</button>
+    </div> <!--/.footer__inner-bottom-->
+  </div> <!--/.container-->
+</footer> <!--/.footer-->
+</body>
+</html>
