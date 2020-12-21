@@ -13,32 +13,29 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-
-      <div class="logo">
-        <a class="logo__img" href="#">
-          <img src="img/header-logo.png" alt="Логотип компании" width="38" height="40">
+      <div class="header__logo logo">
+        <a class="logo__img" href="/">
+          <img src="img/logo-header.png" alt="Логотип компании" width="38" height="40">
         </a>
         <div class="logo__text">
           <a class="logo__title" href="#">Mining Courses</a>
           <div class="logo__subtitle">Учитесь вместе с нами</div>
         </div> <!--/.logo__text-->
       </div> <!--/.logo-->
-
-      <div class="header__contact">
-        <a class="contact__tel" href="tel:88003421333">8 800 342-13-33</a>
-        <p class="contact__text">Бесплатный звонок по Украине</p>
+      <div class="header__contact main-phone">
+        <a class="main-phone__tel" href="tel:38093934588*">+38 (093) 934 58 82</a>
+        <p class="main-phone__text">Бесплатный звонок по Украине</p>
       </div> <!--/.header__contact-->
+      <button class="header__button call-back__button" type="button">Обратный звонок</button>
 
-      <button class="call-back__button call-back__button--header" type="button">Обратный звонок</button>
       <!-- Menu -->
       <nav class="nav">
-        <a class="nav__link" href="./index.html">Главная</a>
+        <a class="nav__link active" href="./index.html">Главная</a>
         <a class="nav__link" href="./courses.html">Курсы</a>
         <a class="nav__link" href="./add-course.html">Добавить курс</a>
         <a class="nav__link" href="./card.html">Корзина</a>
         <a class="nav__link" href="./contacts.html">Контакты</a>
       </nav> <!--/.nav-->
-
       <button class="burger" id="navToggle">
         <span class="burger__item">Menu</span>
       </button> <!--/.burger-->
@@ -59,10 +56,10 @@
     </div> <!--/.container-->
   </section> <!--/.intro-->
 
-  <!--Наши преимузества-->
-  <section class="section section--gray" id="about-us">
+  <!--Наши услуги-->
+  <section class="section section--gray">
     <div class="container">
-      <h2 class="section__title">Наши преимущества</h2>
+      <h2 class="section__title">Наши услуги</h2>
 
       <ul class="features">
 
@@ -102,7 +99,7 @@
   <!--Популярные курсы-->
   <section class="section">
     <div class="container">
-      <h2 class="section__title">Популярные товары</h2>
+      <h2 class="section__title">Популярные курсы</h2>
 
       <ul class="popular__goods">
 
@@ -157,110 +154,39 @@
     </div> <!--/.container-->
   </section> <!--/.section-->
 
-  <!--Наши услуги-->
-  <section class="section section--gray" id="services">
+  <!--Клиенты-->
+  <section class="section section--gray">
     <div class="container">
-      <h2 class="section__title">Наши услуги</h2>
+      <h2 class="section__title">Клиенты</h2>
+    </div>
 
-      <ul class="services">
+  </section>
 
-        <li class="services__item">
-          <div class="services__img-wrapper">
-            <img class="services__img" src="img/truck.png" alt="Самосвал" width="252" height="112">
-          </div>
-          <a class="services__title" href="#">Аренда самосвала</a>
-        </li> <!--/.services__item-->
-
-        <li class="services__item">
-          <div class="services__img-wrapper">
-            <img class="services__img" src="img/tractor-2.png" alt="Колесный погрузчик" width="229"
-                 height="116">
-          </div>
-          <a class="services__title" href="#">Аренда спецтехники</a>
-        </li> <!--/.services__item-->
-
-        <li class="services__item">
-          <div class="services__img-wrapper">
-            <img class="services__img" src="img/tractor-3.png" alt="Трактор" width="189" height="127">
-          </div>
-          <a class="services__title" href="#">Рытье траншей</a>
-        </li> <!--/.services__item-->
-
-      </ul> <!--services-->
-    </div> <!--container-->
-  </section> <!--section-->
-
-  <!--Наши продукты-->
-  <section class="section" id="products">
-    <div class="container">
-      <h2 class="section__title">Всегда в наличии</h2>
-
-      <ul class="products">
-
-        <li class="product__item">
-          <div class="product__img-wrapper">
-            <img class="product__img" src="img/sand.jpg" alt="Песок речной" width="253" height="145">
-          </div>
-          <a class="product__title" href="#">Песок речной</a>
-          <p class="product__text">Мелкий речной песок повышает прочность, долговечность и морозоустойчивость
-            растворов, в состав которых он входит. </p>
-          <b class="product__price price">от 990 р./т</b>
-          <a class="product__button button" href="#">Подробнее</a>
-        </li> <!--/.product__item-->
-
-        <li class="product__item">
-          <div class="product__img-wrapper">
-            <img class="product__img" src="img/stone.png" alt="Щебень" width="240" height="117">
-          </div>
-
-          <a class="product__title" href="#">Щебень</a>
-          <p class="product__text">Мелкий речной песок повышает прочность, долговечность и морозоустойчивость
-            растворов, в состав которых он входит. </p>
-          <b class="product__price price">от 6000 р./т</b>
-          <a class="product__button button" href="#">Подробнее</a>
-        </li> <!--/.product__item-->
-
-        <li class="product__item">
-          <div class="product__img-wrapper">
-            <img class="product__img" src="img/grunt.jpg" alt="Грунт" width="267" height="152">
-          </div>
-          <a class="product__title" href="#">Грунт</a>
-          <p class="product__text">Мелкий речной песок повышает прочность, долговечность и морозоустойчивость
-            растворов, в состав которых он входит. </p>
-          <b class="product__price price">от 900 р./т</b>
-          <a class="product__button button" href="#">Подробнее</a>
-        </li> <!--/.product__item-->
-
-      </ul> <!--/.products-->
-    </div> <!--/.container-->
-  </section> <!--/.section-->
 </main>
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer__inner-top">
-
-      <div class="logo logo--footer">
-        <a class="logo__img" href="#">
-          <img src="/img/footer-logo.png" alt="Логотип компании" width="37" height="38">
+      <div class="footer__logo logo">
+        <a class="logo__img" href="/">
+          <img src="/img/logo-footer.png" alt="Логотип компании" width="37" height="38">
         </a>
         <div class="logo__text">
-          <a class="logo__title" href="#">Mining Blog</a>
-          <div class="logo__subtitle">Все о горном деле</div>
+          <a class="logo__title" href="#">Mining Courses</a>
+          <div class="logo__subtitle">Курсы для горняков!</div>
         </div>
-      </div> <!--/.logo-->
-
-      <div class="footer__contact">
-        <a class="contact__tel" href="tel:88003421333">8 800 342-13-33</a>
-        <p class="contact__text">Бесплатный звонок по Украине</p>
+      </div> <!--/.footer__logo-->
+      <div class="footer__contact main-phone">
+        <a class="main-phone__tel" href="tel:38093934588*">+38 (093) 934 58 82</a>
+        <p class="main-phone__text">Бесплатный звонок по Украине</p>
       </div> <!--/.footer__contact-->
-
     </div> <!--/.footer__inner-top-->
-
     <div class="footer__inner-bottom">
-      <div class="copyright">
-        &copy; 2020 Mining Blog
+      <div class="footer__copyright">
+        &copy; 2021 Mining Courses
       </div>
-      <button class="call-back__button call-back__button--footer" type="button">Обратный звонок</button>
+      <button class="footer__button call-back__button" type="button">Обратный звонок</button>
     </div> <!--/.footer__inner-bottom-->
   </div> <!--/.container-->
 </footer> <!--/.footer-->
