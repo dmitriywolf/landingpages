@@ -29,9 +29,9 @@
 
       <!-- Menu -->
       <nav class="nav">
-        <a class="nav__link active" href="./index.html">Главная</a>
+        <a class="nav__link" href="./index.html">Главная</a>
         <a class="nav__link" href="./courses.html">Курсы</a>
-        <a class="nav__link" href="./add-course.html">Добавить курс</a>
+        <a class="nav__link  active" href="./add-course.html">Добавить курс</a>
         <a class="nav__link" href="./card.html">Корзина</a>
         <a class="nav__link" href="./contacts.html">Контакты</a>
       </nav> <!--/.nav-->
@@ -45,47 +45,47 @@
 
 <main>
   <!--Вводная-->
-  <section class="intro intro--add-course" id="intro">
+  <section class="intro intro--add-course">
     <div class="container">
       <div class="intro__inner">
         <h1 class="intro__title">Добавить курс</h1>
-        <p class="intro__text">Мы раскажем все, что знаем. Будет очень интересно! </p>
-        <a class="intro__button button" href="#">Узнать больше</a>
       </div>
     </div> <!--/.container-->
   </section> <!--/.intro-->
 
-  <section class="add-course">
-
-    <div class="container">
+  <section class="section">
       <div class="container">
-        <div class="add-wrapper">
-          <form action="/add" method="POST">
-            <div class="input-field">
-              <input id="title" name="title" type="text" class="validate" require>
-              <label for="title">Название курса</label>
-              <span class="helper-text" data-error="Введите название"></span>
+        <div class="add">
+
+          <form class="add__form" action="/add" method="POST">
+
+            <div class="add__field">
+              <label class="add__label label" for="title">Название курса</label> <br>
+              <input class="add__input input" id="title" name="title" type="text" require>
             </div>
 
-            <div class="input-field">
-              <input id="price"name="price" type="number" class="validate" require>
-              <label for="price">Цена</label>
-              <span class="helper-text" data-error="Введите цену"></span>
+            <div class="add__field">
+              <label class="add__label label" for="price">Цена</label> <br>
+              <input class="add__input input" id="price" name="price" type="number" require>
             </div>
 
-            <div class="input-field">
-              <input id="img" name="img" type="text" class="validate" require>
-              <label for="img">URL картинки</label>
-              <span class="helper-text" data-error="Введите путь к картинке"></span>
+            <div class="add__field">
+              <label class="add__label label" for="img">URL картинки</label> <br>
+              <input class="add__input input" id="img" name="img" type="text" require>
             </div>
 
-            <button class="btn btn-primary">Добавить курс</button>
+            <div class="add__field">
+              <label class="add__label label" for="description">Краткое описание</label> <br>
+              <textarea class="add__textarea textarea" id="description" rows="4">
+
+              </textarea>
+            </div>
+            <button class="add__button button" type="submit">Добавить курс</button>
           </form>
         </div>
-      </div>
-    </div>
 
-  </section>
+      </div> <!--/.container-->
+  </section> <!--/.section-->
 </main>
 
 <footer class="footer">
@@ -93,7 +93,7 @@
     <div class="footer__inner-top">
       <div class="footer__logo logo">
         <a class="logo__img" href="/">
-          <img src="/img/logo-footer.png" alt="Логотип компании" width="37" height="38">
+          <img src="img/logo-footer.png" alt="Логотип компании" width="37" height="38">
         </a>
         <div class="logo__text">
           <a class="logo__title" href="#">Mining Courses</a>
