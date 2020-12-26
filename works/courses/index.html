@@ -13,8 +13,15 @@
 <div style="display:none">
   <svg>
     <symbol id="close-popup" viewBox="0 0 48 48">
+      <path
+          d="M28.782,24.144,47.812,5.379a2.954,2.954,0,0,0,0-4.22,3.055,3.055,0,0,0-4.279,0L24.5,19.924,5.473,1.159a3.055,3.055,0,0,0-4.279,0,2.954,2.954,0,0,0,0,4.22l19.03,18.765L1.194,42.91a2.954,2.954,0,0,0,0,4.22,3.055,3.055,0,0,0,4.279,0L24.5,28.364,43.532,47.129a3.055,3.055,0,0,0,4.279,0,2.954,2.954,0,0,0,0-4.22Z"/>
+    </symbol>
+
+    <symbol id="arrow" viewBox="0 0 612 430">
+      <g>
         <path
-            d="M28.782,24.144,47.812,5.379a2.954,2.954,0,0,0,0-4.22,3.055,3.055,0,0,0-4.279,0L24.5,19.924,5.473,1.159a3.055,3.055,0,0,0-4.279,0,2.954,2.954,0,0,0,0,4.22l19.03,18.765L1.194,42.91a2.954,2.954,0,0,0,0,4.22,3.055,3.055,0,0,0,4.279,0L24.5,28.364,43.532,47.129a3.055,3.055,0,0,0,4.279,0,2.954,2.954,0,0,0,0-4.22Z"/>
+            d="M412.613,6.81a21.7,21.7,0,0,0-30.843,30.532L538.162,193.733H22.092A21.488,21.488,0,0,0,.5,215.345a21.723,21.723,0,0,0,21.592,21.9h516.07l-156.392,156.1c-8.337,8.629-8.337,22.524,0,30.843a21.609,21.609,0,0,0,30.843,0L606.028,230.775a21.241,21.241,0,0,0,0-30.532Z"/>
+      </g>
     </symbol>
   </svg>
 </div>
@@ -46,7 +53,7 @@
         <a class="nav__link" href="./card.html">Корзина</a>
         <a class="nav__link" href="./contacts.html">Контакты</a>
       </nav> <!--/.nav-->
-      <button class="burger burger--close" id="navToggle">
+      <button class="burger" id="navToggle">
         <span class="burger__item">Menu</span>
       </button> <!--/.burger-->
 
@@ -103,88 +110,116 @@
     <div class="container">
       <h2 class="section__title">Наши клиенты</h2>
 
-      <div class="clients">
+      <div class="clients glide glide--clients">
 
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides clients__slides">
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/poltava.jpg" alt="Poltava Mining">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Полтавский ГОК</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/metinvest.jpg" alt="Metinvest">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Метинвест</a>
 
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/poltava.jpg" alt="Poltava Mining">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Полтавский ГОК</a>
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/metinvest.jpg" alt="Metinvest">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Метинвест</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/mgok.jpg" alt="Михайловский ГОК">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Михайловский ГОК</a>
 
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/mgok.jpg" alt="Михайловский ГОК">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Михайловский ГОК</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/mital.jpg" alt="Arcelor Mital">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Арселор Митал</a>
 
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/mital.jpg" alt="Arcelor Mital">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Арселор Митал</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/ogok.jpg" alt="Орджоникидзевский ГОК">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Орджоникидзевский ГОК</a>
 
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/ogok.jpg" alt="Орджоникидзевский ГОК">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Орджоникидзевский ГОК</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/dtek.jpg" alt="ДТЭК">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">ДТЭК</a>
 
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/dtek.jpg" alt="ДТЭК">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">ДТЭК</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/ugok.jpg" alt="ЮГОК">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Южный ГОК</a>
 
-          </div>
-        </div> <!--/.client-->
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/ugok.jpg" alt="ЮГОК">
-          </div>
-          <div class="client__info">
-            <a class="client__title" href="">Южный ГОК</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+            <div class="glide__slide">
+              <div class="client">
+                <div class="client__logo">
+                  <img src="img/clients/umcc.jpg" alt="ОГХК">
+                </div>
+                <div class="client__info">
+                  <a class="client__title" href="">Объединенная Горно-Химическая Компания</a>
+                </div>
+              </div> <!--/.client-->
+            </div>
+          </div> <!--/.glide__slides-->
+        </div> <!--/.glide__track-->
 
+        <div class="glide__arrows clients__arrows" data-glide-el="controls">
+          <div class="clients__arrow clients__arrow--prev" data-glide-dir=">">
+            <svg class="slider__arrow slider__arrow--prev" width="20" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
           </div>
-        </div> <!--/.client-->
-
-        <div class="client">
-          <div class="client__logo">
-            <img src="img/clients/umcc.jpg" alt="ОГХК">
+          <div class="clients__arrow clients__arrow--next" data-glide-dir="<">
+            <svg class="slider__arrow slider__arrow-next" width="20" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
           </div>
-          <div class="client__info">
-            <a class="client__title" href="">Объединенная Горно-Химическая Компания</a>
-          </div>
-        </div> <!--/.client-->
+        </div> <!--/.glide__arrows /.clients__arrows-->
+      </div> <!--/.glide--clients-->
 
-      </div>
-    </div>
-
+    </div> <!--/.container-->
   </section>
-
 </main>
-
 
 <footer class="footer">
   <div class="container">
