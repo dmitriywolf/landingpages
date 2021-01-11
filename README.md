@@ -1,2 +1,2 @@
 # dmitriywolf
-- Portfolio FrontEnd dev: [Dmitriy.Wolf](https://dmitriywolf.github.io/).
+- Portfolio: [Dmitriy.Wolf](https://dmitriywolf.github.io/).
