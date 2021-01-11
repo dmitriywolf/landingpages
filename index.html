@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио Frontend разработчика или верстальщика.
-    Резюме верстальщика. Выполняю вёрстку сайтов на заказ.">
+  <meta name="description" content="Портфолио Frontend разработчика">
   <meta name="keywords" content="Вёрстка, портфолио, резюме">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,8 +36,8 @@
       </div> <!--/.header__logo-->
       <nav class="navigation" id="navigation">
         <a class="navigation__link navigation__link--active" href="#" data-scroll="#intro">Main</a>
-        <a class="navigation__link" href="#" data-scroll="#resume">About Me</a>
-        <a class="navigation__link" href="#" data-scroll="#works">My works</a>
+        <a class="navigation__link" href="#" data-scroll="#resume">Skills</a>
+        <a class="navigation__link" href="#" data-scroll="#works">Works</a>
         <a class="navigation__link" href="#" data-scroll="#contact">Contatcs</a>
       </nav> <!--/.navigation-->
       <button class="burger" id="navToggle">
@@ -70,15 +69,13 @@
     <div class="container">
 
       <div class="resume" id="resume">
-
         <div class="resume__inner">
-          <h3 class="resume__position">FrontEnd React Developer</h3>
+          <h3 class="resume__position">FrontEnd/React Developer</h3>
           <div class="skills">
             <h3 class="skills__title">Technical Skills</h3>
             <div class="skills__group">
 
               <ul class="skills__list skills__list--tech">
-
                 <li class="skills__item">
                   <p>HTML5 & CSS3</p>
                   <div class="skills__icon-wrapper">
@@ -108,73 +105,9 @@
                     </svg>
                   </div>
                 </li>
-
-              </ul>
-              <ul class="skills__list skills__list--tech">
-                <li class="skills__item">
-                  <p>JavaScript</p>
-                  <div class="skills__icon-wrapper">
-                    <svg class="skills__icon" width='22px' height="22px">
-                      <use xlink:href="img/sprite.svg#icon-js"></use>
-                    </svg>
-                  </div>
-                </li>
-
-                <!-- <li class="skills__item">
-                  <p>jQuery</p>
-                  <div class="skills__icon-wrapper">
-                    <svg class="skills__icon" width='22px' height="22px">
-                      <use xlink:href="img/sprite.svg#icon-jquery"></use>
-                    </svg>
-                  </div>
-                </li> -->
-
-                <li class="skills__item">
-                  <p>React</p>
-                  <div class="skills__icon-wrapper">
-                    <svg class="skills__icon" width='22px' height="22px">
-                      <use xlink:href="img/sprite.svg#icon-react"></use>
-                    </svg>
-                  </div>
-                </li>
-
-                <li class="skills__item">
-                  <p>Redux</p>
-                  <div class="skills__icon-wrapper">
-                    <svg class="skills__icon" width='22px' height="22px">
-                      <use xlink:href="img/sprite.svg#icon-redux"></use>
-                    </svg>
-                  </div>
-                </li>
-
-                <!-- <li class="skills__item">
-                    <p>TypeScript</p>
-                    <div class="skills__icon-wrapper">
-                        <svg class="skills__icon" width='22px' height="22px">
-                            <use xlink:href="img/sprite.svg#icon-typescript"></use>
-                        </svg>
-                    </div>
-                </li> -->
-
-                <!--<li class="skills__item">
-                <p>GraphQL</p>
-                <div class="skills__icon-wrapper">
-                        <svg class="skills__icon" width='25px' height="25px">
-                            <use xlink:href="img/sprite.svg#icon-graph"></use>
-                        </svg>
-                    </div>
-                </li>-->
               </ul>
 
               <ul class="skills__list skills__list--tech">
-                <li class="skills__item">
-                  <P>Git / GitHub</P>
-                  <div class="skills__icon-wrapper">
-                    <svg class="skills__icon" width='22px' height="22px">
-                      <use xlink:href="img/sprite.svg#icon-git"></use>
-                    </svg>
-                  </div>
-                </li>
 
                 <li class="skills__item">
                   <p>Gulp 4</p>
@@ -204,6 +137,37 @@
                 </li>
               </ul>
 
+              <ul class="skills__list skills__list--tech">
+                <li class="skills__item">
+                  <p>TypeScript</p>
+                  <div class="skills__icon-wrapper">
+                      <svg class="skills__icon" width='22px' height="22px">
+                          <use xlink:href="img/sprite.svg#icon-typescript"></use>
+                      </svg>
+                  </div>
+              </li>
+
+                <li class="skills__item">
+                  <p>React/Redux</p>
+                  <div class="skills__icon-wrapper">
+                    <svg class="skills__icon" width='22px' height="22px">
+                      <use xlink:href="img/sprite.svg#icon-react"></use>
+                    </svg>
+                    <svg class="skills__icon" width='22px' height="22px">
+                      <use xlink:href="img/sprite.svg#icon-redux"></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="skills__item">
+                <p>GraphQL</p>
+                <div class="skills__icon-wrapper">
+                        <svg class="skills__icon" width='25px' height="25px">
+                            <use xlink:href="img/sprite.svg#icon-graph"></use>
+                        </svg>
+                    </div>
+                </li>
+              </ul>
             </div> <!--/.skills__group-->
           </div> <!--/.skills-->
           <div class="resume__download download">
@@ -233,8 +197,7 @@
               <div class="works__item-content">
                 <h3 class="work__title">Mining Courses</h3>
                 <div class="work__technology">
-                  <span>Node.js(Express.js)</span>
-                  <span>MongoDB</span>
+                  <span>SPA</span>
                 </div> <!--/.work__technology-->
                 <div class="work__button-wrapper">
                   <a class="work__button" href="https://calm-fortress-08818.herokuapp.com/"
@@ -243,6 +206,12 @@
                       <use xlink:href="img/sprite.svg#icon-web"></use>
                     </svg>
                     Go to Site</a>
+                    <a class="work__button" href="https://github.com/dmitriywolf/miningCourses"
+                     target="_blank">
+                    <svg class="work__img" width="14" height="14">
+                      <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                    GitHub</a>
                 </div> <!--/.work__button-wrapper-->
               </div><!--/.works__item--content-->
             </li><!--/.work-->
@@ -253,10 +222,36 @@
               <div class="works__item-content">
                 <h3 class="work__title">Todo List</h3>
                 <div class="work__technology">
-                  <span>React</span>
+                  <span>SPA </span>
                 </div> <!--/.work__technology-->
                 <div class="work__button-wrapper">
                   <a class="work__button" href="https://dmitriywolf.github.io/toDoList/dist/"
+                     target="_blank">
+                    <svg class="work__img" width="14" height="14">
+                      <use xlink:href="img/sprite.svg#icon-web"></use>
+                    </svg>
+                    Go to Site</a>
+                    <a class="work__button" href="https://github.com/dmitriywolf/toDoList"
+                     target="_blank">
+                    <svg class="work__img" width="14" height="14">
+                      <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                    GitHub</a>
+                </div> <!--/.work__button-wrapper-->
+
+              </div><!--/.works__item--content-->
+            </li><!--/.work-->
+
+             <!--/.Advogrand-->
+             <li class="works__item work">
+              <img class="works__item-img" src="img/works/advogrand.jpg" alt="Advogrand">
+              <div class="works__item-content">
+                <h3 class="work__title">Advogrand</h3>
+                <div class="work__technology">
+                  <span>Landing Page</span>
+                </div> <!--/.work__technology-->
+                <div class="work__button-wrapper">
+                  <a class="work__button" href="https://dmitriywolf.github.io/works/advogrand"
                      target="_blank">
                     <svg class="work__img" width="14" height="14">
                       <use xlink:href="img/sprite.svg#icon-web"></use>
@@ -272,13 +267,7 @@
               <div class="works__item-content">
                 <h3 class="work__title">Yoga</h3>
                 <div class="work__technology">
-                  <span>PSD to HTML</span>
-                  <span>Bootstrap 4 Grid</span>
-                  <span>SCSS</span>
-                  <span>JS</span>
-                  <span>Babel</span>
-                  <span>Webpack</span>
-                  <span>Gulp 4</span>
+                  <span>Landing Page</span>
                 </div> <!--/.work__technology-->
                 <div class="work__button-wrapper">
                   <a class="work__button" href="https://dmitriywolf.github.io/works/yoga"
@@ -297,40 +286,10 @@
               <div class="works__item-content">
                 <h3 class="work__title">Seven Continents</h3>
                 <div class="work__technology">
-                  <span>PSD to HTML</span>
-                  <span>Bootstrap 4 Grid</span>
-                  <span>SCSS</span>
-                  <span>JS</span>
-                  <span>Babel</span>
-                  <span>Webpack</span>
-                  <span>Gulp 4</span>
+                  <span>Landing Page </span>
                 </div> <!--/.work__technology-->
                 <div class="work__button-wrapper">
                   <a class="work__button" href="https://dmitriywolf.github.io/works/continent"
-                     target="_blank">
-                    <svg class="work__img" width="14" height="14">
-                      <use xlink:href="img/sprite.svg#icon-web"></use>
-                    </svg>
-                    Go to Site</a>
-                </div> <!--/.work__button-wrapper-->
-              </div><!--/.works__item--content-->
-            </li><!--/.work-->
-
-            <!--/.Advogrand-->
-            <li class="works__item work">
-              <img class="works__item-img" src="img/works/advogrand.jpg" alt="Advogrand">
-              <div class="works__item-content">
-                <h3 class="work__title">Advogrand</h3>
-                <div class="work__technology">
-                  <span>PSD to HTML</span>
-                  <span>SCSS</span>
-                  <span>JS</span>
-                  <span>Babel</span>
-                  <span>Webpack</span>
-                  <span>Gulp 4</span>
-                </div> <!--/.work__technology-->
-                <div class="work__button-wrapper">
-                  <a class="work__button" href="https://dmitriywolf.github.io/works/advogrand"
                      target="_blank">
                     <svg class="work__img" width="14" height="14">
                       <use xlink:href="img/sprite.svg#icon-web"></use>
@@ -346,10 +305,7 @@
               <div class="works__item-content">
                 <h3 class="work__title">Houses</h3>
                 <div class="work__technology">
-                  <span>PSD to HTML</span>
-                  <span>SCSS</span>
-                  <span>JS / JQuery</span>
-                  <span>Gulp 4</span>
+                  <span>Landing Page</span>
                 </div> <!--/.work__technology-->
                 <div class="work__button-wrapper">
                   <a class="work__button" href="https://dmitriywolf.github.io/works/houses"
@@ -360,28 +316,6 @@
                     Go to Site</a>
                 </div> <!--/.work__button-wrapper-->
               </div><!--works__item-content-->
-            </li><!--/.work-->
-
-            <!--23Degree-->
-            <li class="works__item work">
-              <img class="works__item-img" src="img/works/degree.jpg" alt="23Degree">
-              <div class="works__item-content">
-                <h3 class="work__title">23 Degree</h3>
-                <div class="work__technology">
-                  <span>PSD to HTML</span>
-                  <span>SCSS</span>
-                  <span>JS</span>
-                  <span>Gulp 4</span>
-                </div> <!--/.work__technology-->
-                <div class="work__button-wrapper">
-                  <a class="work__button" href="https://dmitriywolf.github.io/works/23degree"
-                     target="_blank">
-                    <svg class="work__img" width="14" height="14">
-                      <use xlink:href="img/sprite.svg#icon-web"></use>
-                    </svg>
-                    Go to Site</a>
-                </div> <!--/.work__button-wrapper-->
-              </div><!--/.works__item-content-->
             </li><!--/.work-->
 
           </ul> <!--/.works__list-->
@@ -411,7 +345,7 @@
             <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
           </svg>
         </a> <!--/.contact__item-->
-        <a class="contact__item" href="mailto:dmitriyvolchenko18@ukr.net">
+        <a class="contact__item" href="mailto:dmitriy-dev@ukr.net">
           <svg class="contact__icon">
             <use xlink:href="img/sprite.svg#icon-email"></use>
           </svg>
